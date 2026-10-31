@@ -83,6 +83,9 @@ export interface Destination {
   difficulty?: DifficultyTier | null;
   main_attractions?: string[];
   attractions?: string[];
+  highlights?: string[];
+  search_tags?: string[];
+  visibility_status?: string;
   activities?: string[];
   cultural_significance?: string | null;
   historical_significance?: string | null;
@@ -186,6 +189,7 @@ export interface Artisan {
   district: string;
   location?: string | null;
   description?: string | null;
+  bio?: string | null;
   cultural_significance?: string | null;
   image?: string | null;
   gallery?: string[];

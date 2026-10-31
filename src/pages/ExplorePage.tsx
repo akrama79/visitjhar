@@ -1,9 +1,8 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Search, Filter, X, Sparkles, SlidersHorizontal } from 'lucide-react';
+import { Search, Filter, X, Sparkles, SlidersHorizontal, ArrowUpDown } from 'lucide-react';
 import { 
   INITIAL_DESTINATIONS, 
-  INITIAL_CATEGORIES, 
   INITIAL_DISTRICTS 
 } from '../data/mockData';
 import { DestinationCard } from '../components/DestinationCard';
@@ -25,6 +24,7 @@ export const ExplorePage: React.FC = () => {
   const [onlyHiddenGems, setOnlyHiddenGems] = useState(searchParams.get('hidden') === 'true');
   const [sortBy, setSortBy] = useState(searchParams.get('sort') || 'recommended');
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(18);
 
   const TOURISM_PILLARS = [
     'Nature and Waterfalls',
@@ -39,7 +39,29 @@ export const ExplorePage: React.FC = () => {
     'Lesser-Known and Emerging Destinations'
   ];
 
-  // Sync state to URL params
+  const QUICK_CHIPS = [
+    { label: 'All Destinations', pillar: 'all' },
+    { label: 'Waterfalls', pillar: 'Nature and Waterfalls' },
+    { label: 'Hill Stations', pillar: 'Hill Stations and Plateaus' },
+    { label: 'Wildlife & Sanctuaries', pillar: 'Wildlife, Forests and Protected Areas' },
+    { label: 'Spiritual & Temples', pillar: 'Spiritual and Religious Destinations' },
+    { label: 'Heritage & Forts', pillar: 'Heritage, Architecture and Archaeology' },
+    { label: 'Lakes & Dams', pillar: 'Lakes, Dams and Scenic Landscapes' },
+    { label: 'Tribal Traditions', pillar: 'Tribal Culture and Living Traditions' },
+    { label: 'Adventure', pillar: 'Adventure and Outdoor Activities' },
+    { label: 'Rural Tourism', pillar: 'Rural and Community-Based Tourism' },
+  ];
+
+  // Derive unique categories present in the canonical dataset
+  const availableCategories = useMemo(() => {
+    const set = new Set<string>();
+    INITIAL_DESTINATIONS.forEach(d => {
+      if (d.category) set.add(d.category);
+    });
+    return Array.from(set).sort();
+  }, []);
+
+  // Sync state to URL params & reset pagination on filter change
   useEffect(() => {
     const params = new URLSearchParams();
     if (searchQuery) params.set('search', searchQuery);
@@ -52,6 +74,7 @@ export const ExplorePage: React.FC = () => {
     if (onlyHiddenGems) params.set('hidden', 'true');
     if (sortBy !== 'recommended') params.set('sort', sortBy);
     setSearchParams(params, { replace: true });
+    setVisibleCount(18);
   }, [
     searchQuery,
     selectedPillar,
@@ -79,13 +102,14 @@ export const ExplorePage: React.FC = () => {
   const filteredDestinations = useMemo(() => {
     let result = [...INITIAL_DESTINATIONS];
 
-    // Text search
+    // Robust case-insensitive search
     if (searchQuery.trim()) {
       const q = searchQuery.toLowerCase().trim();
       result = result.filter(d => 
-        d.name.toLowerCase().includes(q) ||
-        d.district.toLowerCase().includes(q) ||
-        d.category.toLowerCase().includes(q) ||
+        (d.name && d.name.toLowerCase().includes(q)) ||
+        (d.district && d.district.toLowerCase().includes(q)) ||
+        (d.category && d.category.toLowerCase().includes(q)) ||
+        (d.pillar && d.pillar.toLowerCase().includes(q)) ||
         (d.alt_names && d.alt_names.some(alt => alt.toLowerCase().includes(q))) ||
         (d.short_description && d.short_description.toLowerCase().includes(q)) ||
         (d.activities && d.activities.some(a => a.toLowerCase().includes(q))) ||
@@ -100,12 +124,12 @@ export const ExplorePage: React.FC = () => {
 
     // Category filter
     if (selectedCategory !== 'all') {
-      result = result.filter(d => d.category.toLowerCase() === selectedCategory.toLowerCase());
+      result = result.filter(d => d.category && d.category.toLowerCase() === selectedCategory.toLowerCase());
     }
 
     // District filter
     if (selectedDistrict !== 'all') {
-      result = result.filter(d => d.district.toLowerCase() === selectedDistrict.toLowerCase());
+      result = result.filter(d => d.district && d.district.toLowerCase() === selectedDistrict.toLowerCase());
     }
 
     // Budget filter
@@ -136,11 +160,14 @@ export const ExplorePage: React.FC = () => {
       case 'popular':
         result.sort((a, b) => (b.views || 0) - (a.views || 0));
         break;
-      case 'recent':
-        result.sort((a, b) => new Date(b.created_date || '').getTime() - new Date(a.created_date || '').getTime());
-        break;
       case 'alpha':
         result.sort((a, b) => a.name.localeCompare(b.name));
+        break;
+      case 'alpha_desc':
+        result.sort((a, b) => b.name.localeCompare(a.name));
+        break;
+      case 'recent':
+        result.sort((a, b) => new Date(b.created_date || '').getTime() - new Date(a.created_date || '').getTime());
         break;
       case 'recommended':
       default:
@@ -184,15 +211,17 @@ export const ExplorePage: React.FC = () => {
     onlyHiddenGems
   ].filter(Boolean).length;
 
+  const displayedDestinations = filteredDestinations.slice(0, visibleCount);
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-8">
       {/* Page Header */}
       <div>
-        <h1 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+        <h1 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl text-foreground">
           Explore Jharkhand Destinations
         </h1>
         <p className="mt-2 text-sm text-muted-foreground">
-          Discover 40 authentic tourism landmarks across all 24 districts of Jharkhand.
+          Discover {INITIAL_DESTINATIONS.length} authentic tourism landmarks across all 24 districts of Jharkhand.
         </p>
       </div>
 
@@ -204,13 +233,14 @@ export const ExplorePage: React.FC = () => {
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder="Search by name, district, activities (e.g. trekking, waterfalls)..."
+            placeholder="Search by name, alias, district, pillar (e.g. Parasnath, Lodh, Betla, waterfalls)..."
             className="w-full rounded-xl border border-border bg-card py-2.5 pl-10 pr-4 text-sm text-foreground outline-none focus:border-primary transition"
           />
           {searchQuery && (
             <button
               onClick={() => setSearchQuery('')}
-              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground"
+              className="absolute right-3 top-1/2 -translate-y-1/2 text-muted-foreground hover:text-foreground p-1"
+              aria-label="Clear search"
             >
               <X className="h-4 w-4" />
             </button>
@@ -234,16 +264,39 @@ export const ExplorePage: React.FC = () => {
             className="rounded-xl border border-border bg-card px-4 py-2 text-sm font-medium text-foreground outline-none focus:border-primary cursor-pointer"
           >
             <option value="recommended">Sort: Recommended</option>
+            <option value="alpha">Sort: Alphabetical (A–Z)</option>
+            <option value="alpha_desc">Sort: Alphabetical (Z–A)</option>
             <option value="rating">Sort: Highest Rated</option>
             <option value="popular">Sort: Most Popular</option>
-            <option value="recent">Sort: Recently Added</option>
-            <option value="alpha">Sort: Alphabetical (A-Z)</option>
           </select>
         </div>
       </div>
 
+      {/* Quick Category & Pillar Chips */}
+      <div className="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+        {QUICK_CHIPS.map(chip => {
+          const isSelected = selectedPillar === chip.pillar;
+          return (
+            <button
+              key={chip.label}
+              onClick={() => {
+                setSelectedPillar(chip.pillar);
+                setSelectedCategory('all');
+              }}
+              className={`whitespace-nowrap rounded-full px-3.5 py-1.5 text-xs font-semibold transition ${
+                isSelected
+                  ? 'bg-primary text-white shadow-sm'
+                  : 'border border-border bg-card text-foreground/80 hover:bg-secondary'
+              }`}
+            >
+              {chip.label}
+            </button>
+          );
+        })}
+      </div>
+
       {/* Filter Toolbar (Desktop & Collapsible Mobile) */}
-      <div className={`space-y-4 ${mobileFiltersOpen ? 'block' : 'hidden sm:block'}`}>
+      <div className={`space-y-4 rounded-2xl border border-border/80 bg-card/60 p-4 ${mobileFiltersOpen ? 'block' : 'hidden sm:block'}`}>
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
           {/* Tourism Pillar (Tourism Policy 2021) */}
           <div className="col-span-2 sm:col-span-1">
@@ -270,9 +323,9 @@ export const ExplorePage: React.FC = () => {
               onChange={(e) => setSelectedCategory(e.target.value)}
               className="w-full rounded-lg border border-border bg-card px-3 py-1.5 text-xs text-foreground outline-none cursor-pointer"
             >
-              <option value="all">All Categories</option>
-              {INITIAL_CATEGORIES.map(c => (
-                <option key={c.id} value={c.name}>{c.name}</option>
+              <option value="all">All Categories ({availableCategories.length})</option>
+              {availableCategories.map(c => (
+                <option key={c} value={c}>{c}</option>
               ))}
             </select>
           </div>
@@ -301,7 +354,7 @@ export const ExplorePage: React.FC = () => {
               className="w-full rounded-lg border border-border bg-card px-3 py-1.5 text-xs text-foreground outline-none cursor-pointer"
             >
               <option value="all">Any Budget</option>
-              <option value="LOW">₹ Budget</option>
+              <option value="LOW">₹ Budget Friendly</option>
               <option value="MODERATE">₹₹ Moderate</option>
               <option value="PREMIUM">₹₹₹ Premium</option>
             </select>
@@ -354,7 +407,7 @@ export const ExplorePage: React.FC = () => {
 
         {/* Active Filter Indicators */}
         {activeFilterCount > 0 && (
-          <div className="flex items-center gap-2 pt-2 text-xs text-muted-foreground">
+          <div className="flex items-center gap-2 pt-2 text-xs text-muted-foreground border-t border-border/50">
             <span>{activeFilterCount} active filter{activeFilterCount > 1 ? 's' : ''}:</span>
             <button
               onClick={clearAllFilters}
@@ -369,7 +422,7 @@ export const ExplorePage: React.FC = () => {
       {/* Results Header */}
       <div className="flex items-center justify-between border-b border-border pb-3 text-xs text-muted-foreground">
         <span>
-          Showing <strong className="text-foreground">{filteredDestinations.length}</strong> of {INITIAL_DESTINATIONS.length} destinations
+          Showing <strong className="text-foreground">{displayedDestinations.length}</strong> of <strong className="text-foreground">{filteredDestinations.length}</strong> matching destinations ({INITIAL_DESTINATIONS.length} total)
         </span>
         {sortBy === 'recommended' && (
           <span className="flex items-center gap-1 text-primary font-medium">
@@ -379,19 +432,41 @@ export const ExplorePage: React.FC = () => {
       </div>
 
       {/* Destination Grid or Empty State */}
-      {filteredDestinations.length > 0 ? (
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {filteredDestinations.map(destination => {
-            const matchInfo = destinationScores.get(destination.id);
-            return (
-              <DestinationCard
-                key={destination.id}
-                destination={destination}
-                matchScore={matchInfo?.score}
-                matchReason={matchInfo?.reason}
-              />
-            );
-          })}
+      {displayedDestinations.length > 0 ? (
+        <div className="space-y-8">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {displayedDestinations.map(destination => {
+              const matchInfo = destinationScores.get(destination.id);
+              return (
+                <DestinationCard
+                  key={destination.id}
+                  destination={destination}
+                  matchScore={matchInfo?.score}
+                  matchReason={matchInfo?.reason}
+                />
+              );
+            })}
+          </div>
+
+          {/* Load More / Pagination Controls */}
+          {filteredDestinations.length > visibleCount && (
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-6 pb-2">
+              <button
+                type="button"
+                onClick={() => setVisibleCount(prev => prev + 18)}
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-8 py-3 text-xs font-bold text-white shadow-md hover:bg-primary-light transition"
+              >
+                Load More ({displayedDestinations.length} of {filteredDestinations.length})
+              </button>
+              <button
+                type="button"
+                onClick={() => setVisibleCount(filteredDestinations.length)}
+                className="rounded-full border border-border bg-card px-5 py-3 text-xs font-semibold text-foreground hover:bg-secondary transition"
+              >
+                Show All ({filteredDestinations.length})
+              </button>
+            </div>
+          )}
         </div>
       ) : (
         <div className="rounded-2xl border border-dashed border-border bg-card p-12 text-center max-w-lg mx-auto">

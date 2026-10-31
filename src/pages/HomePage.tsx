@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { 
   Search, 
@@ -13,14 +13,22 @@ import {
   Trees,
   Shield,
   Users,
-  Clock
+  Clock,
+  Waves,
+  Mountain,
+  Landmark,
+  Palmtree,
+  Camera,
+  Layers
 } from 'lucide-react';
 import { 
   INITIAL_DESTINATIONS, 
-  INITIAL_CATEGORIES, 
+  INITIAL_DISTRICTS,
   INITIAL_EVENTS, 
   INITIAL_CULTURE,
-  INITIAL_CIRCUITS 
+  INITIAL_CIRCUITS,
+  INITIAL_EXPERIENCES,
+  INITIAL_ARTISANS
 } from '../data/mockData';
 import { DestinationCard } from '../components/DestinationCard';
 import { useAuth } from '../context/AuthContext';
@@ -40,13 +48,42 @@ export const HomePage: React.FC = () => {
     }
   };
 
-  const quickTags = ['Waterfalls', 'Wildlife', 'Tribal Culture', 'Heritage', 'Adventure', 'Homestays'];
+  const quickTags = ['Waterfalls', 'Netarhat', 'Betla', 'Parasnath', 'Baidyanath Dham', 'Patratu', 'Tribal Crafts'];
 
-  const featuredDestinations = INITIAL_DESTINATIONS.filter(d => d.featured).slice(0, 6);
-  const hiddenGems = INITIAL_DESTINATIONS.filter(d => d.hidden_gem).slice(0, 3);
-  const recommendations = getRecommendedDestinations(INITIAL_DESTINATIONS, user, 3);
-  const upcomingEvents = INITIAL_EVENTS.slice(0, 3);
-  const culturalHighlights = INITIAL_CULTURE.slice(0, 3);
+  // Data slices
+  const featuredDestinations = useMemo(() => INITIAL_DESTINATIONS.filter(d => d.featured).slice(0, 6), []);
+  const hiddenGems = useMemo(() => INITIAL_DESTINATIONS.filter(d => d.hidden_gem).slice(0, 3), []);
+  const recommendations = useMemo(() => getRecommendedDestinations(INITIAL_DESTINATIONS, user, 3), [user]);
+  const waterfallsAndHills = useMemo(() => 
+    INITIAL_DESTINATIONS.filter(d => d.pillar === 'Nature and Waterfalls' || d.pillar === 'Hill Stations and Plateaus').slice(0, 4),
+    []
+  );
+  const wildlifeSanctuaries = useMemo(() => 
+    INITIAL_DESTINATIONS.filter(d => d.pillar === 'Wildlife, Forests and Protected Areas').slice(0, 3),
+    []
+  );
+
+  const upcomingEvents = useMemo(() => INITIAL_EVENTS.slice(0, 3), []);
+  const culturalHighlights = useMemo(() => INITIAL_CULTURE.slice(0, 3), []);
+  const featuredArtisans = useMemo(() => INITIAL_ARTISANS.slice(0, 4), []);
+
+  // Compute destination counts per district
+  const districtCounts = useMemo(() => {
+    const map: Record<string, number> = {};
+    INITIAL_DESTINATIONS.forEach(d => {
+      map[d.district] = (map[d.district] || 0) + 1;
+    });
+    return map;
+  }, []);
+
+  const TOURISM_PILLARS_DATA = [
+    { title: 'Nature & Waterfalls', pillar: 'Nature and Waterfalls', icon: Waves, desc: '98m Hundru, 143m Lodh, Dassam & Jonha cascades.' },
+    { title: 'Hill Stations & Plateaus', pillar: 'Hill Stations and Plateaus', icon: Mountain, desc: 'Netarhat, Patratu Valley, Parasnath & Bagru heights.' },
+    { title: 'Wildlife & Sanctuaries', pillar: 'Wildlife, Forests and Protected Areas', icon: Trees, desc: 'Palamau Tiger Reserve, Betla & Dalma elephant corridors.' },
+    { title: 'Spiritual & Pilgrimage', pillar: 'Spiritual and Religious Destinations', icon: Landmark, desc: 'Baba Baidyanath Jyotirlinga, Parasnath & Rajrappa.' },
+    { title: 'Heritage & Forts', pillar: 'Heritage, Architecture and Archaeology', icon: Layers, desc: 'Navratangarh, Maluti terracotta & 17th-century Palamu Forts.' },
+    { title: 'Tribal Traditions', pillar: 'Tribal Culture and Living Traditions', icon: Users, desc: 'Authentic Sohrai, Khovar murals, Paitkar & Chhau masks.' }
+  ];
 
   return (
     <div className="space-y-16 sm:space-y-24 pb-20">
@@ -55,28 +92,28 @@ export const HomePage: React.FC = () => {
         {/* Background Image with Fallback */}
         <div className="absolute inset-0">
           <img
-            src="https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/820e61551_generated_image.png"
+            src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&auto=format&fit=crop&q=80"
             alt="Jharkhand Landscape"
             className="h-full w-full object-cover object-center brightness-75 scale-105"
+            loading="eager"
             onError={(e) => {
-              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&auto=format&fit=crop&q=80';
+              (e.target as HTMLImageElement).src = 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=1600&auto=format&fit=crop&q=80';
             }}
           />
-          <div className="absolute inset-0 hero-scrim"></div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-black/40 to-black/60"></div>
         </div>
 
         <div className="relative mx-auto max-w-5xl px-4 py-24 sm:px-6 lg:px-8 text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-accent-light backdrop-blur-md">
-            <Trees className="h-3.5 w-3.5 text-accent" /> Eco & Cultural Tourism in Jharkhand
+            <Trees className="h-3.5 w-3.5 text-accent" /> Discover the Hidden Beauty of Jharkhand
           </span>
 
           <h1 className="mt-6 font-heading text-4xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
-            Explore the Heart of <span className="text-accent underline decoration-accent/40 decoration-4">Jharkhand</span>
+            Explore the Untamed Soul of <span className="text-accent underline decoration-accent/40 decoration-4">Jharkhand</span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-base sm:text-lg text-slate-200 leading-relaxed">
-            Discover thundering waterfalls, ancient sal forests, living tribal traditions, and tranquil plateau landscapes across all 24 districts.
+            Discover {INITIAL_DESTINATIONS.length} research-backed tourist destinations across all 24 districts—from thunderous waterfalls and virgin sal forests to ancient sacred temples and living tribal art traditions.
           </p>
 
           {/* Search Bar */}
@@ -87,7 +124,7 @@ export const HomePage: React.FC = () => {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Search waterfalls, Betla, Deoghar, tribal crafts..."
+                placeholder="Search by name, district, alias (e.g. Parasnath, Lodh, Betla, Patratu)..."
                 className="w-full bg-transparent px-3 py-2 text-sm text-foreground outline-none placeholder:text-muted-foreground"
               />
               <button
@@ -101,7 +138,7 @@ export const HomePage: React.FC = () => {
 
           {/* Quick Tags */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
-            <span className="text-xs text-slate-300">Popular:</span>
+            <span className="text-xs text-slate-300">Popular searches:</span>
             {quickTags.map((tag) => (
               <Link
                 key={tag}
@@ -119,7 +156,7 @@ export const HomePage: React.FC = () => {
               to="/explore"
               className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-accent-light transition"
             >
-              <Compass className="h-4 w-4" /> Explore Destinations
+              <Compass className="h-4 w-4" /> Explore All {INITIAL_DESTINATIONS.length} Destinations
             </Link>
             <Link
               to="/plan-trip"
@@ -129,9 +166,9 @@ export const HomePage: React.FC = () => {
             </Link>
             <Link
               to="/map"
-              className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-black/20 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/10 transition"
+              className="inline-flex items-center gap-2 rounded-full border border-white/40 bg-black/30 px-6 py-3 text-sm font-semibold text-white backdrop-blur hover:bg-white/10 transition"
             >
-              <MapPin className="h-4 w-4 text-accent" /> Discover on Map
+              <MapPin className="h-4 w-4 text-accent" /> Interactive Map
             </Link>
           </div>
         </div>
@@ -148,9 +185,7 @@ export const HomePage: React.FC = () => {
               {isAuthenticated ? `Recommended for ${user?.full_name}` : 'Recommended Destinations'}
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              {isAuthenticated 
-                ? 'Ranked transparently by your travel style, preferred categories, duration, and budget tier.'
-                : 'Based on genuine visitor preferences across Jharkhand. Set your travel profile for personalized picks.'}
+              Ranked transparently by your travel style, preferred categories, duration, and budget tier.
             </p>
           </div>
           <Link
@@ -169,7 +204,6 @@ export const HomePage: React.FC = () => {
                 matchScore={score}
                 matchReason={reasons[0]}
               />
-              {/* "Why this place?" explanation pill box */}
               {reasons.length > 0 && (
                 <div className="mt-2 rounded-xl border border-border bg-secondary/50 p-3.5 text-xs">
                   <p className="font-semibold text-foreground flex items-center gap-1">
@@ -187,20 +221,20 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 3. FEATURED DESTINATIONS */}
+      {/* 3. POPULAR OR FEATURED DESTINATIONS */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-end justify-between border-b border-border pb-4">
           <div>
             <span className="text-xs font-bold uppercase tracking-wider text-primary">Curated Highlights</span>
             <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
-              Iconic Jharkhand Destinations
+              Featured Iconic Landmarks
             </h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Must-visit natural wonders, spiritual sanctuaries, and wildlife sanctuaries.
+              Handpicked must-visit natural wonders, spiritual sanctuaries, and historical monuments.
             </p>
           </div>
           <Link to="/explore" className="text-sm font-semibold text-primary hover:text-accent transition">
-            View all 40 →
+            View all {INITIAL_DESTINATIONS.length} →
           </Link>
         </div>
 
@@ -211,63 +245,89 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 4. CATEGORIES EXPLORER */}
+      {/* 4. DISCOVER DESTINATIONS BY DISTRICT (ALL 24 DISTRICTS) */}
       <section className="bg-secondary/40 py-16 border-y border-border">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="text-center max-w-2xl mx-auto">
-            <span className="text-xs font-bold uppercase tracking-wider text-accent">Diverse Landscapes</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-accent">Comprehensive Coverage</span>
             <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
-              Discover by Tourism Theme
+              Discover Across All 24 Districts
             </h2>
             <p className="mt-2 text-sm text-muted-foreground">
-              From roaring monsoon waterfalls to sacred hills and artisanal tribal villages.
+              Every single district of Jharkhand has unique documented tourism landmarks. Click any district to explore its attractions.
             </p>
           </div>
 
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {INITIAL_CATEGORIES.slice(0, 12).map(cat => (
-              <Link
-                key={cat.id}
-                to={`/explore?category=${encodeURIComponent(cat.name)}`}
-                className="group flex flex-col items-center rounded-2xl border border-border bg-card p-5 text-center card-lift shadow-sm"
-              >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-secondary text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                  <Compass className="h-6 w-6" />
-                </div>
-                <h3 className="mt-3 text-sm font-semibold text-foreground group-hover:text-primary transition-colors">
-                  {cat.name}
-                </h3>
-              </Link>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 pt-2">
+            {INITIAL_DISTRICTS.map(dist => {
+              const count = districtCounts[dist.name] || 0;
+              return (
+                <Link
+                  key={dist.id}
+                  to={`/explore?district=${encodeURIComponent(dist.name)}`}
+                  className="group flex flex-col justify-between rounded-xl border border-border bg-card p-3.5 transition-all hover:border-primary hover:shadow-sm"
+                >
+                  <div className="flex items-start justify-between">
+                    <span className="font-heading text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+                      {dist.name}
+                    </span>
+                    <span className="rounded-full bg-secondary px-2 py-0.5 text-[10px] font-bold text-primary">
+                      {count}
+                    </span>
+                  </div>
+                  <span className="mt-2 text-[11px] text-muted-foreground">
+                    {count === 1 ? '1 destination' : `${count} destinations`} →
+                  </span>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* 5. HIDDEN GEMS */}
+      {/* 5. EXPLORE BY TOURISM THEME / PILLARS */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex items-end justify-between border-b border-border pb-4">
-          <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-accent">Off the Beaten Path</span>
-            <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
-              Jharkhand's Secret Corners
-            </h2>
-            <p className="mt-1 text-sm text-muted-foreground">
-              Quiet sanctuaries, forest dams, and hidden waterfalls away from the crowds.
-            </p>
-          </div>
-          <Link to="/explore?hidden=true" className="text-sm font-semibold text-primary hover:text-accent transition">
-            See all hidden gems →
-          </Link>
+        <div className="text-center max-w-2xl mx-auto">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary">State Tourism Policy 2021</span>
+          <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
+            Explore by Tourism Pillars
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Structured along the official strategic pillars established by the Department of Tourism.
+          </p>
         </div>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {hiddenGems.map(dest => (
-            <DestinationCard key={dest.id} destination={dest} />
-          ))}
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {TOURISM_PILLARS_DATA.map(item => {
+            const Icon = item.icon;
+            return (
+              <Link
+                key={item.title}
+                to={`/explore?pillar=${encodeURIComponent(item.pillar)}`}
+                className="group flex flex-col justify-between rounded-2xl border border-border bg-card p-6 card-lift shadow-sm"
+              >
+                <div>
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-colors">
+                    <Icon className="h-6 w-6" />
+                  </div>
+                  <h3 className="mt-4 font-heading text-lg font-bold text-foreground group-hover:text-primary transition-colors">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-xs text-muted-foreground leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="mt-4 flex items-center gap-1 text-xs font-semibold text-primary group-hover:text-accent transition">
+                  <span>Explore theme</span>
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
-      {/* 5B. OFFICIAL POLICY TOURISM CIRCUITS */}
+      {/* 6. CURATED TOURISM CIRCUITS */}
       <section className="bg-secondary/30 py-16 border-y border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-border pb-4">
@@ -276,10 +336,10 @@ export const HomePage: React.FC = () => {
                 State Policy Priority Circuits
               </span>
               <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
-                Curated Tourism Circuits
+                5 Official Tourism Circuits
               </h2>
               <p className="mt-1 text-sm text-muted-foreground">
-                Documented multi-district thematic journeys formulated under the Jharkhand Tourism Policy.
+                Thematic multi-district journeys formulated under the Jharkhand Tourism Policy 2021.
               </p>
             </div>
             <Link to="/itineraries" className="text-sm font-semibold text-primary hover:text-accent transition">
@@ -338,7 +398,57 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 6. CULTURE & EVENTS PREVIEW */}
+      {/* 7. WATERFALLS & NATURAL ATTRACTIONS */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex items-end justify-between border-b border-border pb-4">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-wider text-accent">Spectacular Cascades & Hills</span>
+            <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
+              Waterfalls & Plateau Heights
+            </h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Witness the thunder of Lodh, Hundru, Dassam, and the serene sunset vistas of Netarhat and Patratu.
+            </p>
+          </div>
+          <Link to="/explore?pillar=Nature%20and%20Waterfalls" className="text-sm font-semibold text-primary hover:text-accent transition">
+            View all waterfalls →
+          </Link>
+        </div>
+
+        <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {waterfallsAndHills.map(dest => (
+            <DestinationCard key={dest.id} destination={dest} />
+          ))}
+        </div>
+      </section>
+
+      {/* 8. WILDLIFE & PROTECTED AREAS */}
+      <section className="bg-secondary/20 py-16 border-y border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-border pb-4">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-primary">Ecosystem Sanctuaries</span>
+              <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
+                Wildlife & Protected Reserves
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Home to Asian elephant corridors, Project Tiger reserves, and pristine sal canopies.
+              </p>
+            </div>
+            <Link to="/explore?pillar=Wildlife%2C%20Forests%20and%20Protected%20Areas" className="text-sm font-semibold text-primary hover:text-accent transition">
+              View wildlife reserves →
+            </Link>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {wildlifeSanctuaries.map(dest => (
+              <DestinationCard key={dest.id} destination={dest} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 9. TRIBAL CULTURE & UPCOMING EVENTS */}
       <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-12 lg:grid-cols-2">
           {/* Cultural Heritage */}
@@ -348,7 +458,7 @@ export const HomePage: React.FC = () => {
                 Living Tribal Traditions
               </h3>
               <Link to="/culture" className="text-xs font-semibold text-primary hover:text-accent">
-                View all →
+                View all culture →
               </Link>
             </div>
             <div className="mt-6 space-y-4">
@@ -379,10 +489,10 @@ export const HomePage: React.FC = () => {
           <div>
             <div className="flex items-center justify-between border-b border-border pb-3">
               <h3 className="font-heading text-2xl font-bold text-foreground">
-                Festivals & Cultural Events
+                Festivals & Cultural Calendar
               </h3>
               <Link to="/events" className="text-xs font-semibold text-primary hover:text-accent">
-                Event Calendar →
+                Full Calendar →
               </Link>
             </div>
             <div className="mt-6 space-y-4">
@@ -412,16 +522,97 @@ export const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* 7. RESPONSIBLE TOURISM PRINCIPLES */}
+      {/* 10. LOCAL EXPERIENCES & MASTER ARTISANS */}
+      <section className="bg-secondary/40 py-16 border-y border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-border pb-4">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-accent">Authentic Community Encounters</span>
+              <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
+                Master Artisans & Local Crafts
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Connect directly with traditional Paitkar scroll painters, Dokra metalcasters, and Sohrai mural masters.
+              </p>
+            </div>
+            <Link to="/experiences" className="text-sm font-semibold text-primary hover:text-accent transition">
+              View all 20 experiences →
+            </Link>
+          </div>
+
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {featuredArtisans.map(artisan => (
+              <div key={artisan.id} className="rounded-2xl border border-border bg-card p-5 card-lift shadow-sm space-y-3">
+                <div className="flex items-center gap-3">
+                  <img
+                    src={artisan.image || 'https://images.unsplash.com/photo-1544717305-2782549b5136?w=200'}
+                    alt={artisan.name}
+                    className="h-12 w-12 rounded-full object-cover border border-border"
+                  />
+                  <div>
+                    <h4 className="font-heading text-sm font-bold text-foreground">{artisan.name}</h4>
+                    <span className="text-[11px] text-muted-foreground block">{artisan.craft_type}</span>
+                  </div>
+                </div>
+                <p className="text-xs text-muted-foreground line-clamp-2">
+                  {artisan.description || artisan.bio}
+                </p>
+                <div className="pt-2 border-t border-border flex items-center justify-between text-[11px]">
+                  <span className="text-primary font-semibold">{artisan.district}</span>
+                  <Link to="/experiences" className="font-medium text-accent hover:underline">
+                    View profile →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 11. SMART ITINERARY PLANNER CALL TO ACTION */}
+      <section className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-3xl bg-primary text-white p-8 sm:p-12 shadow-xl">
+          <div className="relative z-10 max-w-2xl space-y-4">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent-light backdrop-blur-sm">
+              <Route className="h-3.5 w-3.5" /> Geographic Proximity Routing
+            </span>
+            <h2 className="font-heading text-3xl font-extrabold tracking-tight sm:text-4xl">
+              Ready to Design Your Custom Jharkhand Journey?
+            </h2>
+            <p className="text-sm text-slate-200 leading-relaxed">
+              Use our intelligent trip planner to calculate day-wise morning, afternoon, and evening stops based on geographic proximity, travel style, and budget tiers.
+            </p>
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <Link
+                to="/plan-trip"
+                className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-bold text-white shadow hover:bg-accent-light transition"
+              >
+                <Route className="h-4 w-4" /> Start Planning Now
+              </Link>
+              <Link
+                to="/map"
+                className="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/10 px-6 py-3 text-sm font-semibold text-white hover:bg-white/20 transition backdrop-blur-sm"
+              >
+                <MapPin className="h-4 w-4" /> Open Full-Screen Map
+              </Link>
+            </div>
+          </div>
+          {/* Subtle decorative circles */}
+          <div className="absolute -right-12 -bottom-12 h-64 w-64 rounded-full bg-white/5 pointer-events-none"></div>
+          <div className="absolute right-32 -top-12 h-48 w-48 rounded-full bg-accent/10 pointer-events-none"></div>
+        </div>
+      </section>
+
+      {/* 12. RESPONSIBLE TOURISM PRINCIPLES */}
       <section className="bg-primary-dark text-white py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto">
-            <span className="text-xs font-bold uppercase tracking-wider text-accent-light">Our Commitment</span>
+            <span className="text-xs font-bold uppercase tracking-wider text-accent-light">Sustainable Stewardship</span>
             <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight">
               Responsible Tourism Principles
             </h2>
             <p className="mt-2 text-sm text-slate-300">
-              Preserving Jharkhand's sacred groves, biodiversity, and indigenous customs for generations to come.
+              Preserving Jharkhand's sacred Sarna groves, biodiversity, and indigenous customs for generations to come.
             </p>
           </div>
 

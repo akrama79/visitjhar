@@ -39,9 +39,16 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
 
         {/* Top Floating Badges */}
         <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-          <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-primary shadow-sm backdrop-blur">
-            {destination.category}
-          </span>
+          <div className="flex items-center gap-1.5 flex-wrap">
+            <span className="rounded-full bg-white/95 px-2.5 py-0.5 text-[11px] font-semibold text-primary shadow-sm backdrop-blur">
+              {destination.category}
+            </span>
+            {destination.verification_status === 'VERIFIED' && (
+              <span className="rounded-full bg-emerald-600/90 text-white px-2 py-0.5 text-[10px] font-bold shadow-sm backdrop-blur">
+                ✓ Verified
+              </span>
+            )}
+          </div>
 
           <button
             onClick={(e) => {
@@ -49,10 +56,10 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
               e.stopPropagation();
               toggleFavorite(destination.id);
             }}
-            className={`rounded-full p-2 transition shadow-md backdrop-blur ${
+            className={`rounded-full p-2 transition shadow-md backdrop-blur focus-visible:ring-2 focus-visible:ring-primary ${
               favorited 
                 ? 'bg-red-500 text-white' 
-                : 'bg-white/85 text-slate-700 hover:bg-white hover:text-red-500'
+                : 'bg-white/90 text-slate-700 hover:bg-white hover:text-red-500'
             }`}
             title={favorited ? 'Remove from favorites' : 'Add to favorites'}
             aria-label="Toggle favorite"
@@ -93,13 +100,16 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
           </div>
         )}
 
-        <h3 className="font-heading text-xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
-          <Link to={`/destination/${destination.id}`}>
+        <h3 className="font-heading text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+          <Link 
+            to={`/destination/${destination.slug || destination.id}`}
+            className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+          >
             {destination.name}
           </Link>
         </h3>
 
-        <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground">
+        <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground flex-1">
           {destination.short_description || destination.description}
         </p>
 
@@ -108,8 +118,8 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
           <span>{destination.recommended_duration || '2–3 hours'}</span>
           <span className="font-medium text-foreground">{destination.estimated_budget || '₹ Budget'}</span>
           <Link
-            to={`/destination/${destination.id}`}
-            className="font-semibold text-primary hover:text-accent transition"
+            to={`/destination/${destination.slug || destination.id}`}
+            className="font-semibold text-primary hover:text-accent transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
           >
             Explore →
           </Link>

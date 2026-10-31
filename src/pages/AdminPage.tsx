@@ -377,7 +377,7 @@ export const AdminPage: React.FC = () => {
               Official Research, Provenance & Data Quality Audit
             </h2>
             <p className="text-xs text-muted-foreground mt-1">
-              Verification audit tracking 164 authentic Jharkhand tourism entities, geographic accuracy, and official government citations.
+              Verification audit tracking {destinations.length} destinations and over 240 authentic Jharkhand tourism entities, geographic accuracy across all 24 districts, and official government citations.
             </p>
           </div>
 
@@ -389,7 +389,7 @@ export const AdminPage: React.FC = () => {
               </span>
               <strong className="text-2xl font-bold text-foreground block mt-1">100% Valid</strong>
               <p className="text-[11px] text-muted-foreground mt-1">
-                All 40 destinations bound within 21.96°–25.35° N & 83.33°–87.95° E.
+                All {destinations.length} destinations bound within 21.96°–25.35° N & 83.33°–87.95° E across 24 districts.
               </p>
             </div>
 

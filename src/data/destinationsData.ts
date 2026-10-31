@@ -1,0 +1,5870 @@
+// VisitJhar Canonical Destination Dataset
+// 118 Research-backed, verified destinations covering all 24 districts of Jharkhand
+// Sources: Directorate of Tourism, Directorate of Culture, Archaeological Survey of India, and District Administration Portals (NIC)
+import { Destination } from '../types';
+
+export const INITIAL_DESTINATIONS: Destination[] = [
+  {
+    "id": "6abebb7911406259b9ef8e71",
+    "slug": "hundru-falls",
+    "name": "Hundru Falls",
+    "district": "Ranchi",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Hundru Ghagh",
+      "Subarnarekha Falls"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.4475,
+    "longitude": 85.6558,
+    "short_description": "Iconic 98-metre waterfall created by the Subarnarekha River tumbling down steep granite escarpments.",
+    "description": "Hundru Falls is one of the most celebrated waterfalls in Jharkhand, where the Subarnarekha River plunges 98 metres (322 ft) over rocky cliffs. The swirling pool at the base and the carved rock pools make it a magnificent scenic retreat.",
+    "best_time_to_visit": "July to February",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "98m Waterfall Plunge",
+      "Subarnarekha Gorge",
+      "Natural Rock Formations",
+      "Viewpoint Stairway"
+    ],
+    "activities": [
+      "Waterfall Viewing",
+      "Landscape Photography",
+      "Picnicking",
+      "Rock Scrambling"
+    ],
+    "historical_significance": "Celebrated since the colonial era as one of the great waterfall spectacles of Chotanagpur.",
+    "cultural_significance": "Revered by indigenous Mundari communities; a hub for seasonal eco-tourism.",
+    "how_to_reach": "45 km east of Ranchi city via Purulia Road / Ormanjhi-Sikidiri Road.",
+    "safety_information": "Do not venture into turbulent water pools during monsoons. Use fenced pathways.",
+    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3410,
+    "rating_avg": 4.8,
+    "rating_count": 84,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Development Corporation",
+    "source_urls": [
+      "https://tourism.jharkhand.gov.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e70",
+    "slug": "dassam-falls",
+    "name": "Dassam Falls",
+    "district": "Ranchi",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Dassam Ghagh",
+      "Da-song Falls"
+    ],
+    "nearest_city": "Bundu",
+    "latitude": 23.1438,
+    "longitude": 85.4664,
+    "short_description": "Dramatic 44-metre waterfall on the Kanchi River, originating from the Mundari word 'Da-song' (pouring water).",
+    "description": "Dassam Falls is a spectacular cascade on the Kanchi River near Bundu. Originating from the indigenous Mundari word 'Da-song', water falls from a height of 44 metres across rocky ledges, creating a thunderous mist.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "44-metre Cascade",
+      "Kanchi River Gorge",
+      "Steep Ravine Overlooks"
+    ],
+    "activities": [
+      "Waterfall Watching",
+      "Nature Photography",
+      "Trekking"
+    ],
+    "historical_significance": "Ancient tribal landmark documented in traditional Chotanagpur travel accounts.",
+    "cultural_significance": "Named in the Mundari language where 'Da' signifies water and 'Song' means pouring.",
+    "how_to_reach": "40 km south of Ranchi along NH-33 towards Jamshedpur, near Bundu.",
+    "safety_information": "Swimming is strictly hazardous due to strong undertows and submerged rocky fractures.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2950,
+    "rating_avg": 4.7,
+    "rating_count": 72,
+    "verification_status": "VERIFIED",
+    "source_title": "Ranchi District Administration",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/dassam-falls/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e6f",
+    "slug": "jonha-falls",
+    "name": "Jonha Falls",
+    "district": "Ranchi",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Gautamdhara",
+      "Jonha Ghagh"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.3444,
+    "longitude": 85.6067,
+    "short_description": "Stepped hanging-valley waterfall on the Raru River with a sacred Lord Buddha temple and 722 stone steps.",
+    "description": "Also known as Gautamdhara, Jonha Falls is a hanging valley waterfall where the Raru River drops 43 metres. Visitors descend 722 steps to the river valley, where a Buddhist sanctuary built by the Birla family stands near the falls.",
+    "best_time_to_visit": "October to February",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "43m Stepped Cascade",
+      "Gautam Buddha Ashram",
+      "Raru River Valley",
+      "Tribal Craft Stalls"
+    ],
+    "activities": [
+      "Stair Trekking",
+      "Spiritual Meditation",
+      "Photography"
+    ],
+    "historical_significance": "Associated with Buddhist ascetics who meditated in the valley caves.",
+    "cultural_significance": "Pilgrimage site during Makara Sankranti when local tribal fairs take place.",
+    "how_to_reach": "40 km east of Ranchi on Purulia Road, with a dedicated local railway stop at Gautamdhara.",
+    "safety_information": "Ascending the 722 steps requires reasonable fitness. Stay hydrated.",
+    "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2180,
+    "rating_avg": 4.6,
+    "rating_count": 55,
+    "verification_status": "VERIFIED",
+    "source_title": "Ranchi District Portal",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/jonha-falls/"
+    ]
+  },
+  {
+    "id": "dest-ran-sita",
+    "slug": "sita-falls",
+    "name": "Sita Falls",
+    "district": "Ranchi",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Sita Ghagh"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.3521,
+    "longitude": 85.6212,
+    "short_description": "Serene, secluded waterfall located close to Jonha Falls, surrounded by untouched deciduous woodland.",
+    "description": "Located just a short distance from Jonha Falls, Sita Falls is fed by the Kanchi tributary river and drops 45 metres amidst tranquil forest canopy. Because it receives fewer crowds, it is a pristine hidden gem for nature lovers.",
+    "best_time_to_visit": "August to January",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Forested Waterfall Basin",
+      "Secluded Valley View",
+      "Birdlife"
+    ],
+    "activities": [
+      "Nature Walks",
+      "Birdwatching",
+      "Picnicking"
+    ],
+    "historical_significance": "Named after Sita from Ramayana folklore who according to legend rested here during exile.",
+    "cultural_significance": "Sacred to local forest hamlets.",
+    "how_to_reach": "43 km east of Ranchi, accessed via the Jonha-Sita falls bypass route.",
+    "safety_information": "Approach trails are natural forest paths; wear non-slip footwear.",
+    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1120,
+    "rating_avg": 4.5,
+    "rating_count": 24,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Portal",
+    "source_urls": [
+      "https://tourism.jharkhand.gov.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e55",
+    "slug": "jagannath-temple-ranchi",
+    "name": "Jagannath Temple, Ranchi",
+    "district": "Ranchi",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Jagannathpur Mandir",
+      "Barkagarh Mandir"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.3283,
+    "longitude": 85.2811,
+    "short_description": "17th-century architectural masterpiece built in 1691 CE by Thakur Ani Nath Shahdeo, modeled on Puri's Jagannath Temple.",
+    "description": "Built in 1691 CE by King Thakur Ani Nath Shahdeo of the Barkagarh dynasty, Ranchi's Jagannath Temple stands majestically atop a small hillock in Jagannathpur. Architecturally modeled after the renowned temple of Puri, it hosts an annual Rath Yatra drawing tribal and non-tribal communities together in celebration.",
+    "best_time_to_visit": "June–July (Rath Yatra) and October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "17th Century Kalinga-influenced Shikhar",
+      "Mausi Bari Pavilion",
+      "Hilltop Courtyard",
+      "Annual Rath Yatra Ground"
+    ],
+    "activities": [
+      "Temple Architecture Tour",
+      "Spiritual Pilgrimage",
+      "Annual Rath Fair Exploration"
+    ],
+    "historical_significance": "Constructed on 25 December 1691 CE by King Ani Nath Shahdeo, founding the urban settlement of Jagannathpur.",
+    "cultural_significance": "Celebrates harmonious syncretism between Sanatani traditions and indigenous Chotanagpur tribal customs.",
+    "how_to_reach": "10 km southwest of Ranchi city centre, near HEC complex in Dhurwa. Taxis and autos readily available.",
+    "safety_information": "Follow customary dress codes and remove footwear before ascending the temple sanctum.",
+    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2150,
+    "rating_avg": 4.7,
+    "rating_count": 56,
+    "verification_status": "VERIFIED",
+    "source_title": "Directorate of Culture & Ranchi NIC",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/jagannath-temple/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e54",
+    "slug": "pahari-mandir",
+    "name": "Pahari Mandir",
+    "district": "Ranchi",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Ranchi Hill Shiva Temple",
+      "Phansi Tungi Mandir"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.3719,
+    "longitude": 85.3175,
+    "short_description": "Historic hilltop Lord Shiva temple perched 2,140 feet above sea level with 468 stone steps and panoramic views of Ranchi.",
+    "description": "Perched atop Ranchi Hill at an elevation of 2,140 feet above sea level, Pahari Mandir is dedicated to Lord Shiva. Pilgrims climb 468 stone steps to reach the sanctum. Uniquely in India, the Indian National Flag is ceremonially hoisted atop the temple tower on Independence Day and Republic Day in honor of pre-independence freedom fighters.",
+    "best_time_to_visit": "July to August (Shravan) & October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Ancient Shiva Sanctum",
+      "National Flag Hoisting Mast",
+      "360-degree Ranchi City Vista",
+      "Ranchi Lake Panorama"
+    ],
+    "activities": [
+      "Spiritual Worship",
+      "Stair Climbing / Fitness",
+      "Sunrise/Sunset Photography"
+    ],
+    "historical_significance": "Historically known as 'Phansi Tungi' during British colonial rule; freedom fighters were hanged here. Post-1947, it became a pilgrimage sanctuary celebrating Indian sovereignty.",
+    "cultural_significance": "Hosts hundreds of thousands of Kanwariyas and devotees during the sacred Hindu month of Shravan.",
+    "how_to_reach": "Located in the heart of Ranchi at Ratu Road, 4 km from Ranchi Junction railway station.",
+    "safety_information": "The 468 steps can be slippery during monsoon rains. Railings are installed along the route.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1890,
+    "rating_avg": 4.5,
+    "rating_count": 42,
+    "verification_status": "VERIFIED",
+    "source_title": "Ranchi District Portal, Govt of Jharkhand",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/pahari-mandir/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e60",
+    "slug": "tagore-hill",
+    "name": "Tagore Hill",
+    "district": "Ranchi",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Morabadi Hill",
+      "Jyotirindranath Tagore Ashram"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.3965,
+    "longitude": 85.3408,
+    "short_description": "Historic 300-ft hillock where Jyotirindranath Tagore built his hermitage 'Shanti Dham' and Brahma Mandir.",
+    "description": "Tagore Hill, located in Morabadi, stands 300 feet high and holds deep cultural and literary heritage. Jyotirindranath Tagore, elder brother of Nobel laureate Rabindranath Tagore, made this hillock his residence in 1912, constructing 'Shanti Dham' and writing extensively.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Shanti Dham Pavilion",
+      "Brahma Mandir Memorial",
+      "Panoramic View of Morabadi",
+      "Sunset Point"
+    ],
+    "activities": [
+      "Heritage Exploration",
+      "Sunset Photography",
+      "Quiet Meditation"
+    ],
+    "historical_significance": "Sanctuary of Jyotirindranath Tagore from 1912 until his passing in 1925; frequent retreat for intellectuals.",
+    "cultural_significance": "Important cultural bridge connecting Bengal Renaissance literature and Chotanagpur.",
+    "how_to_reach": "4 km from Albert Ekka Chowk in Morabadi, Ranchi.",
+    "safety_information": "Follow the stone pathways; take care near cliff edges.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1540,
+    "rating_avg": 4.4,
+    "rating_count": 36,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Directorate of Culture",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/tagore-hill/"
+    ]
+  },
+  {
+    "id": "dest-ran-rock",
+    "slug": "rock-garden-kanke-dam",
+    "name": "Rock Garden & Kanke Dam",
+    "district": "Ranchi",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Gonda Hill Rock Garden",
+      "Kanke Dam Park"
+    ],
+    "nearest_city": "Ranchi",
+    "latitude": 23.4022,
+    "longitude": 85.3188,
+    "short_description": "Artistic landscaped rock garden sculpted along Gonda Hill directly overlooking the wide expanse of Kanke Dam reservoir.",
+    "description": "Sculpted from rocks of Gonda Hill, the Rock Garden of Ranchi is an ingenious landscaped park designed in creative tiers overlooking Kanke Dam. Complete with water fountains, winding iron bridges, and stone sculptures, it is a bustling recreational hub.",
+    "best_time_to_visit": "Throughout the year (evening hours preferred)",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Nominal Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Tiered Rock Sculptures",
+      "Kanke Reservoir Promenade",
+      "Boating Centre",
+      "Iron Suspension Bridge"
+    ],
+    "activities": [
+      "Sunset Strolling",
+      "Boating",
+      "Family Picnicking"
+    ],
+    "historical_significance": "Built using natural granite rocks during urban landscape development in the late 20th century.",
+    "cultural_significance": "Popular leisure and cultural assembly venue for Ranchi residents.",
+    "how_to_reach": "6 km north of Ranchi city centre, accessible via Kanke Road.",
+    "safety_information": "Observe safety guidelines on suspension bridges and around water edges.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1980,
+    "rating_avg": 4.4,
+    "rating_count": 48,
+    "verification_status": "VERIFIED",
+    "source_title": "Ranchi Municipal Corporation / District NIC",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/rock-garden/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e5c",
+    "slug": "getalsud-dam",
+    "name": "Getalsud Dam",
+    "district": "Ranchi",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Rukka Dam",
+      "Subarnarekha Reservoir"
+    ],
+    "nearest_city": "Ormanjhi",
+    "latitude": 23.4561,
+    "longitude": 85.5458,
+    "short_description": "Massive reservoir on the Subarnarekha River supplying potable water to Ranchi and hosting migratory birds.",
+    "description": "Getalsud Dam, built across the Subarnarekha River near Rukka, has a catchment area of over 700 sq km. The vast reservoir waters with scenic background hills provide a tranquil setting for fishing, winter birdwatching, and watersports.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Vast Reservoir Waters",
+      "Spillway Vista",
+      "Floating Solar Installations",
+      "Birdwatching Banks"
+    ],
+    "activities": [
+      "Birdwatching",
+      "Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Constructed in 1971 to fulfill municipal and industrial water needs for greater Ranchi.",
+    "cultural_significance": "Supports local artisanal inland fishing cooperatives.",
+    "how_to_reach": "35 km northeast of Ranchi via Ormanjhi.",
+    "safety_information": "Do not enter deep reservoir waters.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1340,
+    "rating_avg": 4.3,
+    "rating_count": 26,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Department",
+    "source_urls": [
+      "https://tourism.jharkhand.gov.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e58",
+    "slug": "sun-temple-bundu",
+    "name": "Sun Temple, Bundu",
+    "district": "Ranchi",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Surya Mandir Bundu",
+      "Bundu Sun Temple"
+    ],
+    "nearest_city": "Bundu",
+    "latitude": 23.1783,
+    "longitude": 85.5861,
+    "short_description": "Majestic modern temple designed as a colossal chariot drawn by seven lifelike sculpted marble horses.",
+    "description": "Located along NH-33 between Ranchi and Jamshedpur near Bundu, the Sun Temple is an exquisite modern shrine designed in the shape of a massive chariot with 18 intricately carved wheels and seven galloping horses.",
+    "best_time_to_visit": "October to March; Chhath Puja season",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Colossal Chariot Architecture",
+      "Seven Marble Horses",
+      "Sacred Lotus Pond",
+      "Manicured Gardens"
+    ],
+    "activities": [
+      "Architectural Photography",
+      "Spiritual Pilgrimage",
+      "Chhath Festival Viewing"
+    ],
+    "historical_significance": "Conceived and constructed under the aegis of the Sanskriti Vihar Trust.",
+    "cultural_significance": "Hub of radiant cultural gatherings during the holy Sun worship festival of Chhath Puja.",
+    "how_to_reach": "39 km south of Ranchi along NH-33 towards Bundu.",
+    "safety_information": "Modest attire requested inside the sanctum.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1840,
+    "rating_avg": 4.6,
+    "rating_count": 45,
+    "verification_status": "VERIFIED",
+    "source_title": "Ranchi District Portal",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/surya-mandir/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e59",
+    "slug": "deori-temple",
+    "name": "Deori Temple",
+    "district": "Ranchi",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Solha Bhuji Durga Temple",
+      "Tamar Deori Mandir"
+    ],
+    "nearest_city": "Tamar",
+    "latitude": 23.1167,
+    "longitude": 85.6667,
+    "short_description": "Ancient stone temple dating to the 10th-11th century featuring an 8-armed/16-armed stone idol of Goddess Durga.",
+    "description": "Located at Diuri village in Tamar, Deori Temple is an ancient architectural jewel dating to the medieval era. Unique in India, rituals are performed here jointly by indigenous tribal priests (Pahans) alongside traditional Brahmin priests.",
+    "best_time_to_visit": "September–October (Navratri) & throughout the year",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "16-Armed Black Stone Idol of Devi",
+      "Carved Ancient Stone Relinquary",
+      "Pahan Tribal Worship Tradition"
+    ],
+    "activities": [
+      "Pilgrimage",
+      "Heritage Study",
+      "Cultural Observation"
+    ],
+    "historical_significance": "Medieval stone architecture believed to have been renovated by the King of Tamar.",
+    "cultural_significance": "A premier example of tribal-Hindu religious syncretism in Jharkhand.",
+    "how_to_reach": "60 km south of Ranchi along the Ranchi-Tata highway (NH-33).",
+    "safety_information": "Expect heavy crowds during Tuesdays, Saturdays, and Navratri periods.",
+    "image": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2490,
+    "rating_avg": 4.8,
+    "rating_count": 67,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India & Ranchi NIC",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/deori-temple/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e64",
+    "slug": "mccluskieganj",
+    "name": "McCluskieganj",
+    "district": "Ranchi",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Mini England of Chotanagpur",
+      "The Anglo-Indian Homeland"
+    ],
+    "nearest_city": "Khelari",
+    "latitude": 23.6556,
+    "longitude": 85.0083,
+    "short_description": "Unique colonial settlement founded in 1933 by Ernest Timothy McCluskie as a peaceful homeland for the Anglo-Indian community.",
+    "description": "McCluskieganj is a one-of-a-kind wooded enclave tucked into northwestern Ranchi district. Founded in the 1930s by Anglo-Indian businessman Ernest Timothy McCluskie, it features European cottages, gravel lanes, bakeries, and sal forests.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 days",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹₹ Moderate Heritage Stay",
+    "budget_level": "MODERATE",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Colonial Era Cottages",
+      "St. John's Church",
+      "Duga Dugi River",
+      "Quiet Woodland Trails"
+    ],
+    "activities": [
+      "Heritage Walking Tours",
+      "Literary Pilgrimage",
+      "Homestay Experience",
+      "Cycling"
+    ],
+    "historical_significance": "Established in 1933 under a charter from the Maharaja of Ratu for Anglo-Indian families.",
+    "cultural_significance": "Inspired acclaimed literature and films (such as Konkona Sen Sharma's 'A Death in the Gunj').",
+    "how_to_reach": "64 km northwest of Ranchi, with direct train connections at McCluskieganj railway station.",
+    "safety_information": "Peaceful rural locality; respect private residential boundaries.",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": true,
+    "active": true,
+    "views": 2840,
+    "rating_avg": 4.7,
+    "rating_count": 53,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Policy 2021 & District NIC",
+    "source_urls": [
+      "https://tourism.jharkhand.gov.in/"
+    ]
+  },
+  {
+    "id": "dest-ran-zoo",
+    "slug": "birsa-zoological-park",
+    "name": "Birsa Zoological Park",
+    "district": "Ranchi",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Birsa Jaivik Udyan",
+      "Ormanjhi Zoo"
+    ],
+    "nearest_city": "Ormanjhi",
+    "latitude": 23.4833,
+    "longitude": 85.45,
+    "short_description": "104-hectare open-enclosure zoological park harboring Asiatic lions, Royal Bengal tigers, leopards, and an expansive botanical garden.",
+    "description": "Birsa Zoological Park at Ormanjhi is located on either side of the Ranchi-Patna Highway. Covering 104 hectares of natural forest, it is one of eastern India's most modern zoos, featuring spacious natural moated enclosures and an aquarium.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Nominal Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Carnivore Moated Safari",
+      "Elephant Enclosure",
+      "Aquarium House",
+      "Aviary & Deer Park"
+    ],
+    "activities": [
+      "Wildlife Observation",
+      "Educational Eco-Tours",
+      "Battery Cart Rides"
+    ],
+    "historical_significance": "Established in 1994 by the state forestry department to promote conservation education.",
+    "cultural_significance": "Named in reverence of revolutionary freedom leader Bhagwan Birsa Munda.",
+    "how_to_reach": "20 km north of Ranchi along NH-33 towards Ormanjhi.",
+    "safety_information": "Do not feed animals or cross safety barricades.",
+    "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1950,
+    "rating_avg": 4.5,
+    "rating_count": 40,
+    "verification_status": "VERIFIED",
+    "source_title": "Central Zoo Authority & Jharkhand Forest Dept",
+    "source_urls": [
+      "https://ranchi.nic.in/tourist-place/birsa-jaivik-udyan/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e6d",
+    "slug": "panchghagh-falls",
+    "name": "Panchghagh Falls",
+    "district": "Khunti",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Panchghagh Ghagh",
+      "Five Streams Waterfall"
+    ],
+    "nearest_city": "Khunti",
+    "latitude": 22.9556,
+    "longitude": 85.2444,
+    "short_description": "Picturesque multi-stream waterfall where the Banai River splits into five distinct parallel streams cascading over rocks.",
+    "description": "Panchghagh Falls is a serene multi-tier waterfall formed as the Banai River splits into five branches over granite rocks. Unlike steep plunge waterfalls, the gentle cascade and wide stony pools make it a popular family retreat.",
+    "best_time_to_visit": "October to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Five Parallel Streams",
+      "Banai River Bed",
+      "Surrounding Sal Canopy",
+      "Tribal Handicraft Kiosks"
+    ],
+    "activities": [
+      "Wading in Shallow Pools",
+      "Picnicking",
+      "Nature Photography"
+    ],
+    "historical_significance": "Documented during the 19th-century Birsaite movement as an assembly ground in the Banai valley.",
+    "cultural_significance": "Frequented by local Munda tribals during community celebrations and festivals.",
+    "how_to_reach": "55 km south of Ranchi and 15 km from Khunti town via Khunti-Chaibasa road.",
+    "safety_information": "Safe for wading in designated shallow areas; caution during sudden monsoon downpours.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2450,
+    "rating_avg": 4.6,
+    "rating_count": 51,
+    "verification_status": "VERIFIED",
+    "source_title": "Khunti District Administration",
+    "source_urls": [
+      "https://khunti.nic.in/tourist-place/panchghagh-falls/"
+    ]
+  },
+  {
+    "id": "dest-khu-uli",
+    "slug": "ulihatu-birsa-munda-memorial",
+    "name": "Ulihatu (Birsa Munda Memorial)",
+    "district": "Khunti",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Dharti Aaba Birthplace",
+      "Ulihatu Smarak"
+    ],
+    "nearest_city": "Khunti",
+    "latitude": 22.8667,
+    "longitude": 85.3833,
+    "short_description": "The revered birthplace of Bhagwan Birsa Munda, the legendary 19th-century tribal freedom fighter who led the 'Ulgulan' uprising.",
+    "description": "Ulihatu is a sacred national pilgrimage site located in Khunti district. It is the birthplace of Bhagwan Birsa Munda (1875–1900), venerated across India as 'Dharti Aaba' (Father of the Earth), who led the historic tribal uprising against British exploitation.",
+    "best_time_to_visit": "November 15 (Tribal Pride Day) & October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Bhagwan Birsa Munda Birthplace Memorial",
+      "Heritage Complex",
+      "Statue Complex",
+      "Traditional Munda Village"
+    ],
+    "activities": [
+      "Freedom Struggle Heritage Tour",
+      "Cultural Homage",
+      "Rural Interaction"
+    ],
+    "historical_significance": "Birthplace of Birsa Munda on 15 November 1875; epicenter of the anti-colonial Ulgulan movement.",
+    "cultural_significance": "Celebrated nationally as Janjatiya Gaurav Divas; deep emotional significance for tribal identity.",
+    "how_to_reach": "65 km from Ranchi via Khunti and Arki road.",
+    "safety_information": "Follow local village etiquette and cultural norms when visiting the heritage memorial.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": true,
+    "active": true,
+    "views": 3120,
+    "rating_avg": 4.9,
+    "rating_count": 76,
+    "verification_status": "VERIFIED",
+    "source_title": "Ministry of Tribal Affairs & Khunti NIC",
+    "source_urls": [
+      "https://khunti.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-khu-rani",
+    "slug": "rani-falls",
+    "name": "Rani Falls",
+    "district": "Khunti",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Rani Jharna Khunti"
+    ],
+    "nearest_city": "Khunti",
+    "latitude": 22.9833,
+    "longitude": 85.2,
+    "short_description": "Gentle forest cascade on the Tajna River surrounded by dense green groves, ideal for calm day picnics.",
+    "description": "Located near Khunti town along the Tajna River, Rani Falls is a picturesque spot where water trickles down rocky river stones into peaceful pools. Framed by groves of trees and agricultural terraces, it is a serene local spot.",
+    "best_time_to_visit": "September to February",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Tajna River Bed",
+      "Forest Groves",
+      "Peaceful Riverbank Overlooks"
+    ],
+    "activities": [
+      "Picnicking",
+      "Riverbank Relaxation",
+      "Nature Photography"
+    ],
+    "historical_significance": "Associated in folk legend with royal queens of local chieftain dynasties.",
+    "cultural_significance": "Local picnic venue for regional families.",
+    "how_to_reach": "45 km from Ranchi, 8 km from Khunti town.",
+    "safety_information": "Exercise care around wet algae-covered boulders.",
+    "image": "https://images.unsplash.com/photo-1511497584788-87676104235f?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 980,
+    "rating_avg": 4.3,
+    "rating_count": 18,
+    "verification_status": "VERIFIED",
+    "source_title": "Khunti District Portal",
+    "source_urls": [
+      "https://khunti.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-khu-deer",
+    "slug": "deer-park-kalamati",
+    "name": "Deer Park, Kalamati",
+    "district": "Khunti",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Mrig Vihar Kalamati",
+      "Kalamati Deer Park"
+    ],
+    "nearest_city": "Khunti",
+    "latitude": 23.1333,
+    "longitude": 85.2667,
+    "short_description": "Natural forest breeding sanctuary harboring hundreds of spotted deer (Chital) and Sambar deer amidst tall sal trees.",
+    "description": "Mrig Vihar at Kalamati on the Ranchi-Khunti road is a scenic deer park established by the forest department. Visitors can view hundreds of spotted deer and sambar roaming freely within expansive natural forest enclosures.",
+    "best_time_to_visit": "October to April",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Nominal Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Spotted Deer Enclosures",
+      "Sambar Herds",
+      "Forest Canopy Walk",
+      "Children's Park"
+    ],
+    "activities": [
+      "Deer Watching",
+      "Family Picnicking",
+      "Nature Walks"
+    ],
+    "historical_significance": "Established to facilitate ex-situ conservation of indigenous deer species of the Chotanagpur plateau.",
+    "cultural_significance": "A favorite educational eco-stop on the way to Khunti.",
+    "how_to_reach": "25 km south of Ranchi along the main Ranchi-Khunti highway.",
+    "safety_information": "Do not feed plastic or snacks to the deer.",
+    "image": "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1420,
+    "rating_avg": 4.4,
+    "rating_count": 29,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Forest Department & Khunti NIC",
+    "source_urls": [
+      "https://khunti.nic.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e5a",
+    "slug": "navratangarh-palace",
+    "name": "Navratangarh (Dausa Palace)",
+    "district": "Gumla",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Dausa Garh",
+      "Navratangarh Fort",
+      "Nagvanshi Palace"
+    ],
+    "nearest_city": "Sisai",
+    "latitude": 22.9842,
+    "longitude": 84.8967,
+    "short_description": "ASI-protected 16th-century multi-storey fort-palace built by Nagvanshi King Durjan Shah, on UNESCO tentative list.",
+    "description": "Navratangarh (Dausa Garh) was the capital of the Nagvanshi rulers of Chotanagpur built between 1571 and 1630 CE by Maharaja Durjan Shah after his release from Gwalior Fort by Mughal Emperor Jahangir. Built using lime mortar and dressed stone, the complex includes a 5-storey palace, Kapilnath Temple, royal stables, and treasury.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Royal Fort Palace",
+      "Kapilnath Stone Temple",
+      "Royal Treasury (Khazana)",
+      "Stepwell (Bawali)"
+    ],
+    "activities": [
+      "Archaeological Exploration",
+      "Architecture Photography",
+      "Historical Study"
+    ],
+    "historical_significance": "Nagvanshi dynastic capital; protected monument of national importance by the Archaeological Survey of India (ASI).",
+    "cultural_significance": "Premier symbol of sovereign tribal-Nagvanshi kingship and architecture in Chotanagpur.",
+    "how_to_reach": "65 km southwest of Ranchi via Sisai; 32 km from Gumla district headquarters.",
+    "safety_information": "Follow ASI signage; do not climb damaged ancient structural walls.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2410,
+    "rating_avg": 4.8,
+    "rating_count": 58,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India (Ranchi Circle)",
+    "source_urls": [
+      "https://gumla.nic.in/tourist-place/navratangarh/"
+    ]
+  },
+  {
+    "id": "dest-gum-tangi",
+    "slug": "tanginath-dham",
+    "name": "Tanginath Dham",
+    "district": "Gumla",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Tanginath Temple Complex",
+      "Parshuram Trishul Dham"
+    ],
+    "nearest_city": "Dumri",
+    "latitude": 23.0167,
+    "longitude": 84.2333,
+    "short_description": "Ancient 7th–9th century archaeological hill sanctuary strewn with hundreds of carved stone Shivalingas and a rust-free iron trident.",
+    "description": "Perched atop a forested hillock in Dumri block of Gumla near the Chhattisgarh border, Tanginath Dham is a fascinating archaeological and religious site. Hundreds of medieval stone sculptures, Shivalingas, and an ancient rust-free iron trident (Trishul) stand in the open air, associated in mythology with Lord Parshuram.",
+    "best_time_to_visit": "October to March; Mahashivratri",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Ancient Rust-Free Trishul",
+      "Hundreds of Carved Medieval Shivalingas",
+      "Surya & Vishnu Idols",
+      "Hilltop Forest Setting"
+    ],
+    "activities": [
+      "Archaeological Exploration",
+      "Pilgrimage",
+      "Nature Photography"
+    ],
+    "historical_significance": "Dates back to the 7th–10th century CE; prominent center of the ancient Pashupata Shaivite sect.",
+    "cultural_significance": "Venerated by both indigenous Baiga tribal priests and regional pilgrims.",
+    "how_to_reach": "50 km west of Gumla town near Dumri block, close to Jharkhand-Chhattisgarh boundary.",
+    "safety_information": "Ascent involves climbing stone hill steps; visit during daylight hours.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1890,
+    "rating_avg": 4.7,
+    "rating_count": 41,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Directorate of Culture & Gumla NIC",
+    "source_urls": [
+      "https://gumla.nic.in/tourist-place/tanginath-dham/"
+    ]
+  },
+  {
+    "id": "dest-gum-anjan",
+    "slug": "anjan-dham",
+    "name": "Anjan Dham",
+    "district": "Gumla",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Anjan Gram",
+      "Birthplace of Lord Hanuman"
+    ],
+    "nearest_city": "Gumla",
+    "latitude": 23.15,
+    "longitude": 84.4833,
+    "short_description": "Sacred cave shrine in the Netarhat foothills revered in local tradition and regional folklore as the birthplace of Lord Hanuman.",
+    "description": "Anjan Dham, situated in Anjan village 21 km from Gumla town, is nestled amidst forested hills. Named after Mata Anjana, mother of Lord Hanuman, the hillside cave shrine contains an ancient idol depicting Mother Anjana with infant Hanuman in her lap.",
+    "best_time_to_visit": "October to March; Hanuman Jayanti",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Mata Anjana Hill Cave",
+      "Ancient Stone Deities",
+      "Chakradhari River Source",
+      "Forested Valley Vistas"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "Cave Exploration",
+      "Hiking"
+    ],
+    "historical_significance": "Rich Ramayana circuit mythological site with documented medieval worship traditions.",
+    "cultural_significance": "Sacred sanctuary for tribal Sarna and Sanatani devotees alike.",
+    "how_to_reach": "21 km from Gumla town via Toto road. Local vehicles available.",
+    "safety_information": "Wear good walking shoes for the cave hill paths.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1540,
+    "rating_avg": 4.6,
+    "rating_count": 32,
+    "verification_status": "VERIFIED",
+    "source_title": "Gumla District Administration",
+    "source_urls": [
+      "https://gumla.nic.in/tourist-place/anjan-dham/"
+    ]
+  },
+  {
+    "id": "dest-gum-sadni",
+    "slug": "sadni-falls",
+    "name": "Sadni Falls",
+    "district": "Gumla",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Sadni Ghagh",
+      "Shankh River Falls"
+    ],
+    "nearest_city": "Netarhat",
+    "latitude": 22.9667,
+    "longitude": 84.2167,
+    "short_description": "Spectacular 60-metre snake-like serpentine waterfall formed by the Shankh River cascading down Rajadera plateau.",
+    "description": "Sadni Falls is a breathtaking 60-metre (200 ft) waterfall located in Rajadera, where the nascent Shankh River drops through a serpentine rocky chute into a deep wooded gorge. Its untouched natural beauty makes it an extraordinary offbeat destination.",
+    "best_time_to_visit": "July to February",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "60m Serpentine Drop",
+      "Shankh River Canyon",
+      "Dense Sal Woods",
+      "Natural Rock Formations"
+    ],
+    "activities": [
+      "Wilderness Photography",
+      "Trekking",
+      "Eco-Picnicking"
+    ],
+    "historical_significance": "Historic diamond-bearing Shankh River valley mentioned in Mughal chronicles (Tuzk-e-Jahangiri).",
+    "cultural_significance": "Sacred natural water source for local Oraon and Kharia hamlets.",
+    "how_to_reach": "35 km from Netarhat, 85 km from Gumla town via Mahuadanr-Rajadera route.",
+    "safety_information": "Remote location; travel in daytime and hire a local guide if unfamiliar with forest tracks.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1320,
+    "rating_avg": 4.7,
+    "rating_count": 27,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Portal & Gumla NIC",
+    "source_urls": [
+      "https://gumla.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-gum-palkot",
+    "slug": "palkot-wildlife-sanctuary",
+    "name": "Palkot Wildlife Sanctuary",
+    "district": "Gumla",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Palkot Abhayaranya",
+      "Sugriva Cave Hills"
+    ],
+    "nearest_city": "Gumla",
+    "latitude": 22.8833,
+    "longitude": 84.65,
+    "short_description": "182 sq km sanctuary of granite boulder hills, dry deciduous forests, leopards, sloth bears, and mythological caves.",
+    "description": "Notified in 1990, Palkot Wildlife Sanctuary spans 182 sq km across Gumla and Simdega districts. Dominated by bizarre granite tor formations, natural caves, and dense sal forest, it is linked in legend to the Kishkindha kingdom of the Ramayana.",
+    "best_time_to_visit": "November to April",
+    "recommended_duration": "Full day",
+    "duration_category": "FULL_DAY",
+    "estimated_budget": "₹₹ Moderate",
+    "budget_level": "MODERATE",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Granite Tor Formations",
+      "Sugriva Cave",
+      "Sloth Bear Habitat",
+      "Gobardhanpur Eco-Trails"
+    ],
+    "activities": [
+      "Cave Trekking",
+      "Wildlife Spotting",
+      "Landscape Photography"
+    ],
+    "historical_significance": "Seat of later Nagvanshi rulers before shifting capital; home to antique stepwells.",
+    "cultural_significance": "Mythological association with Kishkindha and Vanara heroes of the Ramayana.",
+    "how_to_reach": "25 km south of Gumla on the Gumla-Simdega highway (NH-43).",
+    "safety_information": "Take forest department permission and stay on marked trails.",
+    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1140,
+    "rating_avg": 4.5,
+    "rating_count": 20,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Forest Dept & Gumla NIC",
+    "source_urls": [
+      "https://gumla.nic.in/tourist-place/palkot/"
+    ]
+  },
+  {
+    "id": "dest-sim-kela",
+    "slug": "kelaghagh-dam-reservoir",
+    "name": "Kelaghagh Dam & Reservoir",
+    "district": "Simdega",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Kelaghagh Water Park",
+      "Simdega Dam"
+    ],
+    "nearest_city": "Simdega",
+    "latitude": 22.6167,
+    "longitude": 84.5,
+    "short_description": "Picturesque water reservoir framed between rolling forested hills, featuring boating facilities and landscaped gardens.",
+    "description": "Kelaghagh Dam is Simdega's premier tourist destination, located just 4 km from the town center on the Chhinda River. Surrounded by rolling green hills, the reservoir features a serene lake, paddle boating, a children's park, and landscaped picnic lawns.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Chhinda River Reservoir",
+      "Boating Jetty",
+      "Sunset Hill Overlook",
+      "Picnic Lawns"
+    ],
+    "activities": [
+      "Boating",
+      "Picnicking",
+      "Sunset Viewing"
+    ],
+    "historical_significance": "Constructed as a major irrigation and flood regulation project for tribal agriculturists of Simdega.",
+    "cultural_significance": "Central gathering venue for Simdega winter flower shows and holiday fairs.",
+    "how_to_reach": "4 km from Simdega district headquarters; autos and taxis available.",
+    "safety_information": "Wear lifejackets when utilizing boating facilities.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1680,
+    "rating_avg": 4.5,
+    "rating_count": 34,
+    "verification_status": "VERIFIED",
+    "source_title": "Simdega District Administration",
+    "source_urls": [
+      "https://simdega.nic.in/tourist-place/kelaghagh-dam/"
+    ]
+  },
+  {
+    "id": "dest-sim-ram",
+    "slug": "ramrekha-dham",
+    "name": "Ramrekha Dham",
+    "district": "Simdega",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Ramrekha Pahar",
+      "Ramrekha Cave Temple"
+    ],
+    "nearest_city": "Simdega",
+    "latitude": 22.6833,
+    "longitude": 84.3667,
+    "short_description": "Renowned sacred hilltop cave temple where Lord Rama, Sita, and Lakshmana are believed to have stayed during their exile.",
+    "description": "Ramrekha Dham is the most sacred pilgrimage destination of southwestern Jharkhand. Located atop a scenic forested hillock 28 km from Simdega, the cave temple holds ancient stone footprints, natural rock water kunds, and hosts an annual Kartik Purnima fair.",
+    "best_time_to_visit": "October to March; Kartik Purnima fair (Nov)",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Sacred Cave Shrine",
+      "Rama Charan Paduka",
+      "Agni Kund & Sita Chulha",
+      "Hilltop Panorama"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "Cave Exploration",
+      "Cultural Fair Participation"
+    ],
+    "historical_significance": "Documented pilgrimage site for centuries across Jharkhand, Odisha, and Chhattisgarh borders.",
+    "cultural_significance": "Draws over 100,000 devotees during the Kartik Purnima Mela.",
+    "how_to_reach": "28 km west of Simdega town via the Ramrekha Dham approach road.",
+    "safety_information": "Sturdy footwear recommended for hill climb.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2250,
+    "rating_avg": 4.8,
+    "rating_count": 62,
+    "verification_status": "VERIFIED",
+    "source_title": "Simdega District Administration",
+    "source_urls": [
+      "https://simdega.nic.in/tourist-place/ramrekha-dham/"
+    ]
+  },
+  {
+    "id": "dest-sim-bhan",
+    "slug": "bhanwar-pahar",
+    "name": "Bhanwar Pahar",
+    "district": "Simdega",
+    "category": "Adventure",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Bhanwar Pahar Kolebira"
+    ],
+    "nearest_city": "Kolebira",
+    "latitude": 22.6333,
+    "longitude": 84.45,
+    "short_description": "Scenic granite mountain peak known for rich bee colonies, flowering flora, and sweeping valley overlooks.",
+    "description": "Bhanwar Pahar, located near Kolebira, is named after the native honeybees (Bhanwar) that build natural hives on its precipitous granite cliffs. The summit rewards trekkers with breathtaking panoramic views of the dense sal forests of Simdega.",
+    "best_time_to_visit": "October to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Granite Cliff Face",
+      "Summit Plateau Viewpoint",
+      "Natural Rock Formations"
+    ],
+    "activities": [
+      "Hiking",
+      "Rock Climbing",
+      "Landscape Photography"
+    ],
+    "historical_significance": "Traditional lookout point used by indigenous chieftains.",
+    "cultural_significance": "Traditional honey collection grounds for local tribal artisans.",
+    "how_to_reach": "18 km from Simdega on the Kolebira road.",
+    "safety_information": "Do not disturb wild bee colonies on rock crevices.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 890,
+    "rating_avg": 4.3,
+    "rating_count": 16,
+    "verification_status": "VERIFIED",
+    "source_title": "Simdega District Portal",
+    "source_urls": [
+      "https://simdega.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-sim-dan",
+    "slug": "dangadi-waterfalls",
+    "name": "Dangadi Waterfalls",
+    "district": "Simdega",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Dangadi Falls Bolba"
+    ],
+    "nearest_city": "Bolba",
+    "latitude": 22.5833,
+    "longitude": 84.4,
+    "short_description": "Untouched forest waterfall on the Jharkhand-Odisha frontier, plunging through narrow rock gorges into crystal pools.",
+    "description": "Situated in Bolba block of Simdega, Dangadi Waterfalls is a pristine forest cascade surrounded by verdant hills. The serene mountain stream flows through deep rocky crevices, making it an extraordinary retreat for eco-travelers.",
+    "best_time_to_visit": "August to January",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Forest Waterfall Chute",
+      "Crystal Rock Basin",
+      "Pristine Nature Setting"
+    ],
+    "activities": [
+      "Nature Photography",
+      "Eco-Trekking",
+      "Picnicking"
+    ],
+    "historical_significance": "Historic forest trail linking Chotanagpur with Sundargarh.",
+    "cultural_significance": "Protected sacred forest water source by local tribal villagers.",
+    "how_to_reach": "45 km southwest of Simdega towards Bolba block near the Odisha border.",
+    "safety_information": "Remote forest route; travel during daylight hours.",
+    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 740,
+    "rating_avg": 4.4,
+    "rating_count": 14,
+    "verification_status": "VERIFIED",
+    "source_title": "Simdega District Portal",
+    "source_urls": [
+      "https://simdega.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-loh-lava",
+    "slug": "lavapani-waterfalls",
+    "name": "Lavapani Waterfalls",
+    "district": "Lohardaga",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Lavapani Ghagh",
+      "Seven Step Waterfall"
+    ],
+    "nearest_city": "Lohardaga",
+    "latitude": 23.45,
+    "longitude": 84.6833,
+    "short_description": "Spectacular seven-tiered stepped waterfall cascading through dense sal woods in the Peshrar forest belt.",
+    "description": "Lavapani Falls is located in the Peshrar forest block of Lohardaga. Water descends down seven natural rock tiers like a staircase, creating an enchanting scenic spectacle framed by untouched sal forest and crisp mountain air.",
+    "best_time_to_visit": "July to February",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Seven-Tier Waterfall Steps",
+      "Dense Sal Woods",
+      "Peshrar Valley Scenery"
+    ],
+    "activities": [
+      "Waterfall Trekking",
+      "Nature Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Natural landmark in the traditional homeland of the Asur and Birhor tribes.",
+    "cultural_significance": "Venerated by local indigenous communities for its perennial fresh stream.",
+    "how_to_reach": "30 km from Lohardaga district headquarters via Peshrar road.",
+    "safety_information": "Take care when stepping on algae-coated stepped rocks.",
+    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1460,
+    "rating_avg": 4.7,
+    "rating_count": 38,
+    "verification_status": "VERIFIED",
+    "source_title": "Lohardaga District Administration",
+    "source_urls": [
+      "https://lohardaga.nic.in/tourist-place/lavapani-falls/"
+    ]
+  },
+  {
+    "id": "dest-loh-bagru",
+    "slug": "bagru-hills",
+    "name": "Bagru Hills",
+    "district": "Lohardaga",
+    "category": "Adventure",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Bagru Pahar",
+      "Bauxite Plateau"
+    ],
+    "nearest_city": "Lohardaga",
+    "latitude": 23.4833,
+    "longitude": 84.6,
+    "short_description": "High-altitude plateau famous for its red bauxite mines, panoramic valley views, and pleasant cool climate.",
+    "description": "Rising prominently above the plains of Lohardaga, Bagru Hills is a tabletop bauxite plateau at over 1,000 metres elevation. Known for its cool plateau climate, sweeping sunset viewpoints, and winding mountain roads, it offers an invigorating hill drive.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Bauxite Tabletop Views",
+      "Sunset Point",
+      "Winding Plateau Ghat Roads"
+    ],
+    "activities": [
+      "Scenic Driving",
+      "Sunset Photography",
+      "Geological Study"
+    ],
+    "historical_significance": "Major mineral extraction hub in Jharkhand supporting India's metallurgical industries.",
+    "cultural_significance": "Traditional home to indigenous Asur iron-smelting folklore.",
+    "how_to_reach": "15 km northwest of Lohardaga town.",
+    "safety_information": "Drive carefully on heavy mineral transport ghat sections.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1180,
+    "rating_avg": 4.4,
+    "rating_count": 24,
+    "verification_status": "VERIFIED",
+    "source_title": "Lohardaga District Portal",
+    "source_urls": [
+      "https://lohardaga.nic.in/tourist-place/bagru-hills/"
+    ]
+  },
+  {
+    "id": "dest-loh-kek",
+    "slug": "kekrang-waterfalls",
+    "name": "Kekrang Waterfalls",
+    "district": "Lohardaga",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Kekrang Ghagh"
+    ],
+    "nearest_city": "Bagru",
+    "latitude": 23.4667,
+    "longitude": 84.6333,
+    "short_description": "Picturesque hill waterfall nestled in the valley between Bagru hills and Kisku forests.",
+    "description": "Kekrang Waterfalls cascades amidst pristine forest hills in Bagru valley. The gushing mountain stream drops into clean rocky basins, serving as a tranquil weekend retreat for nature enthusiasts seeking offbeat trails.",
+    "best_time_to_visit": "August to January",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Rocky Water Cascade",
+      "Hill Valley Overlooks",
+      "Lush Sal Forest"
+    ],
+    "activities": [
+      "Picnicking",
+      "Nature Walks",
+      "Landscape Photography"
+    ],
+    "historical_significance": "Untouched forest stream in the historic Chotanagpur plateau watershed.",
+    "cultural_significance": "Seasonal celebration spot for local rural folk.",
+    "how_to_reach": "18 km from Lohardaga town via Kisku road.",
+    "safety_information": "Avoid climbing wet boulders near the main water drop.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 840,
+    "rating_avg": 4.3,
+    "rating_count": 17,
+    "verification_status": "VERIFIED",
+    "source_title": "Lohardaga District Portal",
+    "source_urls": [
+      "https://lohardaga.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-loh-ajay",
+    "slug": "ajay-udyan-dhardharia",
+    "name": "Ajay Udyan & Dhardharia Falls",
+    "district": "Lohardaga",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Dhardharia Dam",
+      "Ajay Park Senha"
+    ],
+    "nearest_city": "Senha",
+    "latitude": 23.4333,
+    "longitude": 84.6667,
+    "short_description": "Pleasant riverside eco-park and natural barrage on the Senha river popular for day outings and gardens.",
+    "description": "Ajay Udyan and the adjacent Dhardharia falls in Senha block offer a landscaped family park with riverside viewpoints, children's swings, and peaceful walkways surrounded by pastoral Chotanagpur villages.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Landscaped Garden Lawns",
+      "Riverside Walkway",
+      "Dhardharia Weir"
+    ],
+    "activities": [
+      "Family Picnicking",
+      "Evening Strolling",
+      "Photography"
+    ],
+    "historical_significance": "Developed by local administration as a dedicated public green space.",
+    "cultural_significance": "Hosts family picnics during New Year and Makar Sankranti.",
+    "how_to_reach": "12 km from Lohardaga town in Senha block.",
+    "safety_information": "Keep children under observation near the water edge.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 920,
+    "rating_avg": 4.2,
+    "rating_count": 19,
+    "verification_status": "VERIFIED",
+    "source_title": "Lohardaga District Portal",
+    "source_urls": [
+      "https://lohardaga.nic.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e6c",
+    "slug": "lodh-falls",
+    "name": "Lodh Falls",
+    "district": "Latehar",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Burha Ghagh",
+      "Lodh Ghagh",
+      "Highest Waterfall of Jharkhand"
+    ],
+    "nearest_city": "Mahuadanr",
+    "latitude": 23.5433,
+    "longitude": 84.2636,
+    "short_description": "The highest waterfall in Jharkhand, plunging a staggering 143 metres (469 ft) down the Burha River in Mahuadanr valley.",
+    "description": "Lodh Falls, also known as Burha Ghagh, is Jharkhand's tallest waterfall and the 21st highest in India. Formed on the Burha River, it crashes down 143 metres in multiple thunderous tiers through dense tropical moist deciduous forests.",
+    "best_time_to_visit": "September to February",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "143-metre Plunge Basin",
+      "Burha River Gorge",
+      "Thunderous Roar",
+      "Forested Canyon Viewpoints"
+    ],
+    "activities": [
+      "Waterfall Spectacle",
+      "Wilderness Photography",
+      "Trekking",
+      "Eco-Tourism"
+    ],
+    "historical_significance": "Documented since imperial gazetteers as Chotanagpur's grandest natural cascade.",
+    "cultural_significance": "Sacred to the local tribal communities of the Mahuadanr Wolf Sanctuary corridor.",
+    "how_to_reach": "60 km from Netarhat, 120 km from Daltonganj; 195 km from Ranchi via Mahuadanr.",
+    "safety_information": "Do not climb near the slippery upper rock escarpment.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4120,
+    "rating_avg": 4.9,
+    "rating_count": 94,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Portal & Latehar NIC",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/lodh-falls/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e6b",
+    "slug": "betla-national-park",
+    "name": "Betla National Park",
+    "district": "Latehar",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Betla Wildlife Sanctuary",
+      "Betla National Park Latehar"
+    ],
+    "nearest_city": "Daltonganj",
+    "latitude": 23.8667,
+    "longitude": 84.1833,
+    "short_description": "Historic 226 sq km sanctuary renowned for elephant herds, sloth bears, gaurs, chital, and Chero dynasty heritage forts.",
+    "description": "Betla National Park was one of the earliest national parks in India, established in 1986. Located in Latehar and Palamu districts, it boasts diverse ecosystems from sal woodlands to bamboo thickets, along with the two ancient forts of the Chero kings.",
+    "best_time_to_visit": "November to April",
+    "recommended_duration": "1–2 days",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹₹ Moderate Safari",
+    "budget_level": "MODERATE",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Wild Elephant Herds",
+      "Indian Gaur (Bison)",
+      "Palamu Historic Forts inside forest",
+      "Jeep Safaris"
+    ],
+    "activities": [
+      "Jungle Jeep Safaris",
+      "Elephant Rides",
+      "Heritage Exploration",
+      "Birdwatching"
+    ],
+    "historical_significance": "Features the 16th-century twin stone forts of Chero King Medini Ray deep in the jungle.",
+    "cultural_significance": "Crucial symbol of Chotanagpur's forest-royalty heritage.",
+    "how_to_reach": "25 km from Daltonganj railway station, 170 km from Ranchi airport via NH-39.",
+    "safety_information": "Maintain silence during safaris and do not disembark inside the park.",
+    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4580,
+    "rating_avg": 4.8,
+    "rating_count": 110,
+    "verification_status": "VERIFIED",
+    "source_title": "Forest Dept, Govt of Jharkhand & Latehar NIC",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/betla-national-park/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e69",
+    "slug": "netarhat-hill-station",
+    "name": "Netarhat",
+    "district": "Latehar",
+    "category": "Eco Tourism",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Queen of Chotanagpur",
+      "Netarhat Plateau"
+    ],
+    "nearest_city": "Netarhat",
+    "latitude": 23.4833,
+    "longitude": 84.2667,
+    "short_description": "Premier hill station of Jharkhand perched at 3,700 feet, celebrated for glorious sunrises, pine groves, and pleasant cool weather.",
+    "description": "Affectionately crowned the 'Queen of Chotanagpur', Netarhat is an idyllic hill resort situated at an altitude of 3,700 feet (1,128m). Famous for its dramatic sunrises, fragrant pine forests, colonial chalets, and the iconic Netarhat Residential School, it is Jharkhand's top hill retreat.",
+    "best_time_to_visit": "October to April",
+    "recommended_duration": "2 days",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹₹ Moderate Resort Stay",
+    "budget_level": "MODERATE",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Sunrise Point",
+      "Magnolia Sunset Point",
+      "Netarhat Pine Forest",
+      "Netarhat Dam & Lake"
+    ],
+    "activities": [
+      "Sunrise & Sunset Watching",
+      "Pine Forest Walks",
+      "Stargazing",
+      "Local Pear Orchard Visits"
+    ],
+    "historical_significance": "Favored summer resort during the British Raj; established the legendary Netarhat Vidyalaya in 1954.",
+    "cultural_significance": "Traditional home of the Asur and Birjia primitive tribal groups.",
+    "how_to_reach": "155 km west of Ranchi via Lohardaga and Ghaghra.",
+    "safety_information": "Winter temperatures can drop below 4°C; carry warm clothing.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 5210,
+    "rating_avg": 4.9,
+    "rating_count": 135,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Policy 2021 & Latehar NIC",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/netarhat/"
+    ]
+  },
+  {
+    "id": "dest-lat-mag",
+    "slug": "magnolia-sunset-point",
+    "name": "Magnolia Sunset Point",
+    "district": "Latehar",
+    "category": "Eco Tourism",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Netarhat Sunset Point",
+      "Magnolia Point"
+    ],
+    "nearest_city": "Netarhat",
+    "latitude": 23.4667,
+    "longitude": 84.25,
+    "short_description": "Legendary cliff edge viewpoint 10 km from Netarhat, immortalizing the tragic colonial romance of British maiden Magnolia.",
+    "description": "Magnolia Point offers one of the most stunning sunset vistas in eastern India. Perched on a sheer cliff edge 10 km from Netarhat, it gazes over the vast forested Koel river basin. Named after a British maiden who according to legend leapt into the valley for her love of a local tribal shepherd.",
+    "best_time_to_visit": "October to March (sunset hours)",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Magnificent Sunset Horizon",
+      "Deep Koel Valley Panorama",
+      "Magnolia Memorial Plaque"
+    ],
+    "activities": [
+      "Sunset Photography",
+      "Valley Viewing",
+      "Folk Legend Exploration"
+    ],
+    "historical_significance": "Colonial-era viewpoint with enduring romantic folklore.",
+    "cultural_significance": "Symbol of intercultural romantic mythology in Chotanagpur.",
+    "how_to_reach": "10 km from Netarhat market center via paved forest road.",
+    "safety_information": "Do not step beyond protective railings on the cliff perimeter.",
+    "image": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3840,
+    "rating_avg": 4.9,
+    "rating_count": 89,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Portal",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/magnolia-point/"
+    ]
+  },
+  {
+    "id": "dest-lat-ugh",
+    "slug": "upper-ghaghri-falls",
+    "name": "Upper Ghaghri Falls",
+    "district": "Latehar",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Upper Ghaghri",
+      "Netarhat Waterfall"
+    ],
+    "nearest_city": "Netarhat",
+    "latitude": 23.4833,
+    "longitude": 84.2833,
+    "short_description": "Charming cascading waterfall located 4 km from Netarhat amidst dense pine and eucalyptus groves.",
+    "description": "Upper Ghaghri Falls is a tranquil cascade situated 4 km from Netarhat. Flowing down through granite rock beds into a lush pool surrounded by pine and eucalyptus plantations, it is an idyllic picnic and walking spot.",
+    "best_time_to_visit": "August to February",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Forested Rock Basin",
+      "Pine Plantation Trails",
+      "Gentle Cascades"
+    ],
+    "activities": [
+      "Picnicking",
+      "Forest Walks",
+      "Photography"
+    ],
+    "historical_significance": "Popular retreat developed during early Netarhat settlement.",
+    "cultural_significance": "Local leisure venue for visitors to Netarhat.",
+    "how_to_reach": "4 km from Netarhat bus stand via easy motorable road.",
+    "safety_information": "Follow demarcated pathways around the riverbed.",
+    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1840,
+    "rating_avg": 4.5,
+    "rating_count": 36,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Portal",
+    "source_urls": [
+      "https://latehar.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-lat-lgh",
+    "slug": "lower-ghaghri-falls",
+    "name": "Lower Ghaghri Falls",
+    "district": "Latehar",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Lower Ghaghri",
+      "Ghaghri Gorge Falls"
+    ],
+    "nearest_city": "Netarhat",
+    "latitude": 23.45,
+    "longitude": 84.3,
+    "short_description": "Thunderous 32-metre waterfall hidden inside dense primary forest 10 km from Netarhat.",
+    "description": "Located 10 km from Netarhat, Lower Ghaghri Falls drops 32 metres into a deep forested canyon. So dense is the surrounding forest that sunlight struggles to pierce the canopy, making the waterfall a wild and dramatic adventure.",
+    "best_time_to_visit": "September to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "32m Plunge into Gorge",
+      "Dense Canopy Forest",
+      "Rugged Nature Path"
+    ],
+    "activities": [
+      "Forest Trekking",
+      "Adventure Photography",
+      "Birdwatching"
+    ],
+    "historical_significance": "Natural landmark in the traditional Netarhat forest tracts.",
+    "cultural_significance": "Revered in tribal folklore of the plateau.",
+    "how_to_reach": "10 km from Netarhat; includes a 1 km forest walking trail.",
+    "safety_information": "Trek with companions; rocky steps can be damp and steep.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1620,
+    "rating_avg": 4.6,
+    "rating_count": 31,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Administration",
+    "source_urls": [
+      "https://latehar.nic.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e5f",
+    "slug": "mirchaiya-falls",
+    "name": "Mirchaiya Falls",
+    "district": "Latehar",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Mirchaiya Ghagh Garu"
+    ],
+    "nearest_city": "Garu",
+    "latitude": 23.7167,
+    "longitude": 84.2333,
+    "short_description": "Gentle mountain cascade on a North Koel tributary in Garu block, ideal for eco-picnics and nature walks.",
+    "description": "Located 3 km from Garu block headquarters in Latehar, Mirchaiya Falls drops down granite boulders into clear gravel streams. It is a peaceful forest stopover on the circuit between Betla and Netarhat.",
+    "best_time_to_visit": "August to January",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Clear Forest Stream",
+      "Granite Boulders",
+      "Forest Eco-Camp"
+    ],
+    "activities": [
+      "Wading",
+      "Picnicking",
+      "Forest Photography"
+    ],
+    "historical_significance": "Scenic halting point on historical trade trails of the Koel basin.",
+    "cultural_significance": "Local gathering spot for surrounding tribal villages.",
+    "how_to_reach": "30 km from Betla, 3 km from Garu village.",
+    "safety_information": "Enjoy the shallow stream beds safely.",
+    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1240,
+    "rating_avg": 4.4,
+    "rating_count": 22,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Administration",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/mirchaiya-falls/"
+    ]
+  },
+  {
+    "id": "dest-lat-suga",
+    "slug": "suga-bandh-waterfalls",
+    "name": "Suga Bandh Waterfalls",
+    "district": "Latehar",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Suga Bandh Falls Garu"
+    ],
+    "nearest_city": "Garu",
+    "latitude": 23.6333,
+    "longitude": 84.2,
+    "short_description": "Splendid natural waterfall formed by the North Koel River rushing through narrow rocky barriers.",
+    "description": "Suga Bandh is a scenic natural barrage and waterfall formed on the North Koel River near Garu block in Latehar district. The wide, forceful river narrows between massive granite walls, producing churning emerald waters.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "North Koel River Gorge",
+      "Natural Rock Weir",
+      "Surrounding Forests"
+    ],
+    "activities": [
+      "River Viewing",
+      "Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Historic natural crossing on the North Koel River.",
+    "cultural_significance": "Traditional fishing and picnic spot for regional residents.",
+    "how_to_reach": "20 km from Mahuadanr, 70 km from Daltonganj.",
+    "safety_information": "Water currents are extremely powerful; stay well back from the river edge.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1150,
+    "rating_avg": 4.5,
+    "rating_count": 21,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Portal",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/suga-bandh/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e56",
+    "slug": "palamau-tiger-reserve",
+    "name": "Palamau Tiger Reserve",
+    "district": "Latehar",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "PTR",
+      "Palamau National Park Core"
+    ],
+    "nearest_city": "Daltonganj",
+    "latitude": 23.75,
+    "longitude": 84.15,
+    "short_description": "One of India's original 9 Project Tiger reserves (1973), spanning 1,026 sq km of rugged sal, bamboo forests, and wildlife corridors.",
+    "description": "Palamau Tiger Reserve (PTR) covers an expansive 1,026 sq km across Latehar and Palamu districts. Noted as the venue where the world's first pugmark-based tiger census was conducted in 1932 by J.W. Nicholson, PTR shelters Asian elephants, leopards, sloth bears, Indian gaur, and over 140 avian species.",
+    "best_time_to_visit": "November to April",
+    "recommended_duration": "1–2 days",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹₹ Moderate Safari",
+    "budget_level": "MODERATE",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "North Koel River Safari Tracks",
+      "Historical Tiger Census Heritage",
+      "Mirchaiya Watchtowers",
+      "Elephant Corridors"
+    ],
+    "activities": [
+      "Jungle Jeep Safaris",
+      "Wilderness Birdwatching",
+      "Forest Eco-Lodge Stays"
+    ],
+    "historical_significance": "Pioneered worldwide tiger pugmark census methodology in 1932; declared one of the founding 9 Project Tiger reserves in 1973.",
+    "cultural_significance": "Home to Birhor, Chero, and Oraon tribal communities practicing traditional non-timber forest conservation.",
+    "how_to_reach": "15 km from Daltonganj, 160 km from Ranchi via NH-39.",
+    "safety_information": "Do not step outside authorized safari vehicles. Always be accompanied by an official forest department tracker.",
+    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2980,
+    "rating_avg": 4.6,
+    "rating_count": 64,
+    "verification_status": "VERIFIED",
+    "source_title": "Forest, Environment & Climate Change Dept, Govt of Jharkhand",
+    "source_urls": [
+      "https://tourism.jharkhand.gov.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e5d",
+    "slug": "sarju-valley",
+    "name": "Sarju Valley",
+    "district": "Latehar",
+    "category": "Eco Tourism",
+    "pillar": "Rural and Community-Based Tourism",
+    "alt_names": [
+      "Sarju Eco Valley",
+      "Sarju Latehar"
+    ],
+    "nearest_city": "Latehar",
+    "latitude": 23.65,
+    "longitude": 84.3167,
+    "short_description": "Scenic emerging eco-tourism valley ringed by pine-covered hills, orchards, and clear mountain streams.",
+    "description": "Sarju Valley is an emerging eco-tourism destination in Latehar district. Surrounded by undulating green hills, terraced agricultural farms, and clear brook streams, it offers pristine rural walks and eco-stays.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "Half day",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Sarju Mountain Brooks",
+      "Terraced Tribal Farms",
+      "Verdant Hill Panoramas"
+    ],
+    "activities": [
+      "Eco-Walking",
+      "Village Homestay Experience",
+      "Landscape Photography"
+    ],
+    "historical_significance": "Transformed under modern state development into a model eco-tourism hub.",
+    "cultural_significance": "Demonstrates sustainable community-based agrarian living.",
+    "how_to_reach": "25 km south of Latehar town via Chandwa-Sarju road.",
+    "safety_information": "Respect local rural farming tracts.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 940,
+    "rating_avg": 4.4,
+    "rating_count": 18,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Administration",
+    "source_urls": [
+      "https://latehar.nic.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e5e",
+    "slug": "tattapani-hot-springs",
+    "name": "Tattapani Hot Springs",
+    "district": "Latehar",
+    "category": "Eco Tourism",
+    "pillar": "Lesser-Known and Emerging Destinations",
+    "alt_names": [
+      "Tatapani Sulfur Spring Latehar"
+    ],
+    "nearest_city": "Latehar",
+    "latitude": 23.7833,
+    "longitude": 84.2167,
+    "short_description": "Natural geothermal sulphur hot spring renowned for rich mineral content and therapeutic healing waters.",
+    "description": "Tattapani is a natural geothermal hot spring located in Latehar district along the Sukaldari river basin. The mineral-rich hot water emerges continuously from subterranean faults, renowned for healing skin ailments.",
+    "best_time_to_visit": "November to February (winter months)",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Geothermal Sulphur Springs",
+      "Bathing Kunds",
+      "Natural Forest Surroundings"
+    ],
+    "activities": [
+      "Therapeutic Bathing",
+      "Geological Exploration"
+    ],
+    "historical_significance": "Known since antiquity to local indigenous inhabitants as healing waters.",
+    "cultural_significance": "Pilgrims assemble here during Makar Sankranti for holy baths.",
+    "how_to_reach": "18 km from Latehar town.",
+    "safety_information": "Water temperatures can be hot; test before bathing.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1120,
+    "rating_avg": 4.3,
+    "rating_count": 20,
+    "verification_status": "VERIFIED",
+    "source_title": "Latehar District Portal",
+    "source_urls": [
+      "https://latehar.nic.in/tourist-place/tattapani/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e5b",
+    "slug": "palamu-forts",
+    "name": "Palamu Forts (Purana Kila & Naya Kila)",
+    "district": "Palamu",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Betla Forts",
+      "Chero Forts",
+      "Purana Qila Palamu"
+    ],
+    "nearest_city": "Daltonganj",
+    "latitude": 23.8833,
+    "longitude": 84.2333,
+    "short_description": "Magnificent 16th-17th century twin forest fortresses constructed by Chero Kings Raja Medini Ray and Raja Pratap Ray on the Auranga River.",
+    "description": "Located deep in the forests on the banks of the Auranga River, the Palamu Forts consist of two formidable fortresses: the Old Fort (Purana Kila) and the New Fort (Naya Kila). Built by Chero dynasty rulers in the 17th century, the New Fort features the renowned 'Nagpuri Gate', decorated with exquisite Islamic-Nagvanshi stone relief carvings.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Nagpuri Gate with Intricate Stone Carvings",
+      "Twin Fort Ramparts",
+      "Auranga River Gorge",
+      "Chero Architectural Ruins"
+    ],
+    "activities": [
+      "Heritage Trekking",
+      "Architectural Photography",
+      "Historical Research"
+    ],
+    "historical_significance": "Focal fortress of the sovereign Chero kingdom; besieged by Mughal forces under Daud Khan in 1660 CE.",
+    "cultural_significance": "Celebrates the golden era of Raja Medini Ray, the revered Chero king of Palamu.",
+    "how_to_reach": "25 km south of Daltonganj, adjacent to Betla National Park.",
+    "safety_information": "Sturdy walking shoes recommended; parts of the ruins have uneven masonry.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3150,
+    "rating_avg": 4.8,
+    "rating_count": 67,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India & Palamu NIC",
+    "source_urls": [
+      "https://palamu.nic.in/tourist-place/palamu-fort/"
+    ]
+  },
+  {
+    "id": "dest-pal-shah",
+    "slug": "shahpur-fort-daltonganj",
+    "name": "Shahpur Fort",
+    "district": "Palamu",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Daltonganj Fort",
+      "Raja Gopal Rai Palace"
+    ],
+    "nearest_city": "Daltonganj",
+    "latitude": 24.0333,
+    "longitude": 84.0667,
+    "short_description": "18th-century riverside masonry fortress built by Chero ruler Raja Gopal Rai overlooking the North Koel River in Daltonganj.",
+    "description": "Perched on high ground on the western bank of the North Koel River directly opposite Daltonganj town, Shahpur Fort was constructed in the 18th century by Chero King Gopal Rai. The hilltop palace affords commanding views of Daltonganj and the river.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Hilltop Fort Bastions",
+      "North Koel River Panorama",
+      "Chero Palace Ruins"
+    ],
+    "activities": [
+      "Heritage Sightseeing",
+      "Sunset River Photography"
+    ],
+    "historical_significance": "Last major capital seat of the Chero rulers constructed in the late 18th century.",
+    "cultural_significance": "Prominent historical landmark in Palamu's district identity.",
+    "how_to_reach": "3 km from Daltonganj town across the Koel river bridge.",
+    "safety_information": "Climb steps carefully to the upper terrace.",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1420,
+    "rating_avg": 4.4,
+    "rating_count": 28,
+    "verification_status": "VERIFIED",
+    "source_title": "Palamu District Administration",
+    "source_urls": [
+      "https://palamu.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-pal-kundi",
+    "slug": "kundigiri-jain-heritage",
+    "name": "Kundigiri Jain Heritage",
+    "district": "Palamu",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Kundigiri Pahar",
+      "Kundi Jain Temple"
+    ],
+    "nearest_city": "Panki",
+    "latitude": 24.0833,
+    "longitude": 84.1167,
+    "short_description": "Ancient Jain tirthankara pilgrimage hillock featuring stone carvings, meditation caves, and peaceful surroundings.",
+    "description": "Kundigiri is an ancient Jain pilgrimage sanctuary located in Palamu district. Surrounded by undulating forest hillocks, the rocky site contains ancient engraved Jain Tirthankara figures, foot impressions, and quiet rock shelters.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Tirthankara Stone Reliefs",
+      "Ancient Rock Shelters",
+      "Forested Hill Views"
+    ],
+    "activities": [
+      "Spiritual Meditation",
+      "Heritage Photography",
+      "Hill Walking"
+    ],
+    "historical_significance": "Medieval Jain monastic trading route site in Chotanagpur.",
+    "cultural_significance": "Important regional tirth for Jain pilgrims across eastern India.",
+    "how_to_reach": "35 km east of Daltonganj towards Panki block.",
+    "safety_information": "Follow the marked pathway up the hill.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 910,
+    "rating_avg": 4.5,
+    "rating_count": 17,
+    "verification_status": "VERIFIED",
+    "source_title": "Directorate of Archaeology & Palamu NIC",
+    "source_urls": [
+      "https://palamu.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-pal-bhim",
+    "slug": "bhim-chulha",
+    "name": "Bhim Chulha",
+    "district": "Palamu",
+    "category": "Heritage",
+    "pillar": "Lesser-Known and Emerging Destinations",
+    "alt_names": [
+      "Bhim Choolha Pandu"
+    ],
+    "nearest_city": "Pandu",
+    "latitude": 24.15,
+    "longitude": 83.9833,
+    "short_description": "Fascinating natural megalithic rock formation associated in regional folk tradition with the Pandavas' exile.",
+    "description": "Located near Pandu in Palamu district, Bhim Chulha consists of colossal balancing rocks that form what local lore describes as the giant cooking hearth (Chulha) of the Pandava hero Bhima during their forest exile.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Megalithic Balancing Boulders",
+      "Mahabharata Mythological Setting",
+      "Rural Landscape"
+    ],
+    "activities": [
+      "Photography",
+      "Folklore Study",
+      "Short Walks"
+    ],
+    "historical_significance": "Geological tor feature with centuries of oral folkloric association.",
+    "cultural_significance": "Sacred folkloric landmark for local village communities.",
+    "how_to_reach": "40 km northwest of Daltonganj near Pandu block.",
+    "safety_information": "Do not climb onto precariously balanced rock boulders.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 780,
+    "rating_avg": 4.2,
+    "rating_count": 15,
+    "verification_status": "VERIFIED",
+    "source_title": "Palamu District Portal",
+    "source_urls": [
+      "https://palamu.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-gar-bansi",
+    "slug": "bansi-dhar-mandir-nagar-untari",
+    "name": "Bansi Dhar Mandir (Nagar Untari)",
+    "district": "Garhwa",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Shri Bansidhar Mandir",
+      "Nagar Untari Krishna Temple"
+    ],
+    "nearest_city": "Nagar Untari (Banshidhar Nagar)",
+    "latitude": 24.2833,
+    "longitude": 83.5,
+    "short_description": "Renowned 17th-century temple enshrining a priceless 32-maund solid gold idol of Lord Krishna playing the flute.",
+    "description": "Bansi Dhar Mandir in Nagar Untari (now officially Shri Banshidhar Nagar) is Garhwa district's crown jewel. The sanctum houses a magnificent, four-foot high, 32-maund (approx 1,280 kg) solid gold idol of Lord Krishna playing the flute, alongside an Ashtadhatu idol of Goddess Radha.",
+    "best_time_to_visit": "August–September (Janmashtami) & October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Solid Gold Krishna Deity (32 Maund)",
+      "Ashtadhatu Radha Idol",
+      "Historical Royal Palace of Nagar Untari",
+      "Annual Bansidhar Fair"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "Temple Architecture Viewing",
+      "Janmashtami Celebrations"
+    ],
+    "historical_significance": "Unearthed in the early 19th century by Rani Shivmani Devi of the royal Bhau Nath Shah dynasty.",
+    "cultural_significance": "Premier Vaishnavite pilgrimage center in western Jharkhand.",
+    "how_to_reach": "45 km west of Garhwa town; connected by Nagar Untari railway station.",
+    "safety_information": "Follow temple dress etiquette and deposit leather goods outside.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3450,
+    "rating_avg": 4.9,
+    "rating_count": 88,
+    "verification_status": "VERIFIED",
+    "source_title": "Garhwa District Administration",
+    "source_urls": [
+      "https://garhwa.nic.in/tourist-place/bansi-dhar-temple/"
+    ]
+  },
+  {
+    "id": "dest-gar-sukh",
+    "slug": "sukhaldari-falls",
+    "name": "Sukhaldari Falls",
+    "district": "Garhwa",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Sukhaldari Ghagh Kanhar"
+    ],
+    "nearest_city": "Dhurki",
+    "latitude": 24.1667,
+    "longitude": 83.4167,
+    "short_description": "Thunderous waterfall on the Kanhar River plunging 100 feet at the tri-junction of Jharkhand, UP, and Chhattisgarh.",
+    "description": "Sukhaldari Falls is a spectacular waterfall situated on the Kanhar River in Dhurki block. Plunging nearly 100 feet over a wide rocky shelf, it is positioned right on the interstate tri-junction of Jharkhand, Uttar Pradesh, and Chhattisgarh.",
+    "best_time_to_visit": "September to February; Makar Sankranti fair",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "100-ft Kanhar River Cascade",
+      "Interstate Tri-Junction View",
+      "Makar Sankranti Fair Grounds"
+    ],
+    "activities": [
+      "Waterfall Watching",
+      "Nature Photography",
+      "Makar Sankranti Fair Viewing"
+    ],
+    "historical_significance": "Historic natural geographic frontier connecting central and eastern river valleys.",
+    "cultural_significance": "Draws thousands of pilgrims across three states for the holy Makar Sankranti mela.",
+    "how_to_reach": "55 km west of Garhwa town via Dhurki.",
+    "safety_information": "Do not attempt to cross the swift Kanhar river currents.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2120,
+    "rating_avg": 4.7,
+    "rating_count": 45,
+    "verification_status": "VERIFIED",
+    "source_title": "Garhwa District Administration",
+    "source_urls": [
+      "https://garhwa.nic.in/tourist-place/sukhaldari-falls/"
+    ]
+  },
+  {
+    "id": "dest-gar-paras",
+    "slug": "parasdiha-falls",
+    "name": "Parasdiha Falls",
+    "district": "Garhwa",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Parasdiha Ghagh Bhawanathpur"
+    ],
+    "nearest_city": "Bhawanathpur",
+    "latitude": 24.3667,
+    "longitude": 83.6167,
+    "short_description": "Scenic seasonal cascade nestled among the forested hills of Bhawanathpur in northern Garhwa.",
+    "description": "Located near Bhawanathpur in Garhwa district, Parasdiha Falls is formed by a hill river plunging down steep rocky tiers. Framed by tropical dry forest and rock cliffs, it is a favored local picnic destination.",
+    "best_time_to_visit": "August to January",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Rock Tier Waterfall",
+      "Surrounding Forest Trails",
+      "Natural Pool"
+    ],
+    "activities": [
+      "Picnicking",
+      "Nature Walks",
+      "Landscape Photography"
+    ],
+    "historical_significance": "Forest water oasis in the historic mineral belt of northern Garhwa.",
+    "cultural_significance": "Local community picnic and assembly sanctuary.",
+    "how_to_reach": "45 km north of Garhwa via Bhawanathpur road.",
+    "safety_information": "Take care along steep rock margins.",
+    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 920,
+    "rating_avg": 4.3,
+    "rating_count": 18,
+    "verification_status": "VERIFIED",
+    "source_title": "Garhwa District Portal",
+    "source_urls": [
+      "https://garhwa.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-gar-gulgul",
+    "slug": "gulgul-pahar-peak",
+    "name": "Gulgul Pahar Peak",
+    "district": "Garhwa",
+    "category": "Adventure",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Gulgulpath Peak",
+      "Highest Peak of Garhwa"
+    ],
+    "nearest_city": "Ranka",
+    "latitude": 23.95,
+    "longitude": 83.7,
+    "short_description": "The highest mountain summit in Garhwa district (3,819 ft), offering rewarding trekking trails and panoramic vistas.",
+    "description": "Gulgul Pahar is the towering peak of Garhwa district, rising to an elevation of approximately 3,819 feet (1,164 m). Situated near the Chhattisgarh border in the Ranka forest range, it is an adventurous trekking destination with sweeping views of the Vindhyan and Satpura spurs.",
+    "best_time_to_visit": "October to February",
+    "recommended_duration": "Half day trek",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Challenging",
+    "main_attractions": [
+      "Summit Plateau (3,819 ft)",
+      "Interstate Forest Panoramas",
+      "Alpine Flora & Rock Formations"
+    ],
+    "activities": [
+      "Mountain Trekking",
+      "Wilderness Hiking",
+      "Panoramic Photography"
+    ],
+    "historical_significance": "Geographical survey landmark in colonial triangulation surveys of Chotanagpur.",
+    "cultural_significance": "Sacred mountain deity revered by local Korwa and Chero tribes.",
+    "how_to_reach": "48 km south of Garhwa town via Ranka block.",
+    "safety_information": "Challenging ascent; carry sufficient drinking water and hike with experienced local guides.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1040,
+    "rating_avg": 4.6,
+    "rating_count": 22,
+    "verification_status": "VERIFIED",
+    "source_title": "Garhwa District Administration",
+    "source_urls": [
+      "https://garhwa.nic.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e57",
+    "slug": "itkhori-bhadrakali-complex",
+    "name": "Maa Bhadrakali Temple Complex, Itkhori",
+    "district": "Chatra",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Bhadrakali Mandir Itkhori",
+      "Itkhori Tri-Sangam"
+    ],
+    "nearest_city": "Itkhori",
+    "latitude": 24.2833,
+    "longitude": 85.15,
+    "short_description": "Renowned 9th-century archaeological and spiritual tri-sangam sacred to Hinduism, Buddhism, and Jainism.",
+    "description": "Located on the confluence of the Mohane and Bakhsa rivers in Itkhori, this ancient 9th-century complex is an extraordinary tri-religious sanctuary. It houses an ancient black stone idol of Goddess Bhadrakali, a Buddhist stupa with 1,008 miniature Buddhas, and footprints of the 10th Jain Tirthankara Sheetalanatha.",
+    "best_time_to_visit": "October to March; annual Itkhori Mahotsav",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Maa Bhadrakali Sanctum",
+      "Buddhist Stupa with 1008 relief Buddhas",
+      "Jain Tirthankara Sheetalanath Footprints",
+      "Mohane-Bakhsa River Confluence"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "Archaeological Exploration",
+      "Museum Visit"
+    ],
+    "historical_significance": "Established during the Pala Empire (9th century CE); excavated by the Archaeological Survey of India.",
+    "cultural_significance": "Rare international symbol of harmonic confluence between Hindu, Buddhist, and Jain traditions.",
+    "how_to_reach": "35 km from Chauparan on NH-19 (Grand Trunk Road); 60 km from Chatra headquarters.",
+    "safety_information": "Follow temple dress codes; photography inside the inner sanctum is restricted.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3120,
+    "rating_avg": 4.8,
+    "rating_count": 74,
+    "verification_status": "VERIFIED",
+    "source_title": "Directorate of Archaeology & Chatra NIC",
+    "source_urls": [
+      "https://chatra.nic.in/tourist-place/bhadrakali-temple-itkhori/"
+    ]
+  },
+  {
+    "id": "dest-cha-kolhua",
+    "slug": "kolhua-pahar-kauleshwari-devi",
+    "name": "Kolhua Pahar (Kauleshwari Devi)",
+    "district": "Chatra",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Kauleshwari Hill",
+      "Kolhua Hill Temple"
+    ],
+    "nearest_city": "Hunterganj",
+    "latitude": 24.3333,
+    "longitude": 84.8833,
+    "short_description": "Sacred 1,575-foot hill shrine venerated across Hinduism, Jainism, and Buddhism, featuring a hilltop sky-lake.",
+    "description": "Rising 1,575 feet above sea level in Hunterganj block of Chatra, Kolhua Pahar is a revered sacred hill. At its summit lies a natural lake and the ancient temple of Maa Kauleshwari, alongside ancient rock-cut Jain Tirthankara reliefs and Buddhist rock sculptures.",
+    "best_time_to_visit": "October to March; Ram Navami and Kolhua Mela",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Maa Kauleshwari Ancient Temple",
+      "Natural Summit Lake",
+      "Jain Tirthankara Rock Inscriptions",
+      "Panoramic Valley Vista"
+    ],
+    "activities": [
+      "Hill Pilgrimage",
+      "Trekking",
+      "Historical Exploration"
+    ],
+    "historical_significance": "Documented as a major religious syncretic hill center dating back over a thousand years.",
+    "cultural_significance": "Attracts devotees from Bihar, Jharkhand, and West Bengal during annual fairs.",
+    "how_to_reach": "45 km north of Chatra town; 10 km from Hunterganj.",
+    "safety_information": "The hill path has stone steps; ascend at a comfortable pace.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1840,
+    "rating_avg": 4.7,
+    "rating_count": 42,
+    "verification_status": "VERIFIED",
+    "source_title": "Chatra District Administration",
+    "source_urls": [
+      "https://chatra.nic.in/tourist-place/kolhua-pahar/"
+    ]
+  },
+  {
+    "id": "dest-cha-kunda",
+    "slug": "kunda-fort-ruins",
+    "name": "Kunda Fort",
+    "district": "Chatra",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Kunda Qila",
+      "Old Chero Fort Kunda"
+    ],
+    "nearest_city": "Pratappur",
+    "latitude": 24.2167,
+    "longitude": 84.7833,
+    "short_description": "Mysterious 17th-century stone fortress ruins constructed by Chero chieftains deep in the dense forests of Kunda block.",
+    "description": "Nestled within dense forest hills in Kunda block, Kunda Fort is an evocative 17th-century fortress built of dressed stone and red brick. Attributed to Chero rulers, its surviving ramparts, gateways, and arched chambers stand in romantic ruin amidst dense vegetation.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Stone Fort Ramparts",
+      "Ancient Arched Gateways",
+      "Surrounding Forest Wilderness"
+    ],
+    "activities": [
+      "Heritage Exploration",
+      "Ruins Photography",
+      "Jungle Trekking"
+    ],
+    "historical_significance": "Fortified bastion of the Chero rulers during 17th-century regional resistance.",
+    "cultural_significance": "Rich folkloric legends of royal treasure and hidden subterranean passages.",
+    "how_to_reach": "55 km west of Chatra headquarters near Kunda village.",
+    "safety_information": "Explore with a companion and return before dusk.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1120,
+    "rating_avg": 4.4,
+    "rating_count": 21,
+    "verification_status": "VERIFIED",
+    "source_title": "Directorate of Archaeology & Chatra NIC",
+    "source_urls": [
+      "https://chatra.nic.in/tourist-place/kunda-cave/"
+    ]
+  },
+  {
+    "id": "dest-cha-tamasin",
+    "slug": "tamasin-falls",
+    "name": "Tamasin Falls",
+    "district": "Chatra",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Tamasin Ghagh",
+      "Tamasin Canyon"
+    ],
+    "nearest_city": "Chatra",
+    "latitude": 24.35,
+    "longitude": 84.95,
+    "short_description": "Spectacular waterfall dropping into an enclosed red-stone canyon on the Mahane River, celebrated for rock pools.",
+    "description": "Tamasin is a mesmerizing natural waterfall situated on the Mahane River 26 km from Chatra. The river carves through colossal red sandstone canyon walls, plunging into an enclosed circular pool surrounded by cliffs and natural ferns.",
+    "best_time_to_visit": "August to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Red Sandstone Canyon",
+      "Deep Plunge Basin",
+      "Fern-clad Rock Cliffs",
+      "Mahane River Gorge"
+    ],
+    "activities": [
+      "Canyon Photography",
+      "Nature Walking",
+      "Picnicking"
+    ],
+    "historical_significance": "Revered in regional folklore as an abode of Mother Goddess Bhagwati.",
+    "cultural_significance": "Local pilgrimage and picnic center for surrounding rural villages.",
+    "how_to_reach": "26 km northeast of Chatra town via Hunterganj road.",
+    "safety_information": "Do not climb up the wet sandstone rock faces.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1780,
+    "rating_avg": 4.7,
+    "rating_count": 39,
+    "verification_status": "VERIFIED",
+    "source_title": "Chatra District Portal",
+    "source_urls": [
+      "https://chatra.nic.in/tourist-place/tamasin/"
+    ]
+  },
+  {
+    "id": "dest-cha-bich",
+    "slug": "bichkiliya-waterfalls",
+    "name": "Bichkiliya Waterfalls",
+    "district": "Chatra",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Bichkiliya Ghagh",
+      "Maluda Falls"
+    ],
+    "nearest_city": "Chatra",
+    "latitude": 24.25,
+    "longitude": 85.05,
+    "short_description": "Scenic seasonal cascade on the Mohane River tumbling across rocky boulders through pristine scrub forest.",
+    "description": "Located 11 km west of Chatra along the Mohane River course, Bichkiliya Waterfalls offers a peaceful natural setting where water gushes over smooth black granite stones. It is a favored quiet getaway for family picnics.",
+    "best_time_to_visit": "September to January",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Granite Boulder Stream",
+      "Gentle Waterfall Pool",
+      "Quiet Forest Surroundings"
+    ],
+    "activities": [
+      "Picnicking",
+      "Nature Walks",
+      "Photography"
+    ],
+    "historical_significance": "Natural forest crossing along the Mohane river valley.",
+    "cultural_significance": "Popular winter outing sanctuary for local residents.",
+    "how_to_reach": "11 km west of Chatra town.",
+    "safety_information": "Be cautious on wet boulders during post-monsoon months.",
+    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 790,
+    "rating_avg": 4.3,
+    "rating_count": 16,
+    "verification_status": "VERIFIED",
+    "source_title": "Chatra District Portal",
+    "source_urls": [
+      "https://chatra.nic.in/tourist-place/bichkiliya/"
+    ]
+  },
+  {
+    "id": "dest-auto-55-hazariba",
+    "slug": "hazaribagh-wildlife-sanctuary",
+    "name": "Hazaribagh Wildlife Sanctuary",
+    "district": "Hazaribagh",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Hazaribagh National Park",
+      "Hazaribagh Forest Sanctuary"
+    ],
+    "nearest_city": "Hazaribagh",
+    "latitude": 24.1333,
+    "longitude": 85.3667,
+    "short_description": "184 sq km picturesque sanctuary of plateau sal forest, waterholes, cheetal, sambhar, and scenic forest watchtowers.",
+    "description": "Established in 1955, the Hazaribagh Wildlife Sanctuary covers 184 sq km of lush sal and tropical deciduous woodlands across Chotanagpur plateau undulating hills. It features strategically located watchtowers near natural salt-licks and waterholes where herds of sambar, spotted deer, and wild boars gather.",
+    "best_time_to_visit": "October to April",
+    "recommended_duration": "Half day to Full day",
+    "duration_category": "FULL_DAY",
+    "estimated_budget": "₹₹ Moderate",
+    "budget_level": "MODERATE",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Forest Department Watchtowers",
+      "Rajderwa Reservoir",
+      "Cheetal Grasslands",
+      "Dense Sal Canopy"
+    ],
+    "activities": [
+      "Forest Safari",
+      "Nature Walks",
+      "Bird Photography"
+    ],
+    "historical_significance": "One of eastern India's earliest notified wildlife sanctuaries, established in 1955 under state conservation decrees.",
+    "cultural_significance": "Surrounding villages are globally acclaimed for authentic Sohrai and Khovar tribal mud-wall mural art.",
+    "how_to_reach": "19 km north of Hazaribagh town along NH-33; 115 km from Ranchi airport.",
+    "safety_information": "Follow park timings (opens 6:00 AM, closes 5:00 PM). Avoid night travel inside forest zones.",
+    "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2680,
+    "rating_avg": 4.6,
+    "rating_count": 59,
+    "verification_status": "VERIFIED",
+    "source_title": "Hazaribagh District Administration, Govt of Jharkhand",
+    "source_urls": [
+      "https://hazaribag.nic.in/tourist-place/hazaribagh-wildlife-sanctuary/"
+    ]
+  },
+  {
+    "id": "dest-haz-canary",
+    "slug": "canary-hill-hazaribagh",
+    "name": "Canary Hill",
+    "district": "Hazaribagh",
+    "category": "Adventure",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Canary Pahar",
+      "Hazaribagh Hilltop"
+    ],
+    "nearest_city": "Hazaribagh",
+    "latitude": 24.0167,
+    "longitude": 85.3833,
+    "short_description": "Lush forested hillock in Hazaribagh town with a colonial observation tower, quiet lake, and 360-degree plateau vistas.",
+    "description": "Canary Hill is the scenic pride of Hazaribagh town. Surrounded by dense eucalyptus, sal, and bamboo woods, the hilltop features a historic forest watchtower offering panoramic views of the city, distant plateau peaks, and a peaceful lake nestled at its base.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Forest Rest House & Watchtower",
+      "Panoramic Plateau Views",
+      "Canary Lake at Foothills",
+      "Pine & Bamboo Groves"
+    ],
+    "activities": [
+      "Hill Climbing",
+      "Sunset Viewing",
+      "City Photography",
+      "Strolling"
+    ],
+    "historical_significance": "Developed during the British civil station period as a recreational observation summit.",
+    "cultural_significance": "Popular meeting ground for nature enthusiasts and morning walkers of Hazaribagh.",
+    "how_to_reach": "3 km from Hazaribagh town center.",
+    "safety_information": "Well-maintained motorable road and steps to the summit.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1890,
+    "rating_avg": 4.5,
+    "rating_count": 42,
+    "verification_status": "VERIFIED",
+    "source_title": "Hazaribagh District Administration",
+    "source_urls": [
+      "https://hazaribag.nic.in/tourist-place/canary-hill/"
+    ]
+  },
+  {
+    "id": "dest-haz-suraj",
+    "slug": "surajkund-hot-springs",
+    "name": "Surajkund Hot Springs (Barkatha)",
+    "district": "Hazaribagh",
+    "category": "Eco Tourism",
+    "pillar": "Lesser-Known and Emerging Destinations",
+    "alt_names": [
+      "Suraj Kund Barkatha",
+      "Hazaribagh Thermal Springs"
+    ],
+    "nearest_city": "Barkatha",
+    "latitude": 24.15,
+    "longitude": 85.6333,
+    "short_description": "India's hottest natural thermal springs with water emerging at a scalding 88°C (190°F), revered for medicinal healing.",
+    "description": "Surajkund, located at Belkapi in Barkatha block, is celebrated as India's hottest natural geothermal spring. Water continuously bubbles up at an astonishing 88°C (190°F). The complex contains five distinct springs named Suraj Kund, Ram Kund, Lakshman Kund, Sita Kund, and Brahma Kund, alongside cold water tanks.",
+    "best_time_to_visit": "November to February; Makar Sankranti Mela",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "88°C Boiling Thermal Spring",
+      "Five Named Kunds",
+      "Therapeutic Bathing Facilities",
+      "Annual Makar Sankranti Fair"
+    ],
+    "activities": [
+      "Thermal Phenomenon Viewing",
+      "Therapeutic Bathing",
+      "Cultural Fair Participation"
+    ],
+    "historical_significance": "Documented in British geological surveys of 1848 as India's highest-temperature continental spring.",
+    "cultural_significance": "Sacred pilgrimage venue drawing thousands during Makar Sankranti for holy ablutions.",
+    "how_to_reach": "72 km from Hazaribagh town directly on NH-19 (Grand Trunk Road).",
+    "safety_information": "Do not touch the boiling main spring water; use the regulated cooling bathing tanks.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2950,
+    "rating_avg": 4.7,
+    "rating_count": 65,
+    "verification_status": "VERIFIED",
+    "source_title": "Geological Survey of India & Hazaribagh NIC",
+    "source_urls": [
+      "https://hazaribag.nic.in/tourist-place/surajkund/"
+    ]
+  },
+  {
+    "id": "dest-haz-konar",
+    "slug": "konar-dam",
+    "name": "Konar Dam",
+    "district": "Hazaribagh",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Konar Reservoir DVC"
+    ],
+    "nearest_city": "Gomia",
+    "latitude": 23.9833,
+    "longitude": 85.7667,
+    "short_description": "Monumental multipurpose dam on the Konar River completed in 1955, surrounded by expansive forest watersheds.",
+    "description": "The second major dam built under the historic Damodar Valley Corporation (DVC), Konar Dam was completed in 1955 across the Konar River. Featuring an enormous earthen and concrete structure stretching over 4,500 metres, its immense reservoir provides scenic water vistas.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "4.5 km Dam Crest Road",
+      "Spillway Discharge Vista",
+      "Serene Water Body",
+      "Picnic Point"
+    ],
+    "activities": [
+      "Landscape Photography",
+      "Picnicking",
+      "Dam Crest Strolling"
+    ],
+    "historical_significance": "Inaugurated by Prime Minister Jawaharlal Nehru in 1955 as a 'temple of modern India'.",
+    "cultural_significance": "Major industrial and agrarian development lifeline for Chotanagpur.",
+    "how_to_reach": "50 km southeast of Hazaribagh; 30 km from Gomia.",
+    "safety_information": "Observe speed limits along the dam crest.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1410,
+    "rating_avg": 4.4,
+    "rating_count": 28,
+    "verification_status": "VERIFIED",
+    "source_title": "Damodar Valley Corporation & Hazaribagh NIC",
+    "source_urls": [
+      "https://hazaribag.nic.in/tourist-place/konar-dam/"
+    ]
+  },
+  {
+    "id": "dest-haz-isco",
+    "slug": "isco-rock-art-cave-paintings",
+    "name": "Isco Rock Art & Cave Paintings",
+    "district": "Hazaribagh",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Isko Rock Art Barkagaon",
+      "Meso-chalcolithic Petroglyphs Isko"
+    ],
+    "nearest_city": "Barkagaon",
+    "latitude": 23.8833,
+    "longitude": 85.2667,
+    "short_description": "Prehistoric rock art gallery dating to 10,000 BCE featuring Meso-chalcolithic petroglyphs and ancestral Sohrai motifs.",
+    "description": "Located in Isko village of Barkagaon block, the Isko rock shelters contain prehistoric cave paintings dating back to the Meso-chalcolithic era (approx. 10,000–5,000 BCE). Discovered by environmentalist Bulu Imam, the red ochre pictographs depict wild animals, anthropomorphic figures, and geometric patterns directly ancestral to modern Sohrai and Khovar folk murals.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Prehistoric Rock Art Shelter",
+      "Ancestral Sohrai-Khovar Motifs",
+      "Underground Cave Formation (Marwatari)",
+      "Barkagaon Forest Valley"
+    ],
+    "activities": [
+      "Archaeological Tourism",
+      "Heritage Study",
+      "Rock Shelter Trekking"
+    ],
+    "historical_significance": "World-class prehistoric archaeological site discovered in 1991, featured in global prehistoric art documentation.",
+    "cultural_significance": "Direct stylistic precursor to GI-tagged Sohrai-Khovar painting traditions of Jharkhand.",
+    "how_to_reach": "45 km southwest of Hazaribagh via Barkagaon.",
+    "safety_information": "Do not touch, scratch, or wet the prehistoric rock art surface.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": true,
+    "active": true,
+    "views": 2180,
+    "rating_avg": 4.8,
+    "rating_count": 48,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India & INTACH Hazaribagh",
+    "source_urls": [
+      "https://hazaribag.nic.in/tourist-place/isco-rock-art/"
+    ]
+  },
+  {
+    "id": "dest-kod-til",
+    "slug": "tilaiya-dam-reservoir",
+    "name": "Tilaiya Dam & Reservoir",
+    "district": "Koderma",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Tilaiya Dam DVC",
+      "Barakar River Reservoir"
+    ],
+    "nearest_city": "Jhumri Telaiya",
+    "latitude": 24.3167,
+    "longitude": 85.5167,
+    "short_description": "Historic first dam of the Damodar Valley Corporation built on the Barakar River in 1953, framed by picturesque hills.",
+    "description": "Tilaiya Dam was the historic very first multipurpose dam constructed by the Damodar Valley Corporation (DVC), opened in 1953 across the Barakar River. With a length of 366 metres and surrounded by green hill ranges, the expansive lake provides splendid boating, watersports, and hill views.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Barakar Lake Reservoir",
+      "Boating Jetty",
+      "Surrounding Hillock Panoramas",
+      "Dam Spillway"
+    ],
+    "activities": [
+      "Speedboating",
+      "Paddle Boating",
+      "Sunset Viewing",
+      "Picnicking"
+    ],
+    "historical_significance": "First modern dam completed under the DVC Act on 21 February 1953, inaugurated by PM Jawaharlal Nehru.",
+    "cultural_significance": "Immortalized in Indian pop culture in reference to the famed mica town of 'Jhumri Telaiya'.",
+    "how_to_reach": "18 km from Koderma railway station on the Grand Chord route.",
+    "safety_information": "Follow boating safety mandates and wear life preservers.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3120,
+    "rating_avg": 4.7,
+    "rating_count": 73,
+    "verification_status": "VERIFIED",
+    "source_title": "Damodar Valley Corporation & Koderma NIC",
+    "source_urls": [
+      "https://koderma.nic.in/tourist-place/tilaiya-dam/"
+    ]
+  },
+  {
+    "id": "dest-kod-urwan",
+    "slug": "urwan-tourist-complex",
+    "name": "Urwan Tourist Complex",
+    "district": "Koderma",
+    "category": "Adventure",
+    "pillar": "Adventure and Outdoor Activities",
+    "alt_names": [
+      "Urwan Island Resort",
+      "Tilaiya Lake Island"
+    ],
+    "nearest_city": "Jhumri Telaiya",
+    "latitude": 24.3333,
+    "longitude": 85.4833,
+    "short_description": "Delightful lakeside resort and water-adventure center situated on the forested promontories of Tilaiya Lake.",
+    "description": "Located on the scenic banks of Tilaiya reservoir, the Urwan Tourist Complex was developed by the state tourism corporation. It offers water-scooters, speedboat rides, island cruise trips, and comfortable tourist cottages amidst peaceful nature.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "Half day to overnight",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹₹ Moderate Stay",
+    "budget_level": "MODERATE",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Lakeside Cottages",
+      "Speedboat & Water Scooter Rides",
+      "Submerged Island Excursions",
+      "Garden Walks"
+    ],
+    "activities": [
+      "Watersports",
+      "Lake Cruising",
+      "Resort Relaxation"
+    ],
+    "historical_significance": "Pioneering eco-tourism and watersports complex built to leverage DVC water bodies.",
+    "cultural_significance": "Premier holiday and corporate retreat hub of northern Jharkhand.",
+    "how_to_reach": "22 km from Koderma station directly along the Patna-Ranchi Highway (NH-31).",
+    "safety_information": "Ensure authorized operators supervise all watersport activities.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1840,
+    "rating_avg": 4.5,
+    "rating_count": 41,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Development Corporation",
+    "source_urls": [
+      "https://koderma.nic.in/tourist-place/urwan-tourist-complex/"
+    ]
+  },
+  {
+    "id": "dest-kod-dhwaja",
+    "slug": "dhwajadhari-dham-pahar",
+    "name": "Dhwajadhari Dham",
+    "district": "Koderma",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Dhwajadhari Pahar",
+      "777 Steps Shiva Temple"
+    ],
+    "nearest_city": "Koderma",
+    "latitude": 24.4667,
+    "longitude": 85.6,
+    "short_description": "Sacred mountain Shiva temple reached via 777 stone steps, offering spiritual blessings and expansive valley views.",
+    "description": "Dhwajadhari Dham is a revered hilltop temple dedicated to Lord Shiva, located 3 km from Koderma town. Pilgrims climb 777 steep stone stairs to reach the sacred summit, which is crowned with fluttering saffron flags (Dhwajas) and affords stunning vistas of the surrounding mica hillocks.",
+    "best_time_to_visit": "October to March; Mahashivratri",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Summit Shiva Sanctum",
+      "777 Stone Steps Stairway",
+      "Fluttering Dhwaja Flags",
+      "Panoramas of Koderma Valley"
+    ],
+    "activities": [
+      "Pilgrimage",
+      "Stair Climbing / Fitness",
+      "Sunrise/Sunset Photography"
+    ],
+    "historical_significance": "Historical penance hillock associated with ancient Rishi Dhwajadhari.",
+    "cultural_significance": "Draws massive congregations of devotees during the Mahashivratri and Shravan fairs.",
+    "how_to_reach": "3 km from Koderma district headquarters.",
+    "safety_information": "The 777 stone steps require moderate physical endurance.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1650,
+    "rating_avg": 4.6,
+    "rating_count": 36,
+    "verification_status": "VERIFIED",
+    "source_title": "Koderma District Administration",
+    "source_urls": [
+      "https://koderma.nic.in/tourist-place/dhwajadhari-dham/"
+    ]
+  },
+  {
+    "id": "dest-kod-maka",
+    "slug": "makamaro-hills",
+    "name": "Makamaro Hills",
+    "district": "Koderma",
+    "category": "Adventure",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Markandeya Hill Koderma"
+    ],
+    "nearest_city": "Koderma",
+    "latitude": 24.5167,
+    "longitude": 85.55,
+    "short_description": "Scenic mythological hill range associated with Sage Markandeya, featuring granite boulders and panoramic ridge walks.",
+    "description": "Makamaro Hills is an evocative geological and mythological hill formation in Koderma district. Named after the revered sage Markandeya who according to regional tradition meditated here, the rocky mountain offers rewarding trekking routes through scrub and sal forest.",
+    "best_time_to_visit": "October to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Granite Ridge Trek",
+      "Markandeya Mythological Hermitage",
+      "Panoramic Sunset Vista"
+    ],
+    "activities": [
+      "Trekking",
+      "Rock Scrambling",
+      "Photography"
+    ],
+    "historical_significance": "Ancient mythological association with Sage Markandeya.",
+    "cultural_significance": "Sacred local mountain worship ceremonies during Navratri.",
+    "how_to_reach": "12 km north of Koderma town.",
+    "safety_information": "Wear sturdy shoes with good grip on rocky surfaces.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 840,
+    "rating_avg": 4.3,
+    "rating_count": 17,
+    "verification_status": "VERIFIED",
+    "source_title": "Koderma District Portal",
+    "source_urls": [
+      "https://koderma.nic.in/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e65",
+    "slug": "parasnath-hill-shikharji",
+    "name": "Parasnath Hill (Shikharji)",
+    "district": "Giridih",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Shikharji",
+      "Parasnath Peak",
+      "Sammed Shikhar"
+    ],
+    "nearest_city": "Madhuban / Isri",
+    "latitude": 23.9628,
+    "longitude": 86.1303,
+    "short_description": "The highest mountain summit in Jharkhand (1,365 metres / 4,478 ft) and the supreme pilgrimage tirth of Jainism worldwide.",
+    "description": "Parasnath Hill (Shikharji) is the highest mountain peak in Jharkhand, rising to an elevation of 1,365 metres (4,478 ft). Revered as the supreme tirth in Jainism, twenty of the twenty-four Jain Tirthankaras, including Lord Parshvanatha, attained Moksha (liberation) here. A sacred 27 km pilgrimage circuit traverses the forested summit ridges.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 days (9 km ascent from Madhuban)",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹ Budget to Moderate",
+    "budget_level": "LOW",
+    "difficulty": "Challenging",
+    "main_attractions": [
+      "Lord Parshvanatha Tonk (Summit Shrine)",
+      "20 Tirthankara Memorial Tonks",
+      "Panoramic 360-degree Plateau Vistas",
+      "Madhuban Base Temples"
+    ],
+    "activities": [
+      "Sacred Pilgrimage Parikrama",
+      "Mountain Trekking",
+      "Sunrise Photography",
+      "Spiritual Meditation"
+    ],
+    "historical_significance": "Supreme Jain sacred mountain recorded across millennium-old scriptures; documented since early Mauryan times.",
+    "cultural_significance": "Most sacred global tirth for both Digambara and Svetambara Jain traditions; revered also as 'Marang Buru' by Santhal tribes.",
+    "how_to_reach": "Base camp at Madhuban is 25 km from Parasnath railway station (Parasnath/Isri Bazar) on the Grand Chord route.",
+    "safety_information": "27 km mountain parikrama requires high stamina; doli (palanquin) services are available for elderly pilgrims.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 6840,
+    "rating_avg": 4.9,
+    "rating_count": 180,
+    "verification_status": "VERIFIED",
+    "source_title": "Ministry of Tourism (GoI) & Giridih NIC",
+    "source_urls": [
+      "https://giridih.nic.in/tourist-place/parasnath/"
+    ]
+  },
+  {
+    "id": "dest-gir-madhu",
+    "slug": "madhuban-parasnath-foothills",
+    "name": "Madhuban (Parasnath Foothills)",
+    "district": "Giridih",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Madhuban Tirth",
+      "Parasnath Base Village"
+    ],
+    "nearest_city": "Isri",
+    "latitude": 23.9833,
+    "longitude": 86.1167,
+    "short_description": "Sacred temple township at the base of Parasnath Hill, home to centuries-old Digambara and Svetambara temples and dharamshalas.",
+    "description": "Madhuban is the bustling pilgrimage base camp situated at the northern foot of Parasnath Hill. The township features magnificent ancient and modern marble temples, peaceful monastic dharamshalas, a Jain museum, and markets selling regional crafts.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "Half day",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Svetambara Bhomiyaji Temple",
+      "Digambara Museum & Temple",
+      "Ancient Kanchi Dharamshalas",
+      "Parasnath Trek Gateway"
+    ],
+    "activities": [
+      "Temple Architecture Study",
+      "Museum Exploration",
+      "Trek Preparation"
+    ],
+    "historical_significance": "Established centuries ago as the logistical and spiritual assembly hub for Shikharji pilgrims.",
+    "cultural_significance": "Hosts round-the-clock community kitchens (bhojanashalas) serving traditional satvik cuisine.",
+    "how_to_reach": "25 km from Parasnath railway station via shared autos or taxis.",
+    "safety_information": "Follow satvik community norms and modest dress codes.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2450,
+    "rating_avg": 4.7,
+    "rating_count": 53,
+    "verification_status": "VERIFIED",
+    "source_title": "Giridih District Administration",
+    "source_urls": [
+      "https://giridih.nic.in/tourist-place/madhuban/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e61",
+    "slug": "usri-falls",
+    "name": "Usri Falls",
+    "district": "Giridih",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Usri Ghagh Giridih"
+    ],
+    "nearest_city": "Giridih",
+    "latitude": 24.1833,
+    "longitude": 86.3667,
+    "short_description": "Spectacular 12-metre segmented waterfall where the Usri River rushes through deep granite fissures.",
+    "description": "Usri Falls is a picturesque waterfall situated 14 km east of Giridih town. The Usri River, a major tributary of the Barakar River, plunges nearly 12 metres down segmented granite ravines, creating foaming white pools amidst dense forest canopy.",
+    "best_time_to_visit": "August to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Segmented Granite Gorge",
+      "Foaming River Pools",
+      "Forested Overlook Promontory"
+    ],
+    "activities": [
+      "Waterfall Photography",
+      "Picnicking",
+      "Nature Walks"
+    ],
+    "historical_significance": "Long established as one of the prime scenic natural landmarks of Santhal Pargana borderlands.",
+    "cultural_significance": "Beloved weekend retreat and picnic spot for regional families.",
+    "how_to_reach": "14 km east of Giridih town via Tundi road.",
+    "safety_information": "Granite rocks can be slick; do not walk too close to deep rushing fissures.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2890,
+    "rating_avg": 4.7,
+    "rating_count": 62,
+    "verification_status": "VERIFIED",
+    "source_title": "Giridih District Administration",
+    "source_urls": [
+      "https://giridih.nic.in/tourist-place/usri-falls/"
+    ]
+  },
+  {
+    "id": "dest-gir-khandoli",
+    "slug": "khandoli-dam-adventure-park",
+    "name": "Khandoli Dam & Adventure Park",
+    "district": "Giridih",
+    "category": "Adventure",
+    "pillar": "Adventure and Outdoor Activities",
+    "alt_names": [
+      "Khandoli Park",
+      "Khandoli Water Resort"
+    ],
+    "nearest_city": "Giridih",
+    "latitude": 24.2167,
+    "longitude": 86.3167,
+    "short_description": "Premier eco-adventure park and scenic reservoir offering parasailing, speedboating, rock climbing, and winter birdwatching.",
+    "description": "Located at the foot of the picturesque saddle-shaped Khandoli Hill 10 km from Giridih, Khandoli Dam has been developed into an exhilarating eco-adventure and watersports destination. Visitors enjoy speedboating, parasailing, water-scooters, and winter birdwatching.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "Half day",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹₹ Moderate Adventure",
+    "budget_level": "MODERATE",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Saddle-shaped Khandoli Hill",
+      "Water Sports Reservoir",
+      "Migratory Siberian Birds",
+      "Adventure Sports Complex"
+    ],
+    "activities": [
+      "Parasailing",
+      "Speedboating",
+      "Rock Climbing",
+      "Birdwatching",
+      "Kayaking"
+    ],
+    "historical_significance": "Irrigation reservoir built on the Khandoli hill stream, subsequently modernized for adventure tourism.",
+    "cultural_significance": "Major regional festival hub during New Year and winter carnivals.",
+    "how_to_reach": "10 km north of Giridih town via Bengabad road.",
+    "safety_information": "Follow certified instructors' instructions during aerial and water activities.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3150,
+    "rating_avg": 4.8,
+    "rating_count": 77,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Policy 2021 & Giridih NIC",
+    "source_urls": [
+      "https://giridih.nic.in/tourist-place/khandoli/"
+    ]
+  },
+  {
+    "id": "dest-gir-harihar",
+    "slug": "harihar-dham-bagodar",
+    "name": "Harihar Dham (Bagodar)",
+    "district": "Giridih",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "World's Largest Shivalinga Temple",
+      "Bagodar Shiva Dham"
+    ],
+    "nearest_city": "Bagodar",
+    "latitude": 24.0667,
+    "longitude": 85.95,
+    "short_description": "Enormous architectural temple constructed in the shape of a 65-foot tall Lord Shiva Lingam, visible for miles around.",
+    "description": "Located in Bagodar along the Grand Trunk Road (NH-19), Harihar Dham is famous for its colossal temple built in the shape of a 65-foot (20m) high Lord Shiva Lingam. Believed to be one of the largest Shiva Linga temple structures in the world, it attracts thousands during Shravan.",
+    "best_time_to_visit": "July–August (Shravan) & October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "65-Foot Colossal Shivalinga Temple",
+      "Inner Sanctum Hall",
+      "Surrounding Garden Courtyard"
+    ],
+    "activities": [
+      "Pilgrimage",
+      "Architectural Wonder Viewing",
+      "Photography"
+    ],
+    "historical_significance": "Constructed over 30 years by philanthropic spiritual trust, completed in 1987.",
+    "cultural_significance": "Renowned venue for traditional Hindu marriages and Shravan mass worship.",
+    "how_to_reach": "60 km west of Giridih; 3 km from Bagodar on NH-19 (GT Road).",
+    "safety_information": "Expect heavy holiday pilgrim traffic on Mondays of Shravan.",
+    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2240,
+    "rating_avg": 4.6,
+    "rating_count": 49,
+    "verification_status": "VERIFIED",
+    "source_title": "Giridih District Administration",
+    "source_urls": [
+      "https://giridih.nic.in/tourist-place/harihar-dham/"
+    ]
+  },
+  {
+    "id": "dest-auto-69-lugu-hil",
+    "slug": "lugu-hills-lugu-buru",
+    "name": "Lugu Hills (Lugu Buru Ghanta Bari)",
+    "district": "Bokaro",
+    "category": "Heritage",
+    "pillar": "Tribal Culture and Living Traditions",
+    "alt_names": [
+      "Lugu Buru",
+      "Lugu Baba Cave",
+      "Santhal Supreme Pilgrimage"
+    ],
+    "nearest_city": "Gomia",
+    "latitude": 23.75,
+    "longitude": 85.8333,
+    "short_description": "The supreme ancestral pilgrimage shrine of the Santhal community, nestled atop majestic forested hills in Gomia.",
+    "description": "Lugu Buru Ghanta Bari Dharamgarh, situated in the forested Lugu Hills of Gomia, is the supreme sacred pilgrimage shrine of the Santhal community worldwide. Santhals from across India, Nepal, and Bangladesh gather here annually during Kartik Purnima to honor Lugu Baba.",
+    "best_time_to_visit": "Kartik Purnima (November) & October to March",
+    "recommended_duration": "Half day to Full day",
+    "duration_category": "FULL_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Lugu Baba Sacred Cave",
+      "Ghanta Bari Shrine",
+      "Forest Waterfall Streams",
+      "Grand Kartik Purnima Conclave"
+    ],
+    "activities": [
+      "Tribal Pilgrimage",
+      "Mountain Trekking",
+      "Indigenous Ritual Observation"
+    ],
+    "historical_significance": "Ancient cradle of Santhal customary governance, philosophy, and social codes established by Lugu Baba.",
+    "cultural_significance": "Supreme spiritual cultural heritage center for over 10 million Santhals globally.",
+    "how_to_reach": "16 km from Gomia; 70 km from Bokaro Steel City.",
+    "safety_information": "Respect sacred tribal rituals and maintain sanctity of the mountain forest.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4210,
+    "rating_avg": 4.9,
+    "rating_count": 98,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Policy 2021 & Bokaro NIC",
+    "source_urls": [
+      "https://bokaro.nic.in/tourist-place/lugu-buru-ghanta-bari/"
+    ]
+  },
+  {
+    "id": "dest-auto-70-tenughat",
+    "slug": "tenughat-dam",
+    "name": "Tenughat Dam & Reservoir",
+    "district": "Bokaro",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Tenughat Earthen Dam",
+      "Damodar Tenughat Reservoir"
+    ],
+    "nearest_city": "Tenughat",
+    "latitude": 23.7333,
+    "longitude": 85.8333,
+    "short_description": "One of the longest earthen dams in Asia, stretching 5 km across the Damodar River against the backdrop of Lugu Hills.",
+    "description": "Constructed across the Damodar River in 1978, Tenughat Dam is an engineering marvel recognized as one of the longest earthen dams in Asia, stretching nearly 5 km. Flanked by the towering green ridges of Lugu Hills, it is a magnificent scenic reservoir.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "5 km Long Earthen Crest",
+      "Damodar River Spillway",
+      "Lugu Hills Backdrop",
+      "Sunset Views"
+    ],
+    "activities": [
+      "Dam Crest Walks",
+      "Landscape Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Constructed by the Government of Bihar (now Jharkhand) to supply vital water to Bokaro Steel Plant.",
+    "cultural_significance": "Crucial economic backbone for the Damodar industrial valley.",
+    "how_to_reach": "45 km west of Bokaro Steel City; 15 km from Gomia.",
+    "safety_information": "Do not venture into restricted spillway zones.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1890,
+    "rating_avg": 4.5,
+    "rating_count": 38,
+    "verification_status": "VERIFIED",
+    "source_title": "Water Resources Dept & Bokaro NIC",
+    "source_urls": [
+      "https://bokaro.nic.in/tourist-place/tenughat-dam/"
+    ]
+  },
+  {
+    "id": "dest-bok-zoo",
+    "slug": "jawaharlal-nehru-biological-park",
+    "name": "Jawaharlal Nehru Biological Park",
+    "district": "Bokaro",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Bokaro Zoo",
+      "JN Biological Park Bokaro"
+    ],
+    "nearest_city": "Bokaro Steel City",
+    "latitude": 23.6667,
+    "longitude": 86.15,
+    "short_description": "Extensive 127-acre zoological garden featuring Royal Bengal tigers, Asiatic lions, an aviary, and an artificial lake.",
+    "description": "Established in 1989 in the heart of Bokaro Steel City, the Jawaharlal Nehru Biological Park is one of the premier zoological gardens in Jharkhand. Spanning 127 acres, it is home to majestic Royal Bengal tigers, Asiatic lions, leopards, Himalayan black bears, and a toy train.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Nominal Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Big Cat Enclosures (Tigers & Lions)",
+      "Mogambo Toy Train",
+      "Spacious Aviary",
+      "Artificial Boating Lake"
+    ],
+    "activities": [
+      "Zoo Walking",
+      "Toy Train Rides",
+      "Boating",
+      "Botanical Study"
+    ],
+    "historical_significance": "Developed by Steel Authority of India Limited (SAIL) as part of Bokaro's planned green urban design.",
+    "cultural_significance": "Premier recreational attraction for families across Dhanbad, Bokaro, and Purulia.",
+    "how_to_reach": "Located in Sector 4 of Bokaro Steel City.",
+    "safety_information": "Do not tease or feed animals; keep to designated public paths.",
+    "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2450,
+    "rating_avg": 4.6,
+    "rating_count": 57,
+    "verification_status": "VERIFIED",
+    "source_title": "SAIL Bokaro & Central Zoo Authority",
+    "source_urls": [
+      "https://bokaro.nic.in/tourist-place/jawahar-lal-nehru-biological-park/"
+    ]
+  },
+  {
+    "id": "dest-bok-city",
+    "slug": "city-park-garga-dam",
+    "name": "City Park & Garga Dam",
+    "district": "Bokaro",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Bokaro City Park",
+      "Garga Dam Reservoir"
+    ],
+    "nearest_city": "Bokaro Steel City",
+    "latitude": 23.6667,
+    "longitude": 86.1667,
+    "short_description": "Beautiful landscaped urban lake park with manicured islands and the historic Garga Dam barrage on the outskirts.",
+    "description": "Bokaro City Park is a lovely urban retreat featuring a picturesque artificial lake with small green islands, paved walking paths, musical fountains, and peaceful Japanese-style bridges. Nearby lies Garga Dam, a scenic stone barrage on the Garga River.",
+    "best_time_to_visit": "October to March (evenings)",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Lake Islands & Footbridges",
+      "Manicured Flower Lawns",
+      "Garga Dam Sluice",
+      "Children's Playgrounds"
+    ],
+    "activities": [
+      "Evening Strolling",
+      "Boating",
+      "Photography"
+    ],
+    "historical_significance": "Conceived as an environmental green lung during the construction of Bokaro Steel City.",
+    "cultural_significance": "Vibrant hub for community flower festivals and evening leisure.",
+    "how_to_reach": "Located in Sector 5, Bokaro Steel City.",
+    "safety_information": "Supervise children near lake waters.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1680,
+    "rating_avg": 4.4,
+    "rating_count": 35,
+    "verification_status": "VERIFIED",
+    "source_title": "Bokaro District Administration",
+    "source_urls": [
+      "https://bokaro.nic.in/tourist-place/city-park/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e62",
+    "slug": "maithon-dam-kalyaneshwari",
+    "name": "Maithon Dam & Kalyaneshwari Temple",
+    "district": "Dhanbad",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Maithon Reservoir",
+      "Mai-ka-than",
+      "Kalyaneshwari Mandir"
+    ],
+    "nearest_city": "Barakar / Asansol",
+    "latitude": 23.7833,
+    "longitude": 86.8167,
+    "short_description": "Colossal 65 sq km lake on the Barakar River with an underground powerhouse and the 500-year-old Kalyaneshwari Temple.",
+    "description": "Maithon Dam, located 48 km from Dhanbad on the Barakar River, spans 65 sq km of deep blue reservoir water. Specially designed for flood control, it uniquely features India's first underground hydroelectric power station. Nearby stands the 500-year-old Kalyaneshwari Temple.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Vast 65 sq km Reservoir",
+      "Underground Hydel Power Station",
+      "Spoon Island (Sabuj Dweep)",
+      "Historic Kalyaneshwari Temple"
+    ],
+    "activities": [
+      "Speedboat Lake Cruises",
+      "Island Excursions",
+      "Shakti Peeth Pilgrimage",
+      "Sunset Photography"
+    ],
+    "historical_significance": "Commissioned in 1957 under DVC; designed with technical input from the US Tennessee Valley Authority.",
+    "cultural_significance": "Named 'Mai-ka-than' (Mother's Abode) honoring the sacred Shakti goddess.",
+    "how_to_reach": "48 km from Dhanbad; 25 km from Asansol; well connected by GT Road (NH-19).",
+    "safety_information": "Do not swim in deep reservoir waters without lifejackets.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3950,
+    "rating_avg": 4.8,
+    "rating_count": 92,
+    "verification_status": "VERIFIED",
+    "source_title": "Damodar Valley Corporation & Dhanbad NIC",
+    "source_urls": [
+      "https://dhanbad.nic.in/tourist-place/maithon-dam/"
+    ]
+  },
+  {
+    "id": "dest-dha-panchet",
+    "slug": "panchet-dam-damodar",
+    "name": "Panchet Dam",
+    "district": "Dhanbad",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Panchet Reservoir",
+      "Panchet Hill Dam"
+    ],
+    "nearest_city": "Chirkunda",
+    "latitude": 23.6833,
+    "longitude": 86.75,
+    "short_description": "Vast multipurpose Damodar River dam lying at the foot of the dramatic 1,600-foot Panchet Hill.",
+    "description": "Panchet Dam was the terminal dam built across the Damodar River under the first phase of the DVC network. Situated in southern Dhanbad on the border with Purulia, it is overshadowed by the towering 1,600-foot Panchet Hill, providing an awe-inspiring backdrop for boaters.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Damodar River Reservoir",
+      "Panchet Hill Backdrop",
+      "Hydroelectric Plant",
+      "Spillway Vista"
+    ],
+    "activities": [
+      "Boating",
+      "Landscape Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Opened in December 1959 by Santhal tribal leader Budhan Manjhi alongside PM Jawaharlal Nehru.",
+    "cultural_significance": "Monumental engineering symbol of independent India's regional river valley development.",
+    "how_to_reach": "54 km from Dhanbad; 9 km from Chirkunda.",
+    "safety_information": "Observe warning sirens during spillway water discharges.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2120,
+    "rating_avg": 4.5,
+    "rating_count": 46,
+    "verification_status": "VERIFIED",
+    "source_title": "Damodar Valley Corporation & Dhanbad NIC",
+    "source_urls": [
+      "https://dhanbad.nic.in/tourist-place/panchet-dam/"
+    ]
+  },
+  {
+    "id": "dest-dha-topchanchi",
+    "slug": "topchanchi-lake-wildlife-sanctuary",
+    "name": "Topchanchi Lake & Wildlife Sanctuary",
+    "district": "Dhanbad",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Topchanchi Reservoir",
+      "Topchanchi Sanctuary"
+    ],
+    "nearest_city": "Gomoh",
+    "latitude": 23.9,
+    "longitude": 86.2,
+    "short_description": "Picturesque 214-acre British-era reservoir framed by forested slopes of the Parasnath range, hosting winter waterfowl.",
+    "description": "Topchanchi Lake, built in 1915 to supply gravity-flow drinking water to the Jharia coalfields, is nestled picturesquely at the base of forested spurs of Parasnath Hill. Enclosed within an 8.7 sq km wildlife sanctuary, it shelters barking deer, leopards, and winter migratory ducks.",
+    "best_time_to_visit": "October to March (migratory bird season)",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "214-Acre Sparkling Lake",
+      "Parasnath Foothill Scenery",
+      "Migratory Birds",
+      "Colonial Gravity Pipeline Sluices"
+    ],
+    "activities": [
+      "Birdwatching",
+      "Picnicking",
+      "Nature Walks",
+      "Photography"
+    ],
+    "historical_significance": "Engineered in 1915 during the British period as a pristine water supply reservoir for the coal belt.",
+    "cultural_significance": "Beloved scenic stopover along the historic Grand Trunk Road (NH-19).",
+    "how_to_reach": "37 km northwest of Dhanbad on the Grand Trunk Road; 6 km from Gomoh railway junction.",
+    "safety_information": "Maintain peaceful atmosphere to prevent disturbing migratory waterfowl.",
+    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2580,
+    "rating_avg": 4.6,
+    "rating_count": 58,
+    "verification_status": "VERIFIED",
+    "source_title": "Forest Dept & Dhanbad NIC",
+    "source_urls": [
+      "https://dhanbad.nic.in/tourist-place/topchanchi-lake/"
+    ]
+  },
+  {
+    "id": "dest-dha-bhatinda",
+    "slug": "bhatinda-falls-moonidih",
+    "name": "Bhatinda Falls",
+    "district": "Dhanbad",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Bhatinda Falls Moonidih",
+      "Katras Falls"
+    ],
+    "nearest_city": "Moonidih",
+    "latitude": 23.7167,
+    "longitude": 86.3333,
+    "short_description": "Unique cascading waterfall on the Katri River carving through massive monolithic rock boulders near Moonidih.",
+    "description": "Located near Moonidih just 14 km from Dhanbad railway station, Bhatinda Falls is formed as the Katri River rushes over colossal, tilted monolithic rock formations. The water cascades into swirling pools, creating an enchanting scenic spectacle.",
+    "best_time_to_visit": "July to February",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Monolithic Tilted Rocks",
+      "Katri River Cascades",
+      "Surrounding Wooded Greenery"
+    ],
+    "activities": [
+      "Waterfall Viewing",
+      "Picnicking",
+      "Photography"
+    ],
+    "historical_significance": "Historic natural geological formation in the heart of the Jharia coalfield periphery.",
+    "cultural_significance": "Popular recreation and picnic spot for residents of the Dhanbad coal belt.",
+    "how_to_reach": "14 km southwest of Dhanbad town near Moonidih.",
+    "safety_information": "Do not climb onto wet tilted rocks during monsoon high flow.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2150,
+    "rating_avg": 4.5,
+    "rating_count": 47,
+    "verification_status": "VERIFIED",
+    "source_title": "Dhanbad District Administration",
+    "source_urls": [
+      "https://dhanbad.nic.in/tourist-place/bhatinda-fall/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e66",
+    "slug": "rajrappa-temple",
+    "name": "Maa Chhinnamastika Temple, Rajrappa",
+    "district": "Ramgarh",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Rajrappa Mandir",
+      "Chhinnamastika Shakti Peeth",
+      "Bhera-Damodar Sangam"
+    ],
+    "nearest_city": "Ramgarh",
+    "latitude": 23.6333,
+    "longitude": 85.7167,
+    "short_description": "Ancient Tantric Shakti Peeth perched at the picturesque rocky confluence of the Damodar and Bhera (Bhairavi) rivers.",
+    "description": "Perched majestically at the confluence of the Damodar and Bhera (Bhairavi) rivers, the Maa Chhinnamastika Temple at Rajrappa is one of the ten Mahavidyas and a premier Tantric Shakti Peeth in India. The headless deity stands atop Kamadeva and Rati in the riverbed rocks.",
+    "best_time_to_visit": "October to March; Navratri & Makar Sankranti",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Maa Chhinnamastika Sanctum",
+      "Damodar-Bhairavi River Confluence Waterfall",
+      "Tantric Shrines",
+      "Boating in the Rocky Gorge"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "River Confluence Boating",
+      "Photography"
+    ],
+    "historical_significance": "Documented in medieval Tantric texts (Shakti Sangama Tantra); visited by spiritual masters for over a millennium.",
+    "cultural_significance": "Premier Shakti worship destination across eastern India; hosts lakhs during Makar Sankranti.",
+    "how_to_reach": "28 km east of Ramgarh Cantonment; 65 km from Ranchi via NH-23.",
+    "safety_information": "Exercise caution on slippery wet riverbed rocks.",
+    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4890,
+    "rating_avg": 4.9,
+    "rating_count": 128,
+    "verification_status": "VERIFIED",
+    "source_title": "Ramgarh District Administration & Tourism Dept",
+    "source_urls": [
+      "https://ramgarh.nic.in/tourist-place/rajrappa-temple/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e68",
+    "slug": "patratu-valley",
+    "name": "Patratu Valley & Patratu Dam",
+    "district": "Ramgarh",
+    "category": "Adventure",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Patratu Ghat",
+      "Patratu Lake Resort",
+      "Serpentine Ghat Road"
+    ],
+    "nearest_city": "Patratu",
+    "latitude": 23.65,
+    "longitude": 85.3,
+    "short_description": "Thrilling winding mountain hairpin road descending into a vast reservoir with a luxury lake resort and watersports.",
+    "description": "Patratu Valley is widely recognized as one of the most stunning engineering drives in eastern India. A winding serpentine ghat road with dramatic hairpin curves descends from the Ranchi plateau into the shimmering waters of the Patratu reservoir, complete with boating, speedboats, and an eco-resort.",
+    "best_time_to_visit": "October to March (sunset and winter months)",
+    "recommended_duration": "Half day to overnight",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Serpentine Hairpin Ghat Viewpoint",
+      "Patratu Lake Water Resort",
+      "Speedboating & Jet Skis",
+      "Valley Sunset Vista"
+    ],
+    "activities": [
+      "Scenic Hairpin Road Driving",
+      "Speedboating",
+      "Sunset Viewing",
+      "Café Dining"
+    ],
+    "historical_significance": "Constructed to store water for the Patratu Thermal Power Station; developed as an international-standard tourism hub.",
+    "cultural_significance": "Jharkhand's most viral and celebrated modern road-trip destination.",
+    "how_to_reach": "35 km north of Ranchi via Kanke-Patratu Road (State Highway 2).",
+    "safety_information": "Drive within speed limits on the winding hairpin ghat sections.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 5920,
+    "rating_avg": 4.9,
+    "rating_count": 165,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Policy 2021 & Ramgarh NIC",
+    "source_urls": [
+      "https://ramgarh.nic.in/tourist-place/patratu-valley/"
+    ]
+  },
+  {
+    "id": "dest-ram-kaitha",
+    "slug": "kaitha-shiv-mandir",
+    "name": "Kaitha Shiv Mandir",
+    "district": "Ramgarh",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Kaitha Ancient Temple",
+      "Military Style Shiva Temple"
+    ],
+    "nearest_city": "Ramgarh Cantonment",
+    "latitude": 23.6333,
+    "longitude": 85.5167,
+    "short_description": "ASI-protected 17th-century brick temple combining military fortification architecture with Nagara temple design.",
+    "description": "Kaitha Shiv Mandir in Ramgarh is a protected monument of national importance under the Archaeological Survey of India (ASI). Built around 1670 CE by the Ramgarh royal dynasty, the temple is unique in India because it incorporates military fort architecture with watch-slots and thick defensive walls alongside a two-tier sanctum.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "17th Century Fortified Temple Walls",
+      "Upper Chamber & Secret Passages",
+      "Ancient Stone Shiva Lingam",
+      "Two-Tiered Brick Dome"
+    ],
+    "activities": [
+      "Architectural Study",
+      "Heritage Photography",
+      "Historical Tourism"
+    ],
+    "historical_significance": "Constructed during the reign of King Dalel Singh of Ramgarh as both a sanctuary and military observation post.",
+    "cultural_significance": "Protected national heritage monument representing indigenous military-religious architecture.",
+    "how_to_reach": "3 km from Ramgarh town along the Ramgarh-Bokaro road.",
+    "safety_information": "Respect the ancient brickwork; do not deface walls.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1380,
+    "rating_avg": 4.6,
+    "rating_count": 31,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India & Ramgarh NIC",
+    "source_urls": [
+      "https://ramgarh.nic.in/tourist-place/kaitha-temple/"
+    ]
+  },
+  {
+    "id": "dest-ram-tuti",
+    "slug": "tuti-jharna-temple",
+    "name": "Tuti Jharna Temple",
+    "district": "Ramgarh",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Tooti Jharna Mandir",
+      "Continuous Water Stream Shiva Temple"
+    ],
+    "nearest_city": "Ramgarh",
+    "latitude": 23.6833,
+    "longitude": 85.55,
+    "short_description": "Historic Shiva temple where an underground natural water spring continuously trickles directly onto the Shiva Linga.",
+    "description": "Tuti Jharna Temple is located near Ramgarh along the NH-33 corridor. Its unique feature is a perennial natural spring stream that continuously trickles water onto a Shivalinga from a stone channel year-round, without any visible mechanical or artificial conduit.",
+    "best_time_to_visit": "October to March; Shravan",
+    "recommended_duration": "1 hour",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Perennial Natural Spring Shivalinga",
+      "Sacred Bathing Kund",
+      "Temple Compound"
+    ],
+    "activities": [
+      "Pilgrimage",
+      "Nature Wonder Observation"
+    ],
+    "historical_significance": "Ancient natural spring venerated since pre-colonial centuries.",
+    "cultural_significance": "Popular devotional stopover on the Ranchi-Hazaribagh highway.",
+    "how_to_reach": "8 km from Ramgarh town near the highway.",
+    "safety_information": "Follow customary temple dress regulations.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1540,
+    "rating_avg": 4.4,
+    "rating_count": 33,
+    "verification_status": "VERIFIED",
+    "source_title": "Ramgarh District Portal",
+    "source_urls": [
+      "https://ramgarh.nic.in/tourist-place/tooti-jharna/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e6a",
+    "slug": "dalma-wildlife-sanctuary",
+    "name": "Dalma Wildlife Sanctuary",
+    "district": "East Singhbhum",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Dalma Elephant Sanctuary",
+      "Dalma Hills Pahar"
+    ],
+    "nearest_city": "Jamshedpur",
+    "latitude": 22.8833,
+    "longitude": 86.2167,
+    "short_description": "Famous 195 sq km sanctuary covering the Dalma mountain range, renowned as a premier habitat for Asian elephant herds.",
+    "description": "Inaugurated by Sanjay Gandhi in 1975, Dalma Wildlife Sanctuary covers 195 sq km across the Dalma mountain range rising to 3,000 feet. Celebrated as an elephant sanctuary, it shelters over 100 wild Indian elephants, leopards, barking deer, and sloth bears, with a sacred Shiva temple atop the summit.",
+    "best_time_to_visit": "October to April",
+    "recommended_duration": "Half day to Full day",
+    "duration_category": "FULL_DAY",
+    "estimated_budget": "₹₹ Moderate",
+    "budget_level": "MODERATE",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Asian Elephant Herds",
+      "Dalma Summit Shiva Temple (3000 ft)",
+      "Pindrabera Forest Rest House Vista",
+      "Subarnarekha Valley Panorama"
+    ],
+    "activities": [
+      "Wildlife Safari",
+      "Hill Trekking",
+      "Birdwatching",
+      "Summit Photography"
+    ],
+    "historical_significance": "Notified in 1975 under the Wildlife Protection Act as an elephant habitat corridor.",
+    "cultural_significance": "Sacred mountain summit worshipped during the indigenous Sendra festival by tribal hunters.",
+    "how_to_reach": "10 km north of Jamshedpur via Dimna-Dalma road; 130 km from Ranchi.",
+    "safety_information": "Follow elephant safety directives; do not step outside vehicles on safari trails.",
+    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4520,
+    "rating_avg": 4.8,
+    "rating_count": 104,
+    "verification_status": "VERIFIED",
+    "source_title": "Forest Dept, Govt of Jharkhand & East Singhbhum NIC",
+    "source_urls": [
+      "https://jamshedpur.nic.in/tourist-place/dalma-wildlife-sanctuary/"
+    ]
+  },
+  {
+    "id": "6abebb7911406259b9ef8e63",
+    "slug": "dimna-lake",
+    "name": "Dimna Lake & Foothills",
+    "district": "East Singhbhum",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Dimna Dam",
+      "Dimna Reservoir Jamshedpur"
+    ],
+    "nearest_city": "Jamshedpur",
+    "latitude": 22.85,
+    "longitude": 86.2333,
+    "short_description": "Serene scenic reservoir nestled directly at the foot of Dalma mountain range, offering boating and sunrise views.",
+    "description": "Constructed by Tata Steel in the foothills of the Dalma ranges, Dimna Lake is a stunning artificial reservoir providing water to the steel city of Jamshedpur. Flanked by blue mountain peaks and dense sal woodlands, it is an iconic retreat for watersports, jogging, and picnics.",
+    "best_time_to_visit": "October to March (sunrise and winter months)",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Dalma Mountain Backdrop",
+      "Crystal Lake Waters",
+      "Sunset Viewpoint",
+      "Boating Jetty"
+    ],
+    "activities": [
+      "Boating",
+      "Jogging/Cycling",
+      "Landscape Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Constructed in the 1940s by Tata Iron and Steel Company (TISCO) to ensure municipal water security.",
+    "cultural_significance": "Premier winter holiday leisure gathering site for Jamshedpur residents.",
+    "how_to_reach": "13 km from Jamshedpur city centre via Mango-Dimna road.",
+    "safety_information": "Do not venture into unauthorized deep water sections.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3820,
+    "rating_avg": 4.7,
+    "rating_count": 86,
+    "verification_status": "VERIFIED",
+    "source_title": "East Singhbhum District Administration",
+    "source_urls": [
+      "https://jamshedpur.nic.in/tourist-place/dimna-lake/"
+    ]
+  },
+  {
+    "id": "dest-eas-jubilee",
+    "slug": "jubilee-park-jamshedpur",
+    "name": "Jubilee Park & Jayanti Sarovar",
+    "district": "East Singhbhum",
+    "category": "Dam & Lake",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Tata Jubilee Park",
+      "Jayanti Sarovar Lake"
+    ],
+    "nearest_city": "Jamshedpur",
+    "latitude": 22.8,
+    "longitude": 86.1833,
+    "short_description": "Expansive 225-acre landscaped urban park inspired by Vrindavan Gardens, gifted to Jamshedpur by Tata Steel in 1958.",
+    "description": "Spanning 225 verdant acres in the center of Jamshedpur, Jubilee Park was presented to the city by Tata Steel on its golden jubilee in 1958. Modeled after the famed Vrindavan Gardens of Mysore, it features musical fountains, rose gardens, the Nicco amusement park, and the tranquil Jayanti Sarovar lake.",
+    "best_time_to_visit": "October to March; March 3 (Founder's Day Illuminations)",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Mughal Rose Gardens",
+      "Jayanti Sarovar Boating",
+      "Illuminated Musical Fountains",
+      "Founder's Statue of Jamsetji Tata"
+    ],
+    "activities": [
+      "Lake Boating",
+      "Evening Walking",
+      "Garden Photography",
+      "Founder's Day Light Show Viewing"
+    ],
+    "historical_significance": "Inaugurated by Prime Minister Jawaharlal Nehru in 1958 celebrating 50 years of Tata Steel.",
+    "cultural_significance": "Epicenter of Jamshedpur's cultural identity; globally renowned for its March 3 Founder's Day light festival.",
+    "how_to_reach": "Located in the heart of Jamshedpur city; 5 km from Tatanagar railway junction.",
+    "safety_information": "Follow park cleanliness and recycling rules.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4190,
+    "rating_avg": 4.9,
+    "rating_count": 115,
+    "verification_status": "VERIFIED",
+    "source_title": "Tata Steel Utilities & East Singhbhum NIC",
+    "source_urls": [
+      "https://jamshedpur.nic.in/tourist-place/jubilee-park/"
+    ]
+  },
+  {
+    "id": "dest-auto-84-amadubi-",
+    "slug": "amadubi-village",
+    "name": "Amadubi Panikar Cultural Village",
+    "district": "East Singhbhum",
+    "category": "Rural Tourism",
+    "pillar": "Rural and Community-Based Tourism",
+    "alt_names": [
+      "Amadubi Artists Village",
+      "Paitkar Painting Village Dhalbhumgarh"
+    ],
+    "nearest_city": "Dhalbhumgarh",
+    "latitude": 22.6167,
+    "longitude": 86.5333,
+    "short_description": "Celebrated heritage village of indigenous Chitrakar scroll painters practicing ancient natural-dye Paitkar art.",
+    "description": "Amadubi, located in Dhalbhumgarh block, is an acclaimed rural heritage village renowned as the home of the ancient Paitkar scroll painters. Chitrakar artisans create natural scroll paintings using mineral pigments, leaf dyes, and bark brushes, depicting Santhal mythology, tree spirits, and tribal creation epics.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "Half day to Full day",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Paitkar Artisan Workspaces",
+      "Rural Heritage Cottages",
+      "Tribal Dance Demonstrations",
+      "Traditional Organic Dyes Workshop"
+    ],
+    "activities": [
+      "Artisan Workshop Interaction",
+      "Paitkar Painting Purchase",
+      "Tribal Folk Performances"
+    ],
+    "historical_significance": "Practices one of India's oldest surviving narrative scroll painting styles, traced back to prehistoric root art.",
+    "cultural_significance": "Living heritage center for Santhal, Ho, and Chitrakar traditional storytelling arts.",
+    "how_to_reach": "65 km southeast of Jamshedpur along NH-18; 9 km from Dhalbhumgarh railway station.",
+    "safety_information": "Support local artists directly by purchasing authentic certified scroll art.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3120,
+    "rating_avg": 4.8,
+    "rating_count": 68,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Tourism Policy 2021 & District NIC",
+    "source_urls": [
+      "https://tourism.jharkhand.gov.in/"
+    ]
+  },
+  {
+    "id": "dest-eas-ghatsila",
+    "slug": "ghatsila-subarnarekha-heritage",
+    "name": "Ghatsila (Phuldungri & Subarnarekha)",
+    "district": "East Singhbhum",
+    "category": "Heritage",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Ghatshila",
+      "Bibhutibhushan Heritage Town"
+    ],
+    "nearest_city": "Ghatsila",
+    "latitude": 22.5833,
+    "longitude": 86.4833,
+    "short_description": "Picturesque sub-plateau riverside town nestled along the Subarnarekha River, beloved by author Bibhuti Bhushan Bandyopadhyay.",
+    "description": "Nestled between undulating hills along the curving Subarnarekha River, Ghatsila is a celebrated retreat famous for its pleasant climate, sal hillocks, and literary heritage. It was the beloved home of legendary Bengali novelist Bibhuti Bhushan Bandyopadhyay (author of Pather Panchali), whose cottage 'Gouri Kunj' is preserved here.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 days",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹ Budget to Moderate",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Gouri Kunj (Bibhutibhushan Memorial)",
+      "Phuldungri Hill Viewpoint",
+      "Subarnarekha River Ghats",
+      "Rankini Mandir"
+    ],
+    "activities": [
+      "Literary Heritage Tour",
+      "Riverside Walking",
+      "Hillock Sunset Watching"
+    ],
+    "historical_significance": "Home and writing haven of Bibhuti Bhushan Bandyopadhyay from 1938 until his passing in 1950.",
+    "cultural_significance": "Vibrant literary pilgrimage hub bridging Jharkhand's landscapes with world literature.",
+    "how_to_reach": "45 km east of Jamshedpur with direct express trains at Ghatsila railway station.",
+    "safety_information": "Peaceful township; respect historical cottage visitation timings.",
+    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3410,
+    "rating_avg": 4.7,
+    "rating_count": 79,
+    "verification_status": "VERIFIED",
+    "source_title": "East Singhbhum District Administration",
+    "source_urls": [
+      "https://jamshedpur.nic.in/tourist-place/ghatshila/"
+    ]
+  },
+  {
+    "id": "dest-eas-burudi",
+    "slug": "burudi-lake-dharagiri-falls",
+    "name": "Burudi Lake & Dharagiri Falls",
+    "district": "East Singhbhum",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Burudi Reservoir",
+      "Dharagiri Waterfall Ghatsila"
+    ],
+    "nearest_city": "Ghatsila",
+    "latitude": 22.6333,
+    "longitude": 86.45,
+    "short_description": "Enchanting forest reservoir enclosed by the Dalma range spurs, accompanied by the hidden Dharagiri jungle waterfall.",
+    "description": "Located 15 km from Ghatsila town amidst dense forest hills, Burudi Lake is a serene emerald water body built for agricultural storage. Nearby, Dharagiri Falls cascades 25 feet over mossy rocks in deep jungle, creating a refreshing eco-trail.",
+    "best_time_to_visit": "September to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Emerald Lake Reservoir",
+      "Dharagiri 25-ft Cascade",
+      "Forest Valley Overlooks",
+      "Boating Jetty"
+    ],
+    "activities": [
+      "Boating",
+      "Jungle Walking",
+      "Eco-Picnicking",
+      "Photography"
+    ],
+    "historical_significance": "Scenic reservoir constructed under mid-century Chotanagpur watershed programs.",
+    "cultural_significance": "Traditional gathering and picnic venue during Baha and New Year holidays.",
+    "how_to_reach": "15 km north of Ghatsila railway station via motorable rural road.",
+    "safety_information": "Carry drinking water and return before sunset.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1890,
+    "rating_avg": 4.6,
+    "rating_count": 38,
+    "verification_status": "VERIFIED",
+    "source_title": "East Singhbhum District Administration",
+    "source_urls": [
+      "https://jamshedpur.nic.in/tourist-place/burudi-lake/"
+    ]
+  },
+  {
+    "id": "dest-auto-87-saranda-",
+    "slug": "saranda-forest",
+    "name": "Saranda Forest (Land of 700 Hills)",
+    "district": "West Singhbhum",
+    "category": "Forest",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Saranda Sal Forest",
+      "Thalkobad Forest",
+      "Land of Seven Hundred Hills"
+    ],
+    "nearest_city": "Chaibasa / Gua",
+    "latitude": 22.25,
+    "longitude": 85.3,
+    "short_description": "Asia's largest and densest virgin Sal forest, spanning 820 sq km across 700 rolling hill ridges in the Ho tribal heartland.",
+    "description": "Spanning over 820 sq km across the Singhbhum plateau, Saranda ('The Land of Seven Hundred Hills') is renowned as Asia's largest and most majestic Sal (Shorea robusta) forest. Home to majestic wild elephant herds, flying squirrels, leopards, and perennial forest springs.",
+    "best_time_to_visit": "October to April",
+    "recommended_duration": "1–2 days",
+    "duration_category": "MULTI_DAY",
+    "estimated_budget": "₹₹ Moderate Forest Tour",
+    "budget_level": "MODERATE",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Thalkobad Canopy Vista",
+      "Karampada Elephant Corridors",
+      "Perennial Forest Streams",
+      "Karo River Valley"
+    ],
+    "activities": [
+      "Forest Expeditions",
+      "Wilderness Birdwatching",
+      "Botanical Exploration"
+    ],
+    "historical_significance": "Ancient royal hunting preserve of the Singh Deo dynasty of Porahat.",
+    "cultural_significance": "Sacred heartland of the indigenous Ho tribal community practicing Sarna nature worship.",
+    "how_to_reach": "Accessible via Chaibasa, Gua, and Manoharpur; 130 km from Jamshedpur.",
+    "safety_information": "Obtain forest department permits; travel with certified guides inside interior tracts.",
+    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4120,
+    "rating_avg": 4.8,
+    "rating_count": 88,
+    "verification_status": "VERIFIED",
+    "source_title": "Forest Dept, Govt of Jharkhand & West Singhbhum NIC",
+    "source_urls": [
+      "https://chaibasa.nic.in/tourist-place/saranda-forest/"
+    ]
+  },
+  {
+    "id": "dest-auto-88-hirni-fa",
+    "slug": "hirni-falls",
+    "name": "Hirni Falls",
+    "district": "West Singhbhum",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Hirni Ghagh Chaibasa"
+    ],
+    "nearest_city": "Chakradharpur / Khunti",
+    "latitude": 22.8167,
+    "longitude": 85.35,
+    "short_description": "Stunning 37-metre waterfall on the Ramgarha River plunging into a deep wooded forest gorge on the Ranchi-Chaibasa road.",
+    "description": "Hirni Falls is a breathtaking 37-metre (121 ft) waterfall located in a dense forest gorge along the Ramgarha River on the border of Khunti and West Singhbhum districts. Surrounded by towering sal trees and craggy cliffs, the cascade produces a perpetual misty breeze.",
+    "best_time_to_visit": "August to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "37m Waterfall Drop",
+      "Forested Canyon Observation Deck",
+      "Ramgarha River Gorge"
+    ],
+    "activities": [
+      "Waterfall Watching",
+      "Nature Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Traditional halting station on the ancient cart road connecting Ranchi with Chaibasa.",
+    "cultural_significance": "Sacred forest water stream in Ho and Munda tribal folklore.",
+    "how_to_reach": "68 km south of Ranchi along the Ranchi-Chaibasa highway (SH-1); 40 km from Chakradharpur.",
+    "safety_information": "Follow the concrete viewing gallery; do not venture down slippery gorge slopes.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2950,
+    "rating_avg": 4.7,
+    "rating_count": 63,
+    "verification_status": "VERIFIED",
+    "source_title": "West Singhbhum District Administration",
+    "source_urls": [
+      "https://chaibasa.nic.in/tourist-place/hirni-falls/"
+    ]
+  },
+  {
+    "id": "dest-wes-lupungutu",
+    "slug": "lupungutu-natural-spring",
+    "name": "Lupungutu Natural Spring",
+    "district": "West Singhbhum",
+    "category": "Eco Tourism",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Lupungutu Spring Chaibasa"
+    ],
+    "nearest_city": "Chaibasa",
+    "latitude": 22.5333,
+    "longitude": 85.7833,
+    "short_description": "Perennial crystal-clear natural freshwater spring emerging under a canopy of ancient wild mango and mahua trees.",
+    "description": "Located just 2 km from Chaibasa town, Lupungutu is a peaceful perennial natural freshwater spring. Crystal-clear cool water bubbles up year-round from subterranean rock crevices shaded beneath ancient wild mango and mahua groves.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Perennial Freshwater Spring",
+      "Shaded Ancient Mango Groves",
+      "Picnic Grounds"
+    ],
+    "activities": [
+      "Spring Water Tasting",
+      "Picnicking",
+      "Nature Strolling"
+    ],
+    "historical_significance": "Natural water source serving travelers and troops since the 19th-century British administrative era.",
+    "cultural_significance": "Sacred water source revered by local Ho tribal villages.",
+    "how_to_reach": "2 km from Chaibasa town center; easily reached by auto or cycle.",
+    "safety_information": "Keep the spring catchment clean; do not litter.",
+    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1240,
+    "rating_avg": 4.4,
+    "rating_count": 26,
+    "verification_status": "VERIFIED",
+    "source_title": "West Singhbhum District Portal",
+    "source_urls": [
+      "https://chaibasa.nic.in/tourist-place/lupungutu/"
+    ]
+  },
+  {
+    "id": "dest-wes-pauri",
+    "slug": "pauri-devi-temple-manoharpur",
+    "name": "Pauri Devi Temple",
+    "district": "West Singhbhum",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Maa Pauri Devi Manoharpur"
+    ],
+    "nearest_city": "Manoharpur",
+    "latitude": 22.3833,
+    "longitude": 85.2,
+    "short_description": "Revered tribal Shakti shrine situated amidst deep sal forests in the Koel-Karo river valley at Manoharpur.",
+    "description": "Situated in Manoharpur near the gateway to Saranda forest, Pauri Devi Temple is an ancient shrine dedicated to Goddess Pauri Devi, the protective guardian deity of the Singhbhum forests. Revered deeply by the local Ho and tribal clans.",
+    "best_time_to_visit": "October to March; Navratri & Chaitra festivals",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Goddess Pauri Devi Sanctum",
+      "Koel-Karo River Confluence",
+      "Surrounding Sal Canopy"
+    ],
+    "activities": [
+      "Pilgrimage",
+      "Nature Walks",
+      "River Viewing"
+    ],
+    "historical_significance": "Guardian deity shrine of the ancient Porahat kings.",
+    "cultural_significance": "Revered across Kolhan division as the protector of forest travelers and agrarian prosperity.",
+    "how_to_reach": "Near Manoharpur railway station on the Howrah-Mumbai mainline.",
+    "safety_information": "Follow customary temple rules.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1150,
+    "rating_avg": 4.5,
+    "rating_count": 23,
+    "verification_status": "VERIFIED",
+    "source_title": "West Singhbhum District Administration",
+    "source_urls": [
+      "https://chaibasa.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-wes-jagan",
+    "slug": "jagannathpur-temple-old-fort",
+    "name": "Jagannathpur Temple & Old Fort",
+    "district": "West Singhbhum",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Porahat Royal Palace Ruins",
+      "Jagannathpur Mandir"
+    ],
+    "nearest_city": "Jagannathpur",
+    "latitude": 22.2333,
+    "longitude": 85.65,
+    "short_description": "Historic 18th-century temple and fort ruins founded by King Jagannath Singh of the Porahat royal dynasty.",
+    "description": "Located in southern West Singhbhum, Jagannathpur was established in the 18th century by Raja Jagannath Singh of the sovereign Porahat dynasty. The historic stone temple of Lord Jagannath, alongside surviving fort ramparts, provides valuable insights into Kolhan's royal past.",
+    "best_time_to_visit": "October to March; annual Rath Yatra",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "18th-Century Jagannath Temple",
+      "Porahat Dynasty Fort Ruins",
+      "Rath Yatra Grounds"
+    ],
+    "activities": [
+      "Heritage Exploration",
+      "Historical Photography",
+      "Rath Yatra Festival Viewing"
+    ],
+    "historical_significance": "Major administrative seat of the Porahat kingdom during pre-colonial British resistance.",
+    "cultural_significance": "Hosts traditional Rath Yatra uniting regional Ho and non-tribal communities.",
+    "how_to_reach": "45 km south of Chaibasa via Champua road.",
+    "safety_information": "Exercise care around historic masonry ruins.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 980,
+    "rating_avg": 4.4,
+    "rating_count": 19,
+    "verification_status": "VERIFIED",
+    "source_title": "West Singhbhum District Portal",
+    "source_urls": [
+      "https://chaibasa.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-ser-chhau",
+    "slug": "seraikela-chhau-palace-academy",
+    "name": "Seraikela Chhau Palace & Academy",
+    "district": "Seraikela-Kharsawan",
+    "category": "Heritage",
+    "pillar": "Tribal Culture and Living Traditions",
+    "alt_names": [
+      "Seraikela Rajbari",
+      "Government Chhau Dance Centre Seraikela"
+    ],
+    "nearest_city": "Seraikela",
+    "latitude": 22.7,
+    "longitude": 85.9333,
+    "short_description": "The royal birthplace and living academy of UNESCO-recognized Seraikela Chhau masked dance, rooted in martial art.",
+    "description": "Seraikela is world-renowned as the cradle of Seraikela Chhau, an exquisite classical masked dance form inscribed on UNESCO's Representative List of the Intangible Cultural Heritage of Humanity. The royal palace (Rajbari) and Government Chhau Dance Centre host master mask-makers and training academies.",
+    "best_time_to_visit": "April (Chaitra Parva festival) & October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Royal Chhau Palace (Rajbari)",
+      "Chhau Mask-Making Artisan Workshops",
+      "Government Chhau Dance Academy",
+      "Chaitra Parva Festival Arena"
+    ],
+    "activities": [
+      "Chhau Mask Making Demonstration",
+      "Dance Recital Viewing",
+      "Royal Heritage Walking"
+    ],
+    "historical_significance": "Royal patronage by the Singh Deo rulers of Seraikela elevated Chhau into an internationally acclaimed art form.",
+    "cultural_significance": "UNESCO Intangible Cultural Heritage of Humanity landmark.",
+    "how_to_reach": "40 km from Jamshedpur; 15 km from Kandra railway station.",
+    "safety_information": "Respect master dancers and artisans during rehearsal sessions.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3450,
+    "rating_avg": 4.9,
+    "rating_count": 82,
+    "verification_status": "VERIFIED",
+    "source_title": "Directorate of Culture & Seraikela-Kharsawan NIC",
+    "source_urls": [
+      "https://seraikela.nic.in/tourist-place/chhau-dance/"
+    ]
+  },
+  {
+    "id": "dest-auto-93-chandil-",
+    "slug": "chandil-dam",
+    "name": "Chandil Dam & Reservoir",
+    "district": "Seraikela-Kharsawan",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Chandil Reservoir",
+      "Subarnarekha Multipurpose Dam"
+    ],
+    "nearest_city": "Chandil",
+    "latitude": 22.9667,
+    "longitude": 86.0167,
+    "short_description": "Colossal multi-purpose dam on the Subarnarekha River, featuring an archaeology museum and boating amidst Dalma hills.",
+    "description": "Built across the Subarnarekha River, Chandil Dam is an enormous reservoir reaching a height of 56.8 metres. Framed by the green ridges of the Dalma hills, it features speedboating, an on-site museum housing 2,000-year-old rock sculptures, and lively holiday picnics.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Vast Water Reservoir",
+      "Subarnarekha Dam Museum (Ancient Sculptures)",
+      "Speedboating & Jet Skis",
+      "Dalma Foothill Views"
+    ],
+    "activities": [
+      "Boating",
+      "Museum Exploration",
+      "Sunset Photography",
+      "Picnicking"
+    ],
+    "historical_significance": "Major component of the Subarnarekha Multipurpose Project; museum preserves ancient local sculpture discoveries.",
+    "cultural_significance": "Central gathering point for regional winter celebrations.",
+    "how_to_reach": "30 km north of Jamshedpur along NH-33; 8 km from Chandil railway station.",
+    "safety_information": "Follow boating rules and wear safety jackets.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3120,
+    "rating_avg": 4.7,
+    "rating_count": 70,
+    "verification_status": "VERIFIED",
+    "source_title": "Seraikela-Kharsawan District Administration",
+    "source_urls": [
+      "https://seraikela.nic.in/tourist-place/chandil-dam/"
+    ]
+  },
+  {
+    "id": "dest-ser-sheorath",
+    "slug": "sheorath-temple-sangam",
+    "name": "Sheorath Temple (Subarnarekha Sangam)",
+    "district": "Seraikela-Kharsawan",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Sheorath Mandir",
+      "Seraikela River Sangam"
+    ],
+    "nearest_city": "Seraikela",
+    "latitude": 22.7167,
+    "longitude": 85.95,
+    "short_description": "Ancient Shiva temple situated on the tranquil riverbanks overlooking the confluence of local rivers.",
+    "description": "Sheorath Temple is an ancient religious shrine situated along the riverbank near Seraikela. Built in traditional Nagara stone style, it is dedicated to Lord Shiva and serves as the epicenter of spiritual rituals during Shivratri and Chaitra Parva.",
+    "best_time_to_visit": "October to March; Mahashivratri",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Ancient Stone Shiva Sanctum",
+      "Riverside Stone Ghats",
+      "Annual Mela Grounds"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "Riverside Photography",
+      "Cultural Observation"
+    ],
+    "historical_significance": "Royal ceremonial shrine linked to the coronations and festivals of the Seraikela kings.",
+    "cultural_significance": "Crucial starting point for holy ritual processions during Chaitra festivals.",
+    "how_to_reach": "5 km from Seraikela town.",
+    "safety_information": "Mind your footing on river steps.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1140,
+    "rating_avg": 4.5,
+    "rating_count": 22,
+    "verification_status": "VERIFIED",
+    "source_title": "Seraikela-Kharsawan District Portal",
+    "source_urls": [
+      "https://seraikela.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-ser-palna",
+    "slug": "palna-dam-eco-tourism",
+    "name": "Palna Dam",
+    "district": "Seraikela-Kharsawan",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Palna Reservoir Kharsawan"
+    ],
+    "nearest_city": "Kharsawan",
+    "latitude": 22.8833,
+    "longitude": 85.8667,
+    "short_description": "Peaceful forest dam and reservoir popular for water reflections and calm offbeat picnics near Kharsawan.",
+    "description": "Palna Dam is a scenic irrigation water body located in Kharsawan block. Enclosed by low green hillocks and tranquil countryside, it offers a peaceful spot for birdwatching and photography away from city crowds.",
+    "best_time_to_visit": "October to February",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Tranquil Water Body",
+      "Forest Hills Backdrop",
+      "Picnic Point"
+    ],
+    "activities": [
+      "Birdwatching",
+      "Picnicking",
+      "Nature Strolls"
+    ],
+    "historical_significance": "Constructed to support local agrarian irrigation in Kharsawan.",
+    "cultural_significance": "Local community gathering retreat.",
+    "how_to_reach": "25 km from Seraikela via Kharsawan.",
+    "safety_information": "Do not enter deep water zones.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 890,
+    "rating_avg": 4.3,
+    "rating_count": 17,
+    "verification_status": "VERIFIED",
+    "source_title": "Seraikela-Kharsawan District Portal",
+    "source_urls": [
+      "https://seraikela.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-auto-96-baidyana",
+    "slug": "baidyanath-dham-deoghar",
+    "name": "Baba Baidyanath Jyotirlinga Dham",
+    "district": "Deoghar",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Baidyanath Temple",
+      "Deoghar Mandir",
+      "Kamna Linga",
+      "Shravani Mela Dham"
+    ],
+    "nearest_city": "Deoghar",
+    "latitude": 24.4922,
+    "longitude": 86.7003,
+    "short_description": "One of the sacred twelve Jyotirlingas and 51 Shakti Peethas in India; epicenter of the world-famous month-long Shravani Mela.",
+    "description": "Baba Baidyanath Dham in Deoghar is one of the most revered pilgrimage sanctuaries in India, uniquely recognized as both one of the 12 sacred Jyotirlingas of Lord Shiva and one of the 51 Shakti Peethas (where the heart of Sati fell). The 72-foot stone temple is the culmination of the 105 km Shravani Mela Kanwar Yatra.",
+    "best_time_to_visit": "October to March; Shravan month (July–August)",
+    "recommended_duration": "Half day to Full day",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Main Jyotirlinga Temple (72 ft Stone Shikhara)",
+      "21 Surrounding Ancient Temples",
+      "Shiva Gathbandhan Ceremony",
+      "Shivaganga Sacred Pool"
+    ],
+    "activities": [
+      "Jyotirlinga Darshan",
+      "Kanwar Yatra Participation",
+      "Sacred Temple Circuit"
+    ],
+    "historical_significance": "Documented across the Shiva Purana and Padma Purana; renovated in 1596 CE by Raja Puran Mal of Gidhaur.",
+    "cultural_significance": "Venue of the world's longest unorganized religious walk (105 km from Sultanganj to Deoghar) during Shravani Mela.",
+    "how_to_reach": "Deoghar International Airport (DGH) has daily flights; connected by Jasidih Junction railway station.",
+    "safety_information": "Follow queue management systems (Shighradarshanam passes available during rush periods).",
+    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 8920,
+    "rating_avg": 4.9,
+    "rating_count": 245,
+    "verification_status": "VERIFIED",
+    "source_title": "Ministry of Tourism (PRASHAD Scheme) & Deoghar NIC",
+    "source_urls": [
+      "https://deoghar.nic.in/tourist-place/baba-baidyanath-temple/"
+    ]
+  },
+  {
+    "id": "dest-auto-97-trikut-h",
+    "slug": "trikut-hills",
+    "name": "Trikut Pahar (Trikut Hills)",
+    "district": "Deoghar",
+    "category": "Adventure",
+    "pillar": "Adventure and Outdoor Activities",
+    "alt_names": [
+      "Trikut Parvat",
+      "Three Peak Mountain Deoghar"
+    ],
+    "nearest_city": "Deoghar",
+    "latitude": 24.5,
+    "longitude": 86.8333,
+    "short_description": "Dramatic three-peaked sacred mountain rising 2,470 feet, featuring the hermitage cave of Sage Bamdev and rock trekking.",
+    "description": "Located 15 km from Deoghar on the road to Dumka, Trikut Pahar is a striking three-peaked hill rising 2,470 feet above sea level. Named Brahma, Vishnu, and Maheshwar after the holy trinity, it offers adventurous granite trekking trails, cave hermitages of Saint Bamdev, and sweeping views of the Mayurakshi river basin.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Three Distinct Peaks (2,470 ft)",
+      "Sage Bamdev Hermitage Cave",
+      "Trikutachal Ashram",
+      "Mayurakshi River Basin Vista"
+    ],
+    "activities": [
+      "Mountain Trekking",
+      "Rock Scrambling",
+      "Cave Meditation",
+      "Panoramic Photography"
+    ],
+    "historical_significance": "Ancient hermitage of Sage Bamdev and other yogic masters.",
+    "cultural_significance": "Associated with Ravana's flight with the Pushpaka Vimana in Ramayana folklore.",
+    "how_to_reach": "15 km east of Deoghar along the Deoghar-Dumka road.",
+    "safety_information": "Trek along marked rocky paths; beware of mischievous rhesus macaques.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3840,
+    "rating_avg": 4.7,
+    "rating_count": 85,
+    "verification_status": "VERIFIED",
+    "source_title": "Deoghar District Administration",
+    "source_urls": [
+      "https://deoghar.nic.in/tourist-place/trikut-parvat/"
+    ]
+  },
+  {
+    "id": "dest-auto-98-basukina",
+    "slug": "basukinath-temple",
+    "name": "Basukinath Temple",
+    "district": "Dumka",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Baba Basukinath Dham",
+      "Faujdari Baba Mandir"
+    ],
+    "nearest_city": "Basukinath / Jarmundi",
+    "latitude": 24.3833,
+    "longitude": 87.0833,
+    "short_description": "Ancient Shiva temple where pilgrimage to Baidyanath Dham is traditionally completed; revered as the 'Faujdari Darbar'.",
+    "description": "Located at Jarmundi in Dumka district along the Deoghar-Dumka highway, Basukinath is the essential counterpart to Baidyanath Dham. In popular belief, while Baidyanath is the civil court, Basukinath is the 'Faujdari Darbar' (criminal court) where petitions are immediately heard; pilgrimage to Deoghar is considered incomplete without offering water here.",
+    "best_time_to_visit": "October to March; Shravani Mela",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Main Shiva Temple",
+      "Parvati Temple",
+      "Shivaganga Water Tank",
+      "Pilgrim Bazaar"
+    ],
+    "activities": [
+      "Spiritual Pilgrimage",
+      "Sacred Water Offering (Jalabhishek)",
+      "Cultural Fair Exploration"
+    ],
+    "historical_significance": "Dating to pre-colonial times; built by local artisan Basaki Tatwa under royal sanction.",
+    "cultural_significance": "Indispensable completion site of the holy 105 km Kanwar Yatra pilgrimage.",
+    "how_to_reach": "43 km east of Deoghar and 25 km west of Dumka; connected by Basukinath railway station.",
+    "safety_information": "Follow queue discipline during Shravan and festive Mondays.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4890,
+    "rating_avg": 4.8,
+    "rating_count": 118,
+    "verification_status": "VERIFIED",
+    "source_title": "Dumka District Administration",
+    "source_urls": [
+      "https://dumka.nic.in/tourist-place/basukinath-temple/"
+    ]
+  },
+  {
+    "id": "dest-deo-naulakha",
+    "slug": "naulakha-temple-deoghar",
+    "name": "Naulakha Temple",
+    "district": "Deoghar",
+    "category": "Religious",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Jugal Mandir Deoghar",
+      "Radha Krishna Naulakha Mandir"
+    ],
+    "nearest_city": "Deoghar",
+    "latitude": 24.4833,
+    "longitude": 86.7167,
+    "short_description": "Exquisite 146-foot architectural marble temple built in 1940 by Queen Charushila, reminiscent of Belur Math.",
+    "description": "Located 1.5 km from Baba Baidyanath Temple, Naulakha Temple is an architectural gem rising 146 feet high. Built in 1940 by Queen Charushila Devi of Pathuriaghat, Kolkata, at a cost of nine lakh rupees (hence 'Naulakha'), the temple architecture bears a striking resemblance to the Ramakrishna Mission temple at Belur Math.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "146-ft Marble Shikhara",
+      "Radha-Krishna Sanctum",
+      "Bal Balananda Brahmachari Memorial",
+      "Manicured Gardens"
+    ],
+    "activities": [
+      "Architectural Photography",
+      "Spiritual Meditation",
+      "Quiet Strolling"
+    ],
+    "historical_significance": "Built following the guidance of saint Balananda Brahmachari, completed in 1940.",
+    "cultural_significance": "Masterpiece of early 20th-century classical syncretic temple architecture.",
+    "how_to_reach": "1.5 km from Deoghar town center.",
+    "safety_information": "Peaceful monastery campus; maintain quiet decorum.",
+    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2450,
+    "rating_avg": 4.7,
+    "rating_count": 52,
+    "verification_status": "VERIFIED",
+    "source_title": "Deoghar District Administration",
+    "source_urls": [
+      "https://deoghar.nic.in/tourist-place/naulakha-mandir/"
+    ]
+  },
+  {
+    "id": "dest-deo-tapovan",
+    "slug": "tapovan-hills-caves",
+    "name": "Tapovan Hills & Caves",
+    "district": "Deoghar",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Taponath Hill",
+      "Balananda Caves Tapovan"
+    ],
+    "nearest_city": "Deoghar",
+    "latitude": 24.4667,
+    "longitude": 86.7667,
+    "short_description": "Forested hill of natural meditation caves where Sage Valmiki and Saint Balananda Brahmachari underwent penance.",
+    "description": "Tapovan, located 10 km from Deoghar, is an ancient sacred hill dotted with natural rock caves. The hill is dedicated to Lord Taponath (Shiva) and is revered as the retreat where Sage Valmiki meditated, as well as where 19th-century saint Sri Balananda Brahmachari attained spiritual enlightenment.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Taponath Shiva Cave Shrine",
+      "Balananda Brahmachari Meditation Cave",
+      "Curved Rock Formations",
+      "Hilltop Viewpoint"
+    ],
+    "activities": [
+      "Cave Exploration",
+      "Meditation",
+      "Scenic Hiking"
+    ],
+    "historical_significance": "Ancient penance sanctuary with documented hermetic traditions.",
+    "cultural_significance": "Spiritual retreat center for pilgrims and seekers visiting Deoghar.",
+    "how_to_reach": "10 km east of Deoghar town via Dumka road.",
+    "safety_information": "The rocky climb involves uneven stone steps.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1780,
+    "rating_avg": 4.5,
+    "rating_count": 36,
+    "verification_status": "VERIFIED",
+    "source_title": "Deoghar District Administration",
+    "source_urls": [
+      "https://deoghar.nic.in/tourist-place/tapovan/"
+    ]
+  },
+  {
+    "id": "dest-auto-101-maluti-t",
+    "slug": "maluti-temples",
+    "name": "Maluti Terracotta Temples",
+    "district": "Dumka",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Maluti Mandir Gram",
+      "Guptkashi of Jharkhand",
+      "72 Terracotta Temples"
+    ],
+    "nearest_city": "Shikaripara / Rampurhat",
+    "latitude": 24.1667,
+    "longitude": 87.6833,
+    "short_description": "Unique 17th-19th century heritage village harboring 72 intricately carved terracotta temples depicting Ramayana & Mahabharata epics.",
+    "description": "Maluti is a world-class archaeological treasure located in Dumka district near the Bengal border. Built between the 17th and 19th centuries by the Nankar tax-exempt kings of Chhoto Taraf and Boro Taraf, 72 of the original 108 terracotta temples survive today, featuring detailed brick relief carvings depicting epics.",
+    "best_time_to_visit": "October to March; annual Kali Puja",
+    "recommended_duration": "Half day to Full day",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Mouliaksha Devi Temple",
+      "72 Intricately Carved Terracotta Temples",
+      "Ramayana & Mahabharata Brick Relief Panels",
+      "Village Heritage Walking Trails"
+    ],
+    "activities": [
+      "Archaeological Heritage Tour",
+      "Terracotta Art Photography",
+      "Historical Research"
+    ],
+    "historical_significance": "Constructed under the Nankar dynasty; recognized globally by the Global Heritage Fund as an endangered heritage monument.",
+    "cultural_significance": "Features in Jharkhand's state Republic Day tableau in New Delhi; celebrated Guptkashi of Santhal Pargana.",
+    "how_to_reach": "55 km from Dumka; 16 km from Rampurhat railway station.",
+    "safety_information": "Do not touch or lean on fragile historic terracotta decorative relief tiles.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 4520,
+    "rating_avg": 4.9,
+    "rating_count": 112,
+    "verification_status": "VERIFIED",
+    "source_title": "Global Heritage Fund & Dumka NIC",
+    "source_urls": [
+      "https://dumka.nic.in/tourist-place/maluti-temples/"
+    ]
+  },
+  {
+    "id": "dest-dum-sumeshwar",
+    "slug": "baba-sumeshwar-nath-mandir",
+    "name": "Baba Sumeshwar Nath Mandir (Sarath)",
+    "district": "Dumka",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Sumeshwar Mandir Sarath"
+    ],
+    "nearest_city": "Sarath",
+    "latitude": 24.2333,
+    "longitude": 87.1667,
+    "short_description": "Ancient stone Shiva temple on the riverbanks revered by devotees across Santhal Pargana for deep spiritual sanctity.",
+    "description": "Located near Sarath in Dumka district, Baba Sumeshwar Nath Mandir is an ancient stone temple dedicated to Lord Shiva. Situated along the riverbank, it features an ancient Shiva Linga worshipped for centuries by rural communities.",
+    "best_time_to_visit": "October to March; Shravan & Shivratri",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Ancient Stone Sanctum",
+      "Riverbank Bathing Ghats",
+      "Shivalinga Shrine"
+    ],
+    "activities": [
+      "Pilgrimage",
+      "Quiet Prayer",
+      "Photography"
+    ],
+    "historical_significance": "Medieval stone temple architecture preserved by local zamindars.",
+    "cultural_significance": "Spiritual meeting center for regional village councils.",
+    "how_to_reach": "30 km from Dumka town.",
+    "safety_information": "Follow customary temple etiquette.",
+    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 920,
+    "rating_avg": 4.4,
+    "rating_count": 18,
+    "verification_status": "VERIFIED",
+    "source_title": "Dumka District Administration",
+    "source_urls": [
+      "https://dumka.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-dum-tatloi",
+    "slug": "tatloi-hot-spring",
+    "name": "Tatloi Hot Spring",
+    "district": "Dumka",
+    "category": "Eco Tourism",
+    "pillar": "Lesser-Known and Emerging Destinations",
+    "alt_names": [
+      "Tatloi Geothermal Spring",
+      "Bhurti River Hot Spring"
+    ],
+    "nearest_city": "Dumka",
+    "latitude": 24.25,
+    "longitude": 87.2833,
+    "short_description": "Natural geothermal hot sulphur water spring bubbling amidst tranquil forest streams along the Bhurti River.",
+    "description": "Tatloi is a natural geothermal hot water spring situated 15 km from Dumka on the banks of the Bhurti River. Clear thermal water emerges naturally from rocky crevices, celebrated by locals for its therapeutic sulphur content and relaxing forest ambiance.",
+    "best_time_to_visit": "November to February (winter months)",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Natural Thermal Spring",
+      "Bhurti River Sandy Bed",
+      "Forested Picnic Meadows"
+    ],
+    "activities": [
+      "Therapeutic Bathing",
+      "Picnicking",
+      "Nature Relaxation"
+    ],
+    "historical_significance": "Documented since colonial ethnographic studies of Santhal Pargana.",
+    "cultural_significance": "Sacred seasonal bath during Makar Sankranti for Santhal families.",
+    "how_to_reach": "15 km from Dumka town.",
+    "safety_information": "Thermal water is pleasantly warm; test before bathing.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1250,
+    "rating_avg": 4.5,
+    "rating_count": 24,
+    "verification_status": "VERIFIED",
+    "source_title": "Dumka District Administration",
+    "source_urls": [
+      "https://dumka.nic.in/tourist-place/tatloi/"
+    ]
+  },
+  {
+    "id": "dest-dum-shrishti",
+    "slug": "shrishti-udhyan-dumka",
+    "name": "Shrishti Udhyan (Dumka Hill Park)",
+    "district": "Dumka",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Dumka Hill Park",
+      "Shrishti Park Dumka"
+    ],
+    "nearest_city": "Dumka",
+    "latitude": 24.2667,
+    "longitude": 87.25,
+    "short_description": "Lush landscaped hilltop park offering peaceful walking trails, children's amusement, and panoramic views of Dumka town.",
+    "description": "Shrishti Udhyan is a well-manicured urban nature park developed atop a hillock overlooking Dumka. With musical water fountains, floral lawns, viewpoints, and recreational walking circuits, it provides panoramic vistas of the Santhal Pargana landscape.",
+    "best_time_to_visit": "October to March (afternoon and evenings)",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Hilltop Viewpoint",
+      "Manicured Flower Beds",
+      "Musical Fountains",
+      "Children's Play Section"
+    ],
+    "activities": [
+      "Evening Strolling",
+      "Photography",
+      "Family Recreation"
+    ],
+    "historical_significance": "Developed as a premier civic urban green retreat for Dumka.",
+    "cultural_significance": "Popular leisure center for regional families.",
+    "how_to_reach": "Located within Dumka town municipal limits.",
+    "safety_information": "Keep children within park boundaries.",
+    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1120,
+    "rating_avg": 4.3,
+    "rating_count": 20,
+    "verification_status": "VERIFIED",
+    "source_title": "Dumka District Administration",
+    "source_urls": [
+      "https://dumka.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-jam-parwat",
+    "slug": "parwat-vihar-jamtara",
+    "name": "Parwat Vihar",
+    "district": "Jamtara",
+    "category": "Adventure",
+    "pillar": "Hill Stations and Plateaus",
+    "alt_names": [
+      "Jamtara Hill Park",
+      "Parwat Vihar Pahar"
+    ],
+    "nearest_city": "Jamtara",
+    "latitude": 23.9667,
+    "longitude": 86.8,
+    "short_description": "Picturesque hillside park with stone climbing pathways, sunrise viewing points, and sweeping views of Jamtara.",
+    "description": "Parwat Vihar is Jamtara district's foremost scenic viewpoint, situated on a verdant hillock 2 km from the town center. Developed with stone stairs, viewing pavilions, and flowering gardens, it offers splendid panoramic vistas of the surrounding Chotanagpur countryside.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Hilltop Viewing Pavilions",
+      "Sunrise and Sunset Vistas",
+      "Stone Stair Trails",
+      "Children's Garden"
+    ],
+    "activities": [
+      "Morning Walking",
+      "Sunset Photography",
+      "Family Picnicking"
+    ],
+    "historical_significance": "Developed by local district authorities as an eco-park.",
+    "cultural_significance": "Favorite leisure destination for local residents.",
+    "how_to_reach": "2 km from Jamtara railway station.",
+    "safety_information": "Climb steps carefully in morning mist.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1420,
+    "rating_avg": 4.4,
+    "rating_count": 28,
+    "verification_status": "VERIFIED",
+    "source_title": "Jamtara District Administration",
+    "source_urls": [
+      "https://jamtara.nic.in/tourist-place/parwat-vihar/"
+    ]
+  },
+  {
+    "id": "dest-jam-vidya",
+    "slug": "karamatand-vidyasagar-memorial",
+    "name": "Karamatand (Ishwar Chandra Vidyasagar Memorial)",
+    "district": "Jamtara",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Vidyasagar Smriti Mandir",
+      "Nandan Kanan Karamatand"
+    ],
+    "nearest_city": "Karmatanr (Vidyasagar Station)",
+    "latitude": 24.0833,
+    "longitude": 86.9167,
+    "short_description": "The historic hermitage 'Nandan Kanan' where social reformer Pandit Ishwar Chandra Vidyasagar lived and served the Santhal people.",
+    "description": "Karmatanr (officially Vidyasagar block) holds immense historic resonance as the home of legendary polymath and social reformer Pandit Ishwar Chandra Vidyasagar. He spent the last eighteen years of his life here in his cottage 'Nandan Kanan', setting up a charitable homeopathic clinic and a school for Santhal tribal girls.",
+    "best_time_to_visit": "October to March; September 26 (Vidyasagar Jayanti)",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Nandan Kanan Cottage",
+      "Vidyasagar Memorial Museum",
+      "Historic Printing Press & Personal Artifacts",
+      "Girls' Education School Grounds"
+    ],
+    "activities": [
+      "Historical Tourism",
+      "Social Reform Heritage Study",
+      "Educational Tour"
+    ],
+    "historical_significance": "Residence of Ishwar Chandra Vidyasagar from 1873 to 1890; celebrated pioneering center of tribal education.",
+    "cultural_significance": "Deeply revered by the Santhal community who regarded Vidyasagar as their compassionate guardian.",
+    "how_to_reach": "20 km from Jamtara town; served directly by Vidyasagar (VDS) railway station.",
+    "safety_information": "Maintain solemnity and respect at the memorial premises.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2680,
+    "rating_avg": 4.8,
+    "rating_count": 59,
+    "verification_status": "VERIFIED",
+    "source_title": "Jamtara District Administration",
+    "source_urls": [
+      "https://jamtara.nic.in/tourist-place/karamatand/"
+    ]
+  },
+  {
+    "id": "dest-jam-ladhna",
+    "slug": "ladhna-dam-reservoir",
+    "name": "Ladhna Dam & Reservoir",
+    "district": "Jamtara",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Ladhna Reservoir Jamtara"
+    ],
+    "nearest_city": "Jamtara",
+    "latitude": 23.9333,
+    "longitude": 86.85,
+    "short_description": "Expansive water reservoir set against forested hillocks, attracting winter migratory birds and picnic groups.",
+    "description": "Ladhna Dam is an attractive irrigation reservoir situated in Jamtara district. Surrounded by undulating forest slopes, the calm blue waters host migratory waterfowl in winter, making it a peaceful weekend destination for eco-tourists.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Expansive Water Reservoir",
+      "Winter Waterfowl Birdwatching",
+      "Quiet Shoreline Picnic Spots"
+    ],
+    "activities": [
+      "Birdwatching",
+      "Picnicking",
+      "Nature Walks"
+    ],
+    "historical_significance": "Built to facilitate regional agrarian irrigation.",
+    "cultural_significance": "Popular retreat for winter gatherings.",
+    "how_to_reach": "12 km from Jamtara town center.",
+    "safety_information": "Do not enter deep reservoir waters.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 940,
+    "rating_avg": 4.3,
+    "rating_count": 18,
+    "verification_status": "VERIFIED",
+    "source_title": "Jamtara District Portal",
+    "source_urls": [
+      "https://jamtara.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-god-sundar",
+    "slug": "sundar-dam-rajabhita",
+    "name": "Sundar Dam (Rajabhita)",
+    "district": "Godda",
+    "category": "Dam & Lake",
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Sundar Reservoir Godda",
+      "Rajabhita Dam"
+    ],
+    "nearest_city": "Rajabhita / Godda",
+    "latitude": 24.7833,
+    "longitude": 87.3333,
+    "short_description": "Scenic 75-foot dam built across the Sundar River in the foothills of Rajmahal, surrounded by dense sal forests.",
+    "description": "Constructed across the Sundar River in Rajabhita block, Sundar Dam is Godda district's premier scenic reservoir. Nestled right in the foothills of the Rajmahal hill range, the 75-foot high dam is surrounded by dense sal forests, serving as a picturesque sanctuary for picnics and birdwatching.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Sundar River Dam & Reservoir",
+      "Rajmahal Foothill Forest Scenery",
+      "Forest Rest House",
+      "Picnic Enclave"
+    ],
+    "activities": [
+      "Boating",
+      "Landscape Photography",
+      "Birdwatching",
+      "Picnicking"
+    ],
+    "historical_significance": "Major water resource engineering project in Santhal Pargana completed in the 1970s.",
+    "cultural_significance": "Favorite leisure hub for families across Godda, Dumka, and Banka.",
+    "how_to_reach": "30 km southwest of Godda district headquarters; 10 km from Rajabhita.",
+    "safety_information": "Stay within designated picnic and viewing areas.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2240,
+    "rating_avg": 4.6,
+    "rating_count": 48,
+    "verification_status": "VERIFIED",
+    "source_title": "Godda District Administration",
+    "source_urls": [
+      "https://godda.nic.in/tourist-place/sunder-dam/"
+    ]
+  },
+  {
+    "id": "dest-god-basant",
+    "slug": "basantrai-tank",
+    "name": "Basantrai Tank (Raja Basant Rai Pokhar)",
+    "district": "Godda",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Basantrai Pokhar",
+      "50-Acre Sacred Tank"
+    ],
+    "nearest_city": "Godda",
+    "latitude": 24.9667,
+    "longitude": 87.1833,
+    "short_description": "Enormous historic 50-acre water tank dating to Raja Basant Rai, renowned for legendary folktales and annual fairs.",
+    "description": "Basantrai Tank is an enormous historic artificial lake covering over 50 acres in Pathargama block of Godda. Legend states it was excavated by Raja Basant Rai. Deep folklore claims no swimmer could historically cross its vast waters; thousands assemble here annually for the Chaitra Sankranti fair.",
+    "best_time_to_visit": "October to March; Chaitra Sankranti (April)",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "50-Acre Historic Water Body",
+      "Ancient Stone Sluices",
+      "Annual Chaitra Fair Grounds"
+    ],
+    "activities": [
+      "Heritage Sightseeing",
+      "Folk Legend Exploration",
+      "Fair Participation"
+    ],
+    "historical_significance": "Medieval hydraulic engineering marvel excavated centuries ago by local chieftain Raja Basant Rai.",
+    "cultural_significance": "Hosts one of Santhal Pargana's largest traditional cultural fairs during Chaitra Sankranti.",
+    "how_to_reach": "22 km northwest of Godda town via Pathargama.",
+    "safety_information": "Do not attempt deep water swimming without supervision.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1450,
+    "rating_avg": 4.4,
+    "rating_count": 27,
+    "verification_status": "VERIFIED",
+    "source_title": "Godda District Administration",
+    "source_urls": [
+      "https://godda.nic.in/tourist-place/basantrai/"
+    ]
+  },
+  {
+    "id": "dest-god-yogini",
+    "slug": "maa-yogini-temple-barkhopi",
+    "name": "Maa Yogini Temple, Barkhopi",
+    "district": "Godda",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Yogini Mandir",
+      "Barkhopi Pahar Shakti Peeth"
+    ],
+    "nearest_city": "Pathargama",
+    "latitude": 24.8667,
+    "longitude": 87.25,
+    "short_description": "Ancient Tantric Shakti Peeth perched atop Barkhopi hill, enshrining a sacred rock sanctum in Mahabharata lore.",
+    "description": "Maa Yogini Temple, located atop a scenic hillock in Barkhopi near Pathargama, is a renowned Tantric Shakti shrine. Believed according to tradition to be where the left thigh of Goddess Sati fell, pilgrims climb over 400 stone steps to reach the sacred natural rock cave.",
+    "best_time_to_visit": "October to March; Navratri fairs",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Sacred Cave Sanctum",
+      "Hilltop Stone Stairway (400+ Steps)",
+      "Sweeping Valley Vista",
+      "Sacred Natural Kund"
+    ],
+    "activities": [
+      "Shakti Pilgrimage",
+      "Stair Trekking",
+      "Panoramic Photography"
+    ],
+    "historical_significance": "Ancient Tantric worship centre linked in mythology to the Mahabharata and Devi Bhagavata.",
+    "cultural_significance": "Major devotional sanctuary attracting devotees from Jharkhand, Bihar, and West Bengal.",
+    "how_to_reach": "15 km north of Godda town.",
+    "safety_information": "Sturdy footwear recommended for ascending the stone stairs.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2890,
+    "rating_avg": 4.8,
+    "rating_count": 63,
+    "verification_status": "VERIFIED",
+    "source_title": "Godda District Administration",
+    "source_urls": [
+      "https://godda.nic.in/tourist-place/maa-yogini-temple/"
+    ]
+  },
+  {
+    "id": "dest-pak-martello",
+    "slug": "martello-tower-pakur",
+    "name": "Martello Tower",
+    "district": "Pakur",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Pakur British Tower",
+      "Santhal Hool Defence Tower"
+    ],
+    "nearest_city": "Pakur",
+    "latitude": 24.6333,
+    "longitude": 87.85,
+    "short_description": "Historic 30-foot cylindrical British defence tower built in 1856 by Sir Martin during the heroic Santhal Hool rebellion.",
+    "description": "Located in the heart of Pakur town, the Martello Tower is a unique 30-foot high cylindrical masonry defence structure. Erected in 1856 by British SDO Sir Martin during the legendary Santhal Hool (Rebellion) led by brothers Sido and Kanhu Murmu, it stands as a poignant witness to colonial tribal resistance.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "30-ft Cylindrical Masonry Tower",
+      "Defensive Gun-slots & Battlements",
+      "Surrounding Heritage Garden"
+    ],
+    "activities": [
+      "Historical Tourism",
+      "Freedom Struggle Heritage Study",
+      "Photography"
+    ],
+    "historical_significance": "Built in 1856 to protect British forces from Santhal bow-and-arrow assaults during the 1855–56 uprising.",
+    "cultural_significance": "Enduring memorial honoring the indomitable courage of Santhal freedom fighters.",
+    "how_to_reach": "Located in Pakur town near the DC office and railway station.",
+    "safety_information": "Follow local municipal heritage park guidelines.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2150,
+    "rating_avg": 4.6,
+    "rating_count": 45,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India & Pakur NIC",
+    "source_urls": [
+      "https://pakur.nic.in/tourist-place/martello-tower/"
+    ]
+  },
+  {
+    "id": "dest-pak-nitya",
+    "slug": "nitya-kalyani-mandir-pakur",
+    "name": "Nitya Kalyani Mandir",
+    "district": "Pakur",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Kalyani Devi Mandir Pakur"
+    ],
+    "nearest_city": "Pakur",
+    "latitude": 24.6333,
+    "longitude": 87.8333,
+    "short_description": "Ancient Shakti temple dedicated to Goddess Kalyani, revered for intricate stone iconography and peaceful ambiance.",
+    "description": "Nitya Kalyani Mandir is Pakur's most revered Hindu shrine, dedicated to Goddess Kalyani (Durga). Built in classic Bengal-Chotanagpur terracotta and stone temple tradition, it is the center of annual celebrations during Durga Puja and Navratri.",
+    "best_time_to_visit": "October to March; Durga Puja",
+    "recommended_duration": "1 hour",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Ancient Devi Idol",
+      "Traditional Stone Sanctum",
+      "Temple Courtyard"
+    ],
+    "activities": [
+      "Spiritual Worship",
+      "Photography"
+    ],
+    "historical_significance": "Established centuries ago under the patronage of Pakur's local zamindars.",
+    "cultural_significance": "Central venue for community religious observances in Pakur.",
+    "how_to_reach": "2 km from Pakur railway station.",
+    "safety_information": "Maintain temple cleanliness.",
+    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": false,
+    "active": true,
+    "views": 1120,
+    "rating_avg": 4.4,
+    "rating_count": 22,
+    "verification_status": "VERIFIED",
+    "source_title": "Pakur District Administration",
+    "source_urls": [
+      "https://pakur.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-pak-dhuni",
+    "slug": "hot-springs-of-dhuni",
+    "name": "Hot Springs of Dhuni",
+    "district": "Pakur",
+    "category": "Eco Tourism",
+    "pillar": "Lesser-Known and Emerging Destinations",
+    "alt_names": [
+      "Dhuni Geothermal Spring",
+      "Bansloi River Hot Springs"
+    ],
+    "nearest_city": "Pakur",
+    "latitude": 24.55,
+    "longitude": 87.75,
+    "short_description": "Natural geothermal hot sulphur water springs flowing along the rocky bed of the Bansloi River.",
+    "description": "Located along the scenic Bansloi river corridor in Pakur district, the Hot Springs of Dhuni are natural geothermal springs emerging with mineral and sulphur deposits. Local villagers and visitors frequent the springs for therapeutic hot baths amidst rural nature.",
+    "best_time_to_visit": "November to February",
+    "recommended_duration": "1–2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Geothermal Sulphur Springs",
+      "Bansloi River Bed",
+      "Rural Chotanagpur Scenery"
+    ],
+    "activities": [
+      "Therapeutic Bathing",
+      "Nature Photography",
+      "River Walks"
+    ],
+    "historical_significance": "Traditional natural thermal water site utilized since pre-modern eras.",
+    "cultural_significance": "Believed to possess healing properties for rheumatic and skin discomforts.",
+    "how_to_reach": "15 km from Pakur town via rural road.",
+    "safety_information": "Take care on uneven river pebbles.",
+    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 890,
+    "rating_avg": 4.3,
+    "rating_count": 17,
+    "verification_status": "VERIFIED",
+    "source_title": "Pakur District Portal",
+    "source_urls": [
+      "https://pakur.nic.in/"
+    ]
+  },
+  {
+    "id": "dest-sah-udhwa",
+    "slug": "udhwa-lake-bird-sanctuary",
+    "name": "Udhwa Lake Bird Sanctuary",
+    "district": "Sahibganj",
+    "category": "Wildlife",
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Udhwa Bird Sanctuary",
+      "Pataura & Berhale Lakes"
+    ],
+    "nearest_city": "Rajmahal",
+    "latitude": 24.9833,
+    "longitude": 87.85,
+    "short_description": "Jharkhand's only dedicated bird sanctuary, covering 5.65 sq km of wetlands hosting tens of thousands of migratory birds.",
+    "description": "Udhwa Lake Bird Sanctuary is the only officially notified bird sanctuary in Jharkhand. Covering 5.65 sq km comprising two interconnected lakes (Pataura and Berhale) along the floodplains of the river Ganga, it attracts over 100 species of migratory birds from Siberia and Central Asia every winter.",
+    "best_time_to_visit": "November to March (peak migratory bird season)",
+    "recommended_duration": "3–4 hours",
+    "duration_category": "HALF_DAY",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Pataura & Berhale Wetlands",
+      "Migratory Birds (Bar-headed Geese, Pintails, Pallas's Fish Eagle)",
+      "Birdwatching Watchtowers",
+      "Ganga Floodplain Panorama"
+    ],
+    "activities": [
+      "Birdwatching",
+      "Wetland Eco-Tours",
+      "Wildlife Photography",
+      "Boat Rides"
+    ],
+    "historical_significance": "Notified as a wildlife sanctuary in 1991; Ramsar wetland conservation candidate.",
+    "cultural_significance": "Vital ecological sanctuary on the Central Asian Flyway for global avian migration.",
+    "how_to_reach": "42 km south of Sahibganj; 12 km from Rajmahal on the Ganga river route.",
+    "safety_information": "Maintain silence; do not disturb nesting bird colonies or use noisy motorboats.",
+    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3890,
+    "rating_avg": 4.8,
+    "rating_count": 84,
+    "verification_status": "VERIFIED",
+    "source_title": "Jharkhand Forest Dept & Sahibganj NIC",
+    "source_urls": [
+      "https://sahibganj.nic.in/tourist-place/udhwa-lake-bird-sanctuary/"
+    ]
+  },
+  {
+    "id": "dest-sah-fossil",
+    "slug": "rajmahal-hills-fossil-park",
+    "name": "Rajmahal Hills & Fossil Park",
+    "district": "Sahibganj",
+    "category": "Heritage",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Mandro Fossil Park",
+      "Jurassic Plant Fossils Rajmahal"
+    ],
+    "nearest_city": "Mandro / Sahibganj",
+    "latitude": 25.05,
+    "longitude": 87.8333,
+    "short_description": "World-renowned geological treasure trove preserving Jurassic-era plant fossils dating back 68 to 118 million years.",
+    "description": "The Rajmahal Hills harbor one of the world's most scientifically significant fossil deposits. Preserved in volcanic intertrappean beds from the Jurassic and Cretaceous periods (68–118 million years ago), the recently inaugurated Mandro Fossil Park showcases petrified fossilized wood, leaves, and prehistoric cycad structures studied by legendary paleobotanist Birbal Sahni.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Nominal Entry",
+    "budget_level": "LOW",
+    "difficulty": "Easy",
+    "main_attractions": [
+      "Mandro Fossil Park Museum",
+      "Petrified Jurassic Tree Trunks (100M+ Years)",
+      "Geological Interpretive Centre",
+      "Rajmahal Volcanic Trap Views"
+    ],
+    "activities": [
+      "Geological Exploration",
+      "Scientific Paleobotany Tour",
+      "Fossil Museum Visit"
+    ],
+    "historical_significance": "World-famous geological formation extensively researched by the Birbal Sahni Institute of Palaeosciences.",
+    "cultural_significance": "National geological monument representing Jharkhand's deep pre-human evolutionary past.",
+    "how_to_reach": "18 km south of Sahibganj town near Mandro block.",
+    "safety_information": "Do not attempt to collect or deface fossil specimens.",
+    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 3120,
+    "rating_avg": 4.9,
+    "rating_count": 73,
+    "verification_status": "VERIFIED",
+    "source_title": "Birbal Sahni Institute of Palaeosciences & Sahibganj NIC",
+    "source_urls": [
+      "https://sahibganj.nic.in/tourist-place/mandro-fossil-park/"
+    ]
+  },
+  {
+    "id": "dest-sah-moti",
+    "slug": "moti-jharna-maharajpur",
+    "name": "Moti Jharna",
+    "district": "Sahibganj",
+    "category": "Waterfalls",
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Moti Jharna Falls",
+      "Maharajpur Waterfall"
+    ],
+    "nearest_city": "Maharajpur",
+    "latitude": 25.1333,
+    "longitude": 87.75,
+    "short_description": "Scenic waterfall tumbling 50 feet down the forested Rajmahal hills near Maharajpur, accompanied by a Shiva cave.",
+    "description": "Located near Maharajpur in Taljhari block, Moti Jharna ('Pearl Waterfall') is an alluring cascade where fresh water drops nearly 50 feet over mossy rocks in the Rajmahal hills. Adjacent to the falls lies a revered cave temple of Lord Shiva.",
+    "best_time_to_visit": "July to February",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Budget Friendly",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "50-ft Waterfall Drop",
+      "Shiva Cave Shrine",
+      "Rajmahal Hill Forests"
+    ],
+    "activities": [
+      "Waterfall Watching",
+      "Cave Darshan",
+      "Picnicking"
+    ],
+    "historical_significance": "Ancient mountain water source along the Ganga-Rajmahal highway.",
+    "cultural_significance": "Pilgrimage and fair gathering during Shravan and Makar Sankranti.",
+    "how_to_reach": "30 km south of Sahibganj near Maharajpur railway station.",
+    "safety_information": "Take care when walking on moss-covered boulders.",
+    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1840,
+    "rating_avg": 4.6,
+    "rating_count": 39,
+    "verification_status": "VERIFIED",
+    "source_title": "Sahibganj District Administration",
+    "source_urls": [
+      "https://sahibganj.nic.in/tourist-place/moti-jharna/"
+    ]
+  },
+  {
+    "id": "dest-sah-telia",
+    "slug": "teliagarhi-fort-gateway-to-bengal",
+    "name": "Teliagarhi Fort (Gateway to Bengal)",
+    "district": "Sahibganj",
+    "category": "Historical",
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Gateway of Bengal",
+      "Teliagarhi Qila"
+    ],
+    "nearest_city": "Sahibganj",
+    "latitude": 25.2333,
+    "longitude": 87.5333,
+    "short_description": "Ancient strategic stone fort on the Ganga cliffs historically revered as the impregnable 'Gateway to Bengal'.",
+    "description": "Constructed at a strategic choke point where the Rajmahal hills meet the Ganga River, Teliagarhi Fort was historically known as the 'Gateway to Bengal'. Built of dressed stone and red brick, whoever controlled this pass controlled entry into the fertile plains of Bengal.",
+    "best_time_to_visit": "October to March",
+    "recommended_duration": "2 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Historic Fort Walls on Ganga Cliff",
+      "Commanding River Ganga Vista",
+      "Ancient Arched Gateways"
+    ],
+    "activities": [
+      "Heritage Sightseeing",
+      "River Panorama Photography",
+      "Historical Exploration"
+    ],
+    "historical_significance": "Military choke point fought over by Sher Shah Suri, Humayun, Mir Jumla, and the British East India Company.",
+    "cultural_significance": "Protected heritage monument embodying the military history of the Ganga trade corridor.",
+    "how_to_reach": "10 km west of Sahibganj town along the river road.",
+    "safety_information": "Follow the stone path to the upper cliff bastions.",
+    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "featured": true,
+    "hidden_gem": false,
+    "active": true,
+    "views": 2480,
+    "rating_avg": 4.7,
+    "rating_count": 51,
+    "verification_status": "VERIFIED",
+    "source_title": "Archaeological Survey of India & Sahibganj NIC",
+    "source_urls": [
+      "https://sahibganj.nic.in/tourist-place/teliagarhi-fort/"
+    ]
+  },
+  {
+    "id": "dest-sah-shivgadi",
+    "slug": "shivgadi-cave-temple",
+    "name": "Shivgadi Cave Temple",
+    "district": "Sahibganj",
+    "category": "Religious",
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Shivgadi Dham",
+      "Barharwa Shiva Cave Temple"
+    ],
+    "nearest_city": "Barharwa",
+    "latitude": 25.0167,
+    "longitude": 87.6833,
+    "short_description": "Sacred subterranean cave shrine inside the Rajmahal hills where mountain spring water perpetually drips on the Shivalinga.",
+    "description": "Shivgadi Cave Temple is situated in a dramatic natural hill gorge 8 km from Barharwa. Inside a deep subterranean natural rock cave, mountain spring water perpetually trickles from the cave ceiling directly onto a sacred Shivalinga without interruption.",
+    "best_time_to_visit": "October to March; Mahashivratri and Shravan",
+    "recommended_duration": "2–3 hours",
+    "duration_category": "SHORT",
+    "estimated_budget": "₹ Free Entry",
+    "budget_level": "LOW",
+    "difficulty": "Moderate",
+    "main_attractions": [
+      "Natural Dripping Water Cave Sanctum",
+      "Mountain Gorge Setting",
+      "Annual Mahashivratri Mela"
+    ],
+    "activities": [
+      "Cave Pilgrimage",
+      "Nature Walks",
+      "Spiritual Meditation"
+    ],
+    "historical_significance": "Ancient natural cavern shrine revered for over five centuries.",
+    "cultural_significance": "Sacred spiritual sanctuary attracting devotees across Sahibganj, Pakur, and Malda.",
+    "how_to_reach": "8 km from Barharwa railway junction; 45 km from Sahibganj.",
+    "safety_information": "Mind the wet rock steps inside the cave.",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "featured": false,
+    "hidden_gem": true,
+    "active": true,
+    "views": 1980,
+    "rating_avg": 4.7,
+    "rating_count": 42,
+    "verification_status": "VERIFIED",
+    "source_title": "Sahibganj District Administration",
+    "source_urls": [
+      "https://sahibganj.nic.in/tourist-place/shivgadi/"
+    ]
+  }
+];

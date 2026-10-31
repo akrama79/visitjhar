@@ -46,13 +46,14 @@ export const DestinationDetailPage: React.FC = () => {
   const { user, isAuthenticated } = useAuth();
   const { isFavorite, toggleFavorite } = useFavorites();
 
-  const destination = INITIAL_DESTINATIONS.find(d => d.id === id);
+  const destination = INITIAL_DESTINATIONS.find(d => d.id === id || d.slug === id);
+  const destId = destination?.id || id || '';
 
   // Local reviews state (combines INITIAL_REVIEWS + user submitted reviews in demo session)
   const [reviews, setReviews] = useState(() => {
-    const saved = localStorage.getItem(`visitjhar_reviews_${id}`);
+    const saved = localStorage.getItem(`visitjhar_reviews_${destId}`);
     const local = saved ? JSON.parse(saved) : [];
-    const base = INITIAL_REVIEWS.filter(r => r.destination_id === id);
+    const base = INITIAL_REVIEWS.filter(r => r.destination_id === destId);
     return [...base, ...local];
   });
 
@@ -126,16 +127,29 @@ export const DestinationDetailPage: React.FC = () => {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 space-y-10">
-      {/* Back & Breadcrumbs */}
-      <div className="flex items-center justify-between">
-        <Link
-          to="/explore"
-          className="inline-flex items-center gap-1.5 text-xs font-semibold text-muted-foreground hover:text-primary transition"
-        >
-          <ArrowLeft className="h-4 w-4" /> Back to Explore
-        </Link>
+      {/* Breadcrumbs Navigation & Actions */}
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border/60 pb-4">
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-muted-foreground flex-wrap">
+          <Link to="/" className="hover:text-primary transition font-medium">Home</Link>
+          <span className="text-muted-foreground/60">/</span>
+          <Link to="/explore" className="hover:text-primary transition font-medium">Explore</Link>
+          <span className="text-muted-foreground/60">/</span>
+          <Link to={`/explore?district=${encodeURIComponent(destination.district)}`} className="hover:text-primary transition font-medium">
+            {destination.district}
+          </Link>
+          <span className="text-muted-foreground/60">/</span>
+          <span className="text-foreground font-semibold truncate max-w-[200px]">{destination.name}</span>
+        </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
+          <Link
+            to={`/plan-trip?startingLocation=${encodeURIComponent(destination.district)}`}
+            className="inline-flex items-center gap-1.5 rounded-full border border-primary/20 bg-primary/10 px-3.5 py-1.5 text-xs font-semibold text-primary hover:bg-primary hover:text-white transition shadow-sm"
+          >
+            <Route className="h-3.5 w-3.5" />
+            <span>Add to Trip Plan</span>
+          </Link>
+
           <button
             onClick={handleShare}
             className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary transition shadow-sm"
