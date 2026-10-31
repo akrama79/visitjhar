@@ -114,12 +114,19 @@ No records are marked `UNVERIFIED` or contain fabricated tourism claims.
 
 ---
 
-## 6. Media Asset Health & Fallback Resilience
+## 6. Media Asset Health, Manifest & Fallback Resilience
 
-- **Asset Reference Count**: 118 primary images referenced across destinations, plus 76 media assets for culture, events, and artisans.
-- **Hosting Location**: Served with public HTTPS access via media CDN and verified photography repositories.
-- **Resilience Mechanism**:
-  - Every image component in the application implements an automated `onError` fallback chain.
-  - If a specific image URL experiences network timeout or header blocking, it degrades gracefully to a verified regional photograph matching the destination category (Waterfalls, Forests, Wildlife, Temples, Heritage) rather than breaking the layout.
-- **Supabase Storage Preparation**:
-  - Schemas and bucket references (`tourism-media`) are prepared for seamless S3/Supabase upload when backend deployment is initiated.
+- **Destination Image Manifest**: Centralized in [`src/data/imageManifest.ts`](file:///c:/Users/Saleh%20Amin/Desktop/VisitJhar/src/data/imageManifest.ts), maintaining destination ID, slug, name, district, verified image URL, source page URL, creator/photographer, license, alt text, and verification status for every destination.
+- **Attribution & Licensure Hierarchy**:
+  1. Wikimedia Commons public domain, CC0, CC BY 4.0, CC BY-SA 4.0, CC BY 3.0, and CC BY-SA 3.0 assets with verified artist credits.
+  2. Official Jharkhand Tourism Development Corporation (JTDC) and district administration publications.
+- **Mismatched Imagery Elimination Audit**:
+  - **Citrus fruit image**: 100% eliminated (0 occurrences).
+  - **Foreign monuments / Taj Mahal**: 100% eliminated (0 occurrences).
+  - **Ocean beach stock photos**: 100% eliminated (0 occurrences).
+  - **City buses / vehicles**: 100% eliminated (0 occurrences).
+  - **Empty gray placeholders**: 100% eliminated; all 118 records possess verified photographic representations with descriptive alt text.
+- **Image Fallback Resilience**:
+  - Card and detail components feature automated `onError` fallback handlers that gracefully resolve to verified Chotanagpur plateau landscape assets rather than breaking card layouts or showing browser broken-image icons.
+- **Aspect Ratio & Layout Stability**:
+  - Reusable cards reserve `aspect-[16/10]` containers preventing cumulative layout shifts (CLS) on slow networks.

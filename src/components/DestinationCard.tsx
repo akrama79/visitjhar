@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, MapPin, Star, Sparkles } from 'lucide-react';
+import { Heart, MapPin, Sparkles, ArrowRight } from 'lucide-react';
 import { Destination } from '../types';
 import { useFavorites } from '../context/FavoritesContext';
 
@@ -8,43 +8,47 @@ interface DestinationCardProps {
   destination: Destination;
   matchScore?: number;
   matchReason?: string;
+  className?: string;
 }
 
 export const DestinationCard: React.FC<DestinationCardProps> = ({
   destination,
   matchScore,
-  matchReason
+  matchReason,
+  className = ''
 }) => {
   const { isFavorite, toggleFavorite } = useFavorites();
   const favorited = isFavorite(destination.id);
+  const [imageError, setImageError] = useState(false);
 
-  const fallbackImage = 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=600&auto=format&fit=crop&q=80';
+  // High-resolution verified fallback image of Jharkhand plateau
+  const fallbackImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg';
+  const displayImage = !imageError && destination.image ? destination.image : fallbackImage;
+  const destinationUrl = `/destination/${destination.slug || destination.id}`;
 
   return (
-    <article className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm">
-      {/* Image & Badges */}
+    <article className={`group relative flex flex-col overflow-hidden rounded-2xl border border-border/80 bg-card transition-all duration-300 hover:shadow-lg hover:border-primary/30 ${className}`}>
+      {/* 1. Image Container with 16:10 aspect ratio */}
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
         <img
-          src={destination.image || fallbackImage}
-          alt={destination.name}
-          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src={displayImage}
+          alt={destination.image_alt || destination.name}
+          className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
           loading="lazy"
-          onError={(e) => {
-            (e.target as HTMLImageElement).src = fallbackImage;
-          }}
+          onError={() => setImageError(true)}
         />
 
-        {/* Gradient Scrim */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
+        {/* Subtle gradient overlay for contrast */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none" />
 
         {/* Top Floating Badges */}
-        <div className="absolute top-3 left-3 right-3 flex items-center justify-between">
-          <div className="flex items-center gap-1.5 flex-wrap">
-            <span className="rounded-full bg-white/95 px-2.5 py-0.5 text-[11px] font-semibold text-primary shadow-sm backdrop-blur">
+        <div className="absolute top-3 left-3 right-3 flex items-center justify-between pointer-events-none">
+          <div className="flex items-center gap-1.5 flex-wrap pointer-events-auto">
+            <span className="rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-primary shadow-sm backdrop-blur">
               {destination.category}
             </span>
             {destination.verification_status === 'VERIFIED' && (
-              <span className="rounded-full bg-emerald-600/90 text-white px-2 py-0.5 text-[10px] font-bold shadow-sm backdrop-blur">
+              <span className="rounded-full bg-emerald-700/90 text-white px-2.5 py-0.5 text-[11px] font-semibold shadow-sm backdrop-blur">
                 ✓ Verified
               </span>
             )}
@@ -56,72 +60,77 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
               e.stopPropagation();
               toggleFavorite(destination.id);
             }}
-            className={`rounded-full p-2 transition shadow-md backdrop-blur focus-visible:ring-2 focus-visible:ring-primary ${
+            className={`pointer-events-auto rounded-full p-2.5 transition shadow-md backdrop-blur focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary ${
               favorited 
                 ? 'bg-red-500 text-white' 
                 : 'bg-white/90 text-slate-700 hover:bg-white hover:text-red-500'
             }`}
             title={favorited ? 'Remove from favorites' : 'Add to favorites'}
-            aria-label="Toggle favorite"
+            aria-label={`Toggle favorite for ${destination.name}`}
           >
             <Heart className={`h-4 w-4 ${favorited ? 'fill-white' : ''}`} />
           </button>
         </div>
 
-        {/* Bottom Image Overlay: District & Hidden Gem */}
-        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs">
-          <span className="inline-flex items-center gap-1 font-medium drop-shadow">
+        {/* Bottom District Tag */}
+        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white text-xs font-medium pointer-events-none">
+          <span className="inline-flex items-center gap-1 rounded-full bg-black/40 px-2.5 py-1 backdrop-blur-sm text-slate-100">
             <MapPin className="h-3.5 w-3.5 text-accent" />
             {destination.district} District
           </span>
 
           {destination.hidden_gem && (
-            <span className="inline-flex items-center gap-1 rounded-full bg-accent/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white shadow">
+            <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/95 px-2.5 py-1 text-[11px] font-semibold text-white shadow">
               <Sparkles className="h-3 w-3" /> Hidden Gem
             </span>
           )}
         </div>
       </div>
 
-      {/* Card Content */}
-      <div className="flex flex-1 flex-col p-4 sm:p-5">
-        {/* Match Score Pill (if present) */}
+      {/* 2. Card Body */}
+      <div className="flex flex-1 flex-col p-5">
+        {/* Match Score Indicator (if provided by recommendation engine) */}
         {typeof matchScore === 'number' && matchScore > 0 && (
-          <div className="mb-2 flex items-center gap-1.5">
-            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700 border border-emerald-200">
+          <div className="mb-2.5 flex items-center gap-2">
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-800 border border-emerald-200">
               <Sparkles className="h-3 w-3 text-emerald-600" />
               {matchScore}% Match
             </span>
             {matchReason && (
-              <span className="text-[11px] text-muted-foreground truncate" title={matchReason}>
+              <span className="text-xs text-muted-foreground truncate" title={matchReason}>
                 {matchReason}
               </span>
             )}
           </div>
         )}
 
-        <h3 className="font-heading text-lg font-bold tracking-tight text-foreground group-hover:text-primary transition-colors">
+        {/* Title */}
+        <h3 className="font-heading text-lg font-bold tracking-tight text-foreground transition-colors group-hover:text-primary">
           <Link 
-            to={`/destination/${destination.slug || destination.id}`}
+            to={destinationUrl}
             className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
           >
             {destination.name}
           </Link>
         </h3>
 
-        <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-muted-foreground flex-1">
+        {/* Description: Readable text-sm, 2 lines max */}
+        <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground flex-1">
           {destination.short_description || destination.description}
         </p>
 
-        {/* Footer info: Duration, Budget, View link */}
-        <div className="mt-4 pt-3 border-t border-border flex items-center justify-between text-xs text-muted-foreground">
-          <span>{destination.recommended_duration || '2–3 hours'}</span>
-          <span className="font-medium text-foreground">{destination.estimated_budget || '₹ Budget'}</span>
+        {/* 3. Action Footer */}
+        <div className="mt-5 pt-3.5 border-t border-border/70 flex items-center justify-between text-xs">
+          <span className="text-muted-foreground font-medium">
+            {destination.recommended_duration || '2–3 hours'}
+          </span>
+
           <Link
-            to={`/destination/${destination.slug || destination.id}`}
-            className="font-semibold text-primary hover:text-accent transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded"
+            to={destinationUrl}
+            className="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary-dark transition group/link focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded py-0.5"
           >
-            Explore →
+            <span>View Details</span>
+            <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
           </Link>
         </div>
       </div>

@@ -265,13 +265,21 @@ export const DestinationDetailPage: React.FC = () => {
           </div>
         </div>
 
-        {/* Right: Primary Hero Image */}
+        {/* Right: Primary Hero Image with Attribution */}
         <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-muted shadow-md">
           <img
-            src={destination.image || 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=1000'}
-            alt={destination.name}
+            src={destination.image || 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg'}
+            alt={destination.image_alt || destination.name}
             className="h-full w-full object-cover"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg';
+            }}
           />
+          {destination.image_credit && (
+            <div className="absolute bottom-3 right-3 rounded-md bg-black/70 px-2.5 py-1 text-[11px] text-white/90 backdrop-blur-sm">
+              Photo: {destination.image_credit} {destination.image_licence ? `• ${destination.image_licence}` : ''}
+            </div>
+          )}
         </div>
       </div>
 

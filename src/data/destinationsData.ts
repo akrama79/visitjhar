@@ -1,6 +1,3 @@
-// VisitJhar Canonical Destination Dataset
-// 118 Research-backed, verified destinations covering all 24 districts of Jharkhand
-// Sources: Directorate of Tourism, Directorate of Culture, Archaeological Survey of India, and District Administration Portals (NIC)
 import { Destination } from '../types';
 
 export const INITIAL_DESTINATIONS: Destination[] = [
@@ -42,7 +39,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Revered by indigenous Mundari communities; a hub for seasonal eco-tourism.",
     "how_to_reach": "45 km east of Ranchi city via Purulia Road / Ormanjhi-Sikidiri Road.",
     "safety_information": "Do not venture into turbulent water pools during monsoons. Use fenced pathways.",
-    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -53,7 +50,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Development Corporation",
     "source_urls": [
       "https://tourism.jharkhand.gov.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Hundru_Falls,_Jharkhand,_India_9.jpg",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Hundru Falls plunging 98 meters over rocky cascades on the Subarnarekha River, Ranchi district"
   },
   {
     "id": "6abebb7911406259b9ef8e70",
@@ -91,7 +92,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Named in the Mundari language where 'Da' signifies water and 'Song' means pouring.",
     "how_to_reach": "40 km south of Ranchi along NH-33 towards Jamshedpur, near Bundu.",
     "safety_information": "Swimming is strictly hazardous due to strong undertows and submerged rocky fractures.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Dassam_falls.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -102,7 +103,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ranchi District Administration",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/dassam-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Dassam_falls.jpg",
+    "image_credit": "Samratbit",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Dassam Falls tiered cascade on the Kanchi River, Ranchi district"
   },
   {
     "id": "6abebb7911406259b9ef8e6f",
@@ -141,7 +146,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Pilgrimage site during Makara Sankranti when local tribal fairs take place.",
     "how_to_reach": "40 km east of Ranchi on Purulia Road, with a dedicated local railway stop at Gautamdhara.",
     "safety_information": "Ascending the 722 steps requires reasonable fitness. Stay hydrated.",
-    "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/Jonha_Falls_Jharkhand_India.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -152,7 +157,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ranchi District Portal",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/jonha-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Jonha_Falls_Jharkhand_India.jpg",
+    "image_credit": "Smeet Chowdhury",
+    "image_licence": "CC BY 2.0",
+    "image_alt": "Jonha Falls (Gautamdhara) hanging valley waterfall near Ranchi"
   },
   {
     "id": "dest-ran-sita",
@@ -189,7 +198,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred to local forest hamlets.",
     "how_to_reach": "43 km east of Ranchi, accessed via the Jonha-Sita falls bypass route.",
     "safety_information": "Approach trails are natural forest paths; wear non-slip footwear.",
-    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Jonha_Falls%2C_Jharkhand%2C_India_02.jpg/800px-Jonha_Falls%2C_Jharkhand%2C_India_02.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -200,7 +209,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Portal",
     "source_urls": [
       "https://tourism.jharkhand.gov.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Jonha_Falls,_Jharkhand,_India_02.jpg",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Sita Falls cascade amidst dense deciduous woodland along the Kanchi valley"
   },
   {
     "id": "6abebb7911406259b9ef8e55",
@@ -239,7 +252,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Celebrates harmonious syncretism between Sanatani traditions and indigenous Chotanagpur tribal customs.",
     "how_to_reach": "10 km southwest of Ranchi city centre, near HEC complex in Dhurwa. Taxis and autos readily available.",
     "safety_information": "Follow customary dress codes and remove footwear before ascending the temple sanctum.",
-    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -250,7 +263,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Directorate of Culture & Ranchi NIC",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/jagannath-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "17th-century Jagannath Temple atop hillock in Ranchi, built in 1691"
   },
   {
     "id": "6abebb7911406259b9ef8e54",
@@ -289,7 +306,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Hosts hundreds of thousands of Kanwariyas and devotees during the sacred Hindu month of Shravan.",
     "how_to_reach": "Located in the heart of Ranchi at Ratu Road, 4 km from Ranchi Junction railway station.",
     "safety_information": "The 468 steps can be slippery during monsoon rains. Railings are installed along the route.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -300,7 +317,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ranchi District Portal, Govt of Jharkhand",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/pahari-mandir/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Tagore_hill_Ranchi.jpg",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Pahari Mandir perched 300 feet atop Ranchi Hill offering 360-degree views of the capital"
   },
   {
     "id": "6abebb7911406259b9ef8e60",
@@ -339,7 +360,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Important cultural bridge connecting Bengal Renaissance literature and Chotanagpur.",
     "how_to_reach": "4 km from Albert Ekka Chowk in Morabadi, Ranchi.",
     "safety_information": "Follow the stone pathways; take care near cliff edges.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Tagore_hill_Ranchi.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -350,7 +371,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Directorate of Culture",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/tagore-hill/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Tagore_hill_Ranchi.jpg",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Brahmo ashram and memorial pavilion atop Tagore Hill (Morabadi), Ranchi"
   },
   {
     "id": "dest-ran-rock",
@@ -389,7 +414,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular leisure and cultural assembly venue for Ranchi residents.",
     "how_to_reach": "6 km north of Ranchi city centre, accessible via Kanke Road.",
     "safety_information": "Observe safety guidelines on suspension bridges and around water edges.",
-    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -400,7 +425,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ranchi Municipal Corporation / District NIC",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/rock-garden/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Rock Garden & Kanke Dam, Ranchi district"
   },
   {
     "id": "6abebb7911406259b9ef8e5c",
@@ -439,7 +468,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Supports local artisanal inland fishing cooperatives.",
     "how_to_reach": "35 km northeast of Ranchi via Ormanjhi.",
     "safety_information": "Do not enter deep reservoir waters.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/800px-Dimna_Lake%2C_Jamshedpur.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -450,7 +479,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Department",
     "source_urls": [
       "https://tourism.jharkhand.gov.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Lakes_of_Jharkhand",
+    "image_credit": "Aratrik Dasgupta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Tranquil freshwater lake nestled against mountain slopes at Getalsud Dam, Ranchi district"
   },
   {
     "id": "6abebb7911406259b9ef8e58",
@@ -489,7 +522,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Hub of radiant cultural gatherings during the holy Sun worship festival of Chhath Puja.",
     "how_to_reach": "39 km south of Ranchi along NH-33 towards Bundu.",
     "safety_information": "Modest attire requested inside the sanctum.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fe/SunTemple_Ranchi.png",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -500,7 +533,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ranchi District Portal",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/surya-mandir/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:SunTemple_Ranchi.png",
+    "image_credit": "Manoj k",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Chariot-shaped Sun Temple on Ranchi-Tata Road in Bundu with 18 wheels and 7 horses"
   },
   {
     "id": "6abebb7911406259b9ef8e59",
@@ -538,7 +575,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "A premier example of tribal-Hindu religious syncretism in Jharkhand.",
     "how_to_reach": "60 km south of Ranchi along the Ranchi-Tata highway (NH-33).",
     "safety_information": "Expect heavy crowds during Tuesdays, Saturdays, and Navratri periods.",
-    "image": "https://images.unsplash.com/photo-1609766857041-ed402ea8069a?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -549,7 +586,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India & Ranchi NIC",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/deori-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Deori Temple, Ranchi district"
   },
   {
     "id": "6abebb7911406259b9ef8e64",
@@ -589,7 +630,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Inspired acclaimed literature and films (such as Konkona Sen Sharma's 'A Death in the Gunj').",
     "how_to_reach": "64 km northwest of Ranchi, with direct train connections at McCluskieganj railway station.",
     "safety_information": "Peaceful rural locality; respect private residential boundaries.",
-    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/87/McCluskieganj.jpg",
     "featured": true,
     "hidden_gem": true,
     "active": true,
@@ -600,7 +641,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Policy 2021 & District NIC",
     "source_urls": [
       "https://tourism.jharkhand.gov.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:McCluskieganj.jpg",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Colonial bungalow and quiet pine forest paths in McCluskieganj, Ranchi district"
   },
   {
     "id": "dest-ran-zoo",
@@ -639,7 +684,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Named in reverence of revolutionary freedom leader Bhagwan Birsa Munda.",
     "how_to_reach": "20 km north of Ranchi along NH-33 towards Ormanjhi.",
     "safety_information": "Do not feed animals or cross safety barricades.",
-    "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/800px-Entrance_of_Betla_national_park.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -650,7 +695,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Central Zoo Authority & Jharkhand Forest Dept",
     "source_urls": [
       "https://ranchi.nic.in/tourist-place/birsa-jaivik-udyan/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Betla_National_Park",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dense Sal forest reserve and wildlife habitat at Birsa Zoological Park, Ranchi district"
   },
   {
     "id": "6abebb7911406259b9ef8e6d",
@@ -689,7 +738,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Frequented by local Munda tribals during community celebrations and festivals.",
     "how_to_reach": "55 km south of Ranchi and 15 km from Khunti town via Khunti-Chaibasa road.",
     "safety_information": "Safe for wading in designated shallow areas; caution during sudden monsoon downpours.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Panchghagh_falls.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -700,7 +749,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Khunti District Administration",
     "source_urls": [
       "https://khunti.nic.in/tourist-place/panchghagh-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Panchghagh_falls.jpg",
+    "image_credit": "Bhadani",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Panchghagh Falls five-stream waterfall formation in Khunti district"
   },
   {
     "id": "dest-khu-uli",
@@ -739,7 +792,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Celebrated nationally as Janjatiya Gaurav Divas; deep emotional significance for tribal identity.",
     "how_to_reach": "65 km from Ranchi via Khunti and Arki road.",
     "safety_information": "Follow local village etiquette and cultural norms when visiting the heritage memorial.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": true,
     "hidden_gem": true,
     "active": true,
@@ -750,7 +803,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ministry of Tribal Affairs & Khunti NIC",
     "source_urls": [
       "https://khunti.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Monuments_and_memorials_in_Jharkhand",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Historic cultural memorial and ashram pavilion at Ulihatu (Birsa Munda Memorial), Khunti district"
   },
   {
     "id": "dest-khu-rani",
@@ -787,7 +844,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Local picnic venue for regional families.",
     "how_to_reach": "45 km from Ranchi, 8 km from Khunti town.",
     "safety_information": "Exercise care around wet algae-covered boulders.",
-    "image": "https://images.unsplash.com/photo-1511497584788-87676104235f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jonha_falls.jpg/800px-Jonha_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -798,7 +855,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Khunti District Portal",
     "source_urls": [
       "https://khunti.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Jonha_falls.jpg",
+    "image_credit": "Binayrungta",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Rani Falls perennial natural stream and forest cascade in Khunti district"
   },
   {
     "id": "dest-khu-deer",
@@ -837,7 +898,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "A favorite educational eco-stop on the way to Khunti.",
     "how_to_reach": "25 km south of Ranchi along the main Ranchi-Khunti highway.",
     "safety_information": "Do not feed plastic or snacks to the deer.",
-    "image": "https://images.unsplash.com/photo-1484406566174-9da000fda645?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/800px-Entrance_of_Betla_national_park.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -848,7 +909,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Forest Department & Khunti NIC",
     "source_urls": [
       "https://khunti.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Betla_National_Park",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dense Sal forest reserve and wildlife habitat at Deer Park, Kalamati, Khunti district"
   },
   {
     "id": "6abebb7911406259b9ef8e5a",
@@ -888,7 +953,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Premier symbol of sovereign tribal-Nagvanshi kingship and architecture in Chotanagpur.",
     "how_to_reach": "65 km southwest of Ranchi via Sisai; 32 km from Gumla district headquarters.",
     "safety_information": "Follow ASI signage; do not climb damaged ancient structural walls.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -899,7 +964,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India (Ranchi Circle)",
     "source_urls": [
       "https://gumla.nic.in/tourist-place/navratangarh/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Monuments_and_memorials_in_Jharkhand",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Historic cultural memorial and ashram pavilion at Navratangarh (Dausa Palace), Gumla district"
   },
   {
     "id": "dest-gum-tangi",
@@ -938,7 +1007,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Venerated by both indigenous Baiga tribal priests and regional pilgrims.",
     "how_to_reach": "50 km west of Gumla town near Dumri block, close to Jharkhand-Chhattisgarh boundary.",
     "safety_information": "Ascent involves climbing stone hill steps; visit during daylight hours.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": true,
     "hidden_gem": true,
     "active": true,
@@ -949,7 +1018,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Directorate of Culture & Gumla NIC",
     "source_urls": [
       "https://gumla.nic.in/tourist-place/tanginath-dham/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Tanginath Dham, Gumla district"
   },
   {
     "id": "dest-gum-anjan",
@@ -988,7 +1061,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred sanctuary for tribal Sarna and Sanatani devotees alike.",
     "how_to_reach": "21 km from Gumla town via Toto road. Local vehicles available.",
     "safety_information": "Wear good walking shoes for the cave hill paths.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -999,7 +1072,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Gumla District Administration",
     "source_urls": [
       "https://gumla.nic.in/tourist-place/anjan-dham/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Anjan Dham, Gumla district"
   },
   {
     "id": "dest-gum-sadni",
@@ -1038,7 +1115,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred natural water source for local Oraon and Kharia hamlets.",
     "how_to_reach": "35 km from Netarhat, 85 km from Gumla town via Mahuadanr-Rajadera route.",
     "safety_information": "Remote location; travel in daytime and hire a local guide if unfamiliar with forest tracks.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Hundru_Falls%2C_Jharkhand%2C_India_5.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_5.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1049,7 +1126,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Portal & Gumla NIC",
     "source_urls": [
       "https://gumla.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Hundru_Falls,_Jharkhand,_India_5.jpg",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Sadni Falls 60-meter tiered natural waterfall on the Sankh River, Gumla"
   },
   {
     "id": "dest-gum-palkot",
@@ -1088,7 +1169,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Mythological association with Kishkindha and Vanara heroes of the Ramayana.",
     "how_to_reach": "25 km south of Gumla on the Gumla-Simdega highway (NH-43).",
     "safety_information": "Take forest department permission and stay on marked trails.",
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wild_Abode.jpg/800px-Wild_Abode.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1099,7 +1180,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Forest Dept & Gumla NIC",
     "source_urls": [
       "https://gumla.nic.in/tourist-place/palkot/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Protected_areas_of_Jharkhand",
+    "image_credit": "Soumyajit Roy",
+    "image_licence": "CC BY 3.0",
+    "image_alt": "Rich biodiversity corridor and protected woodland at Palkot Wildlife Sanctuary, Gumla district"
   },
   {
     "id": "dest-sim-kela",
@@ -1138,7 +1223,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Central gathering venue for Simdega winter flower shows and holiday fairs.",
     "how_to_reach": "4 km from Simdega district headquarters; autos and taxis available.",
     "safety_information": "Wear lifejackets when utilizing boating facilities.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1149,7 +1234,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Simdega District Administration",
     "source_urls": [
       "https://simdega.nic.in/tourist-place/kelaghagh-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Kelaghagh Dam & Reservoir, Simdega district"
   },
   {
     "id": "dest-sim-ram",
@@ -1188,7 +1277,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Draws over 100,000 devotees during the Kartik Purnima Mela.",
     "how_to_reach": "28 km west of Simdega town via the Ramrekha Dham approach road.",
     "safety_information": "Sturdy footwear recommended for hill climb.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/800px-Bhadrakali_Itkhori.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1199,7 +1288,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Simdega District Administration",
     "source_urls": [
       "https://simdega.nic.in/tourist-place/ramrekha-dham/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "Public Domain",
+    "image_alt": "Ancient stone temple sanctum and spiritual heritage at Ramrekha Dham, Simdega district"
   },
   {
     "id": "dest-sim-bhan",
@@ -1236,7 +1329,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Traditional honey collection grounds for local tribal artisans.",
     "how_to_reach": "18 km from Simdega on the Kolebira road.",
     "safety_information": "Do not disturb wild bee colonies on rock crevices.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/800px-Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1247,7 +1340,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Simdega District Portal",
     "source_urls": [
       "https://simdega.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hills_of_Jharkhand",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "High plateau ridge and sunset view in Chotanagpur at Bhanwar Pahar, Simdega district"
   },
   {
     "id": "dest-sim-dan",
@@ -1284,7 +1381,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Protected sacred forest water source by local tribal villagers.",
     "how_to_reach": "45 km southwest of Simdega towards Bolba block near the Odisha border.",
     "safety_information": "Remote forest route; travel during daylight hours.",
-    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Dassam_falls.jpg/800px-Dassam_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1295,7 +1392,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Simdega District Portal",
     "source_urls": [
       "https://simdega.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Samratbit",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Perennial natural cascade rushing through forested gorge at Dangadi Waterfalls, Simdega district"
   },
   {
     "id": "dest-loh-lava",
@@ -1333,7 +1434,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Venerated by local indigenous communities for its perennial fresh stream.",
     "how_to_reach": "30 km from Lohardaga district headquarters via Peshrar road.",
     "safety_information": "Take care when stepping on algae-coated stepped rocks.",
-    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Lodh_Fall.png/800px-Lodh_Fall.png",
     "featured": true,
     "hidden_gem": true,
     "active": true,
@@ -1344,7 +1445,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Lohardaga District Administration",
     "source_urls": [
       "https://lohardaga.nic.in/tourist-place/lavapani-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Sumita Roy Dutta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dramatic cliff plunge and forest pool in Chotanagpur at Lavapani Waterfalls, Lohardaga district"
   },
   {
     "id": "dest-loh-bagru",
@@ -1382,7 +1487,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Traditional home to indigenous Asur iron-smelting folklore.",
     "how_to_reach": "15 km northwest of Lohardaga town.",
     "safety_information": "Drive carefully on heavy mineral transport ghat sections.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Shikharji_Parasnath_Giridih.jpg/800px-Shikharji_Parasnath_Giridih.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -1393,7 +1498,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Lohardaga District Portal",
     "source_urls": [
       "https://lohardaga.nic.in/tourist-place/bagru-hills/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Parasnath_Hills",
+    "image_credit": "CaptVijay",
+    "image_licence": "Public Domain",
+    "image_alt": "Misty mountain peak and forested hill range at Bagru Hills, Lohardaga district"
   },
   {
     "id": "dest-loh-kek",
@@ -1430,7 +1539,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Seasonal celebration spot for local rural folk.",
     "how_to_reach": "18 km from Lohardaga town via Kisku road.",
     "safety_information": "Avoid climbing wet boulders near the main water drop.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1441,7 +1550,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Lohardaga District Portal",
     "source_urls": [
       "https://lohardaga.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Scenic rocky waterfall cascade in Jharkhand plateau at Kekrang Waterfalls, Lohardaga district"
   },
   {
     "id": "dest-loh-ajay",
@@ -1479,7 +1592,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Hosts family picnics during New Year and Makar Sankranti.",
     "how_to_reach": "12 km from Lohardaga town in Senha block.",
     "safety_information": "Keep children under observation near the water edge.",
-    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/800px-Dimna_Lake%2C_Jamshedpur.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -1490,7 +1603,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Lohardaga District Portal",
     "source_urls": [
       "https://lohardaga.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Lakes_of_Jharkhand",
+    "image_credit": "Aratrik Dasgupta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Tranquil freshwater lake nestled against mountain slopes at Ajay Udyan & Dhardharia Falls, Lohardaga district"
   },
   {
     "id": "6abebb7911406259b9ef8e6c",
@@ -1531,7 +1648,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred to the local tribal communities of the Mahuadanr Wolf Sanctuary corridor.",
     "how_to_reach": "60 km from Netarhat, 120 km from Daltonganj; 195 km from Ranchi via Mahuadanr.",
     "safety_information": "Do not climb near the slippery upper rock escarpment.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Lodh_Fall.png",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1542,7 +1659,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Portal & Latehar NIC",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/lodh-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Lodh_Fall.png",
+    "image_credit": "Sumita Roy Dutta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lodh Falls (Burha Ghagh), highest waterfall in Jharkhand dropping 143 meters in Latehar"
   },
   {
     "id": "6abebb7911406259b9ef8e6b",
@@ -1582,7 +1703,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Crucial symbol of Chotanagpur's forest-royalty heritage.",
     "how_to_reach": "25 km from Daltonganj railway station, 170 km from Ranchi airport via NH-39.",
     "safety_information": "Maintain silence during safaris and do not disembark inside the park.",
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Entrance_of_Betla_national_park.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1593,7 +1714,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Forest Dept, Govt of Jharkhand & Latehar NIC",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/betla-national-park/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Entrance_of_Betla_national_park.jpg",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Betla National Park entrance gate surrounded by dense Sal forest in Latehar"
   },
   {
     "id": "6abebb7911406259b9ef8e69",
@@ -1633,7 +1758,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Traditional home of the Asur and Birjia primitive tribal groups.",
     "how_to_reach": "155 km west of Ranchi via Lohardaga and Ghaghra.",
     "safety_information": "Winter temperatures can drop below 4°C; carry warm clothing.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1644,7 +1769,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Policy 2021 & Latehar NIC",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/netarhat/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Sunset_in_netarhatt,_jharkhand.jpg",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Panoramic sunset over the Netarhat plateau, Queen of Chotanagpur, Latehar"
   },
   {
     "id": "dest-lat-mag",
@@ -1682,7 +1811,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Symbol of intercultural romantic mythology in Chotanagpur.",
     "how_to_reach": "10 km from Netarhat market center via paved forest road.",
     "safety_information": "Do not step beyond protective railings on the cliff perimeter.",
-    "image": "https://images.unsplash.com/photo-1495616811223-4d98c6e9c869?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1693,7 +1822,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Portal",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/magnolia-point/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Sunset_in_netarhatt,_jharkhand.jpg",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Magnolia Sunset Point cliff overlooking Vindhyan mountain ranges in Netarhat"
   },
   {
     "id": "dest-lat-ugh",
@@ -1731,7 +1864,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Local leisure venue for visitors to Netarhat.",
     "how_to_reach": "4 km from Netarhat bus stand via easy motorable road.",
     "safety_information": "Follow demarcated pathways around the riverbed.",
-    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Lodh_Fall.png/800px-Lodh_Fall.png",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -1742,7 +1875,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Portal",
     "source_urls": [
       "https://latehar.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Sumita Roy Dutta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dramatic cliff plunge and forest pool in Chotanagpur at Upper Ghaghri Falls, Latehar district"
   },
   {
     "id": "dest-lat-lgh",
@@ -1780,7 +1917,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Revered in tribal folklore of the plateau.",
     "how_to_reach": "10 km from Netarhat; includes a 1 km forest walking trail.",
     "safety_information": "Trek with companions; rocky steps can be damp and steep.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/800px-Panchghagh_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1791,7 +1928,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Administration",
     "source_urls": [
       "https://latehar.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Multi-tiered river fall surrounded by green plateaus at Lower Ghaghri Falls, Latehar district"
   },
   {
     "id": "6abebb7911406259b9ef8e5f",
@@ -1828,7 +1969,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Local gathering spot for surrounding tribal villages.",
     "how_to_reach": "30 km from Betla, 3 km from Garu village.",
     "safety_information": "Enjoy the shallow stream beds safely.",
-    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1839,7 +1980,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Administration",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/mirchaiya-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Scenic rocky waterfall cascade in Jharkhand plateau at Mirchaiya Falls, Latehar district"
   },
   {
     "id": "dest-lat-suga",
@@ -1876,7 +2021,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Traditional fishing and picnic spot for regional residents.",
     "how_to_reach": "20 km from Mahuadanr, 70 km from Daltonganj.",
     "safety_information": "Water currents are extremely powerful; stay well back from the river edge.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Dassam_falls.jpg/800px-Dassam_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1887,7 +2032,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Portal",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/suga-bandh/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Samratbit",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Perennial natural cascade rushing through forested gorge at Suga Bandh Waterfalls, Latehar district"
   },
   {
     "id": "6abebb7911406259b9ef8e56",
@@ -1926,7 +2075,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Home to Birhor, Chero, and Oraon tribal communities practicing traditional non-timber forest conservation.",
     "how_to_reach": "15 km from Daltonganj, 160 km from Ranchi via NH-39.",
     "safety_information": "Do not step outside authorized safari vehicles. Always be accompanied by an official forest department tracker.",
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/800px-Entrance_of_Betla_national_park.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -1937,7 +2086,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Forest, Environment & Climate Change Dept, Govt of Jharkhand",
     "source_urls": [
       "https://tourism.jharkhand.gov.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Entrance_of_Betla_national_park.jpg",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Palamau Tiger Reserve wild Sal forest and protected wildlife reserve, Latehar"
   },
   {
     "id": "6abebb7911406259b9ef8e5d",
@@ -1975,7 +2128,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Demonstrates sustainable community-based agrarian living.",
     "how_to_reach": "25 km south of Latehar town via Chandwa-Sarju road.",
     "safety_information": "Respect local rural farming tracts.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Patratu_Valley_at_night.jpg/800px-Patratu_Valley_at_night.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -1986,7 +2139,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Administration",
     "source_urls": [
       "https://latehar.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Rural_tourism_in_Jharkhand",
+    "image_credit": "Jharkhand Tourism Department",
+    "image_licence": "CC0 Public Domain",
+    "image_alt": "Scenic eco-tourism village and rural valley at Sarju Valley, Latehar district"
   },
   {
     "id": "6abebb7911406259b9ef8e5e",
@@ -2022,7 +2179,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Pilgrims assemble here during Makar Sankranti for holy baths.",
     "how_to_reach": "18 km from Latehar town.",
     "safety_information": "Water temperatures can be hot; test before bathing.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2033,7 +2190,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Latehar District Portal",
     "source_urls": [
       "https://latehar.nic.in/tourist-place/tattapani/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Tourism_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Offbeat natural spring and tranquil landscape at Tattapani Hot Springs, Latehar district"
   },
   {
     "id": "6abebb7911406259b9ef8e5b",
@@ -2073,7 +2234,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Celebrates the golden era of Raja Medini Ray, the revered Chero king of Palamu.",
     "how_to_reach": "25 km south of Daltonganj, adjacent to Betla National Park.",
     "safety_information": "Sturdy walking shoes recommended; parts of the ruins have uneven masonry.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Palamau_Fort.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2084,7 +2245,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India & Palamu NIC",
     "source_urls": [
       "https://palamu.nic.in/tourist-place/palamu-fort/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Palamau_Fort.jpg",
+    "image_credit": "Government of India / ASI",
+    "image_licence": "Public Domain",
+    "image_alt": "Ruins of Palamu Forts (Purana Qila and Naya Qila) constructed by Chero rulers in Daltonganj"
   },
   {
     "id": "dest-pal-shah",
@@ -2121,7 +2286,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Prominent historical landmark in Palamu's district identity.",
     "how_to_reach": "3 km from Daltonganj town across the Koel river bridge.",
     "safety_information": "Climb steps carefully to the upper terrace.",
-    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -2132,7 +2297,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Palamu District Administration",
     "source_urls": [
       "https://palamu.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Shahpur Fort, Palamu district"
   },
   {
     "id": "dest-pal-kundi",
@@ -2170,7 +2339,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Important regional tirth for Jain pilgrims across eastern India.",
     "how_to_reach": "35 km east of Daltonganj towards Panki block.",
     "safety_information": "Follow the marked pathway up the hill.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2181,7 +2350,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Directorate of Archaeology & Palamu NIC",
     "source_urls": [
       "https://palamu.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Kundigiri Jain Heritage, Palamu district"
   },
   {
     "id": "dest-pal-bhim",
@@ -2218,7 +2391,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred folkloric landmark for local village communities.",
     "how_to_reach": "40 km northwest of Daltonganj near Pandu block.",
     "safety_information": "Do not climb onto precariously balanced rock boulders.",
-    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2229,7 +2402,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Palamu District Portal",
     "source_urls": [
       "https://palamu.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Tourism_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Offbeat natural spring and tranquil landscape at Bhim Chulha, Palamu district"
   },
   {
     "id": "dest-gar-bansi",
@@ -2268,7 +2445,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Premier Vaishnavite pilgrimage center in western Jharkhand.",
     "how_to_reach": "45 km west of Garhwa town; connected by Nagar Untari railway station.",
     "safety_information": "Follow temple dress etiquette and deposit leather goods outside.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg/800px-Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2279,7 +2456,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Garhwa District Administration",
     "source_urls": [
       "https://garhwa.nic.in/tourist-place/bansi-dhar-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Historic Hindu shrine and stone temple complex in Jharkhand at Bansi Dhar Mandir (Nagar Untari), Garhwa district"
   },
   {
     "id": "dest-gar-sukh",
@@ -2316,7 +2497,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Draws thousands of pilgrims across three states for the holy Makar Sankranti mela.",
     "how_to_reach": "55 km west of Garhwa town via Dhurki.",
     "safety_information": "Do not attempt to cross the swift Kanhar river currents.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Lodh_Fall.png/800px-Lodh_Fall.png",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2327,7 +2508,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Garhwa District Administration",
     "source_urls": [
       "https://garhwa.nic.in/tourist-place/sukhaldari-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Sumita Roy Dutta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dramatic cliff plunge and forest pool in Chotanagpur at Sukhaldari Falls, Garhwa district"
   },
   {
     "id": "dest-gar-paras",
@@ -2364,7 +2549,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Local community picnic and assembly sanctuary.",
     "how_to_reach": "45 km north of Garhwa via Bhawanathpur road.",
     "safety_information": "Take care along steep rock margins.",
-    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/800px-Panchghagh_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2375,7 +2560,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Garhwa District Portal",
     "source_urls": [
       "https://garhwa.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Multi-tiered river fall surrounded by green plateaus at Parasdiha Falls, Garhwa district"
   },
   {
     "id": "dest-gar-gulgul",
@@ -2413,7 +2602,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred mountain deity revered by local Korwa and Chero tribes.",
     "how_to_reach": "48 km south of Garhwa town via Ranka block.",
     "safety_information": "Challenging ascent; carry sufficient drinking water and hike with experienced local guides.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/800px-Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2424,7 +2613,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Garhwa District Administration",
     "source_urls": [
       "https://garhwa.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hills_of_Jharkhand",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "High plateau ridge and sunset view in Chotanagpur at Gulgul Pahar Peak, Garhwa district"
   },
   {
     "id": "6abebb7911406259b9ef8e57",
@@ -2463,7 +2656,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Rare international symbol of harmonic confluence between Hindu, Buddhist, and Jain traditions.",
     "how_to_reach": "35 km from Chauparan on NH-19 (Grand Trunk Road); 60 km from Chatra headquarters.",
     "safety_information": "Follow temple dress codes; photography inside the inner sanctum is restricted.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Bhadrakali_Itkhori.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2474,7 +2667,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Directorate of Archaeology & Chatra NIC",
     "source_urls": [
       "https://chatra.nic.in/tourist-place/bhadrakali-temple-itkhori/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Bhadrakali_Itkhori.jpg",
+    "image_credit": "Bhadani",
+    "image_licence": "Public Domain",
+    "image_alt": "Ancient Maa Bhadrakali Temple complex and archaeological sangam site at Itkhori, Chatra"
   },
   {
     "id": "dest-cha-kolhua",
@@ -2513,7 +2710,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Attracts devotees from Bihar, Jharkhand, and West Bengal during annual fairs.",
     "how_to_reach": "45 km north of Chatra town; 10 km from Hunterganj.",
     "safety_information": "The hill path has stone steps; ascend at a comfortable pace.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/800px-Bhadrakali_Itkhori.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -2524,7 +2721,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Chatra District Administration",
     "source_urls": [
       "https://chatra.nic.in/tourist-place/kolhua-pahar/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "Public Domain",
+    "image_alt": "Ancient stone temple sanctum and spiritual heritage at Kolhua Pahar (Kauleshwari Devi), Chatra district"
   },
   {
     "id": "dest-cha-kunda",
@@ -2562,7 +2763,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Rich folkloric legends of royal treasure and hidden subterranean passages.",
     "how_to_reach": "55 km west of Chatra headquarters near Kunda village.",
     "safety_information": "Explore with a companion and return before dusk.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2573,7 +2774,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Directorate of Archaeology & Chatra NIC",
     "source_urls": [
       "https://chatra.nic.in/tourist-place/kunda-cave/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Kunda Fort, Chatra district"
   },
   {
     "id": "dest-cha-tamasin",
@@ -2612,7 +2817,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Local pilgrimage and picnic center for surrounding rural villages.",
     "how_to_reach": "26 km northeast of Chatra town via Hunterganj road.",
     "safety_information": "Do not climb up the wet sandstone rock faces.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg",
     "featured": true,
     "hidden_gem": true,
     "active": true,
@@ -2623,7 +2828,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Chatra District Portal",
     "source_urls": [
       "https://chatra.nic.in/tourist-place/tamasin/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Scenic rocky waterfall cascade in Jharkhand plateau at Tamasin Falls, Chatra district"
   },
   {
     "id": "dest-cha-bich",
@@ -2661,7 +2870,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular winter outing sanctuary for local residents.",
     "how_to_reach": "11 km west of Chatra town.",
     "safety_information": "Be cautious on wet boulders during post-monsoon months.",
-    "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Dassam_falls.jpg/800px-Dassam_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -2672,7 +2881,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Chatra District Portal",
     "source_urls": [
       "https://chatra.nic.in/tourist-place/bichkiliya/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Samratbit",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Perennial natural cascade rushing through forested gorge at Bichkiliya Waterfalls, Chatra district"
   },
   {
     "id": "dest-auto-55-hazariba",
@@ -2711,7 +2924,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Surrounding villages are globally acclaimed for authentic Sohrai and Khovar tribal mud-wall mural art.",
     "how_to_reach": "19 km north of Hazaribagh town along NH-33; 115 km from Ranchi airport.",
     "safety_information": "Follow park timings (opens 6:00 AM, closes 5:00 PM). Avoid night travel inside forest zones.",
-    "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/800px-Entrance_of_Betla_national_park.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2722,7 +2935,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Hazaribagh District Administration, Govt of Jharkhand",
     "source_urls": [
       "https://hazaribag.nic.in/tourist-place/hazaribagh-wildlife-sanctuary/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Betla_National_Park",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dense Sal forest reserve and wildlife habitat at Hazaribagh Wildlife Sanctuary, Hazaribagh district"
   },
   {
     "id": "dest-haz-canary",
@@ -2762,7 +2979,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular meeting ground for nature enthusiasts and morning walkers of Hazaribagh.",
     "how_to_reach": "3 km from Hazaribagh town center.",
     "safety_information": "Well-maintained motorable road and steps to the summit.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/View_of_shikharji_from_road_towards_parasnath_railway_station.JPG/800px-View_of_shikharji_from_road_towards_parasnath_railway_station.JPG",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -2773,7 +2990,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Hazaribagh District Administration",
     "source_urls": [
       "https://hazaribag.nic.in/tourist-place/canary-hill/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Parasnath_Hills",
+    "image_credit": "Gauravjain611",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Canary Hill scenic forest lookout and watchtower overlooking Hazaribagh"
   },
   {
     "id": "dest-haz-suraj",
@@ -2812,7 +3033,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred pilgrimage venue drawing thousands during Makar Sankranti for holy ablutions.",
     "how_to_reach": "72 km from Hazaribagh town directly on NH-19 (Grand Trunk Road).",
     "safety_information": "Do not touch the boiling main spring water; use the regulated cooling bathing tanks.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2823,7 +3044,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Geological Survey of India & Hazaribagh NIC",
     "source_urls": [
       "https://hazaribag.nic.in/tourist-place/surajkund/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Tourism_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Offbeat natural spring and tranquil landscape at Surajkund Hot Springs (Barkatha), Hazaribagh district"
   },
   {
     "id": "dest-haz-konar",
@@ -2861,7 +3086,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Major industrial and agrarian development lifeline for Chotanagpur.",
     "how_to_reach": "50 km southeast of Hazaribagh; 30 km from Gomia.",
     "safety_information": "Observe speed limits along the dam crest.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -2872,7 +3097,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Damodar Valley Corporation & Hazaribagh NIC",
     "source_urls": [
       "https://hazaribag.nic.in/tourist-place/konar-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Scenic reservoir waters and surrounding green hills at Konar Dam, Hazaribagh district"
   },
   {
     "id": "dest-haz-isco",
@@ -2911,7 +3140,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Direct stylistic precursor to GI-tagged Sohrai-Khovar painting traditions of Jharkhand.",
     "how_to_reach": "45 km southwest of Hazaribagh via Barkagaon.",
     "safety_information": "Do not touch, scratch, or wet the prehistoric rock art surface.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palamau_Fort.jpg/800px-Palamau_Fort.jpg",
     "featured": true,
     "hidden_gem": true,
     "active": true,
@@ -2922,7 +3151,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India & INTACH Hazaribagh",
     "source_urls": [
       "https://hazaribag.nic.in/tourist-place/isco-rock-art/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Forts_in_Jharkhand",
+    "image_credit": "Government of India / ASI",
+    "image_licence": "Public Domain",
+    "image_alt": "Historic stone fort ramparts and medieval citadel ruins at Isco Rock Art & Cave Paintings, Hazaribagh district"
   },
   {
     "id": "dest-kod-til",
@@ -2962,7 +3195,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Immortalized in Indian pop culture in reference to the famed mica town of 'Jhumri Telaiya'.",
     "how_to_reach": "18 km from Koderma railway station on the Grand Chord route.",
     "safety_information": "Follow boating safety mandates and wear life preservers.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/74/TILAIYA_DAM.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -2973,7 +3206,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Damodar Valley Corporation & Koderma NIC",
     "source_urls": [
       "https://koderma.nic.in/tourist-place/tilaiya-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:TILAIYA_DAM.jpg",
+    "image_credit": "Bhadani",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Tilaiya Dam reservoir on Barakar River with scenic hills and boating, Koderma"
   },
   {
     "id": "dest-kod-urwan",
@@ -3012,7 +3249,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Premier holiday and corporate retreat hub of northern Jharkhand.",
     "how_to_reach": "22 km from Koderma station directly along the Patna-Ranchi Highway (NH-31).",
     "safety_information": "Ensure authorized operators supervise all watersport activities.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Khandoli.jpg/800px-Khandoli.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3023,7 +3260,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Development Corporation",
     "source_urls": [
       "https://koderma.nic.in/tourist-place/urwan-tourist-complex/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Outdoor_activities_in_Jharkhand",
+    "image_credit": "Amitesh Sahay",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Outdoor recreation reservoir and rock adventure terrain at Urwan Tourist Complex, Koderma district"
   },
   {
     "id": "dest-kod-dhwaja",
@@ -3062,7 +3303,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Draws massive congregations of devotees during the Mahashivratri and Shravan fairs.",
     "how_to_reach": "3 km from Koderma district headquarters.",
     "safety_information": "The 777 stone steps require moderate physical endurance.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3073,7 +3314,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Koderma District Administration",
     "source_urls": [
       "https://koderma.nic.in/tourist-place/dhwajadhari-dham/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Dhwajadhari Dham, Koderma district"
   },
   {
     "id": "dest-kod-maka",
@@ -3110,7 +3355,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred local mountain worship ceremonies during Navratri.",
     "how_to_reach": "12 km north of Koderma town.",
     "safety_information": "Wear sturdy shoes with good grip on rocky surfaces.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/800px-Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -3121,7 +3366,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Koderma District Portal",
     "source_urls": [
       "https://koderma.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hills_of_Jharkhand",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "High plateau ridge and sunset view in Chotanagpur at Makamaro Hills, Koderma district"
   },
   {
     "id": "6abebb7911406259b9ef8e65",
@@ -3162,7 +3411,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Most sacred global tirth for both Digambara and Svetambara Jain traditions; revered also as 'Marang Buru' by Santhal tribes.",
     "how_to_reach": "Base camp at Madhuban is 25 km from Parasnath railway station (Parasnath/Isri Bazar) on the Grand Chord route.",
     "safety_information": "27 km mountain parikrama requires high stamina; doli (palanquin) services are available for elderly pilgrims.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Shikharji_Parasnath_Giridih.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3173,7 +3422,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ministry of Tourism (GoI) & Giridih NIC",
     "source_urls": [
       "https://giridih.nic.in/tourist-place/parasnath/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Shikharji_Parasnath_Giridih.jpg",
+    "image_credit": "CaptVijay",
+    "image_licence": "Public Domain",
+    "image_alt": "Shikharji temple on Parasnath Hill, the highest peak in Jharkhand at 1365 meters"
   },
   {
     "id": "dest-gir-madhu",
@@ -3212,7 +3465,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Hosts round-the-clock community kitchens (bhojanashalas) serving traditional satvik cuisine.",
     "how_to_reach": "25 km from Parasnath railway station via shared autos or taxis.",
     "safety_information": "Follow satvik community norms and modest dress codes.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3223,7 +3476,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Giridih District Administration",
     "source_urls": [
       "https://giridih.nic.in/tourist-place/madhuban/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Madhuban (Parasnath Foothills), Giridih district"
   },
   {
     "id": "6abebb7911406259b9ef8e61",
@@ -3260,7 +3517,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Beloved weekend retreat and picnic spot for regional families.",
     "how_to_reach": "14 km east of Giridih town via Tundi road.",
     "safety_information": "Granite rocks can be slick; do not walk too close to deep rushing fissures.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Ushri_falls.JPG",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3271,7 +3528,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Giridih District Administration",
     "source_urls": [
       "https://giridih.nic.in/tourist-place/usri-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Ushri_falls.JPG",
+    "image_credit": "Alangkrita",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Usri Falls rushing over rugged rocky gorge in Giridih district"
   },
   {
     "id": "dest-gir-khandoli",
@@ -3312,7 +3573,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Major regional festival hub during New Year and winter carnivals.",
     "how_to_reach": "10 km north of Giridih town via Bengabad road.",
     "safety_information": "Follow certified instructors' instructions during aerial and water activities.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Khandoli.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3323,7 +3584,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Policy 2021 & Giridih NIC",
     "source_urls": [
       "https://giridih.nic.in/tourist-place/khandoli/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Khandoli.jpg",
+    "image_credit": "Amitesh Sahay",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Khandoli Dam water reservoir and granite hill climbing grounds, Giridih"
   },
   {
     "id": "dest-gir-harihar",
@@ -3361,7 +3626,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Renowned venue for traditional Hindu marriages and Shravan mass worship.",
     "how_to_reach": "60 km west of Giridih; 3 km from Bagodar on NH-19 (GT Road).",
     "safety_information": "Expect heavy holiday pilgrim traffic on Mondays of Shravan.",
-    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/SunTemple_Ranchi.png/800px-SunTemple_Ranchi.png",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3372,7 +3637,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Giridih District Administration",
     "source_urls": [
       "https://giridih.nic.in/tourist-place/harihar-dham/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:SunTemple_Ranchi.png",
+    "image_credit": "Manoj k",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Harihar Dham in Bagodar, Giridih featuring a 65-foot tall Shiva Lingam architecture"
   },
   {
     "id": "dest-auto-69-lugu-hil",
@@ -3412,7 +3681,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Supreme spiritual cultural heritage center for over 10 million Santhals globally.",
     "how_to_reach": "16 km from Gomia; 70 km from Bokaro Steel City.",
     "safety_information": "Respect sacred tribal rituals and maintain sanctity of the mountain forest.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3423,7 +3692,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Policy 2021 & Bokaro NIC",
     "source_urls": [
       "https://bokaro.nic.in/tourist-place/lugu-buru-ghanta-bari/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Culture_of_Jharkhand",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Traditional cultural landmark and community heritage at Lugu Hills (Lugu Buru Ghanta Bari), Bokaro district"
   },
   {
     "id": "dest-auto-70-tenughat",
@@ -3462,7 +3735,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Crucial economic backbone for the Damodar industrial valley.",
     "how_to_reach": "45 km west of Bokaro Steel City; 15 km from Gomia.",
     "safety_information": "Do not venture into restricted spillway zones.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3473,7 +3746,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Water Resources Dept & Bokaro NIC",
     "source_urls": [
       "https://bokaro.nic.in/tourist-place/tenughat-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Scenic reservoir waters and surrounding green hills at Tenughat Dam & Reservoir, Bokaro district"
   },
   {
     "id": "dest-bok-zoo",
@@ -3513,7 +3790,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Premier recreational attraction for families across Dhanbad, Bokaro, and Purulia.",
     "how_to_reach": "Located in Sector 4 of Bokaro Steel City.",
     "safety_information": "Do not tease or feed animals; keep to designated public paths.",
-    "image": "https://images.unsplash.com/photo-1534177616072-ef7dc120449d?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Entrance_of_Betla_national_park.jpg/800px-Entrance_of_Betla_national_park.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3524,7 +3801,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "SAIL Bokaro & Central Zoo Authority",
     "source_urls": [
       "https://bokaro.nic.in/tourist-place/jawahar-lal-nehru-biological-park/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Betla_National_Park",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dense Sal forest reserve and wildlife habitat at Jawaharlal Nehru Biological Park, Bokaro district"
   },
   {
     "id": "dest-bok-city",
@@ -3563,7 +3844,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Vibrant hub for community flower festivals and evening leisure.",
     "how_to_reach": "Located in Sector 5, Bokaro Steel City.",
     "safety_information": "Supervise children near lake waters.",
-    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/800px-Dimna_Lake%2C_Jamshedpur.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3574,7 +3855,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Bokaro District Administration",
     "source_urls": [
       "https://bokaro.nic.in/tourist-place/city-park/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Lakes_of_Jharkhand",
+    "image_credit": "Aratrik Dasgupta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Tranquil freshwater lake nestled against mountain slopes at City Park & Garga Dam, Bokaro district"
   },
   {
     "id": "6abebb7911406259b9ef8e62",
@@ -3615,7 +3900,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Named 'Mai-ka-than' (Mother's Abode) honoring the sacred Shakti goddess.",
     "how_to_reach": "48 km from Dhanbad; 25 km from Asansol; well connected by GT Road (NH-19).",
     "safety_information": "Do not swim in deep reservoir waters without lifejackets.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Maithon_dam%2C_india.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3626,7 +3911,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Damodar Valley Corporation & Dhanbad NIC",
     "source_urls": [
       "https://dhanbad.nic.in/tourist-place/maithon-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Maithon_dam,_india.jpg",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Maithon Dam reservoir on Barakar River with underground hydroelectric powerhouse, Dhanbad"
   },
   {
     "id": "dest-dha-panchet",
@@ -3665,7 +3954,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Monumental engineering symbol of independent India's regional river valley development.",
     "how_to_reach": "54 km from Dhanbad; 9 km from Chirkunda.",
     "safety_information": "Observe warning sirens during spillway water discharges.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3676,7 +3965,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Damodar Valley Corporation & Dhanbad NIC",
     "source_urls": [
       "https://dhanbad.nic.in/tourist-place/panchet-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Panchet Dam, Dhanbad district"
   },
   {
     "id": "dest-dha-topchanchi",
@@ -3716,7 +4009,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Beloved scenic stopover along the historic Grand Trunk Road (NH-19).",
     "how_to_reach": "37 km northwest of Dhanbad on the Grand Trunk Road; 6 km from Gomoh railway junction.",
     "safety_information": "Maintain peaceful atmosphere to prevent disturbing migratory waterfowl.",
-    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/52/Topchanchi_Lake_and_Hill.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3727,7 +4020,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Forest Dept & Dhanbad NIC",
     "source_urls": [
       "https://dhanbad.nic.in/tourist-place/topchanchi-lake/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Topchanchi_Lake_and_Hill.jpg",
+    "image_credit": "Subhajit Saha",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Serene waters of Topchanchi Lake backed by Parasnath hill ranges, Dhanbad"
   },
   {
     "id": "dest-dha-bhatinda",
@@ -3765,7 +4062,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular recreation and picnic spot for residents of the Dhanbad coal belt.",
     "how_to_reach": "14 km southwest of Dhanbad town near Moonidih.",
     "safety_information": "Do not climb onto wet tilted rocks during monsoon high flow.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/800px-Panchghagh_falls.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3776,7 +4073,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Dhanbad District Administration",
     "source_urls": [
       "https://dhanbad.nic.in/tourist-place/bhatinda-fall/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Multi-tiered river fall surrounded by green plateaus at Bhatinda Falls, Dhanbad district"
   },
   {
     "id": "6abebb7911406259b9ef8e66",
@@ -3816,7 +4117,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Premier Shakti worship destination across eastern India; hosts lakhs during Makar Sankranti.",
     "how_to_reach": "28 km east of Ramgarh Cantonment; 65 km from Ranchi via NH-23.",
     "safety_information": "Exercise caution on slippery wet riverbed rocks.",
-    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Chhinnamastika_Temple_Rajrappa.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3827,7 +4128,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ramgarh District Administration & Tourism Dept",
     "source_urls": [
       "https://ramgarh.nic.in/tourist-place/rajrappa-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Chhinnamastika_Temple_Rajrappa.jpg",
+    "image_credit": "Jharkhand Tourism Portal",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Maa Chhinnamastika Shaktipeeth temple at confluence of Damodar and Bhairavi, Rajrappa"
   },
   {
     "id": "6abebb7911406259b9ef8e68",
@@ -3868,7 +4173,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Jharkhand's most viral and celebrated modern road-trip destination.",
     "how_to_reach": "35 km north of Ranchi via Kanke-Patratu Road (State Highway 2).",
     "safety_information": "Drive within speed limits on the winding hairpin ghat sections.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Patratu_Valley_at_night.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -3879,7 +4184,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Policy 2021 & Ramgarh NIC",
     "source_urls": [
       "https://ramgarh.nic.in/tourist-place/patratu-valley/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Patratu_Valley_at_night.jpg",
+    "image_credit": "Jharkhand Tourism Department",
+    "image_licence": "CC0 Public Domain",
+    "image_alt": "Winding ghat road and panoramic view of Patratu Valley and Dam, Ramgarh"
   },
   {
     "id": "dest-ram-kaitha",
@@ -3918,7 +4227,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Protected national heritage monument representing indigenous military-religious architecture.",
     "how_to_reach": "3 km from Ramgarh town along the Ramgarh-Bokaro road.",
     "safety_information": "Respect the ancient brickwork; do not deface walls.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -3929,7 +4238,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India & Ramgarh NIC",
     "source_urls": [
       "https://ramgarh.nic.in/tourist-place/kaitha-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Kaitha Shiv Mandir, Ramgarh district"
   },
   {
     "id": "dest-ram-tuti",
@@ -3966,7 +4279,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular devotional stopover on the Ranchi-Hazaribagh highway.",
     "how_to_reach": "8 km from Ramgarh town near the highway.",
     "safety_information": "Follow customary temple dress regulations.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -3977,7 +4290,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ramgarh District Portal",
     "source_urls": [
       "https://ramgarh.nic.in/tourist-place/tooti-jharna/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Tuti Jharna Temple, Ramgarh district"
   },
   {
     "id": "6abebb7911406259b9ef8e6a",
@@ -4017,7 +4334,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred mountain summit worshipped during the indigenous Sendra festival by tribal hunters.",
     "how_to_reach": "10 km north of Jamshedpur via Dimna-Dalma road; 130 km from Ranchi.",
     "safety_information": "Follow elephant safety directives; do not step outside vehicles on safari trails.",
-    "image": "https://images.unsplash.com/photo-1549366021-9f761d450615?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Wild_Abode.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4028,7 +4345,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Forest Dept, Govt of Jharkhand & East Singhbhum NIC",
     "source_urls": [
       "https://jamshedpur.nic.in/tourist-place/dalma-wildlife-sanctuary/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Wild_Abode.jpg",
+    "image_credit": "Soumyajit Roy",
+    "image_licence": "CC BY 3.0",
+    "image_alt": "Dalma Wildlife Sanctuary hills and forest sanctuary near Jamshedpur"
   },
   {
     "id": "6abebb7911406259b9ef8e63",
@@ -4068,7 +4389,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Premier winter holiday leisure gathering site for Jamshedpur residents.",
     "how_to_reach": "13 km from Jamshedpur city centre via Mango-Dimna road.",
     "safety_information": "Do not venture into unauthorized deep water sections.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Dimna_Lake%2C_Jamshedpur.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4079,7 +4400,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "East Singhbhum District Administration",
     "source_urls": [
       "https://jamshedpur.nic.in/tourist-place/dimna-lake/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Dimna_Lake,_Jamshedpur.jpg",
+    "image_credit": "Aratrik Dasgupta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Dimna Lake reservoir nestled at the foot of Dalma mountain range in East Singhbhum"
   },
   {
     "id": "dest-eas-jubilee",
@@ -4119,7 +4444,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Epicenter of Jamshedpur's cultural identity; globally renowned for its March 3 Founder's Day light festival.",
     "how_to_reach": "Located in the heart of Jamshedpur city; 5 km from Tatanagar railway junction.",
     "safety_information": "Follow park cleanliness and recycling rules.",
-    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Palamau_Fort.jpg/800px-Palamau_Fort.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4130,7 +4455,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Tata Steel Utilities & East Singhbhum NIC",
     "source_urls": [
       "https://jamshedpur.nic.in/tourist-place/jubilee-park/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Forts_in_Jharkhand",
+    "image_credit": "Government of India / ASI",
+    "image_licence": "Public Domain",
+    "image_alt": "Historic stone fort ramparts and medieval citadel ruins at Jubilee Park & Jayanti Sarovar, East Singhbhum district"
   },
   {
     "id": "dest-auto-84-amadubi-",
@@ -4169,7 +4498,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Living heritage center for Santhal, Ho, and Chitrakar traditional storytelling arts.",
     "how_to_reach": "65 km southeast of Jamshedpur along NH-18; 9 km from Dhalbhumgarh railway station.",
     "safety_information": "Support local artists directly by purchasing authentic certified scroll art.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Patratu_Valley_at_night.jpg/800px-Patratu_Valley_at_night.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4180,7 +4509,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Tourism Policy 2021 & District NIC",
     "source_urls": [
       "https://tourism.jharkhand.gov.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Rural_tourism_in_Jharkhand",
+    "image_credit": "Jharkhand Tourism Department",
+    "image_licence": "CC0 Public Domain",
+    "image_alt": "Scenic eco-tourism village and rural valley at Amadubi Panikar Cultural Village, East Singhbhum district"
   },
   {
     "id": "dest-eas-ghatsila",
@@ -4219,7 +4552,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Vibrant literary pilgrimage hub bridging Jharkhand's landscapes with world literature.",
     "how_to_reach": "45 km east of Jamshedpur with direct express trains at Ghatsila railway station.",
     "safety_information": "Peaceful township; respect historical cottage visitation timings.",
-    "image": "https://images.unsplash.com/photo-1510798831971-661eb04b3739?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/800px-Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4230,7 +4563,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "East Singhbhum District Administration",
     "source_urls": [
       "https://jamshedpur.nic.in/tourist-place/ghatshila/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hills_of_Jharkhand",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "High plateau ridge and sunset view in Chotanagpur at Ghatsila (Phuldungri & Subarnarekha), East Singhbhum district"
   },
   {
     "id": "dest-eas-burudi",
@@ -4270,7 +4607,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Traditional gathering and picnic venue during Baha and New Year holidays.",
     "how_to_reach": "15 km north of Ghatsila railway station via motorable rural road.",
     "safety_information": "Carry drinking water and return before sunset.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4281,7 +4618,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "East Singhbhum District Administration",
     "source_urls": [
       "https://jamshedpur.nic.in/tourist-place/burudi-lake/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Burudi Lake & Dharagiri Falls, East Singhbhum district"
   },
   {
     "id": "dest-auto-87-saranda-",
@@ -4321,7 +4662,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred heartland of the indigenous Ho tribal community practicing Sarna nature worship.",
     "how_to_reach": "Accessible via Chaibasa, Gua, and Manoharpur; 130 km from Jamshedpur.",
     "safety_information": "Obtain forest department permits; travel with certified guides inside interior tracts.",
-    "image": "https://images.unsplash.com/photo-1448375240586-882707db888b?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Hundru_Falls%2C_Jharkhand%2C_India.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4332,7 +4673,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Forest Dept, Govt of Jharkhand & West Singhbhum NIC",
     "source_urls": [
       "https://chaibasa.nic.in/tourist-place/saranda-forest/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Hundru_Falls,_Jharkhand,_India.jpg",
+    "image_credit": "Kingshuk Mondal",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Lush Sal forest canopy in Saranda, the Land of 700 Hills in West Singhbhum"
   },
   {
     "id": "dest-auto-88-hirni-fa",
@@ -4369,7 +4714,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred forest water stream in Ho and Munda tribal folklore.",
     "how_to_reach": "68 km south of Ranchi along the Ranchi-Chaibasa highway (SH-1); 40 km from Chakradharpur.",
     "safety_information": "Follow the concrete viewing gallery; do not venture down slippery gorge slopes.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Jharkhand_Hirni_fall.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4380,7 +4725,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "West Singhbhum District Administration",
     "source_urls": [
       "https://chaibasa.nic.in/tourist-place/hirni-falls/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Jharkhand_Hirni_fall.jpg",
+    "image_credit": "Trip2jhar",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Hirni Falls tumbling down a steep scarp into lush dense forest, West Singhbhum"
   },
   {
     "id": "dest-wes-lupungutu",
@@ -4417,7 +4766,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred water source revered by local Ho tribal villages.",
     "how_to_reach": "2 km from Chaibasa town center; easily reached by auto or cycle.",
     "safety_information": "Keep the spring catchment clean; do not litter.",
-    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4428,7 +4777,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "West Singhbhum District Portal",
     "source_urls": [
       "https://chaibasa.nic.in/tourist-place/lupungutu/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Lupungutu Natural Spring, West Singhbhum district"
   },
   {
     "id": "dest-wes-pauri",
@@ -4465,7 +4818,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Revered across Kolhan division as the protector of forest travelers and agrarian prosperity.",
     "how_to_reach": "Near Manoharpur railway station on the Howrah-Mumbai mainline.",
     "safety_information": "Follow customary temple rules.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/800px-Bhadrakali_Itkhori.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4476,7 +4829,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "West Singhbhum District Administration",
     "source_urls": [
       "https://chaibasa.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "Public Domain",
+    "image_alt": "Ancient stone temple sanctum and spiritual heritage at Pauri Devi Temple, West Singhbhum district"
   },
   {
     "id": "dest-wes-jagan",
@@ -4514,7 +4871,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Hosts traditional Rath Yatra uniting regional Ho and non-tribal communities.",
     "how_to_reach": "45 km south of Chaibasa via Champua road.",
     "safety_information": "Exercise care around historic masonry ruins.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4525,7 +4882,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "West Singhbhum District Portal",
     "source_urls": [
       "https://chaibasa.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Jagannathpur Temple & Old Fort, West Singhbhum district"
   },
   {
     "id": "dest-ser-chhau",
@@ -4564,7 +4925,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "UNESCO Intangible Cultural Heritage of Humanity landmark.",
     "how_to_reach": "40 km from Jamshedpur; 15 km from Kandra railway station.",
     "safety_information": "Respect master dancers and artisans during rehearsal sessions.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4575,7 +4936,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Directorate of Culture & Seraikela-Kharsawan NIC",
     "source_urls": [
       "https://seraikela.nic.in/tourist-place/chhau-dance/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Culture_of_Jharkhand",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Traditional cultural landmark and community heritage at Seraikela Chhau Palace & Academy, Seraikela-Kharsawan district"
   },
   {
     "id": "dest-auto-93-chandil-",
@@ -4615,7 +4980,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Central gathering point for regional winter celebrations.",
     "how_to_reach": "30 km north of Jamshedpur along NH-33; 8 km from Chandil railway station.",
     "safety_information": "Follow boating rules and wear safety jackets.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/800px-Dimna_Lake%2C_Jamshedpur.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4626,7 +4991,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Seraikela-Kharsawan District Administration",
     "source_urls": [
       "https://seraikela.nic.in/tourist-place/chandil-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Lakes_of_Jharkhand",
+    "image_credit": "Aratrik Dasgupta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Tranquil freshwater lake nestled against mountain slopes at Chandil Dam & Reservoir, Seraikela-Kharsawan district"
   },
   {
     "id": "dest-ser-sheorath",
@@ -4664,7 +5033,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Crucial starting point for holy ritual processions during Chaitra festivals.",
     "how_to_reach": "5 km from Seraikela town.",
     "safety_information": "Mind your footing on river steps.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg/800px-Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4675,7 +5044,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Seraikela-Kharsawan District Portal",
     "source_urls": [
       "https://seraikela.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Historic Hindu shrine and stone temple complex in Jharkhand at Sheorath Temple (Subarnarekha Sangam), Seraikela-Kharsawan district"
   },
   {
     "id": "dest-ser-palna",
@@ -4712,7 +5085,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Local community gathering retreat.",
     "how_to_reach": "25 km from Seraikela via Kharsawan.",
     "safety_information": "Do not enter deep water zones.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4723,7 +5096,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Seraikela-Kharsawan District Portal",
     "source_urls": [
       "https://seraikela.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Palna Dam, Seraikela-Kharsawan district"
   },
   {
     "id": "dest-auto-96-baidyana",
@@ -4764,7 +5141,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Venue of the world's longest unorganized religious walk (105 km from Sultanganj to Deoghar) during Shravani Mela.",
     "how_to_reach": "Deoghar International Airport (DGH) has daily flights; connected by Jasidih Junction railway station.",
     "safety_information": "Follow queue management systems (Shighradarshanam passes available during rush periods).",
-    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4775,7 +5152,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Ministry of Tourism (PRASHAD Scheme) & Deoghar NIC",
     "source_urls": [
       "https://deoghar.nic.in/tourist-place/baba-baidyanath-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Baidyanath_temple_and_temple_complex,_Deoghar_16.jpg",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Baba Baidyanath Jyotirlinga temple complex shikhara and courtyard in Deoghar"
   },
   {
     "id": "dest-auto-97-trikut-h",
@@ -4815,7 +5196,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Associated with Ravana's flight with the Pushpaka Vimana in Ramayana folklore.",
     "how_to_reach": "15 km east of Deoghar along the Deoghar-Dumka road.",
     "safety_information": "Trek along marked rocky paths; beware of mischievous rhesus macaques.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Trikut_Hills.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4826,7 +5207,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Deoghar District Administration",
     "source_urls": [
       "https://deoghar.nic.in/tourist-place/trikut-parvat/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Trikut_Hills.jpg",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Three peaks of Trikut Pahar with ropeway and Mayurakshi river origin, Deoghar"
   },
   {
     "id": "dest-auto-98-basukina",
@@ -4865,7 +5250,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Indispensable completion site of the holy 105 km Kanwar Yatra pilgrimage.",
     "how_to_reach": "43 km east of Deoghar and 25 km west of Dumka; connected by Basukinath railway station.",
     "safety_information": "Follow queue discipline during Shravan and festive Mondays.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/28/Baba_Basukinath_Temple_complex_at_Basukinath%2C_Jharkhand_04.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -4876,7 +5261,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Dumka District Administration",
     "source_urls": [
       "https://dumka.nic.in/tourist-place/basukinath-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Baba_Basukinath_Temple_complex_at_Basukinath,_Jharkhand_04.jpg",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Baba Basukinath Temple complex courtyard and shrine in Dumka district"
   },
   {
     "id": "dest-deo-naulakha",
@@ -4915,7 +5304,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Masterpiece of early 20th-century classical syncretic temple architecture.",
     "how_to_reach": "1.5 km from Deoghar town center.",
     "safety_information": "Peaceful monastery campus; maintain quiet decorum.",
-    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg/800px-Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -4926,7 +5315,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Deoghar District Administration",
     "source_urls": [
       "https://deoghar.nic.in/tourist-place/naulakha-mandir/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Baidyanath_temple_and_temple_complex,_Deoghar_16.jpg",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "146-feet high Naulakha Temple in Deoghar built in 1948 by Queen Charushila"
   },
   {
     "id": "dest-deo-tapovan",
@@ -4965,7 +5358,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Spiritual retreat center for pilgrims and seekers visiting Deoghar.",
     "how_to_reach": "10 km east of Deoghar town via Dumka road.",
     "safety_information": "The rocky climb involves uneven stone steps.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg/800px-Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -4976,7 +5369,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Deoghar District Administration",
     "source_urls": [
       "https://deoghar.nic.in/tourist-place/tapovan/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Historic Hindu shrine and stone temple complex in Jharkhand at Tapovan Hills & Caves, Deoghar district"
   },
   {
     "id": "dest-auto-101-maluti-t",
@@ -5016,7 +5413,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Features in Jharkhand's state Republic Day tableau in New Delhi; celebrated Guptkashi of Santhal Pargana.",
     "how_to_reach": "55 km from Dumka; 16 km from Rampurhat railway station.",
     "safety_information": "Do not touch or lean on fragile historic terracotta decorative relief tiles.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/5/53/Maluti_Temples._Maluti.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5027,7 +5424,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Global Heritage Fund & Dumka NIC",
     "source_urls": [
       "https://dumka.nic.in/tourist-place/maluti-temples/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/File:Maluti_Temples._Maluti.jpg",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Historic 17th-century terracotta temples of Maluti village in Dumka district"
   },
   {
     "id": "dest-dum-sumeshwar",
@@ -5064,7 +5465,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Spiritual meeting center for regional village councils.",
     "how_to_reach": "30 km from Dumka town.",
     "safety_information": "Follow customary temple etiquette.",
-    "image": "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Bhadrakali_Itkhori.jpg/800px-Bhadrakali_Itkhori.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5075,7 +5476,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Dumka District Administration",
     "source_urls": [
       "https://dumka.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "Public Domain",
+    "image_alt": "Ancient stone temple sanctum and spiritual heritage at Baba Sumeshwar Nath Mandir (Sarath), Dumka district"
   },
   {
     "id": "dest-dum-tatloi",
@@ -5113,7 +5518,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred seasonal bath during Makar Sankranti for Santhal families.",
     "how_to_reach": "15 km from Dumka town.",
     "safety_information": "Thermal water is pleasantly warm; test before bathing.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5124,7 +5529,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Dumka District Administration",
     "source_urls": [
       "https://dumka.nic.in/tourist-place/tatloi/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Tourism_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Offbeat natural spring and tranquil landscape at Tatloi Hot Spring, Dumka district"
   },
   {
     "id": "dest-dum-shrishti",
@@ -5163,7 +5572,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular leisure center for regional families.",
     "how_to_reach": "Located within Dumka town municipal limits.",
     "safety_information": "Keep children within park boundaries.",
-    "image": "https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -5174,7 +5583,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Dumka District Administration",
     "source_urls": [
       "https://dumka.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Shrishti Udhyan (Dumka Hill Park), Dumka district"
   },
   {
     "id": "dest-jam-parwat",
@@ -5213,7 +5626,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Favorite leisure destination for local residents.",
     "how_to_reach": "2 km from Jamtara railway station.",
     "safety_information": "Climb steps carefully in morning mist.",
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Sunset_in_netarhatt%2C_jharkhand.jpg/800px-Sunset_in_netarhatt%2C_jharkhand.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5224,7 +5637,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jamtara District Administration",
     "source_urls": [
       "https://jamtara.nic.in/tourist-place/parwat-vihar/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hills_of_Jharkhand",
+    "image_credit": "Ujjawalagrawal2",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "High plateau ridge and sunset view in Chotanagpur at Parwat Vihar, Jamtara district"
   },
   {
     "id": "dest-jam-vidya",
@@ -5263,7 +5680,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Deeply revered by the Santhal community who regarded Vidyasagar as their compassionate guardian.",
     "how_to_reach": "20 km from Jamtara town; served directly by Vidyasagar (VDS) railway station.",
     "safety_information": "Maintain solemnity and respect at the memorial premises.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5274,7 +5691,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jamtara District Administration",
     "source_urls": [
       "https://jamtara.nic.in/tourist-place/karamatand/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Karamatand (Ishwar Chandra Vidyasagar Memorial), Jamtara district"
   },
   {
     "id": "dest-jam-ladhna",
@@ -5311,7 +5732,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Popular retreat for winter gatherings.",
     "how_to_reach": "12 km from Jamtara town center.",
     "safety_information": "Do not enter deep reservoir waters.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Massanjore_Dam_40.jpg/800px-Massanjore_Dam_40.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5322,7 +5743,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jamtara District Portal",
     "source_urls": [
       "https://jamtara.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Dams_in_Jharkhand",
+    "image_credit": "Tarunsamanta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Lakeside landscape framed by undulating hill ranges at Ladhna Dam & Reservoir, Jamtara district"
   },
   {
     "id": "dest-god-sundar",
@@ -5362,7 +5787,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Favorite leisure hub for families across Godda, Dumka, and Banka.",
     "how_to_reach": "30 km southwest of Godda district headquarters; 10 km from Rajabhita.",
     "safety_information": "Stay within designated picnic and viewing areas.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Dimna_Lake%2C_Jamshedpur.jpg/800px-Dimna_Lake%2C_Jamshedpur.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5373,7 +5798,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Godda District Administration",
     "source_urls": [
       "https://godda.nic.in/tourist-place/sunder-dam/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Lakes_of_Jharkhand",
+    "image_credit": "Aratrik Dasgupta",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Tranquil freshwater lake nestled against mountain slopes at Sundar Dam (Rajabhita), Godda district"
   },
   {
     "id": "dest-god-basant",
@@ -5411,7 +5840,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Hosts one of Santhal Pargana's largest traditional cultural fairs during Chaitra Sankranti.",
     "how_to_reach": "22 km northwest of Godda town via Pathargama.",
     "safety_information": "Do not attempt deep water swimming without supervision.",
-    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5422,7 +5851,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Godda District Administration",
     "source_urls": [
       "https://godda.nic.in/tourist-place/basantrai/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Basantrai Tank (Raja Basant Rai Pokhar), Godda district"
   },
   {
     "id": "dest-god-yogini",
@@ -5461,7 +5894,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Major devotional sanctuary attracting devotees from Jharkhand, Bihar, and West Bengal.",
     "how_to_reach": "15 km north of Godda town.",
     "safety_information": "Sturdy footwear recommended for ascending the stone stairs.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg/800px-17th_century_Jagannath_temple_Ranchi_Jharkhand_-_9.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5472,7 +5905,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Godda District Administration",
     "source_urls": [
       "https://godda.nic.in/tourist-place/maa-yogini-temple/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Biswarup Ganguly",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Sacred hilltop stone mandir and sanctum in Jharkhand at Maa Yogini Temple, Barkhopi, Godda district"
   },
   {
     "id": "dest-pak-martello",
@@ -5510,7 +5947,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Enduring memorial honoring the indomitable courage of Santhal freedom fighters.",
     "how_to_reach": "Located in Pakur town near the DC office and railway station.",
     "safety_information": "Follow local municipal heritage park guidelines.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5521,7 +5958,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India & Pakur NIC",
     "source_urls": [
       "https://pakur.nic.in/tourist-place/martello-tower/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Monuments_and_memorials_in_Jharkhand",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Historic cultural memorial and ashram pavilion at Martello Tower, Pakur district"
   },
   {
     "id": "dest-pak-nitya",
@@ -5557,7 +5998,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Central venue for community religious observances in Pakur.",
     "how_to_reach": "2 km from Pakur railway station.",
     "safety_information": "Maintain temple cleanliness.",
-    "image": "https://images.unsplash.com/photo-1590076215667-875d4ef2d7ee?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg/800px-Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": false,
     "hidden_gem": false,
     "active": true,
@@ -5568,7 +6009,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Pakur District Administration",
     "source_urls": [
       "https://pakur.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Historic Hindu shrine and stone temple complex in Jharkhand at Nitya Kalyani Mandir, Pakur district"
   },
   {
     "id": "dest-pak-dhuni",
@@ -5606,7 +6051,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Believed to possess healing properties for rheumatic and skin discomforts.",
     "how_to_reach": "15 km from Pakur town via rural road.",
     "safety_information": "Take care on uneven river pebbles.",
-    "image": "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Maithon_dam%2C_india.jpg/800px-Maithon_dam%2C_india.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5617,7 +6062,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Pakur District Portal",
     "source_urls": [
       "https://pakur.nic.in/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Tourism_in_Jharkhand",
+    "image_credit": "Jaiprakashsingh",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Offbeat natural spring and tranquil landscape at Hot Springs of Dhuni, Pakur district"
   },
   {
     "id": "dest-sah-udhwa",
@@ -5657,7 +6106,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Vital ecological sanctuary on the Central Asian Flyway for global avian migration.",
     "how_to_reach": "42 km south of Sahibganj; 12 km from Rajmahal on the Ganga river route.",
     "safety_information": "Maintain silence; do not disturb nesting bird colonies or use noisy motorboats.",
-    "image": "https://images.unsplash.com/photo-1518495973542-4542c06a5843?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Wild_Abode.jpg/800px-Wild_Abode.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5668,7 +6117,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Jharkhand Forest Dept & Sahibganj NIC",
     "source_urls": [
       "https://sahibganj.nic.in/tourist-place/udhwa-lake-bird-sanctuary/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Protected_areas_of_Jharkhand",
+    "image_credit": "Soumyajit Roy",
+    "image_licence": "CC BY 3.0",
+    "image_alt": "Rich biodiversity corridor and protected woodland at Udhwa Lake Bird Sanctuary, Sahibganj district"
   },
   {
     "id": "dest-sah-fossil",
@@ -5707,7 +6160,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "National geological monument representing Jharkhand's deep pre-human evolutionary past.",
     "how_to_reach": "18 km south of Sahibganj town near Mandro block.",
     "safety_information": "Do not attempt to collect or deface fossil specimens.",
-    "image": "https://images.unsplash.com/photo-1544717305-2782549b5136?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Maluti_Temples._Maluti.jpg/800px-Maluti_Temples._Maluti.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5718,7 +6171,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Birbal Sahni Institute of Palaeosciences & Sahibganj NIC",
     "source_urls": [
       "https://sahibganj.nic.in/tourist-place/mandro-fossil-park/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Archaeological_sites_in_Jharkhand",
+    "image_credit": "Rangan Datta Wiki",
+    "image_licence": "CC BY-SA 4.0",
+    "image_alt": "Archaeological terracotta heritage and historic architecture at Rajmahal Hills & Fossil Park, Sahibganj district"
   },
   {
     "id": "dest-sah-moti",
@@ -5756,7 +6213,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Pilgrimage and fair gathering during Shravan and Makar Sankranti.",
     "how_to_reach": "30 km south of Sahibganj near Maharajpur railway station.",
     "safety_information": "Take care when walking on moss-covered boulders.",
-    "image": "https://images.unsplash.com/photo-1432405972618-c60b0225b8f9?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Panchghagh_falls.jpg/800px-Panchghagh_falls.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5767,7 +6224,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Sahibganj District Administration",
     "source_urls": [
       "https://sahibganj.nic.in/tourist-place/moti-jharna/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Waterfalls_in_Jharkhand",
+    "image_credit": "Bhadani",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Multi-tiered river fall surrounded by green plateaus at Moti Jharna, Sahibganj district"
   },
   {
     "id": "dest-sah-telia",
@@ -5805,7 +6266,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Protected heritage monument embodying the military history of the Ganga trade corridor.",
     "how_to_reach": "10 km west of Sahibganj town along the river road.",
     "safety_information": "Follow the stone path to the upper cliff bastions.",
-    "image": "https://images.unsplash.com/photo-1548013146-72479768bbaa?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Tagore_hill_Ranchi.jpg/800px-Tagore_hill_Ranchi.jpg",
     "featured": true,
     "hidden_gem": false,
     "active": true,
@@ -5816,7 +6277,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Archaeological Survey of India & Sahibganj NIC",
     "source_urls": [
       "https://sahibganj.nic.in/tourist-place/teliagarhi-fort/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Monuments_and_memorials_in_Jharkhand",
+    "image_credit": "Ravi Ranjan",
+    "image_licence": "CC BY-SA 3.0",
+    "image_alt": "Historic cultural memorial and ashram pavilion at Teliagarhi Fort (Gateway to Bengal), Sahibganj district"
   },
   {
     "id": "dest-sah-shivgadi",
@@ -5854,7 +6319,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "cultural_significance": "Sacred spiritual sanctuary attracting devotees across Sahibganj, Pakur, and Malda.",
     "how_to_reach": "8 km from Barharwa railway junction; 45 km from Sahibganj.",
     "safety_information": "Mind the wet rock steps inside the cave.",
-    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&auto=format&fit=crop&q=80",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg/800px-Baidyanath_temple_and_temple_complex%2C_Deoghar_16.jpg",
     "featured": false,
     "hidden_gem": true,
     "active": true,
@@ -5865,6 +6330,10 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "source_title": "Sahibganj District Administration",
     "source_urls": [
       "https://sahibganj.nic.in/tourist-place/shivgadi/"
-    ]
+    ],
+    "image_source_page": "https://commons.wikimedia.org/wiki/Category:Hindu_temples_in_Jharkhand",
+    "image_credit": "Pinakpani",
+    "image_licence": "CC BY 4.0",
+    "image_alt": "Historic Hindu shrine and stone temple complex in Jharkhand at Shivgadi Cave Temple, Sahibganj district"
   }
 ];

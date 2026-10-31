@@ -95,6 +95,10 @@ export interface Destination {
   nearby_attractions?: string[];
   local_experiences?: any[];
   image?: string | null;
+  image_source_page?: string | null;
+  image_credit?: string | null;
+  image_licence?: string | null;
+  image_alt?: string | null;
   gallery?: string[];
   images?: string[];
   featured?: boolean;
@@ -123,6 +127,10 @@ export interface CulturalContent {
   description?: string | null;
   cultural_significance?: string | null;
   image?: string | null;
+  image_source_page?: string | null;
+  image_credit?: string | null;
+  image_licence?: string | null;
+  image_alt?: string | null;
   gallery?: string[];
   related_destinations?: string[];
   active: boolean;
@@ -170,6 +178,10 @@ export interface LocalExperience {
   provider_name?: string | null;
   contact?: string | null;
   image?: string | null;
+  image_source_page?: string | null;
+  image_credit?: string | null;
+  image_licence?: string | null;
+  image_alt?: string | null;
   gallery?: string[];
   price_range?: string | null;
   estimated_cost?: string | null;
@@ -192,6 +204,10 @@ export interface Artisan {
   bio?: string | null;
   cultural_significance?: string | null;
   image?: string | null;
+  image_source_page?: string | null;
+  image_credit?: string | null;
+  image_licence?: string | null;
+  image_alt?: string | null;
   gallery?: string[];
   active: boolean;
   created_date?: string;
