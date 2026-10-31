@@ -2,6 +2,32 @@ export type BudgetTier = 'LOW' | 'MODERATE' | 'PREMIUM';
 export type DifficultyTier = 'Easy' | 'Moderate' | 'Challenging';
 export type DurationTier = 'SHORT' | 'HALF_DAY' | 'FULL_DAY' | 'MULTI_DAY';
 
+export type TourismPillar =
+  | 'Nature and Waterfalls'
+  | 'Hill Stations and Plateaus'
+  | 'Wildlife, Forests and Protected Areas'
+  | 'Spiritual and Religious Destinations'
+  | 'Heritage, Architecture and Archaeology'
+  | 'Tribal Culture and Living Traditions'
+  | 'Lakes, Dams and Scenic Landscapes'
+  | 'Adventure and Outdoor Activities'
+  | 'Rural and Community-Based Tourism'
+  | 'Lesser-Known and Emerging Destinations';
+
+export interface TourismCircuit {
+  id: string;
+  name: string;
+  slug: string;
+  pillar: TourismPillar;
+  description: string;
+  recommended_days: number;
+  best_season: string;
+  districts: string[];
+  destination_ids: string[];
+  highlights: string[];
+  official_policy_reference: string;
+}
+
 export interface District {
   id: string;
   name: string;
@@ -38,6 +64,11 @@ export interface Destination {
   slug: string;
   district: string;
   category: string;
+  pillar?: TourismPillar;
+  alt_names?: string[];
+  nearest_city?: string;
+  source_title?: string;
+  information_status?: string;
   subcategory?: string | null;
   latitude: number;
   longitude: number;

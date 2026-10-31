@@ -12,13 +12,15 @@ import {
   Heart,
   Trees,
   Shield,
-  Users
+  Users,
+  Clock
 } from 'lucide-react';
 import { 
   INITIAL_DESTINATIONS, 
   INITIAL_CATEGORIES, 
   INITIAL_EVENTS, 
-  INITIAL_CULTURE 
+  INITIAL_CULTURE,
+  INITIAL_CIRCUITS 
 } from '../data/mockData';
 import { DestinationCard } from '../components/DestinationCard';
 import { useAuth } from '../context/AuthContext';
@@ -262,6 +264,77 @@ export const HomePage: React.FC = () => {
           {hiddenGems.map(dest => (
             <DestinationCard key={dest.id} destination={dest} />
           ))}
+        </div>
+      </section>
+
+      {/* 5B. OFFICIAL POLICY TOURISM CIRCUITS */}
+      <section className="bg-secondary/30 py-16 border-y border-border">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 border-b border-border pb-4">
+            <div>
+              <span className="text-xs font-bold uppercase tracking-wider text-accent">
+                State Policy Priority Circuits
+              </span>
+              <h2 className="mt-1 font-heading text-3xl font-bold tracking-tight text-foreground">
+                Curated Tourism Circuits
+              </h2>
+              <p className="mt-1 text-sm text-muted-foreground">
+                Documented multi-district thematic journeys formulated under the Jharkhand Tourism Policy.
+              </p>
+            </div>
+            <Link to="/itineraries" className="text-sm font-semibold text-primary hover:text-accent transition">
+              Explore all circuits & itineraries →
+            </Link>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {INITIAL_CIRCUITS.map(circ => (
+              <div
+                key={circ.id}
+                className="flex flex-col justify-between rounded-2xl border border-border bg-card p-6 card-lift shadow-sm space-y-4"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between text-xs">
+                    <span className="rounded-full bg-primary/10 px-2.5 py-0.5 text-[10px] font-bold text-primary">
+                      {circ.pillar}
+                    </span>
+                    <span className="inline-flex items-center gap-1 text-muted-foreground font-medium">
+                      <Clock className="h-3 w-3 text-accent" /> {circ.recommended_days} Days
+                    </span>
+                  </div>
+
+                  <h3 className="font-heading text-xl font-bold text-foreground">
+                    {circ.name}
+                  </h3>
+
+                  <p className="text-xs text-muted-foreground leading-relaxed">
+                    {circ.description}
+                  </p>
+
+                  <div className="space-y-1.5 text-xs text-slate-700">
+                    <span className="font-bold text-[11px] text-foreground block">Key Highlights:</span>
+                    <ul className="space-y-1 pl-4 list-disc text-muted-foreground text-[11px]">
+                      {circ.highlights.slice(0, 3).map((hl, i) => (
+                        <li key={i}>{hl}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+
+                <div className="border-t border-border pt-4 flex items-center justify-between text-xs">
+                  <span className="text-[10px] text-muted-foreground">
+                    Districts: <strong>{circ.districts.join(', ')}</strong>
+                  </span>
+                  <Link
+                    to={`/plan-trip?startingLocation=${encodeURIComponent(circ.districts[0])}`}
+                    className="font-bold text-primary hover:text-accent transition inline-flex items-center gap-1"
+                  >
+                    Open in Planner →
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

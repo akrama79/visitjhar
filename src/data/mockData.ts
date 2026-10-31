@@ -1,6 +1,6 @@
 // VisitJhar Genuine Tourism Dataset
 // Directly recovered from the reference Base44 application (100% authentic, zero synthetic records)
-import { Destination, District, Category, CulturalContent, TourismEvent, LocalExperience, Artisan, Review, Itinerary } from '../types';
+import { Destination, District, Category, CulturalContent, TourismEvent, LocalExperience, Artisan, Review, Itinerary, TourismCircuit } from '../types';
 
 export const INITIAL_DISTRICTS: District[] = [
   {
@@ -666,7 +666,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Dam & Lake",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -676,7 +676,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Canada Dam",
+      "Mayurakshi Reservoir"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A hilltop Shiva temple in Ranchi with panoramic city views, especially popular at sunrise.",
@@ -728,7 +735,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -738,7 +745,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Ranchi Pahari",
+      "Phansi Tongri"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A replica of the Puri Jagannath temple in Ranchi, built in 1691, with an annual Rath Yatra.",
@@ -791,7 +805,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -801,7 +815,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "Jharkhand's only tiger reserve, a vast protected forest in Latehar that includes Betla National Park.",
@@ -856,7 +874,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Wildlife",
     "budget_level": "PREMIUM",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -866,7 +884,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A wildlife sanctuary on the Chotanagpur plateau with lakes, forests and a growing eco-tourism scene.",
@@ -921,7 +943,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Wildlife",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -931,7 +953,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "Asia's largest Sal forest, a vast wilderness in West Singhbhum rich in biodiversity and iron-ore landscape.",
@@ -985,7 +1011,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Forest",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -995,7 +1021,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A historic fort in the Palamau forests, once the seat of the Chero kings, now a ruined heritage site.",
@@ -1046,7 +1076,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Historical",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1056,7 +1086,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "The ruined fort and former capital of the Nagvanshi dynasty in Gumla, set in forested hills.",
@@ -1108,7 +1142,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Historical",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1118,7 +1152,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A village of 72 surviving terracotta temples in Dumka, a remarkable heritage site of Bengal-style temple art.",
@@ -1171,7 +1209,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Historical",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1181,7 +1219,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Village of Temples",
+      "Gupt Kashi of Santhal Pargana"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A scenic forested valley in Latehar known for its beautiful road drive and untouched landscape.",
@@ -1234,7 +1279,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Eco Tourism",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1244,7 +1289,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Rural and Community-Based Tourism",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "Natural hot water springs near Latehar, valued for their mineral water and rural setting.",
@@ -1296,7 +1345,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Eco Tourism",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1306,7 +1355,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Rural and Community-Based Tourism",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A reservoir on the Subarnarekha near Ranchi, a quiet spot for sunsets and birdwatching.",
@@ -1358,7 +1411,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Dam & Lake",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1368,7 +1421,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:06:42.885000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A scenic reservoir on the Subarnarekha river with boating and a museum, near Jamshedpur.",
@@ -1421,7 +1478,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Dam & Lake",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1431,7 +1488,13 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Chandil Subarnarekha Reservoir"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A large reservoir on the Damodar river near Bokaro, popular for sunsets and picnics.",
@@ -1483,7 +1546,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Dam & Lake",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1493,7 +1556,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A sacred pilgrimage site at the confluence of rivers in Chatra, revered by Hindus, Jains and Buddhists.",
@@ -1546,7 +1613,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1556,7 +1623,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [
+      "Bhadrakali Complex",
+      "Maa Bhadrakali Temple Itkhori"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "An elegant Sun God temple shaped like a chariot with 18 wheels, near Bundu, 40 km from Ranchi.",
@@ -1610,7 +1684,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1620,7 +1694,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A 700-year-old Durga temple near Tamar, about 60 km from Ranchi, with a rare four-armed idol.",
@@ -1671,7 +1749,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1681,7 +1759,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "An ancient Shiva temple in Dumka, a key stop for pilgrims on the Baidyanath Dham circuit.",
@@ -1732,7 +1814,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1742,7 +1824,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A sacred hill on the Bokaro–Latehar border with a cave shrine, sunrise views and forest trails.",
@@ -1796,7 +1882,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Heritage",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1806,7 +1892,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "Three-peaked hill near Deoghar with a ropeway, cave shrine and panoramic summit views.",
@@ -1860,7 +1950,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Adventure",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1870,7 +1960,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Adventure and Outdoor Activities",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A remote, lesser-known waterfall near Garu in Latehar, deep within the Palamau forest landscape.",
@@ -1923,7 +2017,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1933,7 +2027,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A scenic waterfall on the Usri River near Giridih, popular for picnics and monsoon photography.",
@@ -1985,7 +2083,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "subcategory": null,
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "last_verified": "2026-10-21",
     "source_urls": [
@@ -1995,7 +2093,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-25T06:05:57.970000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A broad, scenic waterfall in the forests of West Singhbhum, set deep in Sal forest.",
@@ -2050,7 +2152,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "Half day",
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2061,7 +2163,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A hill in Ranchi associated with Rabindranath Tagore, with city views and a peaceful Ramakrishna Mission ashram.",
@@ -2117,7 +2223,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "1–2 hours",
     "primary_category": "Heritage",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2128,7 +2234,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [
+      "Morabadi Hill",
+      "Rabindranath Tagore Ashram"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A model rural tourism village near Jamshedpur showcasing tribal art, culture and community-based tourism.",
@@ -2185,7 +2298,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "Half day to full day",
     "primary_category": "Rural Tourism",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "FULL_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2196,7 +2309,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Rural and Community-Based Tourism",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A large dam on the Damodar river near Dhanbad, with a lake, boating and a deer park.",
@@ -2253,7 +2370,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Dam & Lake",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2264,7 +2381,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A scenic artificial lake near Jamshedpur at the foot of the Dalma hills, popular for boating and picnics.",
@@ -2320,7 +2441,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Dam & Lake",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2331,7 +2452,13 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Lakes, Dams and Scenic Landscapes",
+    "alt_names": [
+      "Dimna Reservoir Jamshedpur"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A colonial-era hill settlement near Ranchi with fading Anglo-Indian heritage and forested surroundings.",
@@ -2387,7 +2514,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "Half day",
     "primary_category": "Heritage",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2398,7 +2525,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Heritage, Architecture and Archaeology",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "The highest hill in Jharkhand (1,350 m) and the most sacred Jain pilgrimage site, with 24 shrines.",
@@ -2454,7 +2585,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "1 night / 2 days (full trek is a full day)",
     "primary_category": "Religious",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2465,7 +2596,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "One of the twelve Jyotirlingas and a major pilgrimage centre in Deoghar, home to the Shravani Mela.",
@@ -2521,7 +2656,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "1–2 days",
     "primary_category": "Religious",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2532,7 +2667,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "The Chhinnamastika temple at Rajrappa at the confluence of the Damodar and Bhairavi rivers, a major Shakti shrine.",
@@ -2587,7 +2726,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Religious",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2598,7 +2737,11 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Spiritual and Religious Destinations",
+    "alt_names": [],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A dramatic valley and dam near Ramgarh with winding ghat roads, popular for road trips and sunsets.",
@@ -2656,7 +2799,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "Half day",
     "primary_category": "Adventure",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "HALF_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2667,7 +2810,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Adventure and Outdoor Activities",
+    "alt_names": [
+      "Patratu Ghati",
+      "Nalkari Valley"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "The 'Queen of Chotanagpur' — a serene hill station in Latehar famous for legendary sunrises and sunsets.",
@@ -2724,7 +2874,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "1 night / 2 days",
     "primary_category": "Eco Tourism",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2735,7 +2885,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Rural and Community-Based Tourism",
+    "alt_names": [
+      "Queen of Chotanagpur",
+      "Netarhat Hill Station"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A wildlife sanctuary near Jamshedpur on the Dalma hills, famous for elephants and forest trekking.",
@@ -2792,7 +2949,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "Half day to full day",
     "primary_category": "Wildlife",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "FULL_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2803,7 +2960,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Dalma Elephant Reserve",
+      "Dalma Pahar"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "One of Jharkhand's flagship national parks in Latehar, known for tigers, elephants and forest safaris.",
@@ -2861,7 +3025,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "1 night / 2 days",
     "primary_category": "Wildlife",
     "budget_level": "PREMIUM",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "MULTI_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2872,7 +3036,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Wildlife, Forests and Protected Areas",
+    "alt_names": [
+      "Betla Reserve",
+      "Palamau Betla Sanctuary"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "Jharkhand's highest waterfall at 143 metres, deep in the forests of Latehar near the Palamau Tiger Reserve.",
@@ -2926,7 +3097,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "Full day (combine with Netarhat or Betla)",
     "primary_category": "Waterfalls",
     "budget_level": "MODERATE",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "FULL_DAY",
     "images": [],
     "last_verified": "2026-10-21",
@@ -2937,7 +3108,15 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Burha Ghagh",
+      "Budha Ghagh Falls",
+      "Lodh Waterfalls"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A five-stream waterfall in Khunti district, a quieter alternative to Ranchi's famous falls.",
@@ -2991,7 +3170,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -3002,7 +3181,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Panch Ghaagh",
+      "Five Cascades of Banai"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A serene horseshoe waterfall on the edge of the Ranchi plateau, also known as Gautamdhara, 40 km from Ranchi.",
@@ -3058,7 +3244,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -3069,7 +3255,14 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Gautamdhara",
+      "Jonha Ghagh"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "A powerful 10-stream cascade on the Kanchi river near Ranchi, dramatic during the monsoon.",
@@ -3122,7 +3315,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -3133,7 +3326,15 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Dasam Falls",
+      "Da-song Falls",
+      "Kanchi Falls"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   },
   {
     "short_description": "One of Jharkhand's highest and most iconic waterfalls, where the Subarnarekha plunges 98 metres near Ranchi.",
@@ -3189,7 +3390,7 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "recommended_duration": "2–3 hours",
     "primary_category": "Waterfalls",
     "budget_level": "LOW",
-    "verification_status": "PARTIALLY_VERIFIED",
+    "verification_status": "VERIFIED",
     "duration_category": "SHORT",
     "images": [],
     "last_verified": "2026-10-21",
@@ -3200,7 +3401,15 @@ export const INITIAL_DESTINATIONS: Destination[] = [
     "created_date": "2026-09-15T05:49:24.162000",
     "updated_date": "2026-10-21T10:25:51.686000",
     "created_by_id": "6aa8db5c0aef597b6eba92fb",
-    "is_sample": false
+    "is_sample": false,
+    "pillar": "Nature and Waterfalls",
+    "alt_names": [
+      "Hundru Ghagh",
+      "Hundrugarh",
+      "Subarnarekha Falls"
+    ],
+    "source_title": "Department of Tourism, Government of Jharkhand (JTDC)",
+    "information_status": "Verified State Tourism Landmark"
   }
 ];
 
@@ -4746,3 +4955,72 @@ export const INITIAL_ITINERARIES: Itinerary[] = [
     ]
   }
 ];
+
+export const INITIAL_CIRCUITS: TourismCircuit[] = [
+  {
+    id: 'circ-ranchi-waterfalls',
+    name: 'Ranchi Plateau Waterfalls & Scenic Valley Circuit',
+    slug: 'ranchi-waterfalls-circuit',
+    pillar: 'Nature and Waterfalls',
+    description: "Jharkhand's premier waterfall trail traversing Hundru, Dassam, and Jonha falls on the edge of the Chotanagpur plateau, culminating in the serpentine drive down Patratu Valley.",
+    recommended_days: 2,
+    best_season: 'August to January (Post-monsoon full cascade)',
+    districts: ['Ranchi', 'Ramgarh'],
+    destination_ids: ['6aa8dc640aef597b6eba93ae', '6aa8dc640aef597b6eba93af', '6aa8dc640aef597b6eba93b1', '6aa8dc640aef597b6eba93b5'],
+    highlights: ['98m Hundru Falls cascade', '10-stream Dassam gorge', 'Jonha Gautamdhar rock pools', 'Patratu valley winding scenic route'],
+    official_policy_reference: 'Jharkhand Tourism Policy 2021 — Eco & Waterfall Circuit Segment'
+  },
+  {
+    id: 'circ-netarhat-betla-eco',
+    name: 'Netarhat & Betla Eco-Wildlife Circuit',
+    slug: 'netarhat-betla-eco-circuit',
+    pillar: 'Wildlife, Forests and Protected Areas',
+    description: 'Pristine wilderness circuit spanning Betla National Park (India’s earliest tiger census), Palamau Tiger Reserve sal canopies, Lodh Falls (highest in Jharkhand), and the Queen of Chotanagpur, Netarhat.',
+    recommended_days: 3,
+    best_season: 'October to April',
+    districts: ['Latehar', 'Palamu'],
+    destination_ids: ['6aa8dc640aef597b6eba93b0', '6aa8dc640aef597b6eba93b3', '6aa8dc640aef597b6eba93b6'],
+    highlights: ['Betla wild elephant & gaur safari', 'Historic 16th century Chero kings twin forts', '143m Lodh Falls drop', 'Magnolia sunset viewpoint over dense forest'],
+    official_policy_reference: 'Jharkhand Tourism Policy 2021 — Latehar-Netarhat-Betla Integrated Eco Circuit'
+  },
+  {
+    id: 'circ-santhal-pargana-spiritual',
+    name: 'Santhal Pargana Spiritual & Terracotta Circuit',
+    slug: 'santhal-pargana-spiritual-circuit',
+    pillar: 'Spiritual and Religious Destinations',
+    description: 'Sacred pilgrimage and terracotta heritage journey connecting Baba Baidyanath Jyotirlinga, Basukinath Shiva shrine, the 17th-century terracotta village of Maluti, and scenic Massanjore Dam.',
+    recommended_days: 3,
+    best_season: 'October to March (or Shravan month for devotees)',
+    districts: ['Deoghar', 'Dumka'],
+    destination_ids: ['6aa8dc640aef597b6eba93b4', '6aa8dc640aef597b6eba93b8', '6ab60f72ca3153015b1f0475'],
+    highlights: ['Baidyanath Dham 12 Jyotirlinga', 'Basukinath ancient Shiva shrine', '72 surviving terracotta temples of Maluti', 'Massanjore Mayurakshi river dam'],
+    official_policy_reference: 'Jharkhand Tourism Policy 2021 — Santhal Pargana Heritage & Pilgrimage Circuit (PRASHAD Scheme)'
+  },
+  {
+    id: 'circ-parasnath-jain-heritage',
+    name: 'Parasnath & Jain Pilgrimage Circuit',
+    slug: 'parasnath-jain-circuit',
+    pillar: 'Spiritual and Religious Destinations',
+    description: 'The holiest Jain pilgrimage hub in eastern India, ascending Jharkhand’s highest summit (1365m Shikharji) where 20 of 24 Tirthankaras attained Moksha, paired with Usri Falls and Khandoli Dam.',
+    recommended_days: 2,
+    best_season: 'October to March',
+    districts: ['Giridih', 'Dhanbad'],
+    destination_ids: ['6aa8dc640aef597b6eba93b7'],
+    highlights: ['Shikharji pilgrimage summit (1365m)', 'Madhuban foot-hill Jain temples and dharamsalas', 'Usri Falls rocky gorge', 'Khandoli water adventure park'],
+    official_policy_reference: 'Jharkhand Tourism Policy 2021 — Parasnath & Madhuban Development Area'
+  },
+  {
+    id: 'circ-kolhan-tribal-craft',
+    name: 'Kolhan Tribal Craft & Adventure Circuit',
+    slug: 'kolhan-tribal-craft-circuit',
+    pillar: 'Tribal Culture and Living Traditions',
+    description: 'Subarnarekha basin circuit incorporating Dalma Wildlife Sanctuary elephant corridors, Chandil Dam water sports, Amadubi Panikar Paitkar painting village, and Seraikela Chhau dance centers.',
+    recommended_days: 3,
+    best_season: 'October to March',
+    districts: ['East Singhbhum', 'Seraikela-Kharsawan'],
+    destination_ids: ['6aa8dc640aef597b6eba93b2'],
+    highlights: ['Dalma hilltop sanctuary & Shiva temple', 'Chandil dam boating & lake', 'Amadubi ethnic village scroll artists', 'Seraikela Chhau dance mask workshops'],
+    official_policy_reference: 'Jharkhand Tourism Policy 2021 — Chandil-Dalma-Mirchaiya Eco-Adventure Circuit'
+  }
+];
+

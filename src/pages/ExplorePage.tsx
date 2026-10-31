@@ -16,6 +16,7 @@ export const ExplorePage: React.FC = () => {
 
   // Search and filter states initialized from URL params
   const [searchQuery, setSearchQuery] = useState(searchParams.get('search') || '');
+  const [selectedPillar, setSelectedPillar] = useState(searchParams.get('pillar') || 'all');
   const [selectedCategory, setSelectedCategory] = useState(searchParams.get('category') || 'all');
   const [selectedDistrict, setSelectedDistrict] = useState(searchParams.get('district') || 'all');
   const [selectedBudget, setSelectedBudget] = useState(searchParams.get('budget') || 'all');
@@ -25,10 +26,24 @@ export const ExplorePage: React.FC = () => {
   const [sortBy, setSortBy] = useState(searchParams.get('sort') || 'recommended');
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
+  const TOURISM_PILLARS = [
+    'Nature and Waterfalls',
+    'Hill Stations and Plateaus',
+    'Wildlife, Forests and Protected Areas',
+    'Spiritual and Religious Destinations',
+    'Heritage, Architecture and Archaeology',
+    'Tribal Culture and Living Traditions',
+    'Lakes, Dams and Scenic Landscapes',
+    'Adventure and Outdoor Activities',
+    'Rural and Community-Based Tourism',
+    'Lesser-Known and Emerging Destinations'
+  ];
+
   // Sync state to URL params
   useEffect(() => {
     const params = new URLSearchParams();
     if (searchQuery) params.set('search', searchQuery);
+    if (selectedPillar !== 'all') params.set('pillar', selectedPillar);
     if (selectedCategory !== 'all') params.set('category', selectedCategory);
     if (selectedDistrict !== 'all') params.set('district', selectedDistrict);
     if (selectedBudget !== 'all') params.set('budget', selectedBudget);
@@ -39,6 +54,7 @@ export const ExplorePage: React.FC = () => {
     setSearchParams(params, { replace: true });
   }, [
     searchQuery,
+    selectedPillar,
     selectedCategory,
     selectedDistrict,
     selectedBudget,
@@ -70,10 +86,16 @@ export const ExplorePage: React.FC = () => {
         d.name.toLowerCase().includes(q) ||
         d.district.toLowerCase().includes(q) ||
         d.category.toLowerCase().includes(q) ||
+        (d.alt_names && d.alt_names.some(alt => alt.toLowerCase().includes(q))) ||
         (d.short_description && d.short_description.toLowerCase().includes(q)) ||
         (d.activities && d.activities.some(a => a.toLowerCase().includes(q))) ||
         (d.main_attractions && d.main_attractions.some(m => m.toLowerCase().includes(q)))
       );
+    }
+
+    // Tourism Pillar filter (Jharkhand Tourism Policy 2021)
+    if (selectedPillar !== 'all') {
+      result = result.filter(d => d.pillar === selectedPillar);
     }
 
     // Category filter
@@ -129,6 +151,7 @@ export const ExplorePage: React.FC = () => {
     return result;
   }, [
     searchQuery,
+    selectedPillar,
     selectedCategory,
     selectedDistrict,
     selectedBudget,
@@ -141,6 +164,7 @@ export const ExplorePage: React.FC = () => {
 
   const clearAllFilters = () => {
     setSearchQuery('');
+    setSelectedPillar('all');
     setSelectedCategory('all');
     setSelectedDistrict('all');
     setSelectedBudget('all');
@@ -151,6 +175,7 @@ export const ExplorePage: React.FC = () => {
   };
 
   const activeFilterCount = [
+    selectedPillar !== 'all',
     selectedCategory !== 'all',
     selectedDistrict !== 'all',
     selectedBudget !== 'all',
@@ -219,7 +244,24 @@ export const ExplorePage: React.FC = () => {
 
       {/* Filter Toolbar (Desktop & Collapsible Mobile) */}
       <div className={`space-y-4 ${mobileFiltersOpen ? 'block' : 'hidden sm:block'}`}>
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3">
+          {/* Tourism Pillar (Tourism Policy 2021) */}
+          <div className="col-span-2 sm:col-span-1">
+            <label className="block text-[11px] font-semibold text-muted-foreground mb-1">
+              Tourism Pillar
+            </label>
+            <select
+              value={selectedPillar}
+              onChange={(e) => setSelectedPillar(e.target.value)}
+              className="w-full rounded-lg border border-border bg-card px-3 py-1.5 text-xs text-foreground outline-none cursor-pointer"
+            >
+              <option value="all">All 10 Policy Pillars</option>
+              {TOURISM_PILLARS.map(p => (
+                <option key={p} value={p}>{p}</option>
+              ))}
+            </select>
+          </div>
+
           {/* Category */}
           <div>
             <label className="block text-[11px] font-semibold text-muted-foreground mb-1">Category</label>

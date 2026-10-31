@@ -14,7 +14,10 @@ import {
   ArrowLeft,
   Navigation,
   ExternalLink,
-  Sparkles
+  Sparkles,
+  Share2,
+  ShieldCheck,
+  Copy
 } from 'lucide-react';
 import { 
   INITIAL_DESTINATIONS, 
@@ -56,6 +59,21 @@ export const DestinationDetailPage: React.FC = () => {
   const [ratingInput, setRatingInput] = useState(5);
   const [reviewInput, setReviewInput] = useState('');
   const [reviewSubmittedNotice, setReviewSubmittedNotice] = useState(false);
+  const [shareCopied, setShareCopied] = useState(false);
+
+  const handleShare = () => {
+    if (navigator.share) {
+      navigator.share({
+        title: destination?.name || 'VisitJhar Destination',
+        text: destination?.short_description || '',
+        url: window.location.href,
+      }).catch(() => {});
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      setShareCopied(true);
+      setTimeout(() => setShareCopied(false), 3000);
+    }
+  };
 
   if (!destination) {
     return (
@@ -117,17 +135,36 @@ export const DestinationDetailPage: React.FC = () => {
           <ArrowLeft className="h-4 w-4" /> Back to Explore
         </Link>
 
-        <button
-          onClick={() => toggleFavorite(destination.id)}
-          className={`inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-xs font-semibold shadow-sm transition ${
-            favorited 
-              ? 'border-red-200 bg-red-50 text-red-600' 
-              : 'border-border bg-card text-foreground hover:bg-secondary'
-          }`}
-        >
-          <Heart className={`h-4 w-4 ${favorited ? 'fill-red-500 text-red-500' : ''}`} />
-          {favorited ? 'Saved in Favourites' : 'Save to Favourites'}
-        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={handleShare}
+            className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3.5 py-1.5 text-xs font-semibold text-foreground hover:bg-secondary transition shadow-sm"
+          >
+            {shareCopied ? (
+              <>
+                <Check className="h-4 w-4 text-emerald-600" />
+                <span className="text-emerald-700">Link Copied!</span>
+              </>
+            ) : (
+              <>
+                <Share2 className="h-4 w-4 text-primary" />
+                <span>Share</span>
+              </>
+            )}
+          </button>
+
+          <button
+            onClick={() => toggleFavorite(destination.id)}
+            className={`inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-xs font-semibold shadow-sm transition ${
+              favorited 
+                ? 'border-red-200 bg-red-50 text-red-600' 
+                : 'border-border bg-card text-foreground hover:bg-secondary'
+            }`}
+          >
+            <Heart className={`h-4 w-4 ${favorited ? 'fill-red-500 text-red-500' : ''}`} />
+            {favorited ? 'Saved in Favourites' : 'Save to Favourites'}
+          </button>
+        </div>
       </div>
 
       {/* Hero Section */}
@@ -135,6 +172,11 @@ export const DestinationDetailPage: React.FC = () => {
         {/* Left: Destination Info */}
         <div className="space-y-4">
           <div className="flex flex-wrap items-center gap-2">
+            {destination.pillar && (
+              <span className="rounded-full bg-accent/15 px-3 py-1 text-xs font-bold text-accent">
+                {destination.pillar}
+              </span>
+            )}
             <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-bold text-primary">
               {destination.category}
             </span>
@@ -153,9 +195,16 @@ export const DestinationDetailPage: React.FC = () => {
             )}
           </div>
 
-          <h1 className="font-heading text-4xl font-extrabold tracking-tight sm:text-5xl text-foreground">
-            {destination.name}
-          </h1>
+          <div>
+            <h1 className="font-heading text-4xl font-extrabold tracking-tight sm:text-5xl text-foreground">
+              {destination.name}
+            </h1>
+            {destination.alt_names && destination.alt_names.length > 0 && (
+              <p className="mt-1 text-xs text-muted-foreground">
+                <strong className="text-foreground/80">Also known as:</strong> {destination.alt_names.join(', ')}
+              </p>
+            )}
+          </div>
 
           <p className="text-base text-muted-foreground leading-relaxed">
             {destination.short_description}
@@ -317,6 +366,40 @@ export const DestinationDetailPage: React.FC = () => {
               </section>
             )}
           </div>
+
+          {/* Official Source & Verification Metadata Box */}
+          <section className="rounded-2xl border border-emerald-200 bg-emerald-50/60 p-5 text-emerald-950">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-emerald-200/80 pb-3 gap-2">
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5 text-emerald-700 shrink-0" />
+                <h3 className="font-heading text-base font-bold">Official Tourism Source & Verification</h3>
+              </div>
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-200/80 px-2.5 py-0.5 text-[11px] font-bold text-emerald-900 w-fit">
+                <Check className="h-3 w-3" /> Status: {destination.verification_status || 'VERIFIED'}
+              </span>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-3 pt-3 text-xs">
+              <div>
+                <span className="text-emerald-800 font-semibold block">Primary Authority:</span>
+                <span className="text-emerald-950">{destination.source_title || 'Jharkhand Tourism Development Corporation (JTDC)'}</span>
+              </div>
+              <div>
+                <span className="text-emerald-800 font-semibold block">Information Status:</span>
+                <span className="text-emerald-950">{destination.information_status || 'Verified State Tourism Landmark'}</span>
+              </div>
+              <div>
+                <span className="text-emerald-800 font-semibold block">Official Source:</span>
+                <a
+                  href={destination.source_urls?.[0] || 'https://tourism.jharkhand.gov.in/'}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 font-bold text-emerald-900 underline hover:text-emerald-700"
+                >
+                  tourism.jharkhand.gov.in <ExternalLink className="h-3 w-3" />
+                </a>
+              </div>
+            </div>
+          </section>
 
           {/* Reviews & Ratings Section */}
           <section className="rounded-2xl border border-border bg-card p-6 sm:p-8 space-y-6">

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate, useSearchParams, Link } from 'react-router-dom';
-import { Route, Calendar, Users, IndianRupee, MapPin, Sparkles, Clock, Check, Save } from 'lucide-react';
+import { Route, Calendar, Users, IndianRupee, MapPin, Sparkles, Clock, Check, Save, Printer, Share2 } from 'lucide-react';
 import { INITIAL_DESTINATIONS, INITIAL_DISTRICTS } from '../data/mockData';
 import { generateSmartItinerary } from '../lib/itineraryPlanner';
 import { useAuth } from '../context/AuthContext';
@@ -256,12 +256,42 @@ export const PlanTripPage: React.FC = () => {
               </p>
             </div>
 
-            <button
-              onClick={handleSaveItinerary}
-              className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-xs font-semibold text-white shadow hover:bg-primary-light transition"
-            >
-              <Save className="h-4 w-4" /> Save This Itinerary
-            </button>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => window.print()}
+                className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-4 py-2 text-xs font-semibold text-foreground hover:bg-secondary transition shadow-sm"
+              >
+                <Printer className="h-3.5 w-3.5 text-muted-foreground" /> Print / PDF
+              </button>
+              <button
+                type="button"
+                onClick={handleSaveItinerary}
+                className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-xs font-semibold text-white shadow hover:bg-primary-light transition"
+              >
+                <Save className="h-4 w-4" /> Save This Itinerary
+              </button>
+            </div>
+          </div>
+
+          {/* Quick Metrics Bar */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 rounded-2xl border border-border bg-card p-4 shadow-sm text-xs">
+            <div>
+              <span className="text-muted-foreground block text-[11px]">Departure Hub</span>
+              <strong className="text-foreground block mt-0.5">{startingLocation} District</strong>
+            </div>
+            <div>
+              <span className="text-muted-foreground block text-[11px]">Duration</span>
+              <strong className="text-foreground block mt-0.5">{numDays} Days / {numDays * 3} Stops</strong>
+            </div>
+            <div>
+              <span className="text-muted-foreground block text-[11px]">Travel Party</span>
+              <strong className="text-foreground block mt-0.5">{numTravelers} Traveler{numTravelers > 1 ? 's' : ''} ({travelGroup})</strong>
+            </div>
+            <div>
+              <span className="text-muted-foreground block text-[11px]">Budget Strategy</span>
+              <strong className="text-foreground block mt-0.5">{budget === 'LOW' ? '₹ Budget' : budget === 'MODERATE' ? '₹₹ Moderate' : '₹₹₹ Premium'}</strong>
+            </div>
           </div>
 
           {saveNotice && (
