@@ -21,6 +21,7 @@ import {
   INITIAL_CULTURE
 } from '../data/mockData';
 import { DestinationCard } from '../components/DestinationCard';
+import { DestinationImage } from '../components/DestinationImage';
 
 export const HomePage: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');

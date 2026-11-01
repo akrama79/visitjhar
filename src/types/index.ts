@@ -95,10 +95,14 @@ export interface Destination {
   nearby_attractions?: string[];
   local_experiences?: any[];
   image?: string | null;
+  image_source?: string | null;
   image_source_page?: string | null;
   image_credit?: string | null;
+  image_attribution?: string | null;
   image_licence?: string | null;
+  image_license?: string | null;
   image_alt?: string | null;
+  needs_photo?: boolean;
   gallery?: string[];
   images?: string[];
   featured?: boolean;
@@ -107,7 +111,7 @@ export interface Destination {
   views?: number;
   rating_avg?: number | null;
   rating_count?: number;
-  verification_status?: 'VERIFIED' | 'PARTIALLY_VERIFIED' | 'UNVERIFIED';
+  verification_status?: 'VERIFIED' | 'PARTIALLY_VERIFIED' | 'UNVERIFIED' | 'VERIFIED_AUTHENTIC' | 'REPRESENTATIVE_FALLBACK' | 'CATEGORY_PLACEHOLDER';
   last_verified?: string | null;
   source_urls?: string[];
   created_date?: string;

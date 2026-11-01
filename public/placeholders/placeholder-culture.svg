@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="grad-culture" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="50%" stop-color="#4a044e"/>
+      <stop offset="100%" stop-color="#701a75"/>
+    </linearGradient>
+    <pattern id="pat-culture" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M0 16 L16 0 L32 16 L16 32 Z" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with tribal geo motif -->
+  <rect width="100%" height="100%" fill="url(#grad-culture)"/>
+  <rect width="100%" height="100%" fill="url(#pat-culture)"/>
+
+  <!-- Top Decorative Pill -->
+  <g transform="translate(40, 40)">
+    <rect width="130" height="26" rx="13" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="65" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">VISITJHAR</text>
+  </g>
+
+  <!-- Central Emblem -->
+  <g transform="translate(120, -10)">
+    <polygon points="200,130 250,220 200,310 150,220" fill="none" stroke="#f472b6" stroke-width="4"/>
+           <circle cx="200" cy="220" r="25" fill="none" stroke="#ec4899" stroke-width="3"/>
+           <circle cx="200" cy="220" r="8" fill="#f472b6"/>
+  </g>
+
+  <!-- Footer Information -->
+  <g transform="translate(40, 320)">
+    <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">Tribal Culture & Living Traditions</text>
+    <text x="0" y="48" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Sohrai Art, Dokra Metalcraft & Folk Heritage</text>
+  </g>
+</svg>

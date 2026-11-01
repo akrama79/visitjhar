@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="grad-waterfalls" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#0c4a6e"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <pattern id="pat-waterfalls" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M0 16 L16 0 L32 16 L16 32 Z" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with tribal geo motif -->
+  <rect width="100%" height="100%" fill="url(#grad-waterfalls)"/>
+  <rect width="100%" height="100%" fill="url(#pat-waterfalls)"/>
+
+  <!-- Top Decorative Pill -->
+  <g transform="translate(40, 40)">
+    <rect width="130" height="26" rx="13" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="65" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">VISITJHAR</text>
+  </g>
+
+  <!-- Central Emblem -->
+  <g transform="translate(120, -10)">
+    <path d="M120 180 C120 280, 160 320, 200 320 C240 320, 280 280, 280 180" fill="none" stroke="#38bdf8" stroke-width="4" stroke-dasharray="8 6"/>
+           <path d="M160 160 C160 260, 180 300, 200 300 C220 300, 240 260, 240 160" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+           <path d="M100 310 Q200 340 300 310" stroke="#0284c7" stroke-width="6" fill="none"/>
+           <path d="M80 330 Q200 360 320 330" stroke="#0369a1" stroke-width="4" fill="none"/>
+  </g>
+
+  <!-- Footer Information -->
+  <g transform="translate(40, 320)">
+    <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">Nature & Waterfalls</text>
+    <text x="0" y="48" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Cascading Waters of Chotanagpur Plateau</text>
+  </g>
+</svg>

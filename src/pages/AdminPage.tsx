@@ -1,3 +1,4 @@
+import { DestinationImage } from '../components/DestinationImage';
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { 
@@ -251,11 +252,7 @@ export const AdminPage: React.FC = () => {
                 {filteredDestinations.map(d => (
                   <tr key={d.id} className="hover:bg-secondary/30 transition">
                     <td className="p-3 font-semibold text-foreground flex items-center gap-2">
-                      <img
-                        src={d.image || 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=60'}
-                        alt={d.name}
-                        className="h-8 w-8 rounded-lg object-cover"
-                      />
+                      <DestinationImage src={d.image} alt={d.name} targetSize={500} className="h-8 w-8 rounded-lg object-cover" />
                       <span>{d.name}</span>
                     </td>
                     <td className="p-3 text-muted-foreground">{d.district}</td>

@@ -5,6 +5,7 @@ import { INITIAL_DESTINATIONS, INITIAL_DISTRICTS } from '../data/mockData';
 import { generateSmartItinerary } from '../lib/itineraryPlanner';
 import { useAuth } from '../context/AuthContext';
 import { ItineraryDay, Itinerary } from '../types';
+import { DestinationImage } from '../components/DestinationImage';
 
 export const PlanTripPage: React.FC = () => {
   const [searchParams] = useSearchParams();
@@ -334,9 +335,11 @@ export const PlanTripPage: React.FC = () => {
                             )}
                           </div>
 
-                          <img
-                            src={slot.image || 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=300'}
+                          <DestinationImage
+                            src={slot.image}
                             alt={slot.destination_name}
+                            category={slot.category}
+                            targetSize={500}
                             className="h-32 w-full rounded-xl object-cover mb-2"
                           />
 

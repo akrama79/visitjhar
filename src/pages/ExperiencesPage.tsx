@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Compass, MapPin, IndianRupee, Clock, Users, Sparkles, Phone } from 'lucide-react';
 import { INITIAL_EXPERIENCES, INITIAL_ARTISANS } from '../data/mockData';
+import { DestinationImage } from '../components/DestinationImage';
 
 export const ExperiencesPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'experiences' | 'artisans'>('experiences');
@@ -55,11 +56,7 @@ export const ExperiencesPage: React.FC = () => {
               className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm"
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-                <img
-                  src={exp.image || 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=500'}
-                  alt={exp.name}
-                  className="h-full w-full object-cover"
-                />
+                <DestinationImage src={exp.image} alt={exp.name} targetSize={500} className="h-full w-full object-cover" />
                 <div className="absolute top-3 left-3">
                   <span className="rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-primary shadow backdrop-blur">
                     {exp.type}
@@ -112,11 +109,7 @@ export const ExperiencesPage: React.FC = () => {
               className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm"
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-                <img
-                  src={art.image || 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=500'}
-                  alt={art.name}
-                  className="h-full w-full object-cover"
-                />
+                <DestinationImage src={art.image} alt={art.name} targetSize={500} className="h-full w-full object-cover" />
                 <div className="absolute top-3 left-3">
                   <span className="rounded-full bg-accent/90 px-2.5 py-1 text-[11px] font-bold text-white shadow backdrop-blur">
                     {art.craft_type}

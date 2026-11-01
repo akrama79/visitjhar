@@ -1,6 +1,20 @@
-node_modules
-dist
-.DS_Store
+# Dependencies
+node_modules/
+
+# Production builds
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
 *.local
+
+# Build caches & logs
+*.log
 tsconfig.tsbuildinfo
-.gemini
+.gemini/
+
+# OS metadata
+.DS_Store
+Thumbs.db

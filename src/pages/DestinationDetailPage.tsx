@@ -28,6 +28,7 @@ import { useFavorites } from '../context/FavoritesContext';
 import { useAuth } from '../context/AuthContext';
 import { getNearbyDestinations, formatDistance } from '../lib/geo';
 import { DestinationCard } from '../components/DestinationCard';
+import { DestinationImage } from '../components/DestinationImage';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 
@@ -197,6 +198,16 @@ export const DestinationDetailPage: React.FC = () => {
             <span className="inline-flex items-center gap-1 rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-muted-foreground">
               <MapPin className="h-3.5 w-3.5 text-accent" /> {destination.district} District
             </span>
+            {(destination.verification_status === 'VERIFIED_AUTHENTIC' || destination.verification_status === 'VERIFIED') && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-1 text-xs font-bold text-emerald-800 border border-emerald-200">
+                ✓ Verified Authentic
+              </span>
+            )}
+            {destination.needs_photo && (
+              <span className="inline-flex items-center gap-1 rounded-full bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-800 border border-amber-200">
+                📷 Field Photo Needed
+              </span>
+            )}
             {destination.hidden_gem && (
               <span className="rounded-full bg-accent/15 px-3 py-1 text-xs font-bold text-accent">
                 Hidden Gem
@@ -266,15 +277,21 @@ export const DestinationDetailPage: React.FC = () => {
         </div>
 
         {/* Right: Primary Hero Image with Attribution */}
-        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-muted shadow-md">
-          <img
-            src={destination.image || 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg'}
+        <div className="relative aspect-[4/3] overflow-hidden rounded-3xl border border-border bg-slate-900 shadow-md">
+          <DestinationImage
+            src={destination.image}
             alt={destination.image_alt || destination.name}
+            category={destination.category}
+            pillar={destination.pillar}
+            targetSize={960}
             className="h-full w-full object-cover"
-            onError={(e) => {
-              (e.target as HTMLImageElement).src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg';
-            }}
           />
+          {destination.needs_photo && (
+            <div className="absolute top-3 left-3 rounded-full bg-amber-600/90 text-white px-3 py-1 text-xs font-semibold shadow-md backdrop-blur-sm flex items-center gap-1.5">
+              <span>📷</span>
+              <span>Community Photo Contribution Welcomed</span>
+            </div>
+          )}
           {destination.image_credit && (
             <div className="absolute bottom-3 right-3 rounded-md bg-black/70 px-2.5 py-1 text-[11px] text-white/90 backdrop-blur-sm">
               Photo: {destination.image_credit} {destination.image_licence ? `• ${destination.image_licence}` : ''}
@@ -570,9 +587,10 @@ export const DestinationDetailPage: React.FC = () => {
                   className="flex items-center justify-between rounded-xl border border-border p-2.5 hover:bg-secondary transition group"
                 >
                   <div className="flex items-center gap-3">
-                    <img
-                      src={nearby.image || 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=100'}
+                    <DestinationImage
+                      src={nearby.image}
                       alt={nearby.name}
+                      targetSize={500}
                       className="h-10 w-10 rounded-lg object-cover"
                     />
                     <div>

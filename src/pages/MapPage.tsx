@@ -5,6 +5,7 @@ import L from 'leaflet';
 import { MapPin, Navigation, Compass, Filter, ExternalLink, List, Map as MapIcon } from 'lucide-react';
 import { INITIAL_DESTINATIONS, INITIAL_DISTRICTS } from '../data/mockData';
 import { Destination } from '../types';
+import { DestinationImage } from '../components/DestinationImage';
 
 // Custom Pin Marker based on Pillar/Category
 const createCustomPin = (pillar?: string, category?: string) => {
@@ -216,9 +217,12 @@ export const MapPage: React.FC = () => {
               >
                 <Popup>
                   <div className="w-56 p-2 space-y-2">
-                    <img
-                      src={d.image || 'https://images.unsplash.com/photo-1511497584788-87676104235f?w=300'}
-                      alt={d.name}
+                    <DestinationImage
+                      src={d.image}
+                      alt={d.image_alt || d.name}
+                      category={d.category}
+                      pillar={d.pillar}
+                      targetSize={500}
                       className="h-24 w-full rounded-lg object-cover"
                     />
                     <div>

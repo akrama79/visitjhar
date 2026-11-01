@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, MapPin, Sparkles, ArrowRight } from 'lucide-react';
 import { Destination } from '../types';
 import { useFavorites } from '../context/FavoritesContext';
+import { DestinationImage } from './DestinationImage';
 
 interface DestinationCardProps {
   destination: Destination;
@@ -19,23 +20,19 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
 }) => {
   const { isFavorite, toggleFavorite } = useFavorites();
   const favorited = isFavorite(destination.id);
-  const [imageError, setImageError] = useState(false);
-
-  // High-resolution verified fallback image of Jharkhand plateau
-  const fallbackImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hundru_Falls%2C_Jharkhand%2C_India_9.jpg/800px-Hundru_Falls%2C_Jharkhand%2C_India_9.jpg';
-  const displayImage = !imageError && destination.image ? destination.image : fallbackImage;
   const destinationUrl = `/destination/${destination.slug || destination.id}`;
 
   return (
     <article className={`group relative flex flex-col overflow-hidden rounded-2xl border border-border/80 bg-card transition-all duration-300 hover:shadow-lg hover:border-primary/30 ${className}`}>
       {/* 1. Image Container with 16:10 aspect ratio */}
-      <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-        <img
-          src={displayImage}
+      <div className="relative aspect-[16/10] w-full overflow-hidden bg-slate-900">
+        <DestinationImage
+          src={destination.image}
           alt={destination.image_alt || destination.name}
+          category={destination.category}
+          pillar={destination.pillar}
+          targetSize={500}
           className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-          loading="lazy"
-          onError={() => setImageError(true)}
         />
 
         {/* Subtle gradient overlay for contrast */}
@@ -47,9 +44,14 @@ export const DestinationCard: React.FC<DestinationCardProps> = ({
             <span className="rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-primary shadow-sm backdrop-blur">
               {destination.category}
             </span>
-            {destination.verification_status === 'VERIFIED' && (
+            {(destination.verification_status === 'VERIFIED_AUTHENTIC' || destination.verification_status === 'VERIFIED') && (
               <span className="rounded-full bg-emerald-700/90 text-white px-2.5 py-0.5 text-[11px] font-semibold shadow-sm backdrop-blur">
                 ✓ Verified
+              </span>
+            )}
+            {destination.needs_photo && (
+              <span className="rounded-full bg-black/60 text-amber-300 border border-amber-400/40 px-2 py-0.5 text-[10px] font-medium shadow-sm backdrop-blur" title="Community photo contribution welcomed">
+                Photo Needed
               </span>
             )}
           </div>

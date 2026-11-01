@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" width="640" height="400">
+  <defs>
+    <linearGradient id="grad-lakes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#082f49"/>
+      <stop offset="50%" stop-color="#075985"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <pattern id="pat-lakes" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M0 16 L16 0 L32 16 L16 32 Z" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background with tribal geo motif -->
+  <rect width="100%" height="100%" fill="url(#grad-lakes)"/>
+  <rect width="100%" height="100%" fill="url(#pat-lakes)"/>
+
+  <!-- Top Decorative Pill -->
+  <g transform="translate(40, 40)">
+    <rect width="130" height="26" rx="13" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+    <text x="65" y="17" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1">VISITJHAR</text>
+  </g>
+
+  <!-- Central Emblem -->
+  <g transform="translate(120, -10)">
+    <path d="M120 220 Q200 190 280 220" stroke="#38bdf8" stroke-width="4" fill="none"/>
+           <path d="M100 260 Q200 230 300 260" stroke="#0ea5e9" stroke-width="4" fill="none"/>
+           <path d="M80 300 Q200 270 320 300" stroke="#0284c7" stroke-width="4" fill="none"/>
+           <path d="M170 170 L200 130 L230 170 Z" fill="none" stroke="#7dd3fc" stroke-width="3"/>
+  </g>
+
+  <!-- Footer Information -->
+  <g transform="translate(40, 320)">
+    <text x="0" y="24" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="800" letter-spacing="-0.5">Lakes, Dams & Reservoirs</text>
+    <text x="0" y="48" fill="rgba(255,255,255,0.75)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Expansive Water Bodies of Damodar & Subarnarekha</text>
+  </g>
+</svg>
