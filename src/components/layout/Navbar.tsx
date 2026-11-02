@@ -19,7 +19,7 @@ import {
 
 export const Navbar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { user, isAuthenticated, isAdmin, logout, switchDemoRole } = useAuth();
+  const { user, isAuthenticated, isAdmin, logout } = useAuth();
   const { favorites } = useFavorites();
   const location = useLocation();
 
@@ -36,35 +36,6 @@ export const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-white/95 backdrop-blur-md">
-      {/* Demo Mode Notice Pill */}
-      <div className="bg-primary-dark px-4 py-1.5 text-xs text-white/90">
-        <div className="mx-auto flex max-w-7xl items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="inline-block h-2 w-2 rounded-full bg-accent animate-pulse"></span>
-            <span>Demo Mode: Running with genuine local Jharkhand tourism dataset.</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-white/60">Switch Role:</span>
-            <button
-              onClick={() => switchDemoRole('user')}
-              className={`rounded px-2 py-0.5 font-medium transition ${
-                !isAdmin ? 'bg-accent text-white' : 'bg-white/10 hover:bg-white/20'
-              }`}
-            >
-              Visitor
-            </button>
-            <button
-              onClick={() => switchDemoRole('admin')}
-              className={`rounded px-2 py-0.5 font-medium transition ${
-                isAdmin ? 'bg-accent text-white' : 'bg-white/10 hover:bg-white/20'
-              }`}
-            >
-              Admin
-            </button>
-          </div>
-        </div>
-      </div>
-
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Brand Logo */}
         <Link to="/" className="flex items-center gap-3">
