@@ -50,7 +50,7 @@ export const EventsPage: React.FC = () => {
             className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm"
           >
             <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-              <DestinationImage src={evt.image} alt={evt.name} targetSize={500} className="h-full w-full object-cover" />
+              <DestinationImage src={evt.image} alt={evt.name} category={evt.category || 'culture'} targetSize={500} className="h-full w-full object-cover" />
               <div className="absolute top-3 left-3 flex items-center gap-2">
                 <span className="rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-primary shadow backdrop-blur flex items-center gap-1">
                   <Calendar className="h-3 w-3 text-accent" />

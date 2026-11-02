@@ -56,7 +56,7 @@ export const ExperiencesPage: React.FC = () => {
               className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm"
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-                <DestinationImage src={exp.image} alt={exp.name} targetSize={500} className="h-full w-full object-cover" />
+                <DestinationImage src={exp.image} alt={exp.name} category={exp.type} targetSize={500} className="h-full w-full object-cover" />
                 <div className="absolute top-3 left-3">
                   <span className="rounded-full bg-white/95 px-2.5 py-1 text-[11px] font-bold text-primary shadow backdrop-blur">
                     {exp.type}
@@ -109,7 +109,7 @@ export const ExperiencesPage: React.FC = () => {
               className="flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm"
             >
               <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-                <DestinationImage src={art.image} alt={art.name} targetSize={500} className="h-full w-full object-cover" />
+                <DestinationImage src={art.image} alt={art.name} category={art.craft_type} targetSize={500} className="h-full w-full object-cover" />
                 <div className="absolute top-3 left-3">
                   <span className="rounded-full bg-accent/90 px-2.5 py-1 text-[11px] font-bold text-white shadow backdrop-blur">
                     {art.craft_type}

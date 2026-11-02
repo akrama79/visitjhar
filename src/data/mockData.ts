@@ -619,7 +619,7 @@ export { INITIAL_DESTINATIONS } from './destinationsData';
 
 export const INITIAL_CULTURE: CulturalContent[] = [
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/culture/tribal-jewellery-silver.jpg",
     "district": "Statewide",
     "cultural_significance": "Jewellery is an important marker of community identity and occasion in Adivasi culture. Authentic pieces are best bought directly from artisans or community markets.",
     "description": "Tribal jewellery of Jharkhand is made from silver, brass, beads, shells and other natural materials, with distinctive designs worn during festivals, dances and weddings. Each community has characteristic ornaments carrying cultural meaning.",
@@ -636,7 +636,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/culture/bamboo-cane-crafts.jpg",
     "district": "Statewide",
     "cultural_significance": "Bamboo craft reflects the resourcefulness and forest-based knowledge of Jharkhand's communities, with distinctive basketry forms tied to agricultural and domestic use.",
     "description": "Bamboo and cane crafts are widely practised across Jharkhand's Adivasi communities, producing baskets, mats, fishing implements, household items and decorative objects. Designs vary by community and region.",
@@ -653,7 +653,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/ho-tribal-community.jpg",
     "district": "West Singhbhum, East Singhbhum, Seraikela-Kharsawan",
     "cultural_significance": "The Ho community is closely tied to the forest landscape of southern Jharkhand, especially Saranda. Their community governance and cultural traditions are an important part of the region's heritage.",
     "description": "The Ho (Larka Kol) are an indigenous community concentrated in the Singhbhum (Kolhan) region of southern Jharkhand, speaking the Ho language. They have a strong tradition of community governance and a deep relationship with the forests of Saranda and Dalma.",
@@ -670,7 +670,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/oraon-kurukh-dance.jpg",
     "district": "Ranchi, Lohardaga, Gumla, Simdega",
     "cultural_significance": "The Oraon community is integral to the cultural fabric of Chotanagpur, with deep traditions of nature worship, agricultural festivals and oral epics.",
     "description": "The Oraon (Kurukh) are a major Adivasi community of the Chotanagpur plateau, speaking the Kurukh language. They have rich traditions of dance, music, agriculture and community festivals including Sarhul, Karma and Sohrai.",
@@ -687,7 +687,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/munda-tribal-tradition.jpg",
     "district": "Ranchi, Khunti, Simdega, Gumla",
     "cultural_significance": "The Munda community has played a central role in the history and identity of Jharkhand's Adivasi movement, especially through the legacy of Birsa Munda.",
     "description": "The Munda are a major Adivasi community of the Chotanagpur plateau, with a strong tradition of community governance (the Munda Manki system), agriculture and oral epics. Bhagwan Birsa Munda, the legendary Adivasi leader, belonged to this community.",
@@ -704,7 +704,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/santhal-community-dance.jpg",
     "district": "Dumka, Sahibganj, Pakur, Godda",
     "cultural_significance": "The Santhal community has a strong cultural identity centred on community, nature and oral tradition, and has played a significant role in the history of Jharkhand's Adivasi movements.",
     "description": "The Santhal (Santal) are one of the largest indigenous communities of Jharkhand and eastern India, concentrated in the Santhal Pargana region. They have a rich tradition of music, dance, storytelling and agriculture. The Santhali language has its own script (Ol Chiki).",
@@ -721,7 +721,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/tusu-festival-chaudal.jpg",
     "district": "Singhbhum, Ranchi, Statewide",
     "cultural_significance": "Tusu is a celebration of the harvest and the changing seasons, with strong community and artistic traditions distinctive to the Singhbhum region.",
     "description": "Tusu (or Tusu Parab) is a harvest festival celebrated through the winter months (December–January), particularly in the Singhbhum and Kolhan regions. It centres on the Tusu idol, songs, and a vibrant fair atmosphere.",
@@ -738,7 +738,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/sohrai-harvest-festival.jpg",
     "district": "Hazaribagh, Ranchi, Statewide",
     "cultural_significance": "Sohrai celebrates the bond between communities, cattle and the harvest. The accompanying wall-painting tradition is a recognised indigenous art form practised mainly by women.",
     "description": "Sohrai is a harvest and cattle festival celebrated after Diwali, honouring cattle as sacred companions in agricultural life. It is closely associated with the vibrant Sohrai and Kohvar mud-wall painting traditions of Hazaribagh.",
@@ -755,7 +755,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/karma-festival-dance.jpg",
     "district": "Statewide",
     "cultural_significance": "Karma is tied to nature worship, agricultural cycles and the well-being of the family. The Karam tree symbolises endurance and fertility.",
     "description": "Karma (or Karam) is a major festival celebrated during the monsoon (August–September), dedicated to the Karam tree and the welfare of the family and harvest. Young people plant Karam branches, dance the Jhumar and Karma dance through the night, and seek blessings for prosperity.",
@@ -772,7 +772,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/sarhul-festival-procession.jpg",
     "district": "Statewide",
     "cultural_significance": "Sarhul venerates the Sal tree (sakhua), nature and village deities (bonga), reflecting the deep relationship between Adivasi communities and the forest. It marks the new year in the traditional calendar of many communities.",
     "description": "Sarhul is the most important festival of the tribal communities of Jharkhand, celebrating the worship of the Sal tree and marking the beginning of spring. The festival involves the offering of Sal flowers to village deities, traditional dance, music and community feasts. It is celebrated by the Santhal, Munda, Oraon and Ho communities.",
@@ -789,7 +789,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/culture/tribal-ornaments-beadwork.jpg",
     "district": "Statewide",
     "cultural_significance": "Jewellery is an important marker of community identity and occasion in Adivasi culture, with forms and materials carrying symbolic meaning. Authentic pieces are best bought directly from artisans or community markets.",
     "description": "Tribal jewellery of Jharkhand is made from silver, brass, beads, shells and other natural materials, with distinctive designs worn during festivals, dances and weddings. Each community has characteristic ornaments that carry cultural meaning, marking identity, status and occasion.",
@@ -806,7 +806,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/culture/bamboo-artisan-weaving.jpg",
     "district": "Statewide",
     "cultural_significance": "Bamboo craft reflects the resourcefulness and forest-based knowledge of Jharkhand's communities. Each community has distinctive basketry forms tied to agricultural and domestic use.",
     "description": "Bamboo and cane crafts are widely practised across Jharkhand's Adivasi communities, producing baskets, mats, fishing implements, household items and decorative objects. The craft is deeply embedded in daily life and agricultural practice, with designs varying by community and region.",
@@ -823,7 +823,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/ho-heritage-kolhan.jpg",
     "district": "West Singhbhum, East Singhbhum, Seraikela-Kharsawan",
     "cultural_significance": "The Ho community is closely tied to the forest landscape of southern Jharkhand, especially Saranda. Their community governance and cultural traditions are an important part of the Singhbhum region's heritage.",
     "description": "The Ho (Larka Kol) are an indigenous community concentrated in the Singhbhum (Kolhan) region of southern Jharkhand, speaking the Ho language. They have a strong tradition of community governance (the Munda-Manki system), agriculture and a deep relationship with the forests of Saranda and Dalma. The Ho are among the communities that celebrate Mage, Baa and Jomnama festivals.",
@@ -840,7 +840,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/oraon-jatra-heritage.jpg",
     "district": "Ranchi, Lohardaga, Gumla, Simdega",
     "cultural_significance": "The Oraon community is integral to the cultural fabric of Chotanagpur, with deep traditions of nature worship, agricultural festivals and oral epics. Their language, Kurukh, has a recognised literary tradition.",
     "description": "The Oraon (Kurukh) are a major Adivasi community of the Chotanagpur plateau, speaking the Kurukh language. They have rich traditions of dance (such as the Karma and Jatra dances), music, agriculture and community festivals. The Oraon are among the communities that celebrate Sarhul, Karma and Sohrai prominently.",
@@ -857,7 +857,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/munda-heritage-khunti.jpg",
     "district": "Ranchi, Khunti, Simdega, Gumla",
     "cultural_significance": "The Munda community has played a central role in the history and identity of Jharkhand's Adivasi movement, especially through the legacy of Birsa Munda. Their community governance systems and oral traditions are an important part of the state's cultural heritage.",
     "description": "The Munda are a major Adivasi community of the Chotanagpur plateau, with a strong tradition of community governance (the Munda Manki system), agriculture and oral epics. The Munda language (Mundari) belongs to the Austroasiatic family. Bhagwan Birsa Munda, the legendary Adivasi leader, belonged to this community.",
@@ -874,7 +874,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8b82eb47b_generated_image.png",
+    "image": "/culture/santhal-folk-musicians.jpg",
     "district": "Dumka, Sahibganj, Pakur, Godda",
     "cultural_significance": "The Santhal community has a strong cultural identity centred on community, nature and oral tradition. Santhali music and dance are widely recognised, and the community has played a significant role in the history of Jharkhand's Adivasi movements.",
     "description": "The Santhal (Santal) are one of the largest indigenous communities of Jharkhand and eastern India, concentrated in the Santhal Pargana region. They have a rich tradition of music, dance (such as the Santhali dance), storytelling and agriculture. The Santhali language has its own script (Ol Chiki) and a vibrant literary and cultural tradition.",
@@ -891,7 +891,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/tusu-parab-mela.jpg",
     "district": "Singhbhum, Ranchi, Statewide",
     "cultural_significance": "Tusu is a celebration of the harvest and the changing seasons, with strong community and artistic traditions. The Tusu songs and the decorated Tusu structures are a distinctive cultural expression of the Singhbhum region.",
     "description": "Tusu (or Tusu Parab) is a harvest festival celebrated through the winter months (December–January), particularly in the Singhbhum and Kolhan regions. It centres on the Tusu idol, songs, and a vibrant fair atmosphere. The festival is closely associated with the Tusu art form and is a major cultural event for the communities of southern Jharkhand.",
@@ -908,7 +908,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/sohrai-cattle-worship.jpg",
     "district": "Hazaribagh, Ranchi, Statewide",
     "cultural_significance": "Sohrai celebrates the bond between communities, cattle and the harvest. The accompanying wall-painting tradition (Sohrai and Kohvar art) is a recognised indigenous art form of Jharkhand, practised mainly by women.",
     "description": "Sohrai is a harvest and cattle festival celebrated after Diwali, honouring cattle as sacred companions in agricultural life. It is closely associated with the vibrant Sohrai and Kohvar mud-wall painting traditions of Hazaribagh and the surrounding region. During Sohrai, villages decorate their homes with paintings, worship cattle, and celebrate with food, song and dance.",
@@ -925,7 +925,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/karam-puja-ceremony.jpg",
     "district": "Statewide",
     "cultural_significance": "Karma is tied to nature worship, agricultural cycles and the well-being of the family. The Karam tree symbolises endurance and fertility, and the festival marks the anticipation of a good harvest.",
     "description": "Karma (or Karam) is a major festival celebrated during the monsoon (August–September), dedicated to the Karam tree and the welfare of the family and harvest. Young people plant Karam branches, dance the Jhumar and Karma dance through the night, and seek blessings for prosperity. It is widely celebrated by the Munda, Oraon, Santhal, Ho and Kharia communities.",
@@ -942,7 +942,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/culture/sarhul-sarna-grove.jpg",
     "district": "Statewide",
     "cultural_significance": "Sarhul venerates the Sal tree (sakhua), nature and village deities (bonga), reflecting the deep relationship between Adivasi communities and the forest. It marks the new year in the traditional calendar of many communities and is a celebration of nature's renewal.",
     "description": "Sarhul is the most important festival of the tribal communities of Jharkhand, celebrating the worship of the Sal tree and marking the beginning of spring. The festival involves the offering of Sal flowers to village deities, traditional dance, music and community feasts. It is celebrated by the Santhal, Munda, Oraon and Ho communities, among others, and is one of the most culturally significant events in the state's calendar.",
@@ -959,7 +959,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/d401b3917_generated_image.png",
+    "image": "/destinations/saranda-forest.jpg",
     "district": "West Singhbhum",
     "cultural_significance": "A sacred forest central to the identity, livelihood and spiritual life of local tribal communities.",
     "description": "Saranda is often called Asia's largest sal forest, a vast green expanse in West Singhbhum. Beyond its ecological importance, it is deeply woven into the cultural and spiritual life of the Ho and other tribal communities who have lived within and alongside it for centuries.",
@@ -979,7 +979,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/f6f8c737f_generated_image.png",
+    "image": "/culture/dokra-metal-figurine.jpg",
     "district": "Bokaro",
     "cultural_significance": "An ancient metallurgical craft tradition preserved by artisan communities for generations.",
     "description": "Dokra is an ancient lost-wax metal casting craft practised by nomadic metalworkers. Using this technique, artisans create intricate figurines of deities, animals and tribal life from brass and bronze. Each piece is unique, as the mould is destroyed in casting.",
@@ -998,7 +998,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8722b4a49_generated_image.png",
+    "image": "/culture/jharkhandi-dhuska-cuisine.jpg",
     "district": "Multiple",
     "cultural_significance": "A cuisine shaped by forest and farm, reflecting the deep connection between tribal communities and their natural environment.",
     "description": "Jharkhandi cuisine is rooted in the land, featuring dishes like dhuska (fried lentil-rice bread), litti, pittha (rice dumplings), bamboo shoots, rugra (mushrooms) and mahua-based preparations. The food is simple, earthy and closely tied to seasonal forest produce.",
@@ -1017,7 +1017,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/27227d712_generated_image.png",
+    "image": "/culture/tribal-communities-jharkhand.jpg",
     "district": "Multiple",
     "cultural_significance": "The indigenous cultural foundation of Jharkhand, central to the state's identity and heritage.",
     "description": "Jharkhand is home to over 30 tribal communities including the Santhal, Munda, Oraon, Ho, and Kharia. Each community has distinct languages, customs, festivals and art forms, together forming a rich tapestry of indigenous culture rooted in nature worship and community life.",
@@ -1037,7 +1037,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/b4141f686_generated_image.png",
+    "image": "/culture/paitkar-scroll-painting.jpg",
     "district": "East Singhbhum",
     "cultural_significance": "One of eastern India's oldest storytelling art forms, preserving narrative and devotional traditions.",
     "description": "Paitkar is an ancient scroll painting tradition practised by the Chitrakar community, narrating stories from mythology and the afterlife. These long vertical scrolls were once used by wandering storytellers to accompany oral narratives.",
@@ -1056,7 +1056,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/f83f0f3fb_generated_image.png",
+    "image": "/culture/nagpuri-folk-mandar.jpg",
     "district": "Ranchi",
     "cultural_significance": "The oral musical heritage of the Chotanagpur plateau, central to community celebrations and storytelling.",
     "description": "Nagpuri is the folk music tradition of the Nagpuri-speaking people of the Chotanagpur plateau, featuring songs of nature, love, harvest and daily life. Accompanied by traditional instruments like the mandar and dhol, it forms the soundtrack of festivals and community gatherings.",
@@ -1076,7 +1076,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/e503bbb74_generated_image.png",
+    "image": "/destinations/seraikela-chhau.jpg",
     "district": "Seraikella-Kharsawan",
     "cultural_significance": "A UNESCO-recognised intangible cultural heritage representing the martial and artistic traditions of the region.",
     "description": "Chhau is a semi-classical martial dance form performed with elaborate masks, blending dance, martial arts and storytelling. The Seraikella and Mayurbhanj styles are renowned. Performances depict episodes from Hindu epics and local legends through expressive masked movements.",
@@ -1095,7 +1095,7 @@ export const INITIAL_CULTURE: CulturalContent[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/6a336bc07_generated_image.png",
+    "image": "/culture/sohrai-kohvar-murals.jpg",
     "district": "Hazaribagh",
     "cultural_significance": "A living tradition of women's art that documents tribal life, nature and rituals, recognised internationally for its beauty and cultural depth.",
     "description": "Sohrai and Kohvar are centuries-old mural painting traditions created by tribal women on the mud walls of their homes. Sohrai celebrates harvest and cattle with motifs of animals and nature, while Kohvar marks weddings with symbolic patterns. Painted using natural earth colours, these art forms have gained international recognition.",
@@ -1119,7 +1119,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-11-15",
     "end_date": "2026-11-15",
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/events/jharkhand-foundation-day.jpg",
     "district": "Ranchi",
     "name": "Jharkhand Foundation Day Celebrations",
     "cultural_significance": "A state celebration of Jharkhand's identity, showcasing the cultural and natural heritage of the state.",
@@ -1137,7 +1137,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-11-04",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/events/kartik-purnima-deoghar.jpg",
     "district": "Deoghar",
     "name": "Kartik Purnima Mela, Deoghar",
     "cultural_significance": "A significant pilgrimage event at one of the twelve Jyotirlingas, held on the auspicious full moon of Kartik.",
@@ -1155,7 +1155,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2027-06-25",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/destinations/jagannath-temple-ranchi.jpg",
     "images": [],
     "recurring": false,
     "description": "The annual Rath Yatra at the historic Jagannath Temple in Ranchi echoes the famous Puri festival, with the deities taken out in a chariot procession through the city, drawing large crowds of devotees.",
@@ -1182,7 +1182,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2027-01-20",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ac5569094_generated_image.png",
+    "image": "/events/mage-parab-celebration.jpg",
     "district": "West Singhbhum",
     "name": "Mage Parab",
     "cultural_significance": "An important winter festival of the Ho community, marking community bonding and the agricultural cycle.",
@@ -1200,7 +1200,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-11-25",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/4aafaf4df_generated_image.png",
+    "image": "/events/chatra-cattle-fair.jpg",
     "district": "Chatra",
     "name": "Cattle Fair, Chatra",
     "cultural_significance": "A centuries-old rural trade fair reflecting the agrarian economy and community life of the region.",
@@ -1220,7 +1220,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-04-18",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/5d6b451f8_generated_image.png",
+    "image": "/events/chhau-dance-festival.jpg",
     "district": "Seraikela-Kharsawan",
     "name": "Chhau Dance Festival",
     "cultural_significance": "Chhau dance is a UNESCO-recognised intangible cultural heritage, central to the performing arts tradition of eastern Jharkhand.",
@@ -1240,7 +1240,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-02-05",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/07326c555_generated_image.png",
+    "image": "/destinations/kunda-fort-ruins.jpg",
     "district": "Chatra",
     "name": "Kunda Mela",
     "cultural_significance": "A community fair preserving local folk traditions and crafts.",
@@ -1260,7 +1260,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-01-14",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ce31d0b73_generated_image.png",
+    "image": "/events/tusu-parab-celebration.jpg",
     "district": "Ranchi",
     "name": "Tussu Parab",
     "cultural_significance": "A harvest thanksgiving festival reflecting the agrarian roots of the region's communities.",
@@ -1281,7 +1281,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-11-10",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/0c1caecbb_generated_image.png",
+    "image": "/events/sohrai-art-festival.jpg",
     "district": "Hazaribagh",
     "name": "Sohrai Art Festival",
     "cultural_significance": "Preserves and promotes the centuries-old Sohrai and Kohvar painting traditions unique to Jharkhand's tribal communities.",
@@ -1301,7 +1301,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-07-22",
     "end_date": "2026-08-21",
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/719039378_generated_image.png",
+    "image": "/events/shravani-mela-kanwariya.jpg",
     "district": "Deoghar",
     "name": "Shravani Mela",
     "cultural_significance": "A monumental pilgrimage tradition drawing millions, central to Shaivite devotion in the region.",
@@ -1321,7 +1321,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-08-15",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/6ccf7a554_generated_image.png",
+    "image": "/events/karma-festival-event.jpg",
     "district": "Ranchi",
     "name": "Karma Festival",
     "cultural_significance": "A festival of nature worship and sibling bonds, central to the cultural life of tribal communities.",
@@ -1341,7 +1341,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
   {
     "date": "2026-03-25",
     "end_date": null,
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/b885c1db1_generated_image.png",
+    "image": "/events/sarhul-festival-ranchi.jpg",
     "district": "Ranchi",
     "name": "Sarhul Festival",
     "cultural_significance": "The most significant festival of the Adivasi communities of Jharkhand, celebrating nature worship and community bonds.",
@@ -1363,7 +1363,7 @@ export const INITIAL_EVENTS: TourismEvent[] = [
 
 export const INITIAL_EXPERIENCES: LocalExperience[] = [
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ae135ed96_generated_image.png",
+    "image": "/destinations/hundru-falls.jpg",
     "rating": 4.4,
     "description": "A full-day guided circuit of the Ranchi waterfalls—Hundru, Dassam and Jonha—combining the three most iconic cascades of the Ranchi plateau with scenic drives between them. Best in the post-monsoon season when the falls are at their most powerful.",
     "price_range": "₹₹",
@@ -1384,7 +1384,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/sohrai-village-walk.jpg",
     "rating": 4.6,
     "description": "A visit to villages around Hazaribagh where women practise the traditional Sohrai and Kohvar mud-wall painting traditions, recognised indigenous art forms of Jharkhand. Visitors can watch the painting process and buy authentic works directly from the artists.",
     "price_range": "₹",
@@ -1405,7 +1405,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/c7e0d5643_generated_image.png",
+    "image": "/destinations/patratu-valley.jpg",
     "rating": 4.5,
     "description": "A scenic drive through the winding ghat roads of Patratu Valley ending at a sunset viewpoint over the reservoir, one of Jharkhand's most popular road-trip experiences. Best done in the late afternoon from Ranchi or Ramgarh.",
     "price_range": "₹",
@@ -1426,7 +1426,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/bb849f383_generated_image.png",
+    "image": "/destinations/parasnath-hill.jpg",
     "rating": 4.7,
     "description": "The sacred pilgrimage trek around the summit of Parasnath Hill (Shikharji), the most revered site of Jainism, passing 24 shrines (tonks) dedicated to the Tirthankaras. The full trek takes 8–10 hours. Dharamshalas are available along the route.",
     "price_range": "₹",
@@ -1447,7 +1447,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/a46ea047a_generated_image.png",
+    "image": "/destinations/maluti-temples.jpg",
     "rating": 4.5,
     "description": "A guided walk through the heritage village of Maluti in Dumka, home to 72 surviving terracotta temples with intricate panels depicting scenes from the epics and everyday life. A local guide explains the history of the temples and the local ruling family that built them.",
     "price_range": "₹",
@@ -1468,7 +1468,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/5633c7f05_generated_image.png",
+    "image": "/destinations/betla-national-park.jpg",
     "rating": 4.6,
     "description": "A guided jeep safari through Betla National Park, the core of the Palamau Tiger Reserve, offering the chance to spot tigers, elephants, leopards, deer and a wide range of bird species in their natural forest habitat. Safaris run in the early morning and late afternoon with authorised guides.",
     "price_range": "₹₹",
@@ -1489,7 +1489,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/ae135ed96_generated_image.png",
+    "image": "/destinations/dassam-falls.jpg",
     "rating": 4.4,
     "description": "A full-day guided circuit of the Ranchi waterfalls—Hundru, Dassam and Jonha—combining the three most iconic cascades of the Ranchi plateau with scenic drives between them. Best in the post-monsoon season when the falls are at their most powerful.",
     "price_range": "₹₹",
@@ -1510,7 +1510,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/sohrai-hands-on-workshop.jpg",
     "rating": 4.6,
     "description": "A visit to villages around Hazaribagh where women practise the traditional Sohrai and Kohvar mud-wall painting traditions, recognised indigenous art forms of Jharkhand. Visitors can watch the painting process and buy authentic works directly from the artists.",
     "price_range": "₹",
@@ -1531,7 +1531,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/c7e0d5643_generated_image.png",
+    "image": "/experiences/patratu-lake-view.jpg",
     "rating": 4.5,
     "description": "A scenic drive through the winding ghat roads of Patratu Valley ending at a sunset viewpoint over the reservoir, one of Jharkhand's most popular road-trip experiences. Best done in the late afternoon from Ranchi or Ramgarh.",
     "price_range": "₹",
@@ -1552,7 +1552,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/bb849f383_generated_image.png",
+    "image": "/destinations/madhuban.jpg",
     "rating": 4.7,
     "description": "The sacred pilgrimage trek around the summit of Parasnath Hill (Shikharji), the most revered site of Jainism, passing 24 shrines (tonks) dedicated to the Tirthankaras. The full trek takes 8–10 hours and is undertaken by thousands of Jains each year. Dharamshalas are available along the route.",
     "price_range": "₹",
@@ -1573,7 +1573,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/a46ea047a_generated_image.png",
+    "image": "/experiences/maluti-terracotta-carvings.jpg",
     "rating": 4.5,
     "description": "A guided walk through the heritage village of Maluti in Dumka, home to 72 surviving terracotta temples with intricate panels depicting scenes from the epics and everyday life. A local guide explains the history of the temples and the local ruling family that built them.",
     "price_range": "₹",
@@ -1594,7 +1594,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/5633c7f05_generated_image.png",
+    "image": "/destinations/palamau-tiger-reserve.jpg",
     "rating": 4.6,
     "description": "A guided jeep safari through Betla National Park, the core of the Palamau Tiger Reserve, offering the chance to spot tigers, elephants, leopards, deer and a wide range of bird species in their natural forest habitat. Safaris run in the early morning and late afternoon with authorised guides.",
     "price_range": "₹₹",
@@ -1615,7 +1615,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/0ad26a004_generated_image.png",
+    "image": "/destinations/saranda-forest.jpg",
     "district": "West Singhbhum",
     "contact": "Available on request",
     "name": "Saranda Forest Experience",
@@ -1634,7 +1634,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/2739a8e68_generated_image.png",
+    "image": "/destinations/magnolia-sunset-point.jpg",
     "district": "Latehar",
     "contact": "Available on request",
     "name": "Netarhat Nature Walk",
@@ -1653,7 +1653,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/dff456136_generated_image.png",
+    "image": "/experiences/jharkhand-village-cooking.jpg",
     "district": "Ranchi",
     "contact": "Available on request",
     "name": "Traditional Jharkhandi Cooking Class",
@@ -1672,7 +1672,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/8c683d874_generated_image.png",
+    "image": "/experiences/dokra-craft-demonstration.jpg",
     "district": "Bokaro",
     "contact": "Available on request",
     "name": "Dokra Metal Craft Demonstration",
@@ -1691,7 +1691,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/9352e2d53_generated_image.png",
+    "image": "/destinations/dalma-wildlife-sanctuary.jpg",
     "district": "East Singhbhum",
     "contact": "Available on request",
     "name": "Dalma Forest Trek with Local Guide",
@@ -1710,7 +1710,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/d5270f913_generated_image.png",
+    "image": "/destinations/amadubi-village.jpg",
     "district": "East Singhbhum",
     "contact": "Available on request",
     "name": "Amadubi Village Homestay",
@@ -1729,7 +1729,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/b809fed7d_generated_image.png",
+    "image": "/experiences/sohrai-painting-experience.jpg",
     "district": "Hazaribagh",
     "contact": "Available on request",
     "name": "Sohrai Painting Experience",
@@ -1748,7 +1748,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/a979cd0f3_generated_image.png",
+    "image": "/experiences/chhau-dance-workshop.jpg",
     "district": "Seraikela-Kharsawan",
     "contact": "Available on request",
     "name": "Chhau Dance Workshop",
@@ -1770,7 +1770,7 @@ export const INITIAL_EXPERIENCES: LocalExperience[] = [
 
 export const INITIAL_ARTISANS: Artisan[] = [
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-terracotta-maluti.jpg",
     "district": "Dumka",
     "name": "Rabindra Karmakar",
     "craft_type": "Terracotta",
@@ -1786,7 +1786,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-chhau-mask-making.jpg",
     "district": "Seraikela-Kharsawan",
     "name": "Karan Mahato",
     "craft_type": "Chhau Mask Making",
@@ -1802,7 +1802,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-tribal-jewellery.jpg",
     "district": "West Singhbhum",
     "name": "Sushila Murmu",
     "craft_type": "Tribal Jewellery",
@@ -1818,7 +1818,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-stone-carving.jpg",
     "district": "Dumka",
     "name": "Gopal Sutradhar",
     "craft_type": "Stone Carving",
@@ -1834,7 +1834,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-terracotta-craft.jpg",
     "district": "Dumka",
     "name": "Rabindra Karmakar",
     "craft_type": "Terracotta",
@@ -1850,7 +1850,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-chhau-mask-painting.jpg",
     "district": "Seraikela-Kharsawan",
     "name": "Karan Mahato",
     "craft_type": "Chhau Mask Making",
@@ -1866,7 +1866,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-tribal-ornaments.jpg",
     "district": "West Singhbhum",
     "name": "Sushila Murmu",
     "craft_type": "Tribal Jewellery",
@@ -1882,7 +1882,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-temple-sculpture.jpg",
     "district": "Dumka",
     "name": "Gopal Sutradhar",
     "craft_type": "Stone Carving",
@@ -1898,7 +1898,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-pottery-wheel.jpg",
     "district": "Gumla",
     "name": "Phulmani Devi",
     "craft_type": "Pottery",
@@ -1914,7 +1914,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-wood-carving.jpg",
     "district": "Khunti",
     "name": "Dukhicharan Mahato",
     "craft_type": "Wood Crafts",
@@ -1930,7 +1930,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-tribal-weaving.jpg",
     "district": "Seraikela-Kharsawan",
     "name": "Sunita Hembram",
     "craft_type": "Textile/Traditional Crafts",
@@ -1946,7 +1946,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-paitkar-scrolls.jpg",
     "district": "East Singhbhum",
     "name": "Ramesh Chitrakar",
     "craft_type": "Paitkar Painting",
@@ -1962,7 +1962,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-kohvar-mural.jpg",
     "district": "Hazaribagh",
     "name": "Lakhi Mahato",
     "craft_type": "Kohvar Art",
@@ -1978,7 +1978,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-bamboo-craft.jpg",
     "district": "Ranchi",
     "name": "Mangal Singh Soren",
     "craft_type": "Bamboo Crafts",
@@ -1994,7 +1994,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-dokra-casting.jpg",
     "district": "Bokaro",
     "name": "Bikram Karmakar",
     "craft_type": "Dokra Metal Craft",
@@ -2010,7 +2010,7 @@ export const INITIAL_ARTISANS: Artisan[] = [
     "is_sample": false
   },
   {
-    "image": "https://media.base44.com/images/public/6aa8db580aef597b6eba92f6/851839f18_generated_image.png",
+    "image": "/experiences/artisan-sohrai-painting.jpg",
     "district": "Hazaribagh",
     "name": "Shanti Devi",
     "craft_type": "Sohrai Art",

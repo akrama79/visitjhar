@@ -88,7 +88,7 @@ export const CulturePage: React.FC = () => {
             className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card card-lift shadow-sm"
           >
             <div className="relative aspect-[16/10] w-full overflow-hidden bg-muted">
-              <DestinationImage src={item.image} alt={item.title} targetSize={500} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <DestinationImage src={item.image} alt={item.title} category={item.category} targetSize={500} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
               <div className="absolute top-3 left-3">
                 <span className="rounded-full bg-white/90 px-2.5 py-1 text-[11px] font-bold text-primary shadow backdrop-blur">
                   {item.category}
